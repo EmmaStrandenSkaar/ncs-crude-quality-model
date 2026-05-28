@@ -263,11 +263,12 @@ def get_market_defaults_2025():
 
 
 def predict_differential(api, sulfur, vac_res, ccr, v_ni, mid_dist, brent, market,
-                          coefs, features, quarter: int) -> float:
+                          coefs, features, quarter: int, is_fpso: int = 0) -> float:
     """
     Prediker differensial for et NCS-felt gitt kvalitetsegenskaper + marked.
-    Bruker Modell B (Brent-linked, 34b_brent_model.json).
+    Bruker Modell B v3 (Brent-linked + is_fpso, 34b_brent_model.json).
     quarter = 1-4 (for cos_month proxy: Q1≈Jan, Q2≈Apr, Q3≈Jul, Q4≈Oct)
+    is_fpso = 1 hvis grade lastes via FPSO, 0 hvis pipeline (NY i v3)
     """
     # cos_month proxy for kvartal
     month_map = {1: 1, 2: 4, 3: 7, 4: 10}
@@ -293,6 +294,7 @@ def predict_differential(api, sulfur, vac_res, ccr, v_ni, mid_dist, brent, marke
         # ── Logistikk (NCS = short distance) ─────────────────────────────────
         # d_distance_medium fjernet fra Brent-modellen
         "d_distance_long":       0,    # NCS er short-distance
+        "is_fpso":               is_fpso,   # NY i v3: -1.98 USD/bbl for FPSO-grades
         # ── Tidsvarierende markedsfeatures ───────────────────────────────────
         "brent_price":                       brent,
         # wti_brent_spread fjernet fra Brent-modellen
@@ -365,6 +367,8 @@ def run_forward_scenario(scenario_name: str, brent_path: dict,
         # Beregn vektet differensial
         weighted_diff = 0.0
         field_rows = []
+        # FPSO-felt (synkronisert med script 62 og script 42)
+        AKRBP_FPSO = {"ALVHEIM", "BØYLA", "SKOGUL", "SKARV", "YGGDRASIL"}
         for field, kboepd in field_prods.items():
             share = kboepd / total_prod
             fq = ALL_FIELD_QUALITY.get(field)
@@ -376,7 +380,8 @@ def run_forward_scenario(scenario_name: str, brent_path: dict,
                 v_ni=fq["vanadium"] + fq["nickel"],
                 mid_dist=fq.get("middle_distillate_pct", 40.0),
                 brent=brent, market=market,
-                coefs=coefs, features=features, quarter=q
+                coefs=coefs, features=features, quarter=q,
+                is_fpso=1 if field in AKRBP_FPSO else 0,
             )
             weighted_diff += share * diff
             field_rows.append({

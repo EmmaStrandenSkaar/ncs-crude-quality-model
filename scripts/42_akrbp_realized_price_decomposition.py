@@ -337,6 +337,16 @@ def load_sodir_production():
 # MODELL-PREDIKSJON PER FELT PER MÅNED
 # ────────────────────────────────────────────────────────────────────────────
 
+# ── FPSO-flag per AKRBP-felt (synkronisert med script 62) ────────────────
+# Felt som lastes via FPSO til shuttle-tanker (har is_fpso=1 i Modell v3)
+AKRBP_FPSO_FIELDS = {
+    "ALVHEIM", "BØYLA", "SKOGUL",   # Alvheim FPSO
+    "SKARV",                          # Skarv FPSO
+    # Pipeline-felt: VALHALL, HOD, ULA, TAMBAR, TAMBAR ØST (Ekofisk Blend),
+    #                EDVARD GRIEG, IVAR AASEN (Grane Blend), JOHAN SVERDRUP
+}
+
+
 def build_field_features(field: str, mts: pd.DataFrame, coefs: dict, features: list) -> pd.DataFrame:
     """
     Bygg full feature-matrise for ett felt × alle måneder.
@@ -351,8 +361,8 @@ def build_field_features(field: str, mts: pd.DataFrame, coefs: dict, features: l
     vac_res  = q["vacuum_resid"]
     ccr      = q["ccr"]
     v_ni     = np.log1p(q["vanadium"] + q["nickel"])
-    mid_dist = q.get("middle_distillate_pct", 38.0)   # kerosene + gasoil yield, default ≈ NCS avg
-    log_dist = q.get("log_dist_rotterdam", 6.74)       # default = Sture terminal (845 km)
+    mid_dist = q.get("middle_distillate_pct", 38.0)
+    is_fpso  = 1 if field in AKRBP_FPSO_FIELDS else 0   # NY: Modell v3
 
     rows = []
     for _, row in mts.iterrows():
@@ -378,6 +388,7 @@ def build_field_features(field: str, mts: pd.DataFrame, coefs: dict, features: l
             # ── Logistikk (NCS = kort avstand, ingen long-distance rabatt) ──
             # d_distance_medium er fjernet fra Brent-modellen (kollineær med WestAfrica)
             "d_distance_long":       0,    # NCS er short-distance → 0
+            "is_fpso":               is_fpso,   # NY i v3: -1.98 USD/bbl for FPSO-grades
             # ── Tidsvarierende markedsfeatures ───────────────────────────────
             "brent_price":                       brent,
             # wti_brent_spread er fjernet fra Brent-modellen

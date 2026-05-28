@@ -64,6 +64,17 @@ DIRECT_ASSAY = {
     "NJORD":          "Njord",
 }
 
+# ── FPSO vs pipeline-flag per Sodir-feltnavn (UPPERCASE) ───────────────────
+# Synkronisert med script 62. Brukes for is_fpso-featuren i Modell v3.
+SODIR_FPSO_FIELDS = {
+    "ALVHEIM", "BØYLA", "SKOGUL", "VOLUND", "VILJE",
+    "SKARV", "AASTA HANSTEEN",
+    "ÅSGARD", "HEIDRUN", "NORNE", "DRAUGEN",
+    "GOLIAT", "BALDER", "JOTUN", "GINA KROG", "MARTIN LINGE",
+    "KNARR", "NJORD", "MARULK", "SKULD", "URD", "MARIA",
+}
+
+
 # ── BLEND-PROXY (★★ faktisk eksportstream) ─────────────────────────────────
 # Felt som sammenblandes og eksporteres som én navngitt blend.
 # Formatet: (assay_grade, "name of actual export blend")
@@ -280,8 +291,10 @@ def load_normpris_latest() -> dict:
 # ────────────────────────────────────────────────────────────────────────────
 
 def build_field_features(api, sulfur, vac_res, ccr, mid_dist, v_ni,
-                          brent=75.0, refutil=92.0) -> dict:
-    """Bygg en feature-dict for NCS-felt med 'standard' markedsforhold."""
+                          brent=75.0, refutil=92.0, is_fpso=0) -> dict:
+    """Bygg en feature-dict for NCS-felt med 'standard' markedsforhold.
+    is_fpso: 1 hvis grade lastes via FPSO, 0 hvis pipeline (NY i v3).
+    """
     return {
         # Statiske kvalitets-features
         "api_gravity":           api,
@@ -296,6 +309,7 @@ def build_field_features(api, sulfur, vac_res, ccr, mid_dist, v_ni,
         "log_v_ni":              np.log1p(v_ni),
         # Logistikk
         "d_distance_long":       0,
+        "is_fpso":               is_fpso,   # NY i v3: -1.98 USD/bbl for FPSO
         # Markeds-features (baseline-snitt)
         "brent_price":                       brent,
         "diesel_minus_gasoline_crack":        15.0,
@@ -911,9 +925,13 @@ def main() -> None:
             n_none += 1
             continue
 
+        # is_fpso-flagg basert på Sodir-feltnavn (NY i v3)
+        is_fpso = 1 if name in SODIR_FPSO_FIELDS else 0
+
         feat = build_field_features(
             assay["api"], assay["sulfur"], assay["vac_res"],
-            assay["ccr"], assay["mid_dist"], assay["v_ni"]
+            assay["ccr"], assay["mid_dist"], assay["v_ni"],
+            is_fpso=is_fpso,
         )
         pred = predict(feat, coefs, features)
         top5 = quality_impact_decomposition(assay, ncs_baseline, coefs)
@@ -924,6 +942,7 @@ def main() -> None:
             "source_type":   source_type,
             "source_label":  source_label,
             "proxy_grade":   assay_grade,
+            "is_fpso":       is_fpso,
         }
 
     print(f"  ★★★ DIRECT (egen assay):       {n_direct:>3}")

@@ -145,6 +145,7 @@ def predict_grade_differential(stage2: dict, grade_assay: dict,
         "reg_NorthAfrica":       1 if grade_assay["region"] == "NorthAfrica" else 0,
         # Logistikk
         "d_distance_long":       1 if grade_assay["region"] in ("MiddleEast", "WestAfrica") else 0,
+        "is_fpso":               grade_assay.get("is_fpso", 0),    # NY i v3
         # Markedsfeatures (fra crack-forecast og baseline)
         "brent_price":                       market["brent"],
         "gasoline_crack_brent":              market["gasoline_crack"],
@@ -210,6 +211,7 @@ def build_grade_assays(panel: pd.DataFrame, stage2_grades: list) -> dict:
             "kerosene":     float(r.get("kerosene_pct", 12.0) or 12.0),
             "v_ni":         float(np.expm1(r.get("log_v_ni", np.log1p(5.0)) or np.log1p(5.0))),
             "region":       region_map.get(r["region"], "Other"),
+            "is_fpso":      int(r.get("is_fpso", 0)),   # NY i v3
         }
     return out
 
