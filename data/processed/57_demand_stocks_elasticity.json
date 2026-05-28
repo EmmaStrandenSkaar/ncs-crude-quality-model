@@ -1,0 +1,50 @@
+{
+  "motor_gasoline": {
+    "n": 71,
+    "r2": 0.6904693726205895,
+    "demand_coef": -0.008784,
+    "demand_pvalue": 0.1352,
+    "lag_coef": 0.5476,
+    "long_run_elasticity": -0.019416,
+    "short_run_change_per_200kbpd": -1.76,
+    "long_run_change_per_200kbpd": -3.88,
+    "demand_mean": 8858.5,
+    "stocks_mean": 226.9
+  },
+  "jet_fuel": {
+    "n": 71,
+    "r2": 0.6870896764248658,
+    "demand_coef": 0.001952,
+    "demand_pvalue": 0.5476,
+    "lag_coef": 0.7613,
+    "long_run_elasticity": 0.008178,
+    "short_run_change_per_200kbpd": 0.39,
+    "long_run_change_per_200kbpd": 1.64,
+    "demand_mean": 1685.0,
+    "stocks_mean": 41.7
+  },
+  "distillate_fuel": {
+    "n": 71,
+    "r2": 0.6958662193732188,
+    "demand_coef": -0.020807,
+    "demand_pvalue": 0.0,
+    "lag_coef": 0.8335,
+    "long_run_elasticity": -0.124957,
+    "short_run_change_per_200kbpd": -4.16,
+    "long_run_change_per_200kbpd": -24.99,
+    "demand_mean": 3882.6,
+    "stocks_mean": 114.6
+  },
+  "residual_fuel": {
+    "n": 71,
+    "r2": 0.8939215066624199,
+    "demand_coef": -0.009617,
+    "demand_pvalue": 0.008,
+    "lag_coef": 0.9268,
+    "long_run_elasticity": -0.131431,
+    "short_run_change_per_200kbpd": -1.92,
+    "long_run_change_per_200kbpd": -26.29,
+    "demand_mean": 302.9,
+    "stocks_mean": 25.6
+  }
+}

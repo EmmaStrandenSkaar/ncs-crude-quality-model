@@ -1,0 +1,167 @@
+{
+  "gasoline_crack_brent": {
+    "label": "Gasoline crack vs. Brent",
+    "features": [
+      "motor_gasoline_kbpd",
+      "motor_gasoline_stocks_mbbl",
+      "us_refinery_util_pct",
+      "brent_price",
+      "sin_month",
+      "cos_month",
+      "d_russia_sanctions"
+    ],
+    "coefficients": {
+      "const": 106.911232,
+      "motor_gasoline_kbpd": -0.01404,
+      "motor_gasoline_stocks_mbbl": -0.304021,
+      "us_refinery_util_pct": 0.955688,
+      "brent_price": 0.222294,
+      "sin_month": 2.080632,
+      "cos_month": -5.702569,
+      "d_russia_sanctions": 4.334364
+    },
+    "std_errors": {
+      "const": 72.941677,
+      "motor_gasoline_kbpd": 0.005908,
+      "motor_gasoline_stocks_mbbl": 0.118958,
+      "us_refinery_util_pct": 0.270996,
+      "brent_price": 0.084769,
+      "sin_month": 2.163255,
+      "cos_month": 1.861634,
+      "d_russia_sanctions": 3.269172
+    },
+    "p_values": {
+      "const": 0.142728,
+      "motor_gasoline_kbpd": 0.017483,
+      "motor_gasoline_stocks_mbbl": 0.010597,
+      "us_refinery_util_pct": 0.000421,
+      "brent_price": 0.008733,
+      "sin_month": 0.336147,
+      "cos_month": 0.00219,
+      "d_russia_sanctions": 0.184896
+    },
+    "metrics": {
+      "n_obs": 52,
+      "r2": 0.5755,
+      "r2_adj": 0.508,
+      "r2_cv": -0.4051,
+      "r2_oot": -5.1507,
+      "rmse": 5.7
+    },
+    "y_mean": 21.69,
+    "y_range": [
+      10.72,
+      48.73
+    ]
+  },
+  "diesel_crack_brent": {
+    "label": "Diesel/distillate crack vs. Brent",
+    "features": [
+      "distillate_fuel_kbpd",
+      "distillate_stocks_mbbl",
+      "us_refinery_util_pct",
+      "brent_price",
+      "sin_month",
+      "cos_month",
+      "d_russia_sanctions"
+    ],
+    "coefficients": {
+      "const": -75.352878,
+      "distillate_fuel_kbpd": 0.002191,
+      "distillate_stocks_mbbl": -1.199852,
+      "us_refinery_util_pct": 1.978515,
+      "brent_price": 0.63143,
+      "sin_month": -1.57412,
+      "cos_month": 14.53123,
+      "d_russia_sanctions": 12.730737
+    },
+    "std_errors": {
+      "const": 96.961048,
+      "distillate_fuel_kbpd": 0.014205,
+      "distillate_stocks_mbbl": 0.335619,
+      "us_refinery_util_pct": 0.709668,
+      "brent_price": 0.128217,
+      "sin_month": 2.701381,
+      "cos_month": 3.144734,
+      "d_russia_sanctions": 5.215798
+    },
+    "p_values": {
+      "const": 0.437073,
+      "distillate_fuel_kbpd": 0.877401,
+      "distillate_stocks_mbbl": 0.00035,
+      "us_refinery_util_pct": 0.005304,
+      "brent_price": 1e-06,
+      "sin_month": 0.560089,
+      "cos_month": 4e-06,
+      "d_russia_sanctions": 0.014655
+    },
+    "metrics": {
+      "n_obs": 52,
+      "r2": 0.6028,
+      "r2_adj": 0.5396,
+      "r2_cv": -0.39,
+      "r2_oot": 0.2041,
+      "rmse": 10.8304
+    },
+    "y_mean": 36.12,
+    "y_range": [
+      14.6,
+      89.16
+    ]
+  },
+  "jet_crack_brent": {
+    "label": "Jet fuel crack vs. Brent",
+    "features": [
+      "jet_fuel_kbpd",
+      "jet_fuel_stocks_mbbl",
+      "us_refinery_util_pct",
+      "brent_price",
+      "sin_month",
+      "cos_month",
+      "d_russia_sanctions"
+    ],
+    "coefficients": {
+      "const": 17.686869,
+      "jet_fuel_kbpd": 0.005335,
+      "jet_fuel_stocks_mbbl": -2.217775,
+      "us_refinery_util_pct": 0.409063,
+      "brent_price": 0.452457,
+      "sin_month": -1.466427,
+      "cos_month": 2.588472,
+      "d_russia_sanctions": 19.016483
+    },
+    "std_errors": {
+      "const": 70.718445,
+      "jet_fuel_kbpd": 0.028261,
+      "jet_fuel_stocks_mbbl": 0.83255,
+      "us_refinery_util_pct": 0.50448,
+      "brent_price": 0.147046,
+      "sin_month": 2.538654,
+      "cos_month": 2.744018,
+      "d_russia_sanctions": 5.416309
+    },
+    "p_values": {
+      "const": 0.802508,
+      "jet_fuel_kbpd": 0.850264,
+      "jet_fuel_stocks_mbbl": 0.007726,
+      "us_refinery_util_pct": 0.417445,
+      "brent_price": 0.002091,
+      "sin_month": 0.563507,
+      "cos_month": 0.34552,
+      "d_russia_sanctions": 0.000446
+    },
+    "metrics": {
+      "n_obs": 52,
+      "r2": 0.5629,
+      "r2_adj": 0.4933,
+      "r2_cv": -1.076,
+      "r2_oot": -0.7954,
+      "rmse": 9.4045
+    },
+    "y_mean": 27.92,
+    "y_range": [
+      9.22,
+      66.26
+    ]
+  }
+}
