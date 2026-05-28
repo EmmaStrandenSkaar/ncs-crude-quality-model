@@ -1,0 +1,64 @@
+═══════════════════════════════════════════════════════════════
+1. BEGGS-ROBINSON VISCOSITY MODEL (Darcy's Law)
+═══════════════════════════════════════════════════════════════
+   Reservoir temperature: 90°C (194°F)
+   Water viscosity: 0.35 cp
+
+   Estimated oil viscosity across NCS fields:
+   API 25° → μ = 4.43 cp
+   API 35° → μ = 1.89 cp
+   API 45° → μ = 0.95 cp
+   API 53° → μ = 0.58 cp
+
+   Range: 0.59 – 4.67 cp
+   Mobility ratio M (μ_o/μ_w): 1.7 – 13.4
+
+   Correlations with decline rate D:
+   ln(viscosity) vs D:     r=+0.309 (p=0.0272) **
+   ln(mobility ratio) vs D: r=+0.309 (p=0.0272) **
+
+═════════════════════════════════════════════════════════════════
+2. BUCKLEY-LEVERETT WATER CUT MODEL
+═════════════════════════════════════════════════════════════════
+   Logistic water cut model fitted for 51 fields
+   Fit R²: median=0.801
+   Water cut rate k: median=0.0139/mnd
+   Time to 50% water cut: median=162 months
+
+   Water cut rate (k) vs D:  r=+0.353 (p=0.0120) **
+   Mobility ratio vs wc rate: r=+0.161 (p=0.2636) 
+
+═════════════════════════════════════════════════════════════════
+3. PHYSICS MODEL vs RAW QUALITY: regression comparison
+═════════════════════════════════════════════════════════════════
+
+  Raw quality (N=50, R²=0.198, Adj-R²=0.146, AIC=-108.0)
+    api_gravity          β=  -0.00272 (p=0.449) 
+    sulfur_pct           β=   0.10264 (p=0.461) 
+    oil_mean             β=  -0.06615 (p=0.001) ***
+
+  Physics (N=50, R²=0.395, Adj-R²=0.355, AIC=-122.0)
+    ln_viscosity         β=   0.05793 (p=0.032) **
+    wc_k                 β=   1.54805 (p=0.046) **
+    oil_mean             β=  -0.08944 (p=0.000) ***
+
+  Physics+mobility (N=50, R²=0.395, Adj-R²=0.355, AIC=-122.0)
+    ln_viscosity         β=   0.01024 (p=0.624) 
+    ln_mobility          β=   0.04769 (p=0.000) ***
+    wc_k                 β=   1.54805 (p=0.046) **
+    oil_mean             β=  -0.08944 (p=0.000) ***
+
+  Physics+sulfur (N=50, R²=0.403, Adj-R²=0.350, AIC=-120.7)
+    ln_viscosity         β=   0.03383 (p=0.402) 
+    wc_k                 β=   1.54344 (p=0.042) **
+    sulfur_pct           β=   0.08144 (p=0.489) 
+    oil_mean             β=  -0.09750 (p=0.000) ***
+
+  Standardized β (Physics model):
+    ln_viscosity         β= +0.307 (p=0.032) **
+    wc_k                 β= +0.491 (p=0.046) **
+    oil_mean             β= -0.488 (p=0.000) ***
+
+Saved fig_physics_viscosity.png
+Saved fig_physics_watercut.png
+Saved fig_physics_combined.png

@@ -1,0 +1,47 @@
+ARPS DECLINE CURVE BACKTEST
+Cutoff: fit on post-peak data ≤2012, forecast 2013-2026
+Fields: 32
+
+Best-fitting model distribution:
+  {'exp': 16, 'hyp': 15, 'harm': 1}
+
+In-sample fit (best model R²): median=0.815, mean=0.696
+Out-of-sample MAPE: median=47.1%, mean=69.6%
+Out-of-sample RMSE: median=8.8 pp, mean=10.4 pp
+Forecast bias: median=-2.7 pp (>0 = overforecast)
+
+Hyperbolic b-parameter: median=1.329, range=[0.034, 2.000]
+  b<0.5 (near-exponential): 4
+  b=0.5-1.0 (typical): 3
+  b>1.0 (very slow decline): 8
+
+============================================================
+Correlations: quality → forecast error (best model MAPE)
+============================================================
+  api_gravity               r=+0.347 (p=0.052) *
+  sulfur_pct                r=-0.219 (p=0.228) 
+  vacuum_resid_pct          r=-0.160 (p=0.382) 
+  oil_mean                  r=-0.204 (p=0.262) 
+  D_annual                  r=+0.095 (p=0.604) 
+  best_b                    r=+0.348 (p=0.051) *
+
+============================================================
+Correlations: quality → Arps b-parameter (hyperbolic fits)
+============================================================
+  api_gravity               r=-0.005 (p=0.985) 
+  sulfur_pct                r=+0.064 (p=0.820) 
+  vacuum_resid_pct          r=-0.202 (p=0.470) 
+  oil_mean                  r=-0.204 (p=0.466) 
+
+============================================================
+OLS: quality + size → forecast MAPE
+============================================================
+  const                β= -174.1803 (p=0.001) ***
+  api_gravity          β=    6.0966 (p=0.000) ***
+  sulfur_pct           β=   91.3171 (p=0.065) *
+  oil_mean             β=  -35.4068 (p=0.267) 
+  R²=0.167, Adj-R²=0.078
+
+Saved fig_arps_examples.png
+Saved fig_arps_errors.png
+Saved fig_arps_b_parameter.png

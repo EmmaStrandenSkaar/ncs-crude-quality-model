@@ -1,0 +1,95 @@
+PURE ARPS DECLINE CURVE ANALYSIS
+Fit window: first 60 months post-peak
+Forecast window: month 60+ (median 227 months)
+Fields: 37
+
+═════════════════════════════════════════════════════════════════
+FITTED PARAMETERS
+═════════════════════════════════════════════════════════════════
+
+  EXP          (n=37 fits)
+    qi: median=89.8%, Di: median=0.01436/mnd (0.1723/yr)
+    In-sample R²: median=0.592, range=[-0.000, 0.944]
+
+  HYP          (n=37 fits)
+    qi: median=93.3%, Di: median=0.01659/mnd (0.1990/yr)
+    In-sample R²: median=0.697, range=[-0.000, 0.964]
+    b-parameter: median=0.010, range=[0.010, 2.000]
+
+  HARM         (n=37 fits)
+    qi: median=92.5%, Di: median=0.02098/mnd (0.2518/yr)
+    In-sample R²: median=0.603, range=[-0.000, 0.950]
+
+═════════════════════════════════════════════════════════════════
+BEST MODEL PER FIELD
+═════════════════════════════════════════════════════════════════
+  {'exp': 19, 'hyp': 17, 'harm': 1}
+
+═════════════════════════════════════════════════════════════════
+FORECAST ACCURACY (best model per field)
+═════════════════════════════════════════════════════════════════
+  In-sample R²:      median=0.697
+  Out-of-sample MAPE: median=53.8%
+  Out-of-sample RMSE: median=9.2 pp
+  Forecast bias:     median=2.2 pp (over-forecasts)
+  Cumulative error:  median=-9.2% of actual production
+
+  Per model type:
+    exp   (n=19): MAPE=54.4%, bias=+3.8pp, cum_err=-25.4%
+    hyp   (n=17): MAPE=50.9%, bias=+0.8pp, cum_err=-5.0%
+
+═════════════════════════════════════════════════════════════════
+RESIDUAL ANALYSIS: what does Arps miss, and is it quality-linked?
+═════════════════════════════════════════════════════════════════
+  API Gravity          vs MAPE: r=-0.063     vs bias: r=+0.310*    vs cum_err: r=-0.270   
+  Sulfur %             vs MAPE: r=+0.115     vs bias: r=-0.274     vs cum_err: r=+0.227   
+  Avg Production       vs MAPE: r=-0.144     vs bias: r=+0.044     vs cum_err: r=+0.096   
+  b-parameter          vs MAPE: r=+0.130     vs bias: r=-0.327**   vs cum_err: r=+0.326** 
+  Field Age            vs MAPE: r=+0.074     vs bias: r=+0.213     vs cum_err: r=-0.162   
+
+Saved fig_arps_pure_examples.png
+Saved fig_arps_pure_residuals.png
+Saved fig_arps_pure_summary.png
+
+═════════════════════════════════════════════════════════════════
+PER-FIELD RESULTS (sorted by forecast MAPE)
+═════════════════════════════════════════════════════════════════
+  Field                Best      b   Di/yr  R²fit  MAPE%   Bias   Cum%   API
+  ──────────────────── ───── ───── ─────── ────── ────── ────── ────── ─────
+  ALVHEIM                hyp  2.00  0.1539  0.520   20.2   +2.1   -5.0  34.5
+  VILJE                  hyp  0.01  0.2223  0.855   26.5   +0.8   -5.8  34.5
+  GULLFAKS               exp  0.00  0.1205  0.592   27.3   -1.7  +12.4  39.3
+  FRAM                   exp  0.00  0.0910  0.413   27.8   +0.6   -1.6  38.8
+  JOTUN                  hyp  0.53  0.9851  0.964   33.7   -0.6  +18.0  32.0
+  OSEBERG SØR            exp  0.00  0.0956  0.517   34.7   +4.6  -14.5  39.9
+  GUDRUN                 exp  0.00  0.2032  0.699   36.1   +3.8  -14.7  52.9
+  OSEBERG                exp  0.00  0.1348  0.799   37.3   -0.0   +0.0  39.9
+  NORNE                  hyp  0.04  0.1990  0.838   40.1   -0.7   +7.9  34.0
+  TROLL                  hyp  0.58  0.2924  0.946   40.4   +9.7  -40.9  38.8
+  GYDA                   exp  0.00  0.2206  0.857   43.3   +2.2  -25.4  38.9
+  ELDFISK                hyp  2.00  0.1986  0.584   46.1  +13.8  -31.4  38.9
+  URD                    hyp  2.00  3.6878  0.697   46.3   +3.6  -21.1  34.0
+  VOLUND                 exp  0.00  0.2667  0.812   46.5   +7.4  -41.4  34.5
+  SNORRE                 hyp  1.63  0.2520  0.497   48.1   +3.1   -9.2  39.3
+  DRAUGEN                exp  0.00  0.1085  0.430   48.5   -6.3  +38.4  41.4
+  SKARV                  exp  0.00  0.2284  0.588   49.3  +12.8  -49.8  50.8
+  ULA                    hyp  0.44  0.4372  0.910   50.9   +3.5  -40.9  38.9
+  EMBLA                  hyp  1.08  0.4080  0.722   53.8   -1.2   +8.3  38.9
+  STATFJORD              exp  0.00  0.1220  0.777   54.4   -3.5  +32.6  39.3
+  STATFJORD ØST          hyp  0.26  0.2055  0.486   55.6   -0.4   +3.6  39.3
+  BALDER                 exp  0.00  0.2062  0.917   59.8  +14.6  -58.8  30.0
+  ÅSGARD                 exp  0.00  0.1603  0.801   64.3  +18.6  -59.2  47.5
+  VIGDIS                 hyp  2.00  0.2849  0.413   65.9   +1.9   -5.7  39.3
+  TAMBAR                 exp  0.00  0.1723  0.744   66.8   +3.2  -21.3  38.9
+  VALHALL                hyp  0.56  0.0567  0.256   72.8   -0.5   +1.1  38.9
+  TORDIS                 exp  0.00  0.1805  0.650   75.2   +8.3  -44.0  39.3
+  OSEBERG ØST            exp  0.00  0.3258  0.863   77.1   +7.1  -70.4  39.9
+  VISUND                 exp  0.00  0.1614  0.372   78.4  +25.3  -73.1  39.3
+  EKOFISK                exp  0.00  0.1310  0.561   79.8  +37.2  -82.7  38.9
+  SYGNA                  exp  0.00  0.3092  0.809   91.4   +2.6  -44.6  39.3
+  HOD                    hyp  1.12  0.5861  0.914  105.8   +2.3  -17.7  38.9
+  HEIDRUN                hyp  2.00  0.0612  0.182  117.0  -21.9  +75.9  24.4
+  NJORD                  hyp  2.00  1.0707  0.721  132.1   -5.8  +41.1  44.8
+  GRANE                  hyp  2.00  0.0870  0.459  140.7  -22.6  +75.7  27.1
+  KVITEBJØRN            harm  1.00  0.0000 -0.000  254.5  -31.7  +93.1  39.3
+  STATFJORD NORD         exp  0.00  0.0470  0.070  329.9  -20.2 +125.2  39.3

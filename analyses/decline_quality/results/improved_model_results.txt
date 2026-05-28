@@ -1,0 +1,89 @@
+IMPROVED PHYSICS MODEL
+Fields: 50
+D_annual range: 0.0103 – 0.3839
+
+═════════════════════════════════════════════════════════════════
+GOR ANALYSIS
+═════════════════════════════════════════════════════════════════
+GOR range: 0.0000 – 15.6476
+GOR distribution: {'Low GOR': 18, 'High GOR': 17, 'Medium GOR': 9}
+  GOR             vs D: r=+0.205 (p=0.153) 
+  ln(GOR)         vs D: r=+0.046 (p=0.751) 
+  ln(GOR) vs ln(μ): r=-0.218 (p=0.129) — independent
+
+═════════════════════════════════════════════════════════════════
+MODEL LADDER: progressively adding physics
+═════════════════════════════════════════════════════════════════
+
+  M0: Size only
+    R²=0.065, Adj-R²=0.046, LOO-CV R²=-0.042, AIC=-104.3, k=1
+      oil_mean             β=  -0.04677 (p=0.004) ***
+
+  M1: Raw quality
+    R²=0.198, Adj-R²=0.146, LOO-CV R²=0.019, AIC=-108.0, k=3
+      api_gravity          β=  -0.00272 (p=0.449) 
+      sulfur_pct           β=   0.10264 (p=0.461) 
+      oil_mean             β=  -0.06615 (p=0.001) ***
+
+  M2: Viscosity (Darcy)
+    R²=0.192, Adj-R²=0.158, LOO-CV R²=0.059, AIC=-109.6, k=2
+      ln_viscosity         β=   0.06798 (p=0.038) **
+      oil_mean             β=  -0.05619 (p=0.000) ***
+
+  M3: + Water cut (B-L)
+    R²=0.395, Adj-R²=0.355, LOO-CV R²=-0.641, AIC=-122.0, k=3
+      ln_viscosity         β=   0.05793 (p=0.032) **
+      wc_k                 β=   1.54805 (p=0.046) **
+      oil_mean             β=  -0.08944 (p=0.000) ***
+
+  M4: + GOR
+    R²=0.409, Adj-R²=0.357, LOO-CV R²=-0.743, AIC=-121.2, k=4
+      ln_viscosity         β=   0.06310 (p=0.023) **
+      wc_k                 β=   1.54510 (p=0.055) *
+      ln_gor               β=   0.00445 (p=0.158) 
+      oil_mean             β=  -0.08983 (p=0.000) ***
+
+  M5: + Interaction μ×k
+    R²=0.569, Adj-R²=0.520, LOO-CV R²=-0.240, AIC=-135.0, k=5
+      ln_viscosity         β=  -0.03839 (p=0.140) 
+      wc_k                 β=  -0.10501 (p=0.873) 
+      ln_gor               β=   0.00327 (p=0.337) 
+      visc_x_wck           β=   3.81711 (p=0.000) ***
+      oil_mean             β=  -0.10714 (p=0.000) ***
+
+  M6: Full physics
+    R²=0.570, Adj-R²=0.510, LOO-CV R²=-0.388, AIC=-133.1, k=6
+      ln_viscosity         β=  -0.03913 (p=0.152) 
+      wc_k                 β=  -0.13043 (p=0.851) 
+      ln_gor               β=   0.00353 (p=0.307) 
+      visc_x_wck           β=   3.82224 (p=0.000) ***
+      wc_current           β=   0.00872 (p=0.839) 
+      oil_mean             β=  -0.10572 (p=0.000) ***
+
+  ★ Best by LOO-CV: M2: Viscosity (Darcy) (CV R²=0.059)
+
+═════════════════════════════════════════════════════════════════
+STANDARDIZED β — M2: Viscosity (Darcy)
+═════════════════════════════════════════════════════════════════
+  ln_viscosity         β= +0.360 (p=0.038) **
+  oil_mean             β= -0.306 (p=0.000) ***
+
+Saved fig_improved_model.png
+Saved fig_gor_analysis.png
+Saved fig_model_diagnostics.png
+
+═════════════════════════════════════════════════════════════════
+MODEL COMPARISON SUMMARY
+═════════════════════════════════════════════════════════════════
+  Model                              R²  AdjR²  CV-R²     AIC   k
+  ────────────────────────────── ────── ────── ────── ─────── ───
+  M0: Size only                   0.065  0.046 -0.042  -104.3   1
+  M1: Raw quality                 0.198  0.146  0.019  -108.0   3
+  M2: Viscosity (Darcy)           0.192  0.158  0.059  -109.6   2 ★
+  M3: + Water cut (B-L)           0.395  0.355 -0.641  -122.0   3
+  M4: + GOR                       0.409  0.357 -0.743  -121.2   4
+  M5: + Interaction μ×k           0.569  0.520 -0.240  -135.0   5
+  M6: Full physics                0.570  0.510 -0.388  -133.1   6
+
+  ★ = best by LOO cross-validation
+  CV R² penalizes overfitting — it's the most honest metric
