@@ -1,0 +1,254 @@
+[
+  {
+    "grade": "Alaskan North Slope (ANS)",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/alaska_north_slope.xlsx",
+    "local_file": "alaska_north_slope.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Azeri BTC",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/azeri_btc.xlsx",
+    "local_file": "azeri_btc.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Azeri Light",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/azeri_light.xlsx",
+    "local_file": "azeri_light.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Bakken",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/bakken.xlsx",
+    "local_file": "bakken.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Banyu Urip",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/banyu_urip.xlsx",
+    "local_file": "banyu_urip.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Bonga",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/bonga.xlsx",
+    "local_file": "bonga.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "CLOV",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/clov.xlsx",
+    "local_file": "clov.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Cold Lake Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/cold_lake_blend.xlsx",
+    "local_file": "cold_lake_blend.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Coral Condensate",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/coral_condensate.xlsx",
+    "local_file": "coral_condensate.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "CPC Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/cpc_blend.xlsx",
+    "local_file": "cpc_blend.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Dalia",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/dalia.xlsx",
+    "local_file": "dalia.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Domestic Sweet",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/domestic_sweet.xlsx",
+    "local_file": "domestic_sweet.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Ebok",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/ebok.xlsx",
+    "local_file": "ebok.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Erha",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/erha.xlsx",
+    "local_file": "erha.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Gindungo",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/gindungo.xlsx",
+    "local_file": "gindungo.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Gippsland Condensate",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/gippsland_condensate.xlsx",
+    "local_file": "gippsland_condensate.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Girassol",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/girassol.xlsx",
+    "local_file": "girassol.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Golden Arrowhead",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/golden_arrowheadv2.xlsx",
+    "local_file": "golden_arrowheadv2.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Gorgon",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/gorgon.xlsx",
+    "local_file": "gorgon.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Hebron",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/hebron.xlsx",
+    "local_file": "hebron.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Hibernia Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/hibernia.xlsx",
+    "local_file": "hibernia.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "HOOPS Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/hoops.xlsx",
+    "local_file": "hoops.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Hungo Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/hungo_blend.xlsx",
+    "local_file": "hungo_blend.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Kearl",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/kearl.xlsx",
+    "local_file": "kearl.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Kissanje Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/kissanje_blend.xlsx",
+    "local_file": "kissanje_blend.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Kutubu",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/kutubu.xlsx",
+    "local_file": "kutubu.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Liza",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/liza_v-2.xlsx",
+    "local_file": "liza_v-2.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Mondo Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/mondo_blend.xlsx",
+    "local_file": "mondo_blend.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Mostarda",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/mostarda.xlsx",
+    "local_file": "mostarda.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Payara Gold",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/payara_gold.xlsx",
+    "local_file": "payara_gold.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Pazflor",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/pazflor.xlsx",
+    "local_file": "pazflor.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Qua Iboe",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/qua_iboe.xlsx",
+    "local_file": "qua_iboe.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Saxi Batuque",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/saxi_batuque.xlsx",
+    "local_file": "saxi_batuque.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Tapis",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/tapis.xlsx",
+    "local_file": "tapis.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Terengganu Condensate",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/terengganu_condensate.xlsx",
+    "local_file": "terengganu_condensate.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Thunder Horse",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/thunder_horse.xlsx",
+    "local_file": "thunder_horse.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Unity Gold",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/unity_gold.xlsx",
+    "local_file": "unity_gold.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Upper Zakum",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/upper_zakum.xlsx",
+    "local_file": "upper_zakum.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Usan",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2025/usan.xlsx",
+    "local_file": "usan.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "WTI Light",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/wti_light.xlsx",
+    "local_file": "wti_light.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Yoho",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/yoho.xlsx",
+    "local_file": "yoho.xlsx",
+    "source": "ExxonMobil"
+  },
+  {
+    "grade": "Zafiro Blend",
+    "url": "https://corporate.exxonmobil.com/-/media/global/files/crude-oils/xls/2024/zafiro_blend.xlsx",
+    "local_file": "zafiro_blend.xlsx",
+    "source": "ExxonMobil"
+  }
+]

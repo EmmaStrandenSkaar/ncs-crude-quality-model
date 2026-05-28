@@ -1,0 +1,16 @@
+field,crude_stream,region,dno_interest_pct,est_net_kbpd,api_gravity,sulfur_pct,normpris_field,confidence,note
+Tawke,Tawke Blend,Kurdistan,75.0,45.0,28.0,3.50,,medium,Hovudfelt KRI - eksportert via Ceyhan - veldig sur
+Peshkabir,Tawke Blend,Kurdistan,75.0,15.0,26.0,3.80,,medium,Del av Tawke-lisensen - tyngre enn Tawke
+Ekofisk,Ekofisk Blend,Nordsjoen,7.6,4.0,37.5,0.25,EKOFISK,high,BFOET-medlem - fra Sval Energi
+Eldfisk,Ekofisk Blend,Nordsjoen,7.6,3.5,37.5,0.25,EKOFISK,high,Ekofisk-system - samme crude stream
+Embla,Ekofisk Blend,Nordsjoen,7.6,0.3,37.5,0.25,EKOFISK,high,Ekofisk-system - lite felt
+Tor,Ekofisk Blend,Nordsjoen,7.6,0.5,37.5,0.25,EKOFISK,medium,Ekofisk-system
+Martin Linge,Martin Linge,Nordsjoen,15.0,4.0,41.0,0.04,MARTIN LINGE,medium,Lett kondensat - fra Sval Energi
+Nova,Nova,Nordsjoen,15.0,3.0,33.0,0.25,,low,Tieback til Gjoa - estimert kvalitet
+Kvitebjorn,Troll/kondensat,Nordsjoen,10.0,2.0,52.0,0.04,,low,Gass/kondensat - Troll-omradet
+Maria,Heidrun-area,Nordsjoen,10.0,1.5,30.0,0.40,,low,Tieback til Heidrun - estimert kvalitet
+Symra,Aasta Hansteen-area,Nordsjoen,20.0,1.0,45.0,0.05,,low,Ny oppstart - gass/kondensat - estimat
+Brasse,Brasse,Nordsjoen,50.0,0.5,35.0,0.30,,low,DNO-operert - estimat basert paa regionen
+Andvare,Norne-area,Nordsjoen,10.0,0.5,32.0,0.16,NORNE,low,Ny oppstart sen-2025 - Norne-stream
+Verdande,Norne-area,Nordsjoen,14.8,0.8,32.0,0.16,NORNE,low,Ny oppstart sen-2025 - Norne-stream
+CI-26,West Africa blend,VestAfrika,27.0,3.3,35.0,0.20,,low,Cote dIvoire - estimert kvalitet

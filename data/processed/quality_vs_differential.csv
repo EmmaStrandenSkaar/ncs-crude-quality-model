@@ -1,0 +1,24 @@
+field,crude_grade,operator,api_gravity,sulfur_pct,confidence,source_note,mean_diff_usd,std_diff_usd,n_obs,first_year,last_year
+ALVHEIM,Alvheim Blend,Aker BP,38.4,0.15,medium,Public assay - lett soet,2.7436462512754076,2.511649343522829,94,2012,2025
+TROLL,Troll Blend,Equinor,28.3,0.31,high,Medium sweet,2.6260416691501933,1.7280043144786628,96,2012,2025
+OSEBERG,Oseberg Blend,Equinor,37.6,0.27,high,Light sweet (BFOET-kurv),1.9794566839730112,1.609361555576971,95,2012,2025
+GOLIAT,Goliat Blend,Var Energi,34.0,0.27,low,Barents medium - verifiser,1.9246552542372881,2.835901987215766,59,2019,2024
+EKOFISK,Ekofisk Blend,ConocoPhillips,37.5,0.25,medium,Light sweet (BFOET-kurv),1.7861702118782288,1.499863869947588,94,2012,2025
+GULLFAKS,Gullfaks Blend,Equinor,35.4,0.4,medium,Medium - lett sur,1.6771611483374516,1.9601790483703663,96,2012,2025
+NORNE,Norne Blend,Equinor,32.0,0.16,medium,Light sweet,1.356868492852825,2.36000640835965,73,2012,2025
+MARTIN LINGE,Martin Linge,Equinor,41.0,0.04,medium,Light sweet condensate,1.3542553191489362,1.7753392139811905,47,2021,2025
+STATFJORD,Statfjord Blend,Equinor,38.4,0.27,high,Light sweet,0.6267108185234838,1.5155450600017029,95,2012,2025
+GRANE,Grane,Equinor,19.0,0.65,medium,Heavy sour - tung olje,0.274712863987998,1.665138389591951,95,2012,2025
+NJORD,Njord,Equinor,35.0,0.21,low,Sweet light - verifiser,0.15263157894736845,1.060853126839501,19,2024,2025
+HEIDRUN,Heidrun,Equinor,28.5,0.5,medium,Medium sour,-0.050507045417379826,2.1209902336018995,94,2012,2025
+DRAUGEN,Draugen,OKEA,39.5,0.13,medium,Sweet light - verifiser,-0.32,0.7785614264377873,20,2022,2025
+JOHAN SVERDRUP,Johan Sverdrup Blend,Equinor,28.0,0.8,medium,Medium sour - kjent for rabatt,-0.5661016949152542,1.6339195702033895,59,2021,2025
+JOTUN,Jotun Blend,Var Energi,25.0,0.2,low,Medium - lite info offentlig,-0.8450399989196657,1.0158685323000547,20,2012,2020
+GINA KROG,Gina Krog,Equinor,36.0,0.04,medium,Sweet condensate,-1.7569767441860464,3.09326421429633,43,2019,2024
+YME,Yme,Repsol,32.0,0.4,low,Medium - lite info offentlig,-1.7603225806451612,1.8734201946724212,31,2022,2025
+SKARV,Skarv,Aker BP,38.0,0.04,medium,Very sweet near-condensate,-2.1084255211267604,2.1519468314153496,71,2017,2025
+KNARR,Knarr,Shell/Lundin,39.0,0.13,low,Light sweet - verifiser,-2.6655172413793102,2.751074577333239,29,2017,2022
+VOLVE,Volve,Equinor,28.0,0.18,low,Felt nedstengt 2016 - lite data,-3.170679974555969,1.3529110319996764,5,2012,2013
+BALDER,Balder Blend,Var Energi,23.0,0.21,low,Heavy crude - verifiser,-3.605971855263158,1.8239172401368047,76,2019,2025
+ÅSGARD,Åsgard,Equinor,49.0,0.13,medium,Light condensate fra Norskehavet,-3.764110418249915,2.468548319687582,96,2012,2025
+GUDRUN,Gudrun,Equinor,39.0,0.3,low,Light/condensate - verifiser,-5.1303559523809525,3.47137239859442,84,2017,2025

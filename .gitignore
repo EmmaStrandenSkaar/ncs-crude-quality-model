@@ -1,0 +1,70 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ============================================================
+# OS / Editor
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================================
+# Store rådata-filer (reproduserbare fra API)
+# ============================================================
+data/raw/sodir_geo/*.geojson
+data/raw/sodir/*.csv
+data/raw/price_cache/
+data/raw/eia_cache/
+data/raw/world_bank_cache/
+
+# Behold mappestruktur men ikke innholdet
+!data/raw/.gitkeep
+!data/raw/*/.gitkeep
+
+# ============================================================
+# Store output-filer (genereres av scripts)
+# ============================================================
+# Interaktivt kart (30 MB — kan re-genereres med script 49)
+data/processed/49_ncs_interactive_map.html
+
+# Excel-kopier (kun lokale arbeidskopier)
+data/processed/*copy*.xlsx
+data/processed/*.tmp.*
+
+# ============================================================
+# Secrets / credentials (skal ALDRI committes)
+# ============================================================
+.env
+.env.local
+*.pem
+*.key
+secrets/
+credentials.json
+
+# ============================================================
+# Logger og midlertidige filer
+# ============================================================
+*.log
+*.tmp
+/tmp/
+
+# ============================================================
+# Claude Code metadata (lokale prosjektinnstillinger)
+# ============================================================
+.claude/

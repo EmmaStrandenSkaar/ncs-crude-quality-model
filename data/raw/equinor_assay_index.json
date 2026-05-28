@@ -1,0 +1,278 @@
+[
+  {
+    "date": "17.08.2018",
+    "grade": "Algerian Condensate",
+    "description": "Low sulphur condensate",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/ab9f0233a6a19c469653d8aa1bbdbf935eaabab0.xlsx"
+  },
+  {
+    "date": "10.01.2025",
+    "grade": "Alvheim",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/a1fb161eefd2941ce0b39cead43ee9fb32cc2615.xlsx"
+  },
+  {
+    "date": "27.08.2025",
+    "grade": "Aasgard Blend",
+    "description": "Extra light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/2750e2d99b2938d144ff27d55fceed10ba5a1ff3.xlsx"
+  },
+  {
+    "date": "19.08.2025",
+    "grade": "Aasta Hansteen",
+    "description": "Extra light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/ab2d54725f0f5b2e8d6ff7c37de34e3457d63e05.xlsx"
+  },
+  {
+    "date": "01.12.2022",
+    "grade": "Azeri BTC",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/9e0fe9ff6a4eaabb1b40d313f1b8f88dfcdee810.xlsx"
+  },
+  {
+    "date": "05.11.2019",
+    "grade": "Azeri Light",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/c3872a635ce45955b5dfb4106e83b3dab3f22e39.xlsx"
+  },
+  {
+    "date": "17.03.2026",
+    "grade": "Bacalhau",
+    "description": "Medium, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/5626fae9bc2484e20705867e301d6b3b754a3a81.xlsx"
+  },
+  {
+    "date": "25.10.2022",
+    "grade": "Bakken",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/5cf361b269686540aa6aff136f19a0262bb2e266.xlsx"
+  },
+  {
+    "date": "20.01.2021",
+    "grade": "Clov",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/6a8cd6fad92f99ade3f8b04ed95a74cfd64758fc.xlsx"
+  },
+  {
+    "date": "05.11.2019",
+    "grade": "Dalia",
+    "description": "Heavy, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/59103e7b401aaa85bd12d5a4029c4f8dc4e68b07.xlsx"
+  },
+  {
+    "date": "27.08.2024",
+    "grade": "Draugen",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/347ebfb058dd8a3d8c44389f65f8d99789d77932.xlsx"
+  },
+  {
+    "date": "07.10.2015",
+    "grade": "Ekofisk Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/b35949a85f43e83bcc3df3ead7e3bf4a297f759d.xlsx"
+  },
+  {
+    "date": "20.03.2026",
+    "grade": "Forties Blend",
+    "description": "Light, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/dfb758e3182f5572ffda3373f6891a2e250c1362.xlsx"
+  },
+  {
+    "date": "07.08.2015",
+    "grade": "Girassol",
+    "description": "Medium density, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/100e4b034278661f93068b647c769e242b22e223.xlsx"
+  },
+  {
+    "date": "16.01.2023",
+    "grade": "Goliat Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/4358a3895d8013e23de24f89a20554ac52e1bf3d.xlsx"
+  },
+  {
+    "date": "20.12.2024",
+    "grade": "Grane Blend",
+    "description": "Medium density, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/31355eaf5da16b6753d028355567062109383aaf.xlsx"
+  },
+  {
+    "date": "24.10.2025",
+    "grade": "Gudrun Blend",
+    "description": "Extra light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/d4e158b4a9315f06688cc1a58809bc62be8206ef.xlsx"
+  },
+  {
+    "date": "27.02.2024",
+    "grade": "Gullfaks Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/5fb02f66ce39f8573fb449983ffca6b0dbb485b3.xlsx"
+  },
+  {
+    "date": "30.09.2025",
+    "grade": "Hebron",
+    "description": "Heavy, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/71a12bff2c5c8c927ec8df335036c854a32abb08.xlsx"
+  },
+  {
+    "date": "19.03.2019",
+    "grade": "Heidrun",
+    "description": "Heavy, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/68b448fea7a4284503d714fb7d8e1cd7cd3d31d4.xlsx"
+  },
+  {
+    "date": "01.10.2025",
+    "grade": "Hibernia Blend",
+    "description": "Light, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/687fc4911b8f1a388f99d74dee2dbddc4551b571.xlsx"
+  },
+  {
+    "date": "27.12.2020",
+    "grade": "Hungo Blend",
+    "description": "Medium density, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/26d07d4f8888c8ee804f50d2c8f3b6e2e61cbf0c.xlsx"
+  },
+  {
+    "date": "05.09.2025",
+    "grade": "Johan Castberg",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/e73f65e6b98da4f648a7b245b159c7cd1bfff6cb.xlsx"
+  },
+  {
+    "date": "01.06.2021",
+    "grade": "Johan Sverdrup",
+    "description": "Medium density, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/5743996ff14ae07269f2c345738fb2b7bd16167a.xlsx"
+  },
+  {
+    "date": "30.09.2024",
+    "grade": "Kissanje Blend",
+    "description": "Medium, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/ffff12c44cb8c116d272c208d2ef5390ad9212ad.xlsx"
+  },
+  {
+    "date": "26.06.2024",
+    "grade": "Mariner Blend",
+    "description": "Heavy, high sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/d0927afc51a12dfdf39f1d0dd3ef0ec1d282bef0.xlsx"
+  },
+  {
+    "date": "28.04.2025",
+    "grade": "Mars",
+    "description": "Medium density, high sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/f0f400e1edbc35ff1cee02febe2446969469f2cf.xlsx"
+  },
+  {
+    "date": "08.10.2025",
+    "grade": "Martin Linge",
+    "description": "Medium density, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/b05c198876318c1286e2bf100f23384142fdecc6.xlsx"
+  },
+  {
+    "date": "25.04.2023",
+    "grade": "Medanito",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/f2df2840fa6e64c5838e369d0ca265cc252bca45.xlsx"
+  },
+  {
+    "date": "04.10.2024",
+    "grade": "Mondo",
+    "description": "Medium, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/d9e3bda6f23c808a81663f3f9137594fb9494de2.xlsx"
+  },
+  {
+    "date": "10.03.2026",
+    "grade": "Njord Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/0633c3a48f8a603155b5f4e0af9f01f0eec58252.xlsx"
+  },
+  {
+    "date": "11.03.2026",
+    "grade": "Norne Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/ee6ff694a7a7da66789c0dcba7f51ec543e8c579.xlsx"
+  },
+  {
+    "date": "17.04.2018",
+    "grade": "Ormen Lange Condensate",
+    "description": "Low sulphur condensate",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/f0df685e064ed77fb1ae2cab19465e9b6017b800.xlsx"
+  },
+  {
+    "date": "22.10.2024",
+    "grade": "Oseberg Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/4d73cbf7379f3f5a872afbac29d1952164fc42c6.xlsx"
+  },
+  {
+    "date": "10.02.2017",
+    "grade": "Pazflor",
+    "description": "Medium density, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/ab1df1abe47dbd35df1fa245748561af825a9401.xlsx"
+  },
+  {
+    "date": "26.11.2024",
+    "grade": "Peregrino",
+    "description": "Heavy, high sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/fe5145ce66363aa915b53cfdc3562720cf8128b4.xlsx"
+  },
+  {
+    "date": "21.08.2025",
+    "grade": "Poseidon",
+    "description": "Medium density, high sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/639f1d111ddb935fef7f7add5571d253b978b9ca.xlsx"
+  },
+  {
+    "date": "18.11.2017",
+    "grade": "Roncador Heavy",
+    "description": "Heavy, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/64d84f83e218ecea1b3516ea65e293872a83b655.xlsx"
+  },
+  {
+    "date": "21.11.2017",
+    "grade": "Roncador Light",
+    "description": "Medium density, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/7309838fc350ed7b05c557ae979f889ff61ca036.xlsx"
+  },
+  {
+    "date": "20.09.2024",
+    "grade": "Saturno",
+    "description": "Medium, medium sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/1829a8081002336921e6ed25af06a35232ffef25.xlsx"
+  },
+  {
+    "date": "26.09.2024",
+    "grade": "Saxi Batuque Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/9d9d09d6f751f9d6620599f99e2ae0de75e8aff6.xlsx"
+  },
+  {
+    "date": "05.05.2023",
+    "grade": "Skarv",
+    "description": "Extra light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/b9658e6ccd1566c1fee63e9c1c9faa88e8505ac4.xlsx"
+  },
+  {
+    "date": "27.08.2018",
+    "grade": "Snøhvit Condensate",
+    "description": "Low sulphur condensate",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/86158a1eb5182efbcdc671d28c2f1060d06cdf44.xlsx"
+  },
+  {
+    "date": "11.09.2025",
+    "grade": "Southern Green Canyon Blend",
+    "description": "Medium, high sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/e1e1bda09e55f7afdd209516d399fe0b546b4cd1.xlsx"
+  },
+  {
+    "date": "28.11.2023",
+    "grade": "Statfjord",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/2267e7ce7d78565414388148ba690ba955c5d7e7.xlsx"
+  },
+  {
+    "date": "25.03.2026",
+    "grade": "Troll Blend",
+    "description": "Light, low sulphur crude oil",
+    "url": "https://cdn.sanity.io/files/h61q9gi9/global/6f7694f2914e97c9cac9e8f01e6bce757b6916c6.xlsx"
+  }
+]

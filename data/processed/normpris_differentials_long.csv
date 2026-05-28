@@ -1,0 +1,1492 @@
+field,month,differential_usd,year,source_quarter,source_file
+ALVHEIM,4,3.950000047683716,2012,2,normpriser-2q-2012.xlsx
+ALVHEIM,5,3.299999952316284,2012,2,normpriser-2q-2012.xlsx
+ALVHEIM,6,3.700000047683716,2012,2,normpriser-2q-2012.xlsx
+ALVHEIM,7,3.0,2012,3,np-3q-2012.xlsx
+ALVHEIM,8,3.4000000953674316,2012,3,np-3q-2012.xlsx
+ALVHEIM,9,3.4000000953674316,2012,3,np-3q-2012.xlsx
+ALVHEIM,1,4.050000190734863,2013,1,np-2013-1q.xlsx
+ALVHEIM,2,2.4000000953674316,2013,1,np-2013-1q.xlsx
+ALVHEIM,3,3.4000000953674316,2013,1,np-2013-1q.xlsx
+ALVHEIM,1,1.45,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ALVHEIM,2,1.2,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ALVHEIM,3,1.5,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ALVHEIM,7,1.35,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ALVHEIM,8,1.75,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ALVHEIM,9,2.2,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ALVHEIM,4,1.8,2019,2,np-2q-2019-normpriser.xlsx
+ALVHEIM,5,2.15,2019,2,np-2q-2019-normpriser.xlsx
+ALVHEIM,6,3.0,2019,2,np-2q-2019-normpriser.xlsx
+ALVHEIM,8,2.452747,2019,3,np-3q-2019-normpriser.xlsx
+ALVHEIM,9,2.5,2019,3,np-3q-2019-normpriser.xlsx
+ALVHEIM,10,2.55,2019,4,np-4q-2019-normpriser.xlsx
+ALVHEIM,11,3.15,2019,4,np-4q-2019-normpriser.xlsx
+ALVHEIM,12,3.7,2019,4,np-4q-2019-normpriser.xlsx
+ALVHEIM,1,4.65,2020,1,np-1q-2020-normpriser.xlsx
+ALVHEIM,2,3.85,2020,1,np-1q-2020-normpriser.xlsx
+ALVHEIM,3,3.65,2020,1,np-1q-2020-normpriser.xlsx
+ALVHEIM,4,2.75,2020,2,np-2q-2020-normpriser.xlsx
+ALVHEIM,5,-4.7,2020,2,np-2q-2020-normpriser.xlsx
+ALVHEIM,6,-0.7,2020,2,np-2q-2020-normpriser.xlsx
+ALVHEIM,7,1.1,2020,3,np-3q-2020-normpriser.xlsx
+ALVHEIM,7,-8.6,2020,3,np-3q-2020-normpriser.xlsx
+ALVHEIM,8,1.15,2020,3,np-3q-2020-normpriser.xlsx
+ALVHEIM,9,1.05,2020,3,np-3q-2020-normpriser.xlsx
+ALVHEIM,10,0.4,2020,4,np-4q-2020-normpriser.xlsx
+ALVHEIM,11,0.15,2020,4,np-4q-2020-normpriser.xlsx
+ALVHEIM,12,0.05,2020,4,np-4q-2020-normpriser.xlsx
+ALVHEIM,1,0.8,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ALVHEIM,2,0.75,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ALVHEIM,3,0.4,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ALVHEIM,4,0.75,2021,2,np-2q-2021-endelige-normpriser.xlsx
+ALVHEIM,5,0.5,2021,2,np-2q-2021-endelige-normpriser.xlsx
+ALVHEIM,7,0.75,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ALVHEIM,8,1.55,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ALVHEIM,9,0.55,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ALVHEIM,10,0.7,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ALVHEIM,11,1.1,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ALVHEIM,12,1.5,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ALVHEIM,1,1.4,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ALVHEIM,2,1.95,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ALVHEIM,3,3.55,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ALVHEIM,4,6.2,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ALVHEIM,5,5.5,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ALVHEIM,6,7.0,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ALVHEIM,7,8.0,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ALVHEIM,8,10.95,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ALVHEIM,9,11.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ALVHEIM,10,6.1,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ALVHEIM,11,6.75,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ALVHEIM,12,5.9,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ALVHEIM,1,4.5,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ALVHEIM,2,5.2,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ALVHEIM,3,1.4,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ALVHEIM,4,1.4,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ALVHEIM,5,1.5,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ALVHEIM,6,2.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ALVHEIM,7,3.55,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ALVHEIM,8,5.0,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ALVHEIM,9,2.55,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ALVHEIM,10,4.3,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ALVHEIM,11,4.25,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ALVHEIM,12,6.7,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ALVHEIM,1,3.0,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ALVHEIM,2,3.7,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ALVHEIM,3,4.25,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ALVHEIM,4,3.4,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ALVHEIM,5,3.0,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ALVHEIM,6,3.45,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ALVHEIM,7,2.3,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ALVHEIM,8,3.15,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ALVHEIM,9,3.1,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ALVHEIM,10,2.5,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ALVHEIM,11,2.65,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ALVHEIM,12,2.05,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ALVHEIM,1,1.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ALVHEIM,2,1.7,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ALVHEIM,3,2.6,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ALVHEIM,4,3.1,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ALVHEIM,5,3.0,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ALVHEIM,6,3.15,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ALVHEIM,8,4.05,2025,3,np-3q-2025-endelige-normpriser.xlsx
+ALVHEIM,9,2.1,2025,3,np-3q-2025-endelige-normpriser.xlsx
+ALVHEIM,10,2.15,2025,4,np-4q-2025-endelige-normpriser.xlsx
+ALVHEIM,11,2.0,2025,4,np-4q-2025-endelige-normpriser.xlsx
+ALVHEIM,12,2.65,2025,4,np-4q-2025-endelige-normpriser.xlsx
+BALDER,4,-2.1,2019,2,np-2q-2019-normpriser.xlsx
+BALDER,5,-2.65,2019,2,np-2q-2019-normpriser.xlsx
+BALDER,6,-2.2,2019,2,np-2q-2019-normpriser.xlsx
+BALDER,7,-2.4,2019,3,np-3q-2019-normpriser.xlsx
+BALDER,8,-3.65,2019,3,np-3q-2019-normpriser.xlsx
+BALDER,9,-2.5,2019,3,np-3q-2019-normpriser.xlsx
+BALDER,10,-2.75,2019,4,np-4q-2019-normpriser.xlsx
+BALDER,11,-2.65,2019,4,np-4q-2019-normpriser.xlsx
+BALDER,12,-1.95,2019,4,np-4q-2019-normpriser.xlsx
+BALDER,1,-5.2,2020,1,np-1q-2020-normpriser.xlsx
+BALDER,2,-4.15,2020,1,np-1q-2020-normpriser.xlsx
+BALDER,3,-3.9,2020,1,np-1q-2020-normpriser.xlsx
+BALDER,4,-3.65,2020,2,np-2q-2020-normpriser.xlsx
+BALDER,4,-6.25,2020,2,np-2q-2020-normpriser.xlsx
+BALDER,6,-9.35,2020,2,np-2q-2020-normpriser.xlsx
+BALDER,7,-3.2,2020,3,np-3q-2020-normpriser.xlsx
+BALDER,7,-3.8,2020,3,np-3q-2020-normpriser.xlsx
+BALDER,8,-1.7,2020,3,np-3q-2020-normpriser.xlsx
+BALDER,9,-4.1,2020,3,np-3q-2020-normpriser.xlsx
+BALDER,10,-4.3,2020,4,np-4q-2020-normpriser.xlsx
+BALDER,11,-3.2,2020,4,np-4q-2020-normpriser.xlsx
+BALDER,12,-3.4,2020,4,np-4q-2020-normpriser.xlsx
+BALDER,1,-3.053861,2021,1,np-1q-2021-endelige-normpriser.xlsx
+BALDER,2,-2.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+BALDER,3,-2.8,2021,1,np-1q-2021-endelige-normpriser.xlsx
+BALDER,4,-4.3,2021,2,np-2q-2021-endelige-normpriser.xlsx
+BALDER,5,-3.6,2021,2,np-2q-2021-endelige-normpriser.xlsx
+BALDER,6,-4.0,2021,2,np-2q-2021-endelige-normpriser.xlsx
+BALDER,7,-3.15,2021,3,np-3q-2021-endelige-normpriser.xlsx
+BALDER,9,-5.5,2021,3,np-3q-2021-endelige-normpriser.xlsx
+BALDER,10,-4.35,2021,4,np-4q-2021-endelige-normpriser.xlsx
+BALDER,11,-4.1,2021,4,np-4q-2021-endelige-normpriser.xlsx
+BALDER,12,-4.45,2021,4,np-4q-2021-endelige-normpriser.xlsx
+BALDER,1,-4.85,2022,1,np-1q-2022-endelige-normpriser.xlsx
+BALDER,2,-4.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+BALDER,3,-3.3,2022,1,np-1q-2022-endelige-normpriser.xlsx
+BALDER,4,-1.7,2022,2,np-2q-2022-endelige-normpriser.xlsx
+BALDER,5,-2.7,2022,2,np-2q-2022-endelige-normpriser.xlsx
+BALDER,6,-2.8,2022,2,np-2q-2022-endelige-normpriser.xlsx
+BALDER,7,-3.35,2022,3,np-3q-2022-endelige-normpriser.xlsx
+BALDER,8,0.7,2022,3,np-3q-2022-endelige-normpriser.xlsx
+BALDER,10,-8.35,2022,4,np-4q-2022-endelige-normpriser.xlsx
+BALDER,11,-8.45,2022,4,np-4q-2022-endelige-normpriser.xlsx
+BALDER,12,-4.05,2022,4,np-4q-2022-endelige-normpriser.xlsx
+BALDER,1,-6.7,2023,1,np-1q-2023-endelige-normpriser.xlsx
+BALDER,2,-4.4,2023,1,np-1q-2023-endelige-normpriser.xlsx
+BALDER,6,-3.95,2023,2,np-2q-2023-endelige-normpriser.xlsx
+BALDER,7,-2.75,2023,3,np-3q-2023-endelige-normpriser.xlsx
+BALDER,9,-1.2,2023,3,np-3q-2023-endelige-normpriser.xlsx
+BALDER,10,-1.55,2023,4,np-4q-2023-endelige-normpriser.xlsx
+BALDER,11,0.3,2023,4,np-4q-2023-endelige-normpriser.xlsx
+BALDER,12,-5.15,2023,4,np-4q-2023-endelige-normpriser.xlsx
+BALDER,1,-8.45,2024,1,np-1q-2024-endelige-normpriser.xlsx
+BALDER,2,-2.05,2024,1,np-1q-2024-endelige-normpriser.xlsx
+BALDER,3,-3.95,2024,1,np-1q-2024-endelige-normpriser.xlsx
+BALDER,4,-4.55,2024,2,np-2q-2024-endelige-normpriser.xlsx
+BALDER,5,-2.65,2024,2,np-2q-2024-endelige-normpriser.xlsx
+BALDER,6,-5.25,2024,2,np-2q-2024-endelige-normpriser.xlsx
+BALDER,7,-4.0,2024,3,np-3q-2024-endelige-normpriser.xlsx
+BALDER,8,-3.4,2024,3,np-3q-2024-endelige-normpriser.xlsx
+BALDER,9,-0.85,2024,3,np-3q-2024-endelige-normpriser.xlsx
+BALDER,10,-5.25,2024,4,np-4q-2024-endelige-normpriser.xlsx
+BALDER,11,-6.2,2024,4,np-4q-2024-endelige-normpriser.xlsx
+BALDER,12,-4.4,2024,4,np-4q-2024-endelige-normpriser.xlsx
+BALDER,1,-3.4,2025,1,np-1q-2025-endelige-normpriser.xlsx
+BALDER,2,-5.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+BALDER,3,-3.8,2025,1,np-1q-2025-endelige-normpriser.xlsx
+BALDER,4,-2.15,2025,2,np-2q-2025-endelige-normpriser.xlsx
+BALDER,5,-2.3,2025,2,np-2q-2025-endelige-normpriser.xlsx
+BALDER,6,-2.85,2025,2,np-2q-2025-endelige-normpriser.xlsx
+BALDER,7,-2.7,2025,3,np-3q-2025-endelige-normpriser.xlsx
+BALDER,8,-1.85,2025,3,np-3q-2025-endelige-normpriser.xlsx
+BALDER,9,-2.0,2025,3,np-3q-2025-endelige-normpriser.xlsx
+BALDER,10,-1.65,2025,4,np-4q-2025-endelige-normpriser.xlsx
+BALDER,11,-2.3,2025,4,np-4q-2025-endelige-normpriser.xlsx
+BALDER,12,-2.5,2025,4,np-4q-2025-endelige-normpriser.xlsx
+DRAUGEN,11,-0.45,2022,4,np-4q-2022-endelige-normpriser.xlsx
+DRAUGEN,1,-0.25,2023,1,np-1q-2023-endelige-normpriser.xlsx
+DRAUGEN,2,0.7,2023,1,np-1q-2023-endelige-normpriser.xlsx
+DRAUGEN,3,0.6,2023,1,np-1q-2023-endelige-normpriser.xlsx
+DRAUGEN,6,-0.9,2023,2,np-2q-2023-endelige-normpriser.xlsx
+DRAUGEN,7,0.4,2023,3,np-3q-2023-endelige-normpriser.xlsx
+DRAUGEN,9,0.45,2023,3,np-3q-2023-endelige-normpriser.xlsx
+DRAUGEN,11,0.95,2023,4,np-4q-2023-endelige-normpriser.xlsx
+DRAUGEN,12,0.15,2023,4,np-4q-2023-endelige-normpriser.xlsx
+DRAUGEN,2,0.15,2024,1,np-1q-2024-endelige-normpriser.xlsx
+DRAUGEN,4,-0.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+DRAUGEN,5,-1.15,2024,2,np-2q-2024-endelige-normpriser.xlsx
+DRAUGEN,7,-1.7,2024,3,np-3q-2024-endelige-normpriser.xlsx
+DRAUGEN,8,-0.3,2024,3,np-3q-2024-endelige-normpriser.xlsx
+DRAUGEN,10,0.3,2024,4,np-4q-2024-endelige-normpriser.xlsx
+DRAUGEN,2,-0.7,2025,1,np-1q-2025-endelige-normpriser.xlsx
+DRAUGEN,4,-0.85,2025,2,np-2q-2025-endelige-normpriser.xlsx
+DRAUGEN,6,-1.45,2025,2,np-2q-2025-endelige-normpriser.xlsx
+DRAUGEN,8,-0.5,2025,3,np-3q-2025-endelige-normpriser.xlsx
+DRAUGEN,10,-1.5,2025,4,np-4q-2025-endelige-normpriser.xlsx
+EKOFISK,4,1.7000000476837158,2012,2,normpriser-2q-2012.xlsx
+EKOFISK,5,0.6499999761581421,2012,2,normpriser-2q-2012.xlsx
+EKOFISK,6,1.25,2012,2,normpriser-2q-2012.xlsx
+EKOFISK,7,0.699999988079071,2012,3,np-3q-2012.xlsx
+EKOFISK,8,1.0499999523162842,2012,3,np-3q-2012.xlsx
+EKOFISK,9,1.25,2012,3,np-3q-2012.xlsx
+EKOFISK,1,1.649999976158142,2013,1,np-2013-1q.xlsx
+EKOFISK,2,1.5499999523162842,2013,1,np-2013-1q.xlsx
+EKOFISK,3,1.600000023841858,2013,1,np-2013-1q.xlsx
+EKOFISK,1,0.1,2017,1,np-q1-2017-endelige-normpriser.xlsx
+EKOFISK,2,0.1,2017,1,np-q1-2017-endelige-normpriser.xlsx
+EKOFISK,3,0.1,2017,1,np-q1-2017-endelige-normpriser.xlsx
+EKOFISK,7,-0.05,2017,3,np-q3-2017-endelige-normpriser.xlsx
+EKOFISK,8,0.15,2017,3,np-q3-2017-endelige-normpriser.xlsx
+EKOFISK,9,0.35,2017,3,np-q3-2017-endelige-normpriser.xlsx
+EKOFISK,4,0.65,2019,2,np-2q-2019-normpriser.xlsx
+EKOFISK,5,1.05,2019,2,np-2q-2019-normpriser.xlsx
+EKOFISK,6,1.25,2019,2,np-2q-2019-normpriser.xlsx
+EKOFISK,7,1.1,2019,3,np-3q-2019-normpriser.xlsx
+EKOFISK,8,0.6,2019,3,np-3q-2019-normpriser.xlsx
+EKOFISK,9,0.85,2019,3,np-3q-2019-normpriser.xlsx
+EKOFISK,10,1.35,2019,4,np-4q-2019-normpriser.xlsx
+EKOFISK,11,1.5,2019,4,np-4q-2019-normpriser.xlsx
+EKOFISK,12,2.35,2019,4,np-4q-2019-normpriser.xlsx
+EKOFISK,1,2.6,2020,1,np-1q-2020-normpriser.xlsx
+EKOFISK,2,2.25,2020,1,np-1q-2020-normpriser.xlsx
+EKOFISK,3,2.45,2020,1,np-1q-2020-normpriser.xlsx
+EKOFISK,4,1.25,2020,2,np-2q-2020-normpriser.xlsx
+EKOFISK,5,-2.9,2020,2,np-2q-2020-normpriser.xlsx
+EKOFISK,6,-0.4,2020,2,np-2q-2020-normpriser.xlsx
+EKOFISK,7,1.0,2020,3,np-3q-2020-normpriser.xlsx
+EKOFISK,8,1.0,2020,3,np-3q-2020-normpriser.xlsx
+EKOFISK,9,0.8,2020,3,np-3q-2020-normpriser.xlsx
+EKOFISK,10,0.3,2020,4,np-4q-2020-normpriser.xlsx
+EKOFISK,11,0.35,2020,4,np-4q-2020-normpriser.xlsx
+EKOFISK,12,0.2,2020,4,np-4q-2020-normpriser.xlsx
+EKOFISK,1,0.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+EKOFISK,2,0.55,2021,1,np-1q-2021-endelige-normpriser.xlsx
+EKOFISK,3,0.8,2021,1,np-1q-2021-endelige-normpriser.xlsx
+EKOFISK,4,0.7,2021,2,np-2q-2021-endelige-normpriser.xlsx
+EKOFISK,5,0.8,2021,2,np-2q-2021-endelige-normpriser.xlsx
+EKOFISK,6,0.8,2021,2,np-2q-2021-endelige-normpriser.xlsx
+EKOFISK,7,0.95,2021,3,np-3q-2021-endelige-normpriser.xlsx
+EKOFISK,8,1.2,2021,3,np-3q-2021-endelige-normpriser.xlsx
+EKOFISK,9,1.0,2021,3,np-3q-2021-endelige-normpriser.xlsx
+EKOFISK,10,0.65,2021,4,np-4q-2021-endelige-normpriser.xlsx
+EKOFISK,11,1.25,2021,4,np-4q-2021-endelige-normpriser.xlsx
+EKOFISK,12,1.5,2021,4,np-4q-2021-endelige-normpriser.xlsx
+EKOFISK,1,1.5,2022,1,np-1q-2022-endelige-normpriser.xlsx
+EKOFISK,2,2.4,2022,1,np-1q-2022-endelige-normpriser.xlsx
+EKOFISK,3,3.3,2022,1,np-1q-2022-endelige-normpriser.xlsx
+EKOFISK,4,4.05,2022,2,np-2q-2022-endelige-normpriser.xlsx
+EKOFISK,5,3.45,2022,2,np-2q-2022-endelige-normpriser.xlsx
+EKOFISK,6,5.35,2022,2,np-2q-2022-endelige-normpriser.xlsx
+EKOFISK,7,6.75,2022,3,np-3q-2022-endelige-normpriser.xlsx
+EKOFISK,8,8.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+EKOFISK,9,5.9,2022,3,np-3q-2022-endelige-normpriser.xlsx
+EKOFISK,10,2.9,2022,4,np-4q-2022-endelige-normpriser.xlsx
+EKOFISK,11,3.55,2022,4,np-4q-2022-endelige-normpriser.xlsx
+EKOFISK,12,4.1,2022,4,np-4q-2022-endelige-normpriser.xlsx
+EKOFISK,1,3.05,2023,1,np-1q-2023-endelige-normpriser.xlsx
+EKOFISK,2,2.55,2023,1,np-1q-2023-endelige-normpriser.xlsx
+EKOFISK,3,2.8,2023,1,np-1q-2023-endelige-normpriser.xlsx
+EKOFISK,4,2.4,2023,2,np-2q-2023-endelige-normpriser.xlsx
+EKOFISK,5,2.5,2023,2,np-2q-2023-endelige-normpriser.xlsx
+EKOFISK,6,1.95,2023,2,np-2q-2023-endelige-normpriser.xlsx
+EKOFISK,7,1.3,2023,3,np-3q-2023-endelige-normpriser.xlsx
+EKOFISK,8,1.8,2023,3,np-3q-2023-endelige-normpriser.xlsx
+EKOFISK,9,2.7,2023,3,np-3q-2023-endelige-normpriser.xlsx
+EKOFISK,10,2.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+EKOFISK,1,2.55,2024,1,np-1q-2024-endelige-normpriser.xlsx
+EKOFISK,2,2.9,2024,1,np-1q-2024-endelige-normpriser.xlsx
+EKOFISK,3,3.25,2024,1,np-1q-2024-endelige-normpriser.xlsx
+EKOFISK,4,3.0,2024,2,np-2q-2024-endelige-normpriser.xlsx
+EKOFISK,5,2.4,2024,2,np-2q-2024-endelige-normpriser.xlsx
+EKOFISK,6,1.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+EKOFISK,7,1.8,2024,3,np-3q-2024-endelige-normpriser.xlsx
+EKOFISK,8,3.05,2024,3,np-3q-2024-endelige-normpriser.xlsx
+EKOFISK,9,3.05,2024,3,np-3q-2024-endelige-normpriser.xlsx
+EKOFISK,10,2.45,2024,4,np-4q-2024-endelige-normpriser.xlsx
+EKOFISK,11,1.65,2024,4,np-4q-2024-endelige-normpriser.xlsx
+EKOFISK,12,1.55,2024,4,np-4q-2024-endelige-normpriser.xlsx
+EKOFISK,1,1.3,2025,1,np-1q-2025-endelige-normpriser.xlsx
+EKOFISK,2,1.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+EKOFISK,3,1.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+EKOFISK,4,1.85,2025,2,np-2q-2025-endelige-normpriser.xlsx
+EKOFISK,5,1.9,2025,2,np-2q-2025-endelige-normpriser.xlsx
+EKOFISK,6,2.1,2025,2,np-2q-2025-endelige-normpriser.xlsx
+EKOFISK,7,2.15,2025,3,np-3q-2025-endelige-normpriser.xlsx
+EKOFISK,8,2.3,2025,3,np-3q-2025-endelige-normpriser.xlsx
+EKOFISK,9,1.8,2025,3,np-3q-2025-endelige-normpriser.xlsx
+EKOFISK,10,1.5,2025,4,np-4q-2025-endelige-normpriser.xlsx
+EKOFISK,11,1.6,2025,4,np-4q-2025-endelige-normpriser.xlsx
+EKOFISK,12,1.3,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GINA KROG,4,-0.05,2019,2,np-2q-2019-normpriser.xlsx
+GINA KROG,5,-0.05,2019,2,np-2q-2019-normpriser.xlsx
+GINA KROG,6,-0.7,2019,2,np-2q-2019-normpriser.xlsx
+GINA KROG,7,0.0,2019,3,np-3q-2019-normpriser.xlsx
+GINA KROG,8,-0.3,2019,3,np-3q-2019-normpriser.xlsx
+GINA KROG,9,-0.25,2019,3,np-3q-2019-normpriser.xlsx
+GINA KROG,10,0.2,2019,4,np-4q-2019-normpriser.xlsx
+GINA KROG,11,0.7,2019,4,np-4q-2019-normpriser.xlsx
+GINA KROG,12,1.5,2019,4,np-4q-2019-normpriser.xlsx
+GINA KROG,1,1.8,2020,1,np-1q-2020-normpriser.xlsx
+GINA KROG,2,1.45,2020,1,np-1q-2020-normpriser.xlsx
+GINA KROG,4,-9.45,2020,2,np-2q-2020-normpriser.xlsx
+GINA KROG,4,-0.2,2020,2,np-2q-2020-normpriser.xlsx
+GINA KROG,5,-10.45,2020,2,np-2q-2020-normpriser.xlsx
+GINA KROG,6,-5.2,2020,2,np-2q-2020-normpriser.xlsx
+GINA KROG,7,-0.85,2020,3,np-3q-2020-normpriser.xlsx
+GINA KROG,8,-1.6,2020,3,np-3q-2020-normpriser.xlsx
+GINA KROG,9,-0.2,2020,3,np-3q-2020-normpriser.xlsx
+GINA KROG,10,-1.2,2020,4,np-4q-2020-normpriser.xlsx
+GINA KROG,12,-1.6,2020,4,np-4q-2020-normpriser.xlsx
+GINA KROG,1,-0.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GINA KROG,2,-1.9,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GINA KROG,3,-1.5,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GINA KROG,4,-1.45,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GINA KROG,6,-1.95,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GINA KROG,7,-0.65,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GINA KROG,8,-1.25,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GINA KROG,11,-0.2,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GINA KROG,1,1.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GINA KROG,2,-3.65,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GINA KROG,4,0.1,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GINA KROG,6,-11.15,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GINA KROG,8,1.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GINA KROG,11,-3.65,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GINA KROG,1,-7.6,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GINA KROG,4,-6.6,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GINA KROG,7,-2.6,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GINA KROG,11,-1.55,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GINA KROG,12,-3.25,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GINA KROG,2,-0.75,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GINA KROG,3,-0.65,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GINA KROG,5,-0.6,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GINA KROG,7,-0.75,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GOLIAT,4,1.15,2019,2,np-2q-2019-normpriser.xlsx
+GOLIAT,5,0.75,2019,2,np-2q-2019-normpriser.xlsx
+GOLIAT,6,1.3,2019,2,np-2q-2019-normpriser.xlsx
+GOLIAT,7,1.1,2019,3,np-3q-2019-normpriser.xlsx
+GOLIAT,8,1.4,2019,3,np-3q-2019-normpriser.xlsx
+GOLIAT,10,1.6,2019,4,np-4q-2019-normpriser.xlsx
+GOLIAT,11,1.80466,2019,4,np-4q-2019-normpriser.xlsx
+GOLIAT,12,2.25,2019,4,np-4q-2019-normpriser.xlsx
+GOLIAT,1,3.1,2020,1,np-1q-2020-normpriser.xlsx
+GOLIAT,2,3.35,2020,1,np-1q-2020-normpriser.xlsx
+GOLIAT,3,2.15,2020,1,np-1q-2020-normpriser.xlsx
+GOLIAT,4,1.65,2020,2,np-2q-2020-normpriser.xlsx
+GOLIAT,4,-2.8,2020,2,np-2q-2020-normpriser.xlsx
+GOLIAT,6,-3.55,2020,2,np-2q-2020-normpriser.xlsx
+GOLIAT,7,0.05,2020,3,np-3q-2020-normpriser.xlsx
+GOLIAT,8,0.45,2020,3,np-3q-2020-normpriser.xlsx
+GOLIAT,9,-0.1,2020,3,np-3q-2020-normpriser.xlsx
+GOLIAT,10,-0.85,2020,4,np-4q-2020-normpriser.xlsx
+GOLIAT,11,-0.85,2020,4,np-4q-2020-normpriser.xlsx
+GOLIAT,12,-1.25,2020,4,np-4q-2020-normpriser.xlsx
+GOLIAT,1,-0.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GOLIAT,2,-0.7,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GOLIAT,3,-0.25,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GOLIAT,4,-0.6,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GOLIAT,5,-0.45,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GOLIAT,7,0.0,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GOLIAT,8,0.35,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GOLIAT,9,-0.4,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GOLIAT,10,-0.65,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GOLIAT,11,0.0,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GOLIAT,12,1.45,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GOLIAT,1,-0.45,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GOLIAT,2,1.3,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GOLIAT,3,3.65,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GOLIAT,4,4.1,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GOLIAT,5,2.8,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GOLIAT,6,4.85,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GOLIAT,7,6.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GOLIAT,8,10.65,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GOLIAT,9,11.15,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GOLIAT,10,9.95,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GOLIAT,11,6.45,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GOLIAT,12,5.05,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GOLIAT,1,3.45,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GOLIAT,3,3.35,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GOLIAT,4,1.9,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GOLIAT,5,3.35,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GOLIAT,6,1.8,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GOLIAT,7,2.2,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GOLIAT,8,3.2,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GOLIAT,9,2.75,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GOLIAT,10,4.1,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GOLIAT,11,0.95,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GOLIAT,1,0.5,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GOLIAT,2,2.6,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GOLIAT,3,0.95,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GOLIAT,5,3.1,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GOLIAT,6,0.75,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GOLIAT,7,1.85,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GRANE,4,-1.649999976158142,2012,2,normpriser-2q-2012.xlsx
+GRANE,5,-2.1500000953674316,2012,2,normpriser-2q-2012.xlsx
+GRANE,6,-0.8999999761581421,2012,2,normpriser-2q-2012.xlsx
+GRANE,7,-0.699999988079071,2012,3,np-3q-2012.xlsx
+GRANE,8,0.10000000149011612,2012,3,np-3q-2012.xlsx
+GRANE,9,0.550000011920929,2012,3,np-3q-2012.xlsx
+GRANE,1,-2.602277994155884,2013,1,np-2013-1q.xlsx
+GRANE,2,-3.299999952316284,2013,1,np-2013-1q.xlsx
+GRANE,3,-2.549999952316284,2013,1,np-2013-1q.xlsx
+GRANE,1,-2.05,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GRANE,2,-1.75,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GRANE,3,-0.8,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GRANE,7,-0.8,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GRANE,8,-0.7,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GRANE,9,-0.25,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GRANE,4,0.15,2019,2,np-2q-2019-normpriser.xlsx
+GRANE,5,0.7,2019,2,np-2q-2019-normpriser.xlsx
+GRANE,6,1.35,2019,2,np-2q-2019-normpriser.xlsx
+GRANE,7,0.7,2019,3,np-3q-2019-normpriser.xlsx
+GRANE,8,-0.4,2019,3,np-3q-2019-normpriser.xlsx
+GRANE,9,0.35,2019,3,np-3q-2019-normpriser.xlsx
+GRANE,10,1.2,2019,4,np-4q-2019-normpriser.xlsx
+GRANE,11,0.8,2019,4,np-4q-2019-normpriser.xlsx
+GRANE,12,0.7,2019,4,np-4q-2019-normpriser.xlsx
+GRANE,1,0.55,2020,1,np-1q-2020-normpriser.xlsx
+GRANE,2,0.2,2020,1,np-1q-2020-normpriser.xlsx
+GRANE,3,-0.2,2020,1,np-1q-2020-normpriser.xlsx
+GRANE,4,-0.7,2020,2,np-2q-2020-normpriser.xlsx
+GRANE,5,-3.65,2020,2,np-2q-2020-normpriser.xlsx
+GRANE,7,1.2,2020,3,np-3q-2020-normpriser.xlsx
+GRANE,8,1.1,2020,3,np-3q-2020-normpriser.xlsx
+GRANE,9,-0.75,2020,3,np-3q-2020-normpriser.xlsx
+GRANE,10,-1.35,2020,4,np-4q-2020-normpriser.xlsx
+GRANE,11,-0.75,2020,4,np-4q-2020-normpriser.xlsx
+GRANE,12,0.15,2020,4,np-4q-2020-normpriser.xlsx
+GRANE,1,0.1,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GRANE,2,-0.05,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GRANE,3,-0.55,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GRANE,4,-1.0,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GRANE,5,-1.65,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GRANE,6,-1.7,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GRANE,7,-0.75,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GRANE,8,-0.55,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GRANE,9,-1.15,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GRANE,10,-0.7,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GRANE,11,-1.05,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GRANE,12,-0.15,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GRANE,1,-0.8,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GRANE,2,-0.6,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GRANE,3,0.0,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GRANE,4,1.1,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GRANE,5,3.4,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GRANE,6,1.65,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GRANE,7,1.75,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GRANE,8,4.35,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GRANE,9,5.15,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GRANE,10,-0.9,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GRANE,11,-0.6,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GRANE,12,0.3,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GRANE,1,-2.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GRANE,2,-1.2,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GRANE,3,0.45,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GRANE,4,0.2,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GRANE,5,0.6,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GRANE,6,0.85,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GRANE,7,1.0,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GRANE,8,3.25,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GRANE,9,2.9,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GRANE,10,2.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GRANE,11,5.3,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GRANE,12,1.15,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GRANE,1,-1.7,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GRANE,2,2.5,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GRANE,3,2.35,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GRANE,4,-0.45,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GRANE,5,0.7,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GRANE,6,1.3,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GRANE,7,1.9,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GRANE,8,2.1,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GRANE,9,1.3,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GRANE,10,0.95,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GRANE,11,-0.3,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GRANE,12,-0.4,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GRANE,1,-0.95,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GRANE,2,0.45,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GRANE,3,1.55,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GRANE,4,1.2,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GRANE,5,0.75,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GRANE,6,1.1,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GRANE,7,2.35,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GRANE,8,2.9,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GRANE,9,1.7,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GRANE,10,1.45,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GRANE,11,0.95,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GRANE,12,0.5,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GUDRUN,1,-0.6,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GUDRUN,2,-0.5,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GUDRUN,3,-1.15,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GUDRUN,7,-1.4,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GUDRUN,8,-1.0,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GUDRUN,9,-0.3,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GUDRUN,4,-4.05,2019,2,np-2q-2019-normpriser.xlsx
+GUDRUN,5,-3.3,2019,2,np-2q-2019-normpriser.xlsx
+GUDRUN,6,-3.65,2019,2,np-2q-2019-normpriser.xlsx
+GUDRUN,7,-5.05,2019,3,np-3q-2019-normpriser.xlsx
+GUDRUN,8,-3.95,2019,3,np-3q-2019-normpriser.xlsx
+GUDRUN,9,-4.7,2019,3,np-3q-2019-normpriser.xlsx
+GUDRUN,10,-4.1,2019,4,np-4q-2019-normpriser.xlsx
+GUDRUN,11,-3.4,2019,4,np-4q-2019-normpriser.xlsx
+GUDRUN,12,-2.85,2019,4,np-4q-2019-normpriser.xlsx
+GUDRUN,1,-2.4,2020,1,np-1q-2020-normpriser.xlsx
+GUDRUN,2,-0.75,2020,1,np-1q-2020-normpriser.xlsx
+GUDRUN,3,-2.5,2020,1,np-1q-2020-normpriser.xlsx
+GUDRUN,4,-9.15,2020,2,np-2q-2020-normpriser.xlsx
+GUDRUN,5,-10.55,2020,2,np-2q-2020-normpriser.xlsx
+GUDRUN,5,-9.6,2020,2,np-2q-2020-normpriser.xlsx
+GUDRUN,6,-6.75,2020,2,np-2q-2020-normpriser.xlsx
+GUDRUN,7,-3.1,2020,3,np-3q-2020-normpriser.xlsx
+GUDRUN,8,-2.5,2020,3,np-3q-2020-normpriser.xlsx
+GUDRUN,9,-1.25,2020,3,np-3q-2020-normpriser.xlsx
+GUDRUN,10,-2.85,2020,4,np-4q-2020-normpriser.xlsx
+GUDRUN,11,-2.65,2020,4,np-4q-2020-normpriser.xlsx
+GUDRUN,12,-1.6,2020,4,np-4q-2020-normpriser.xlsx
+GUDRUN,1,-1.9,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GUDRUN,2,-1.85,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GUDRUN,3,-1.35,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GUDRUN,4,-3.4,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GUDRUN,5,-3.05,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GUDRUN,6,-2.7,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GUDRUN,7,-1.85,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GUDRUN,8,-2.4,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GUDRUN,10,-1.75,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GUDRUN,11,-1.35,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GUDRUN,12,-0.75,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GUDRUN,1,-1.25,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GUDRUN,2,-1.0,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GUDRUN,3,-0.1,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GUDRUN,4,-5.9,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GUDRUN,5,-3.6499,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GUDRUN,7,-16.1,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GUDRUN,8,-15.05,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GUDRUN,9,-11.2,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GUDRUN,10,-10.05,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GUDRUN,11,-10.0,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GUDRUN,12,-9.7,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GUDRUN,1,-9.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GUDRUN,2,-6.1,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GUDRUN,3,-6.15,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GUDRUN,4,-6.3,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GUDRUN,5,-6.3,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GUDRUN,6,-6.6,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GUDRUN,7,-7.0,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GUDRUN,8,-8.3,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GUDRUN,9,-9.5,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GUDRUN,10,-8.05,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GUDRUN,11,-8.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GUDRUN,12,-8.5,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GUDRUN,1,-8.4,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GUDRUN,2,-8.5,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GUDRUN,3,-10.9,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GUDRUN,4,-7.9,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GUDRUN,5,-7.75,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GUDRUN,6,-8.0,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GUDRUN,7,-8.6,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GUDRUN,8,-8.6,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GUDRUN,10,-7.15,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GUDRUN,11,-4.85,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GUDRUN,12,-2.15,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GUDRUN,1,-3.3,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GUDRUN,2,-4.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GUDRUN,3,-4.6,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GUDRUN,4,-4.9,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GUDRUN,5,-4.6,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GUDRUN,6,-3.3,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GUDRUN,7,-6.85,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GUDRUN,8,-5.95,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GUDRUN,10,-5.15,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GUDRUN,11,-5.6,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GUDRUN,12,-5.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GULLFAKS,4,1.75,2012,2,normpriser-2q-2012.xlsx
+GULLFAKS,5,1.0,2012,2,normpriser-2q-2012.xlsx
+GULLFAKS,6,1.9500000476837158,2012,2,normpriser-2q-2012.xlsx
+GULLFAKS,7,1.0499999523162842,2012,3,np-3q-2012.xlsx
+GULLFAKS,8,0.949999988079071,2012,3,np-3q-2012.xlsx
+GULLFAKS,9,1.350000023841858,2012,3,np-3q-2012.xlsx
+GULLFAKS,1,1.2000000476837158,2013,1,np-2013-1q.xlsx
+GULLFAKS,2,1.649999976158142,2013,1,np-2013-1q.xlsx
+GULLFAKS,3,2.5999999046325684,2013,1,np-2013-1q.xlsx
+GULLFAKS,1,0.3,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GULLFAKS,2,-0.25,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GULLFAKS,3,0.4,2017,1,np-q1-2017-endelige-normpriser.xlsx
+GULLFAKS,7,0.15,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GULLFAKS,8,0.25,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GULLFAKS,9,0.45,2017,3,np-q3-2017-endelige-normpriser.xlsx
+GULLFAKS,4,0.45,2019,2,np-2q-2019-normpriser.xlsx
+GULLFAKS,5,0.6525313,2019,2,np-2q-2019-normpriser.xlsx
+GULLFAKS,6,1.4,2019,2,np-2q-2019-normpriser.xlsx
+GULLFAKS,7,0.7001215,2019,3,np-3q-2019-normpriser.xlsx
+GULLFAKS,8,0.4,2019,3,np-3q-2019-normpriser.xlsx
+GULLFAKS,9,0.45,2019,3,np-3q-2019-normpriser.xlsx
+GULLFAKS,10,1.3,2019,4,np-4q-2019-normpriser.xlsx
+GULLFAKS,11,1.8,2019,4,np-4q-2019-normpriser.xlsx
+GULLFAKS,12,2.6,2019,4,np-4q-2019-normpriser.xlsx
+GULLFAKS,1,3.1,2020,1,np-1q-2020-normpriser.xlsx
+GULLFAKS,2,3.05,2020,1,np-1q-2020-normpriser.xlsx
+GULLFAKS,3,2.8,2020,1,np-1q-2020-normpriser.xlsx
+GULLFAKS,4,-0.8,2020,2,np-2q-2020-normpriser.xlsx
+GULLFAKS,5,-5.45,2020,2,np-2q-2020-normpriser.xlsx
+GULLFAKS,5,-3.05,2020,2,np-2q-2020-normpriser.xlsx
+GULLFAKS,7,0.5,2020,3,np-3q-2020-normpriser.xlsx
+GULLFAKS,8,0.6,2020,3,np-3q-2020-normpriser.xlsx
+GULLFAKS,9,0.3,2020,3,np-3q-2020-normpriser.xlsx
+GULLFAKS,10,-0.2,2020,4,np-4q-2020-normpriser.xlsx
+GULLFAKS,11,-0.15,2020,4,np-4q-2020-normpriser.xlsx
+GULLFAKS,12,0.0,2020,4,np-4q-2020-normpriser.xlsx
+GULLFAKS,1,-0.1,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GULLFAKS,2,-0.15,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GULLFAKS,3,0.05,2021,1,np-1q-2021-endelige-normpriser.xlsx
+GULLFAKS,4,0.15,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GULLFAKS,5,-0.85,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GULLFAKS,6,-0.6,2021,2,np-2q-2021-endelige-normpriser.xlsx
+GULLFAKS,7,-0.4451825,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GULLFAKS,8,0.2,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GULLFAKS,9,-0.55,2021,3,np-3q-2021-endelige-normpriser.xlsx
+GULLFAKS,10,-0.4,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GULLFAKS,11,0.05,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GULLFAKS,12,1.7,2021,4,np-4q-2021-endelige-normpriser.xlsx
+GULLFAKS,1,0.75,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GULLFAKS,2,1.75,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GULLFAKS,3,2.9,2022,1,np-1q-2022-endelige-normpriser.xlsx
+GULLFAKS,4,4.25,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GULLFAKS,5,3.55,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GULLFAKS,6,4.55,2022,2,np-2q-2022-endelige-normpriser.xlsx
+GULLFAKS,7,6.25,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GULLFAKS,8,9.6,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GULLFAKS,9,6.85,2022,3,np-3q-2022-endelige-normpriser.xlsx
+GULLFAKS,10,3.0,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GULLFAKS,11,3.8,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GULLFAKS,12,4.2,2022,4,np-4q-2022-endelige-normpriser.xlsx
+GULLFAKS,1,3.5,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GULLFAKS,2,3.2,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GULLFAKS,3,3.6,2023,1,np-1q-2023-endelige-normpriser.xlsx
+GULLFAKS,4,2.95,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GULLFAKS,5,2.95,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GULLFAKS,6,2.05,2023,2,np-2q-2023-endelige-normpriser.xlsx
+GULLFAKS,7,1.95,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GULLFAKS,8,2.2,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GULLFAKS,9,2.7,2023,3,np-3q-2023-endelige-normpriser.xlsx
+GULLFAKS,10,4.25,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GULLFAKS,11,5.5,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GULLFAKS,12,3.7,2023,4,np-4q-2023-endelige-normpriser.xlsx
+GULLFAKS,1,3.4,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GULLFAKS,2,3.45,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GULLFAKS,3,3.35,2024,1,np-1q-2024-endelige-normpriser.xlsx
+GULLFAKS,4,1.75,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GULLFAKS,5,2.9,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GULLFAKS,6,2.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+GULLFAKS,7,1.85,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GULLFAKS,8,2.5,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GULLFAKS,9,2.45,2024,3,np-3q-2024-endelige-normpriser.xlsx
+GULLFAKS,10,2.05,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GULLFAKS,11,2.0,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GULLFAKS,12,1.85,2024,4,np-4q-2024-endelige-normpriser.xlsx
+GULLFAKS,1,1.2,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GULLFAKS,2,1.4,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GULLFAKS,3,1.9,2025,1,np-1q-2025-endelige-normpriser.xlsx
+GULLFAKS,4,1.7,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GULLFAKS,5,1.5,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GULLFAKS,6,1.2,2025,2,np-2q-2025-endelige-normpriser.xlsx
+GULLFAKS,7,2.55,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GULLFAKS,8,2.3,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GULLFAKS,9,0.9,2025,3,np-3q-2025-endelige-normpriser.xlsx
+GULLFAKS,10,0.15,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GULLFAKS,11,1.0,2025,4,np-4q-2025-endelige-normpriser.xlsx
+GULLFAKS,12,1.0,2025,4,np-4q-2025-endelige-normpriser.xlsx
+HEIDRUN,5,2.700000047683716,2012,2,normpriser-2q-2012.xlsx
+HEIDRUN,6,3.7000129222869873,2012,2,normpriser-2q-2012.xlsx
+HEIDRUN,7,3.299999952316284,2012,3,np-3q-2012.xlsx
+HEIDRUN,8,4.099999904632568,2012,3,np-3q-2012.xlsx
+HEIDRUN,9,4.199999809265137,2012,3,np-3q-2012.xlsx
+HEIDRUN,1,0.8999999761581421,2013,1,np-2013-1q.xlsx
+HEIDRUN,2,1.4975240230560303,2013,1,np-2013-1q.xlsx
+HEIDRUN,3,2.1500000953674316,2013,1,np-2013-1q.xlsx
+HEIDRUN,1,-1.7,2017,1,np-q1-2017-endelige-normpriser.xlsx
+HEIDRUN,2,-0.95,2017,1,np-q1-2017-endelige-normpriser.xlsx
+HEIDRUN,3,-0.25,2017,1,np-q1-2017-endelige-normpriser.xlsx
+HEIDRUN,7,-1.0,2017,3,np-q3-2017-endelige-normpriser.xlsx
+HEIDRUN,8,-1.15,2017,3,np-q3-2017-endelige-normpriser.xlsx
+HEIDRUN,9,-0.4,2017,3,np-q3-2017-endelige-normpriser.xlsx
+HEIDRUN,4,0.95,2019,2,np-2q-2019-normpriser.xlsx
+HEIDRUN,5,0.75,2019,2,np-2q-2019-normpriser.xlsx
+HEIDRUN,6,0.85,2019,2,np-2q-2019-normpriser.xlsx
+HEIDRUN,7,1.3,2019,3,np-3q-2019-normpriser.xlsx
+HEIDRUN,8,0.25,2019,3,np-3q-2019-normpriser.xlsx
+HEIDRUN,9,-0.2,2019,3,np-3q-2019-normpriser.xlsx
+HEIDRUN,10,1.5,2019,4,np-4q-2019-normpriser.xlsx
+HEIDRUN,11,2.4,2019,4,np-4q-2019-normpriser.xlsx
+HEIDRUN,12,3.1,2019,4,np-4q-2019-normpriser.xlsx
+HEIDRUN,1,-1.05,2020,1,np-1q-2020-normpriser.xlsx
+HEIDRUN,2,0.45,2020,1,np-1q-2020-normpriser.xlsx
+HEIDRUN,3,-1.25,2020,1,np-1q-2020-normpriser.xlsx
+HEIDRUN,4,0.3,2020,2,np-2q-2020-normpriser.xlsx
+HEIDRUN,5,-8.4,2020,2,np-2q-2020-normpriser.xlsx
+HEIDRUN,5,-4.8,2020,2,np-2q-2020-normpriser.xlsx
+HEIDRUN,6,-4.15,2020,2,np-2q-2020-normpriser.xlsx
+HEIDRUN,7,0.2,2020,3,np-3q-2020-normpriser.xlsx
+HEIDRUN,8,0.2,2020,3,np-3q-2020-normpriser.xlsx
+HEIDRUN,9,0.05,2020,3,np-3q-2020-normpriser.xlsx
+HEIDRUN,10,-2.4,2020,4,np-4q-2020-normpriser.xlsx
+HEIDRUN,11,-1.3,2020,4,np-4q-2020-normpriser.xlsx
+HEIDRUN,12,-1.1,2020,4,np-4q-2020-normpriser.xlsx
+HEIDRUN,1,-0.95,2021,1,np-1q-2021-endelige-normpriser.xlsx
+HEIDRUN,2,-0.9,2021,1,np-1q-2021-endelige-normpriser.xlsx
+HEIDRUN,3,-0.55,2021,1,np-1q-2021-endelige-normpriser.xlsx
+HEIDRUN,4,-1.6,2021,2,np-2q-2021-endelige-normpriser.xlsx
+HEIDRUN,5,-2.145199,2021,2,np-2q-2021-endelige-normpriser.xlsx
+HEIDRUN,6,-2.45,2021,2,np-2q-2021-endelige-normpriser.xlsx
+HEIDRUN,7,-1.5,2021,3,np-3q-2021-endelige-normpriser.xlsx
+HEIDRUN,8,-1.2,2021,3,np-3q-2021-endelige-normpriser.xlsx
+HEIDRUN,9,-1.4,2021,3,np-3q-2021-endelige-normpriser.xlsx
+HEIDRUN,10,-1.5,2021,4,np-4q-2021-endelige-normpriser.xlsx
+HEIDRUN,11,-1.15,2021,4,np-4q-2021-endelige-normpriser.xlsx
+HEIDRUN,12,-1.2,2021,4,np-4q-2021-endelige-normpriser.xlsx
+HEIDRUN,1,-0.25,2022,1,np-1q-2022-endelige-normpriser.xlsx
+HEIDRUN,2,-1.15,2022,1,np-1q-2022-endelige-normpriser.xlsx
+HEIDRUN,4,-2.7,2022,2,np-2q-2022-endelige-normpriser.xlsx
+HEIDRUN,5,1.25,2022,2,np-2q-2022-endelige-normpriser.xlsx
+HEIDRUN,6,1.45,2022,2,np-2q-2022-endelige-normpriser.xlsx
+HEIDRUN,7,1.85,2022,3,np-3q-2022-endelige-normpriser.xlsx
+HEIDRUN,8,5.85,2022,3,np-3q-2022-endelige-normpriser.xlsx
+HEIDRUN,9,-0.1,2022,3,np-3q-2022-endelige-normpriser.xlsx
+HEIDRUN,10,0.5,2022,4,np-4q-2022-endelige-normpriser.xlsx
+HEIDRUN,11,-0.55,2022,4,np-4q-2022-endelige-normpriser.xlsx
+HEIDRUN,12,-5.7,2022,4,np-4q-2022-endelige-normpriser.xlsx
+HEIDRUN,1,-4.1,2023,1,np-1q-2023-endelige-normpriser.xlsx
+HEIDRUN,2,-2.9,2023,1,np-1q-2023-endelige-normpriser.xlsx
+HEIDRUN,3,-1.5,2023,1,np-1q-2023-endelige-normpriser.xlsx
+HEIDRUN,4,-1.15,2023,2,np-2q-2023-endelige-normpriser.xlsx
+HEIDRUN,5,-0.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+HEIDRUN,6,-0.25,2023,2,np-2q-2023-endelige-normpriser.xlsx
+HEIDRUN,7,0.4,2023,3,np-3q-2023-endelige-normpriser.xlsx
+HEIDRUN,8,2.35,2023,3,np-3q-2023-endelige-normpriser.xlsx
+HEIDRUN,9,2.5,2023,3,np-3q-2023-endelige-normpriser.xlsx
+HEIDRUN,10,1.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+HEIDRUN,11,0.35,2023,4,np-4q-2023-endelige-normpriser.xlsx
+HEIDRUN,12,1.3,2023,4,np-4q-2023-endelige-normpriser.xlsx
+HEIDRUN,1,-1.45,2024,1,np-1q-2024-endelige-normpriser.xlsx
+HEIDRUN,2,-0.2,2024,1,np-1q-2024-endelige-normpriser.xlsx
+HEIDRUN,4,-2.5,2024,2,np-2q-2024-endelige-normpriser.xlsx
+HEIDRUN,5,-0.3,2024,2,np-2q-2024-endelige-normpriser.xlsx
+HEIDRUN,6,-1.65,2024,2,np-2q-2024-endelige-normpriser.xlsx
+HEIDRUN,7,-1.0,2024,3,np-3q-2024-endelige-normpriser.xlsx
+HEIDRUN,8,0.25,2024,3,np-3q-2024-endelige-normpriser.xlsx
+HEIDRUN,9,0.1,2024,3,np-3q-2024-endelige-normpriser.xlsx
+HEIDRUN,10,0.45,2024,4,np-4q-2024-endelige-normpriser.xlsx
+HEIDRUN,11,0.85,2024,4,np-4q-2024-endelige-normpriser.xlsx
+HEIDRUN,12,0.7,2024,4,np-4q-2024-endelige-normpriser.xlsx
+HEIDRUN,1,0.25,2025,1,np-1q-2025-endelige-normpriser.xlsx
+HEIDRUN,2,0.5,2025,1,np-1q-2025-endelige-normpriser.xlsx
+HEIDRUN,3,2.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+HEIDRUN,4,1.65,2025,2,np-2q-2025-endelige-normpriser.xlsx
+HEIDRUN,5,2.25,2025,2,np-2q-2025-endelige-normpriser.xlsx
+HEIDRUN,6,1.3,2025,2,np-2q-2025-endelige-normpriser.xlsx
+HEIDRUN,7,1.95,2025,3,np-3q-2025-endelige-normpriser.xlsx
+HEIDRUN,8,-0.15,2025,3,np-3q-2025-endelige-normpriser.xlsx
+HEIDRUN,9,1.3,2025,3,np-3q-2025-endelige-normpriser.xlsx
+HEIDRUN,10,2.0,2025,4,np-4q-2025-endelige-normpriser.xlsx
+HEIDRUN,11,-0.5,2025,4,np-4q-2025-endelige-normpriser.xlsx
+HEIDRUN,12,0.25,2025,4,np-4q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,1,-0.3,2021,1,np-1q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,2,-0.5,2021,1,np-1q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,3,-1.7,2021,1,np-1q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,4,-2.35,2021,2,np-2q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,5,-2.3,2021,2,np-2q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,6,-1.9,2021,2,np-2q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,7,-2.3,2021,3,np-3q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,8,-2.65,2021,3,np-3q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,9,-2.4,2021,3,np-3q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,10,-1.85,2021,4,np-4q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,11,-1.65,2021,4,np-4q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,12,-1.35,2021,4,np-4q-2021-endelige-normpriser.xlsx
+JOHAN SVERDRUP,1,-1.25,2022,1,np-1q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,2,-0.95,2022,1,np-1q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,3,-1.05,2022,1,np-1q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,4,-0.9,2022,2,np-2q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,5,-0.45,2022,2,np-2q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,6,0.5,2022,2,np-2q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,7,1.25,2022,3,np-3q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,8,3.15,2022,3,np-3q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,9,2.4,2022,3,np-3q-2022-endelige-normpriser_johan_sverdrup.xlsx
+JOHAN SVERDRUP,10,-2.45,2022,4,np-4q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,11,-1.05,2022,4,np-4q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,12,-3.8,2022,4,np-4q-2022-endelige-normpriser.xlsx
+JOHAN SVERDRUP,1,-4.8,2023,1,np-1q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,2,-1.5,2023,1,np-1q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,3,-0.65,2023,1,np-1q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,4,-1.15,2023,2,np-2q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,5,0.2,2023,2,np-2q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,6,-0.05,2023,2,np-2q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,7,1.15,2023,3,np-3q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,8,2.0,2023,3,np-3q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,9,0.9,2023,3,np-3q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,10,1.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,11,2.0,2023,4,np-4q-2023-endelige-normpriser.xlsx
+JOHAN SVERDRUP,1,-1.25,2024,1,np-1q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,2,1.5,2024,1,np-1q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,3,-2.55,2024,1,np-1q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,4,-2.3,2024,2,np-2q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,5,-0.6,2024,2,np-2q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,6,0.5,2024,2,np-2q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,7,1.1,2024,3,np-3q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,8,-0.35,2024,3,np-3q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,9,-0.4,2024,3,np-3q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,10,-1.0,2024,4,np-4q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,11,-1.4,2024,4,np-4q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,12,-2.65,2024,4,np-4q-2024-endelige-normpriser.xlsx
+JOHAN SVERDRUP,1,-1.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,2,0.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,3,1.45,2025,1,np-1q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,4,-0.2,2025,2,np-2q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,5,-1.15,2025,2,np-2q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,6,0.55,2025,2,np-2q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,7,2.45,2025,3,np-3q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,8,1.65,2025,3,np-3q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,9,0.75,2025,3,np-3q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,10,-0.3,2025,4,np-4q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,11,-1.25,2025,4,np-4q-2025-endelige-normpriser.xlsx
+JOHAN SVERDRUP,12,-0.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+JOTUN,4,-0.30000001192092896,2012,2,normpriser-2q-2012.xlsx
+JOTUN,5,-0.8999999761581421,2012,2,normpriser-2q-2012.xlsx
+JOTUN,6,-0.3499999940395355,2012,2,normpriser-2q-2012.xlsx
+JOTUN,7,-0.3499999940395355,2012,3,np-3q-2012.xlsx
+JOTUN,8,-0.15000000596046448,2012,3,np-3q-2012.xlsx
+JOTUN,9,-0.15000000596046448,2012,3,np-3q-2012.xlsx
+JOTUN,1,0.800000011920929,2013,1,np-2013-1q.xlsx
+JOTUN,2,-0.10000000149011612,2013,1,np-2013-1q.xlsx
+JOTUN,3,-0.05000000074505806,2013,1,np-2013-1q.xlsx
+JOTUN,1,-1.65,2017,1,np-q1-2017-endelige-normpriser.xlsx
+JOTUN,3,-2.9008,2017,1,np-q1-2017-endelige-normpriser.xlsx
+JOTUN,8,-1.7,2017,3,np-q3-2017-endelige-normpriser.xlsx
+JOTUN,9,-1.2,2017,3,np-q3-2017-endelige-normpriser.xlsx
+JOTUN,4,-1.05,2019,2,np-2q-2019-normpriser.xlsx
+JOTUN,6,-2.0,2019,2,np-2q-2019-normpriser.xlsx
+JOTUN,8,-1.35,2019,3,np-3q-2019-normpriser.xlsx
+JOTUN,10,-0.5,2019,4,np-4q-2019-normpriser.xlsx
+JOTUN,11,-2.45,2019,4,np-4q-2019-normpriser.xlsx
+JOTUN,1,1.0,2020,1,np-1q-2020-normpriser.xlsx
+JOTUN,3,-1.55,2020,1,np-1q-2020-normpriser.xlsx
+KNARR,1,-0.15,2017,1,np-q1-2017-endelige-normpriser.xlsx
+KNARR,2,-0.85,2017,1,np-q1-2017-endelige-normpriser.xlsx
+KNARR,3,-1.2,2017,1,np-q1-2017-endelige-normpriser.xlsx
+KNARR,7,-1.45,2017,3,np-q3-2017-endelige-normpriser.xlsx
+KNARR,8,-1.55,2017,3,np-q3-2017-endelige-normpriser.xlsx
+KNARR,9,-1.5,2017,3,np-q3-2017-endelige-normpriser.xlsx
+KNARR,4,-2.0,2019,2,np-2q-2019-normpriser.xlsx
+KNARR,8,-2.1,2019,3,np-3q-2019-normpriser.xlsx
+KNARR,10,-1.75,2019,4,np-4q-2019-normpriser.xlsx
+KNARR,11,-1.25,2019,4,np-4q-2019-normpriser.xlsx
+KNARR,1,0.05,2020,1,np-1q-2020-normpriser.xlsx
+KNARR,3,0.2,2020,1,np-1q-2020-normpriser.xlsx
+KNARR,5,-11.2,2020,2,np-2q-2020-normpriser.xlsx
+KNARR,5,-7.45,2020,2,np-2q-2020-normpriser.xlsx
+KNARR,6,-11.2,2020,2,np-2q-2020-normpriser.xlsx
+KNARR,7,-2.7,2020,3,np-3q-2020-normpriser.xlsx
+KNARR,8,-2.65,2020,3,np-3q-2020-normpriser.xlsx
+KNARR,9,-3.0,2020,3,np-3q-2020-normpriser.xlsx
+KNARR,10,-2.9,2020,4,np-4q-2020-normpriser.xlsx
+KNARR,11,-2.2,2020,4,np-4q-2020-normpriser.xlsx
+KNARR,12,-2.1,2020,4,np-4q-2020-normpriser.xlsx
+KNARR,1,-2.65,2021,1,np-1q-2021-endelige-normpriser.xlsx
+KNARR,3,-2.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+KNARR,5,-4.1,2021,2,np-2q-2021-endelige-normpriser.xlsx
+KNARR,9,-2.4,2021,3,np-3q-2021-endelige-normpriser.xlsx
+KNARR,11,-2.15,2021,4,np-4q-2021-endelige-normpriser.xlsx
+KNARR,2,-1.0,2022,1,np-1q-2022-endelige-normpriser.xlsx
+KNARR,3,-1.15,2022,1,np-1q-2022-endelige-normpriser.xlsx
+KNARR,5,-2.3,2022,2,np-2q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,10,-2.9,2021,4,np-4q-2021-endelige-normpriser.xlsx
+MARTIN LINGE,11,-2.9,2021,4,np-4q-2021-endelige-normpriser.xlsx
+MARTIN LINGE,12,-2.05,2021,4,np-4q-2021-endelige-normpriser.xlsx
+MARTIN LINGE,1,-1.75,2022,1,np-1q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,2,-1.05,2022,1,np-1q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,3,-0.8,2022,1,np-1q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,4,-0.2,2022,2,np-2q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,5,1.15,2022,2,np-2q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,6,0.75,2022,2,np-2q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,7,1.75,2022,3,np-3q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,8,4.3,2022,3,np-3q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,9,4.7,2022,3,np-3q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,10,2.25,2022,4,np-4q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,11,2.35,2022,4,np-4q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,12,5.75,2022,4,np-4q-2022-endelige-normpriser.xlsx
+MARTIN LINGE,1,2.1,2023,1,np-1q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,2,0.25,2023,1,np-1q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,3,1.55,2023,1,np-1q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,4,0.35,2023,2,np-2q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,5,1.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,6,0.85,2023,2,np-2q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,7,0.85,2023,3,np-3q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,8,2.05,2023,3,np-3q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,9,2.6,2023,3,np-3q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,10,1.3,2023,4,np-4q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,11,3.65,2023,4,np-4q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,12,1.35,2023,4,np-4q-2023-endelige-normpriser.xlsx
+MARTIN LINGE,1,-0.05,2024,1,np-1q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,3,-0.75,2024,1,np-1q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,4,2.9,2024,2,np-2q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,5,3.1,2024,2,np-2q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,6,1.3,2024,2,np-2q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,7,1.95,2024,3,np-3q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,8,1.85,2024,3,np-3q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,9,1.2,2024,3,np-3q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,11,1.95,2024,4,np-4q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,12,2.45,2024,4,np-4q-2024-endelige-normpriser.xlsx
+MARTIN LINGE,1,1.5,2025,1,np-1q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,2,1.15,2025,1,np-1q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,3,1.2,2025,1,np-1q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,5,2.45,2025,2,np-2q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,6,2.5,2025,2,np-2q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,7,2.6,2025,3,np-3q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,9,2.75,2025,3,np-3q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,10,0.8,2025,4,np-4q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,11,0.45,2025,4,np-4q-2025-endelige-normpriser.xlsx
+MARTIN LINGE,12,2.45,2025,4,np-4q-2025-endelige-normpriser.xlsx
+NJORD,4,-0.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+NJORD,5,0.75,2024,2,np-2q-2024-endelige-normpriser.xlsx
+NJORD,6,0.5,2024,2,np-2q-2024-endelige-normpriser.xlsx
+NJORD,7,0.45,2024,3,np-3q-2024-endelige-normpriser.xlsx
+NJORD,8,0.2,2024,3,np-3q-2024-endelige-normpriser.xlsx
+NJORD,10,1.0,2024,4,np-4q-2024-endelige-normpriser.xlsx
+NJORD,11,0.95,2024,4,np-4q-2024-endelige-normpriser.xlsx
+NJORD,12,0.9,2024,4,np-4q-2024-endelige-normpriser.xlsx
+NJORD,1,1.2,2025,1,np-1q-2025-endelige-normpriser.xlsx
+NJORD,2,0.0,2025,1,np-1q-2025-endelige-normpriser.xlsx
+NJORD,3,0.3,2025,1,np-1q-2025-endelige-normpriser.xlsx
+NJORD,4,0.1,2025,2,np-2q-2025-endelige-normpriser.xlsx
+NJORD,5,0.35,2025,2,np-2q-2025-endelige-normpriser.xlsx
+NJORD,6,0.6,2025,2,np-2q-2025-endelige-normpriser.xlsx
+NJORD,7,1.1,2025,3,np-3q-2025-endelige-normpriser.xlsx
+NJORD,8,0.85,2025,3,np-3q-2025-endelige-normpriser.xlsx
+NJORD,10,-1.7,2025,4,np-4q-2025-endelige-normpriser.xlsx
+NJORD,11,-1.55,2025,4,np-4q-2025-endelige-normpriser.xlsx
+NJORD,12,-2.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+NORNE,4,3.2002999782562256,2012,2,normpriser-2q-2012.xlsx
+NORNE,5,3.700000047683716,2012,2,normpriser-2q-2012.xlsx
+NORNE,6,3.3499999046325684,2012,2,normpriser-2q-2012.xlsx
+NORNE,7,3.8499999046325684,2012,3,np-3q-2012.xlsx
+NORNE,8,4.550000190734863,2012,3,np-3q-2012.xlsx
+NORNE,9,3.25,2012,3,np-3q-2012.xlsx
+NORNE,1,3.049999952316284,2013,1,np-2013-1q.xlsx
+NORNE,2,3.450000047683716,2013,1,np-2013-1q.xlsx
+NORNE,3,3.049999952316284,2013,1,np-2013-1q.xlsx
+NORNE,1,-0.75,2017,1,np-q1-2017-endelige-normpriser.xlsx
+NORNE,2,-0.25,2017,1,np-q1-2017-endelige-normpriser.xlsx
+NORNE,3,-0.25,2017,1,np-q1-2017-endelige-normpriser.xlsx
+NORNE,7,0.45,2017,3,np-q3-2017-endelige-normpriser.xlsx
+NORNE,8,0.75,2017,3,np-q3-2017-endelige-normpriser.xlsx
+NORNE,9,0.85,2017,3,np-q3-2017-endelige-normpriser.xlsx
+NORNE,4,0.6,2019,2,np-2q-2019-normpriser.xlsx
+NORNE,5,1.05,2019,2,np-2q-2019-normpriser.xlsx
+NORNE,6,0.1,2019,2,np-2q-2019-normpriser.xlsx
+NORNE,7,0.8,2019,3,np-3q-2019-normpriser.xlsx
+NORNE,8,0.8,2019,3,np-3q-2019-normpriser.xlsx
+NORNE,9,1.05,2019,3,np-3q-2019-normpriser.xlsx
+NORNE,11,1.65,2019,4,np-4q-2019-normpriser.xlsx
+NORNE,12,1.55,2019,4,np-4q-2019-normpriser.xlsx
+NORNE,1,0.35,2020,1,np-1q-2020-normpriser.xlsx
+NORNE,2,0.1,2020,1,np-1q-2020-normpriser.xlsx
+NORNE,3,1.9,2020,1,np-1q-2020-normpriser.xlsx
+NORNE,4,2.1,2020,2,np-2q-2020-normpriser.xlsx
+NORNE,5,-7.4,2020,2,np-2q-2020-normpriser.xlsx
+NORNE,6,-2.2,2020,2,np-2q-2020-normpriser.xlsx
+NORNE,7,-0.25,2020,3,np-3q-2020-normpriser.xlsx
+NORNE,8,0.95,2020,3,np-3q-2020-normpriser.xlsx
+NORNE,10,-0.2,2020,4,np-4q-2020-normpriser.xlsx
+NORNE,11,-0.6,2020,4,np-4q-2020-normpriser.xlsx
+NORNE,1,-0.5989,2021,1,np-1q-2021-endelige-normpriser.xlsx
+NORNE,3,-0.95,2021,1,np-1q-2021-endelige-normpriser.xlsx
+NORNE,4,-0.95,2021,2,np-2q-2021-endelige-normpriser.xlsx
+NORNE,7,-1.65,2021,3,np-3q-2021-endelige-normpriser.xlsx
+NORNE,8,0.6,2021,3,np-3q-2021-endelige-normpriser.xlsx
+NORNE,9,0.6,2021,3,np-3q-2021-endelige-normpriser.xlsx
+NORNE,10,-0.2,2021,4,np-4q-2021-endelige-normpriser.xlsx
+NORNE,12,-0.95,2021,4,np-4q-2021-endelige-normpriser.xlsx
+NORNE,1,-0.3,2022,1,np-1q-2022-endelige-normpriser.xlsx
+NORNE,2,0.4,2022,1,np-1q-2022-endelige-normpriser.xlsx
+NORNE,3,2.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+NORNE,4,5.4,2022,2,np-2q-2022-endelige-normpriser.xlsx
+NORNE,5,3.7,2022,2,np-2q-2022-endelige-normpriser.xlsx
+NORNE,6,4.85,2022,2,np-2q-2022-endelige-normpriser.xlsx
+NORNE,7,5.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+NORNE,9,7.95,2022,3,np-3q-2022-endelige-normpriser.xlsx
+NORNE,10,10.15,2022,4,np-4q-2022-endelige-normpriser.xlsx
+NORNE,11,3.15,2022,4,np-4q-2022-endelige-normpriser.xlsx
+NORNE,12,2.7,2022,4,np-4q-2022-endelige-normpriser.xlsx
+NORNE,1,1.8,2023,1,np-1q-2023-endelige-normpriser.xlsx
+NORNE,2,-0.55,2023,1,np-1q-2023-endelige-normpriser.xlsx
+NORNE,3,2.45,2023,1,np-1q-2023-endelige-normpriser.xlsx
+NORNE,4,1.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+NORNE,5,0.8,2023,2,np-2q-2023-endelige-normpriser.xlsx
+NORNE,8,0.55,2023,3,np-3q-2023-endelige-normpriser.xlsx
+NORNE,10,3.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+NORNE,11,3.7,2023,4,np-4q-2023-endelige-normpriser.xlsx
+NORNE,1,0.6,2024,1,np-1q-2024-endelige-normpriser.xlsx
+NORNE,2,1.85,2024,1,np-1q-2024-endelige-normpriser.xlsx
+NORNE,4,1.25,2024,2,np-2q-2024-endelige-normpriser.xlsx
+NORNE,5,0.65,2024,2,np-2q-2024-endelige-normpriser.xlsx
+NORNE,7,-0.1,2024,3,np-3q-2024-endelige-normpriser.xlsx
+NORNE,8,0.4,2024,3,np-3q-2024-endelige-normpriser.xlsx
+NORNE,11,0.2,2024,4,np-4q-2024-endelige-normpriser.xlsx
+NORNE,12,0.2,2024,4,np-4q-2024-endelige-normpriser.xlsx
+NORNE,2,0.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+NORNE,4,0.15,2025,2,np-2q-2025-endelige-normpriser.xlsx
+NORNE,8,1.15,2025,3,np-3q-2025-endelige-normpriser.xlsx
+NORNE,11,0.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+NORNE,12,0.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+OSEBERG,4,1.649999976158142,2012,2,normpriser-2q-2012.xlsx
+OSEBERG,5,0.75,2012,2,normpriser-2q-2012.xlsx
+OSEBERG,6,1.100000023841858,2012,2,normpriser-2q-2012.xlsx
+OSEBERG,7,0.800000011920929,2012,3,np-3q-2012.xlsx
+OSEBERG,8,1.350000023841858,2012,3,np-3q-2012.xlsx
+OSEBERG,9,1.3485349416732788,2012,3,np-3q-2012.xlsx
+OSEBERG,1,2.549999952316284,2013,1,np-2013-1q.xlsx
+OSEBERG,2,1.75,2013,1,np-2013-1q.xlsx
+OSEBERG,3,1.9500000476837158,2013,1,np-2013-1q.xlsx
+OSEBERG,1,0.4,2017,1,np-q1-2017-endelige-normpriser.xlsx
+OSEBERG,2,0.5,2017,1,np-q1-2017-endelige-normpriser.xlsx
+OSEBERG,3,0.7,2017,1,np-q1-2017-endelige-normpriser.xlsx
+OSEBERG,7,0.6,2017,3,np-q3-2017-endelige-normpriser.xlsx
+OSEBERG,8,0.55,2017,3,np-q3-2017-endelige-normpriser.xlsx
+OSEBERG,9,0.75,2017,3,np-q3-2017-endelige-normpriser.xlsx
+OSEBERG,4,0.85,2019,2,np-2q-2019-normpriser.xlsx
+OSEBERG,5,1.1,2019,2,np-2q-2019-normpriser.xlsx
+OSEBERG,6,1.2,2019,2,np-2q-2019-normpriser.xlsx
+OSEBERG,7,1.3,2019,3,np-3q-2019-normpriser.xlsx
+OSEBERG,8,0.7,2019,3,np-3q-2019-normpriser.xlsx
+OSEBERG,9,0.85,2019,3,np-3q-2019-normpriser.xlsx
+OSEBERG,10,1.45,2019,4,np-4q-2019-normpriser.xlsx
+OSEBERG,11,1.35,2019,4,np-4q-2019-normpriser.xlsx
+OSEBERG,12,2.39985,2019,4,np-4q-2019-normpriser.xlsx
+OSEBERG,1,2.8,2020,1,np-1q-2020-normpriser.xlsx
+OSEBERG,2,2.75,2020,1,np-1q-2020-normpriser.xlsx
+OSEBERG,3,2.6,2020,1,np-1q-2020-normpriser.xlsx
+OSEBERG,4,-0.65,2020,2,np-2q-2020-normpriser.xlsx
+OSEBERG,5,-4.3,2020,2,np-2q-2020-normpriser.xlsx
+OSEBERG,6,1.3,2020,2,np-2q-2020-normpriser.xlsx
+OSEBERG,7,0.4,2020,3,np-3q-2020-normpriser.xlsx
+OSEBERG,8,0.8,2020,3,np-3q-2020-normpriser.xlsx
+OSEBERG,9,0.3,2020,3,np-3q-2020-normpriser.xlsx
+OSEBERG,10,0.1,2020,4,np-4q-2020-normpriser.xlsx
+OSEBERG,11,0.45,2020,4,np-4q-2020-normpriser.xlsx
+OSEBERG,12,0.55,2020,4,np-4q-2020-normpriser.xlsx
+OSEBERG,1,0.65,2021,1,np-1q-2021-endelige-normpriser.xlsx
+OSEBERG,2,0.05,2021,1,np-1q-2021-endelige-normpriser.xlsx
+OSEBERG,3,0.85,2021,1,np-1q-2021-endelige-normpriser.xlsx
+OSEBERG,4,0.6,2021,2,np-2q-2021-endelige-normpriser.xlsx
+OSEBERG,5,0.65,2021,2,np-2q-2021-endelige-normpriser.xlsx
+OSEBERG,6,0.9,2021,2,np-2q-2021-endelige-normpriser.xlsx
+OSEBERG,7,0.8,2021,3,np-3q-2021-endelige-normpriser.xlsx
+OSEBERG,8,1.05,2021,3,np-3q-2021-endelige-normpriser.xlsx
+OSEBERG,9,0.75,2021,3,np-3q-2021-endelige-normpriser.xlsx
+OSEBERG,10,0.45,2021,4,np-4q-2021-endelige-normpriser.xlsx
+OSEBERG,11,0.85,2021,4,np-4q-2021-endelige-normpriser.xlsx
+OSEBERG,12,1.05,2021,4,np-4q-2021-endelige-normpriser.xlsx
+OSEBERG,1,1.2,2022,1,np-1q-2022-endelige-normpriser.xlsx
+OSEBERG,2,2.2,2022,1,np-1q-2022-endelige-normpriser.xlsx
+OSEBERG,3,3.2,2022,1,np-1q-2022-endelige-normpriser.xlsx
+OSEBERG,4,4.45,2022,2,np-2q-2022-endelige-normpriser.xlsx
+OSEBERG,5,3.75,2022,2,np-2q-2022-endelige-normpriser.xlsx
+OSEBERG,6,3.6,2022,2,np-2q-2022-endelige-normpriser.xlsx
+OSEBERG,7,6.7,2022,3,np-3q-2022-endelige-normpriser.xlsx
+OSEBERG,8,6.4,2022,3,np-3q-2022-endelige-normpriser.xlsx
+OSEBERG,9,5.95,2022,3,np-3q-2022-endelige-normpriser.xlsx
+OSEBERG,11,4.15,2022,4,np-4q-2022-endelige-normpriser.xlsx
+OSEBERG,12,4.05,2022,4,np-4q-2022-endelige-normpriser.xlsx
+OSEBERG,1,3.95,2023,1,np-1q-2023-endelige-normpriser.xlsx
+OSEBERG,2,3.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+OSEBERG,3,4.0,2023,1,np-1q-2023-endelige-normpriser.xlsx
+OSEBERG,4,3.9,2023,2,np-2q-2023-endelige-normpriser.xlsx
+OSEBERG,5,2.95,2023,2,np-2q-2023-endelige-normpriser.xlsx
+OSEBERG,6,2.6,2023,2,np-2q-2023-endelige-normpriser.xlsx
+OSEBERG,7,2.45,2023,3,np-3q-2023-endelige-normpriser.xlsx
+OSEBERG,8,3.3,2023,3,np-3q-2023-endelige-normpriser.xlsx
+OSEBERG,9,4.45,2023,3,np-3q-2023-endelige-normpriser.xlsx
+OSEBERG,10,4.95,2023,4,np-4q-2023-endelige-normpriser.xlsx
+OSEBERG,11,3.15,2023,4,np-4q-2023-endelige-normpriser.xlsx
+OSEBERG,12,4.05,2023,4,np-4q-2023-endelige-normpriser.xlsx
+OSEBERG,1,3.1,2024,1,np-1q-2024-endelige-normpriser.xlsx
+OSEBERG,2,4.05,2024,1,np-1q-2024-endelige-normpriser.xlsx
+OSEBERG,3,4.0,2024,1,np-1q-2024-endelige-normpriser.xlsx
+OSEBERG,4,1.25,2024,2,np-2q-2024-endelige-normpriser.xlsx
+OSEBERG,5,2.55,2024,2,np-2q-2024-endelige-normpriser.xlsx
+OSEBERG,6,1.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+OSEBERG,7,2.4,2024,3,np-3q-2024-endelige-normpriser.xlsx
+OSEBERG,8,1.7,2024,3,np-3q-2024-endelige-normpriser.xlsx
+OSEBERG,9,3.15,2024,3,np-3q-2024-endelige-normpriser.xlsx
+OSEBERG,10,2.9,2024,4,np-4q-2024-endelige-normpriser.xlsx
+OSEBERG,11,2.55,2024,4,np-4q-2024-endelige-normpriser.xlsx
+OSEBERG,12,2.0,2024,4,np-4q-2024-endelige-normpriser.xlsx
+OSEBERG,1,1.7,2025,1,np-1q-2025-endelige-normpriser.xlsx
+OSEBERG,2,1.55,2025,1,np-1q-2025-endelige-normpriser.xlsx
+OSEBERG,3,1.9,2025,1,np-1q-2025-endelige-normpriser.xlsx
+OSEBERG,4,1.6,2025,2,np-2q-2025-endelige-normpriser.xlsx
+OSEBERG,5,1.85,2025,2,np-2q-2025-endelige-normpriser.xlsx
+OSEBERG,6,2.55,2025,2,np-2q-2025-endelige-normpriser.xlsx
+OSEBERG,7,3.4,2025,3,np-3q-2025-endelige-normpriser.xlsx
+OSEBERG,8,2.6,2025,3,np-3q-2025-endelige-normpriser.xlsx
+OSEBERG,9,1.45,2025,3,np-3q-2025-endelige-normpriser.xlsx
+OSEBERG,10,1.7,2025,4,np-4q-2025-endelige-normpriser.xlsx
+OSEBERG,11,2.1,2025,4,np-4q-2025-endelige-normpriser.xlsx
+OSEBERG,12,1.7,2025,4,np-4q-2025-endelige-normpriser.xlsx
+SKARV,1,-0.7,2017,1,np-q1-2017-endelige-normpriser.xlsx
+SKARV,7,-0.8,2017,3,np-q3-2017-endelige-normpriser.xlsx
+SKARV,8,-0.65,2017,3,np-q3-2017-endelige-normpriser.xlsx
+SKARV,9,-0.7,2017,3,np-q3-2017-endelige-normpriser.xlsx
+SKARV,4,-0.75,2019,2,np-2q-2019-normpriser.xlsx
+SKARV,5,-0.1,2019,2,np-2q-2019-normpriser.xlsx
+SKARV,6,0.15,2019,2,np-2q-2019-normpriser.xlsx
+SKARV,7,-1.0,2019,3,np-3q-2019-normpriser.xlsx
+SKARV,8,-1.25,2019,3,np-3q-2019-normpriser.xlsx
+SKARV,9,-1.55,2019,3,np-3q-2019-normpriser.xlsx
+SKARV,10,-1.0,2019,4,np-4q-2019-normpriser.xlsx
+SKARV,11,1.05,2019,4,np-4q-2019-normpriser.xlsx
+SKARV,1,1.45,2020,1,np-1q-2020-normpriser.xlsx
+SKARV,2,0.0,2020,1,np-1q-2020-normpriser.xlsx
+SKARV,3,0.85,2020,1,np-1q-2020-normpriser.xlsx
+SKARV,4,-7.1529,2020,2,np-2q-2020-normpriser.xlsx
+SKARV,5,-10.5,2020,2,np-2q-2020-normpriser.xlsx
+SKARV,6,-9.85,2020,2,np-2q-2020-normpriser.xlsx
+SKARV,7,-2.8,2020,3,np-3q-2020-normpriser.xlsx
+SKARV,9,-3.1,2020,3,np-3q-2020-normpriser.xlsx
+SKARV,10,-2.65,2020,4,np-4q-2020-normpriser.xlsx
+SKARV,11,-1.75,2020,4,np-4q-2020-normpriser.xlsx
+SKARV,12,-1.3,2020,4,np-4q-2020-normpriser.xlsx
+SKARV,1,-2.2472,2021,1,np-1q-2021-endelige-normpriser.xlsx
+SKARV,2,-3.25,2021,1,np-1q-2021-endelige-normpriser.xlsx
+SKARV,3,-2.15,2021,1,np-1q-2021-endelige-normpriser.xlsx
+SKARV,4,-1.7,2021,2,np-2q-2021-endelige-normpriser.xlsx
+SKARV,5,-3.45,2021,2,np-2q-2021-endelige-normpriser.xlsx
+SKARV,6,-3.0,2021,2,np-2q-2021-endelige-normpriser.xlsx
+SKARV,7,-2.25,2021,3,np-3q-2021-endelige-normpriser.xlsx
+SKARV,8,-1.8,2021,3,np-3q-2021-endelige-normpriser.xlsx
+SKARV,10,-1.75,2021,4,np-4q-2021-endelige-normpriser.xlsx
+SKARV,11,-1.8,2021,4,np-4q-2021-endelige-normpriser.xlsx
+SKARV,12,-0.25,2021,4,np-4q-2021-endelige-normpriser.xlsx
+SKARV,1,-1.348112,2022,1,np-1q-2022-endelige-normpriser.xlsx
+SKARV,3,0.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+SKARV,4,-5.4,2022,2,np-2q-2022-endelige-normpriser.xlsx
+SKARV,5,-0.2,2022,2,np-2q-2022-endelige-normpriser.xlsx
+SKARV,6,-7.55,2022,2,np-2q-2022-endelige-normpriser.xlsx
+SKARV,7,-5.65,2022,3,np-3q-2022-endelige-normpriser.xlsx
+SKARV,8,-4.15,2022,3,np-3q-2022-endelige-normpriser.xlsx
+SKARV,9,-2.65,2022,3,np-3q-2022-endelige-normpriser.xlsx
+SKARV,10,-1.75,2022,4,np-4q-2022-endelige-normpriser.xlsx
+SKARV,11,-1.0,2022,4,np-4q-2022-endelige-normpriser.xlsx
+SKARV,12,-0.1,2022,4,np-4q-2022-endelige-normpriser.xlsx
+SKARV,1,-1.9,2023,1,np-1q-2023-endelige-normpriser.xlsx
+SKARV,2,-2.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+SKARV,3,-2.4,2023,1,np-1q-2023-endelige-normpriser.xlsx
+SKARV,4,-2.15,2023,2,np-2q-2023-endelige-normpriser.xlsx
+SKARV,5,-2.5,2023,2,np-2q-2023-endelige-normpriser.xlsx
+SKARV,6,-0.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+SKARV,7,-1.6,2023,3,np-3q-2023-endelige-normpriser.xlsx
+SKARV,8,-1.5,2023,3,np-3q-2023-endelige-normpriser.xlsx
+SKARV,10,-2.8,2023,4,np-4q-2023-endelige-normpriser.xlsx
+SKARV,11,-1.6,2023,4,np-4q-2023-endelige-normpriser.xlsx
+SKARV,12,-1.75,2023,4,np-4q-2023-endelige-normpriser.xlsx
+SKARV,1,-2.35,2024,1,np-1q-2024-endelige-normpriser.xlsx
+SKARV,2,-1.4,2024,1,np-1q-2024-endelige-normpriser.xlsx
+SKARV,3,-5.05,2024,1,np-1q-2024-endelige-normpriser.xlsx
+SKARV,5,-3.9,2024,2,np-2q-2024-endelige-normpriser.xlsx
+SKARV,6,-2.5,2024,2,np-2q-2024-endelige-normpriser.xlsx
+SKARV,7,-1.85,2024,3,np-3q-2024-endelige-normpriser.xlsx
+SKARV,10,-2.55,2024,4,np-4q-2024-endelige-normpriser.xlsx
+SKARV,11,-1.95,2024,4,np-4q-2024-endelige-normpriser.xlsx
+SKARV,1,-0.85,2025,1,np-1q-2025-endelige-normpriser.xlsx
+SKARV,2,-0.85,2025,1,np-1q-2025-endelige-normpriser.xlsx
+SKARV,4,-2.3,2025,2,np-2q-2025-endelige-normpriser.xlsx
+SKARV,6,-1.4,2025,2,np-2q-2025-endelige-normpriser.xlsx
+SKARV,7,-2.65,2025,3,np-3q-2025-endelige-normpriser.xlsx
+SKARV,9,-0.75,2025,3,np-3q-2025-endelige-normpriser.xlsx
+SKARV,11,-0.8,2025,4,np-4q-2025-endelige-normpriser.xlsx
+STATFJORD,4,0.6499999761581421,2012,2,normpriser-2q-2012.xlsx
+STATFJORD,5,0.05000000074505806,2012,2,normpriser-2q-2012.xlsx
+STATFJORD,6,0.6000000238418579,2012,2,normpriser-2q-2012.xlsx
+STATFJORD,7,0.5964323282241821,2012,3,np-3q-2012.xlsx
+STATFJORD,8,0.800000011920929,2012,3,np-3q-2012.xlsx
+STATFJORD,9,0.800000011920929,2012,3,np-3q-2012.xlsx
+STATFJORD,1,1.75,2013,1,np-2013-1q.xlsx
+STATFJORD,2,0.8500000238418579,2013,1,np-2013-1q.xlsx
+STATFJORD,3,0.8957564830780029,2013,1,np-2013-1q.xlsx
+STATFJORD,1,-0.7,2017,1,np-q1-2017-endelige-normpriser.xlsx
+STATFJORD,2,-0.55,2017,1,np-q1-2017-endelige-normpriser.xlsx
+STATFJORD,3,-0.45,2017,1,np-q1-2017-endelige-normpriser.xlsx
+STATFJORD,7,-0.9,2017,3,np-q3-2017-endelige-normpriser.xlsx
+STATFJORD,8,-0.75,2017,3,np-q3-2017-endelige-normpriser.xlsx
+STATFJORD,9,-0.25,2017,3,np-q3-2017-endelige-normpriser.xlsx
+STATFJORD,4,0.0,2019,2,np-2q-2019-normpriser.xlsx
+STATFJORD,5,-0.05,2019,2,np-2q-2019-normpriser.xlsx
+STATFJORD,6,0.45,2019,2,np-2q-2019-normpriser.xlsx
+STATFJORD,7,-0.25,2019,3,np-3q-2019-normpriser.xlsx
+STATFJORD,8,-0.55,2019,3,np-3q-2019-normpriser.xlsx
+STATFJORD,9,-0.05,2019,3,np-3q-2019-normpriser.xlsx
+STATFJORD,10,0.2,2019,4,np-4q-2019-normpriser.xlsx
+STATFJORD,11,1.3,2019,4,np-4q-2019-normpriser.xlsx
+STATFJORD,12,1.8,2019,4,np-4q-2019-normpriser.xlsx
+STATFJORD,1,1.85,2020,1,np-1q-2020-normpriser.xlsx
+STATFJORD,2,2.5,2020,1,np-1q-2020-normpriser.xlsx
+STATFJORD,3,2.0,2020,1,np-1q-2020-normpriser.xlsx
+STATFJORD,4,0.2,2020,2,np-2q-2020-normpriser.xlsx
+STATFJORD,6,-2.1,2020,2,np-2q-2020-normpriser.xlsx
+STATFJORD,6,-5.05,2020,2,np-2q-2020-normpriser.xlsx
+STATFJORD,7,-0.5,2020,3,np-3q-2020-normpriser.xlsx
+STATFJORD,8,0.3,2020,3,np-3q-2020-normpriser.xlsx
+STATFJORD,9,-0.1,2020,3,np-3q-2020-normpriser.xlsx
+STATFJORD,10,-0.7,2020,4,np-4q-2020-normpriser.xlsx
+STATFJORD,11,-0.65,2020,4,np-4q-2020-normpriser.xlsx
+STATFJORD,12,-0.75,2020,4,np-4q-2020-normpriser.xlsx
+STATFJORD,1,-0.85,2021,1,np-1q-2021-endelige-normpriser.xlsx
+STATFJORD,2,-0.85,2021,1,np-1q-2021-endelige-normpriser.xlsx
+STATFJORD,3,-0.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+STATFJORD,4,-0.4,2021,2,np-2q-2021-endelige-normpriser.xlsx
+STATFJORD,5,-1.7,2021,2,np-2q-2021-endelige-normpriser.xlsx
+STATFJORD,6,-1.3,2021,2,np-2q-2021-endelige-normpriser.xlsx
+STATFJORD,7,-0.85,2021,3,np-3q-2021-endelige-normpriser.xlsx
+STATFJORD,8,-0.35,2021,3,np-3q-2021-endelige-normpriser.xlsx
+STATFJORD,9,-0.5,2021,3,np-3q-2021-endelige-normpriser.xlsx
+STATFJORD,10,-0.7,2021,4,np-4q-2021-endelige-normpriser.xlsx
+STATFJORD,11,-0.65,2021,4,np-4q-2021-endelige-normpriser.xlsx
+STATFJORD,12,-0.25,2021,4,np-4q-2021-endelige-normpriser.xlsx
+STATFJORD,1,0.1453389,2022,1,np-1q-2022-endelige-normpriser.xlsx
+STATFJORD,2,1.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+STATFJORD,3,2.35,2022,1,np-1q-2022-endelige-normpriser.xlsx
+STATFJORD,4,2.85,2022,2,np-2q-2022-endelige-normpriser.xlsx
+STATFJORD,5,1.75,2022,2,np-2q-2022-endelige-normpriser.xlsx
+STATFJORD,6,2.45,2022,2,np-2q-2022-endelige-normpriser.xlsx
+STATFJORD,7,6.25,2022,3,np-3q-2022-endelige-normpriser.xlsx
+STATFJORD,8,2.8,2022,3,np-3q-2022-endelige-normpriser.xlsx
+STATFJORD,9,-0.45,2022,3,np-3q-2022-endelige-normpriser.xlsx
+STATFJORD,10,1.9,2022,4,np-4q-2022-endelige-normpriser.xlsx
+STATFJORD,11,3.7,2022,4,np-4q-2022-endelige-normpriser.xlsx
+STATFJORD,12,2.8,2022,4,np-4q-2022-endelige-normpriser.xlsx
+STATFJORD,1,0.95,2023,1,np-1q-2023-endelige-normpriser.xlsx
+STATFJORD,2,1.05,2023,1,np-1q-2023-endelige-normpriser.xlsx
+STATFJORD,3,1.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+STATFJORD,4,2.4,2023,2,np-2q-2023-endelige-normpriser.xlsx
+STATFJORD,5,0.75,2023,2,np-2q-2023-endelige-normpriser.xlsx
+STATFJORD,6,-0.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+STATFJORD,7,1.55,2023,3,np-3q-2023-endelige-normpriser.xlsx
+STATFJORD,8,1.85,2023,3,np-3q-2023-endelige-normpriser.xlsx
+STATFJORD,9,2.6,2023,3,np-3q-2023-endelige-normpriser.xlsx
+STATFJORD,10,1.65,2023,4,np-4q-2023-endelige-normpriser.xlsx
+STATFJORD,11,3.85,2023,4,np-4q-2023-endelige-normpriser.xlsx
+STATFJORD,12,2.7,2023,4,np-4q-2023-endelige-normpriser.xlsx
+STATFJORD,1,1.25,2024,1,np-1q-2024-endelige-normpriser.xlsx
+STATFJORD,2,2.6,2024,1,np-1q-2024-endelige-normpriser.xlsx
+STATFJORD,3,1.7,2024,1,np-1q-2024-endelige-normpriser.xlsx
+STATFJORD,4,-0.95,2024,2,np-2q-2024-endelige-normpriser.xlsx
+STATFJORD,5,1.6,2024,2,np-2q-2024-endelige-normpriser.xlsx
+STATFJORD,6,0.05,2024,2,np-2q-2024-endelige-normpriser.xlsx
+STATFJORD,7,1.8,2024,3,np-3q-2024-endelige-normpriser.xlsx
+STATFJORD,8,1.0,2024,3,np-3q-2024-endelige-normpriser.xlsx
+STATFJORD,9,0.6,2024,3,np-3q-2024-endelige-normpriser.xlsx
+STATFJORD,10,1.65,2024,4,np-4q-2024-endelige-normpriser.xlsx
+STATFJORD,11,0.95,2024,4,np-4q-2024-endelige-normpriser.xlsx
+STATFJORD,12,1.8,2024,4,np-4q-2024-endelige-normpriser.xlsx
+STATFJORD,1,0.8,2025,1,np-1q-2025-endelige-normpriser.xlsx
+STATFJORD,2,0.45,2025,1,np-1q-2025-endelige-normpriser.xlsx
+STATFJORD,3,0.65,2025,1,np-1q-2025-endelige-normpriser.xlsx
+STATFJORD,4,0.9,2025,2,np-2q-2025-endelige-normpriser.xlsx
+STATFJORD,5,0.7,2025,2,np-2q-2025-endelige-normpriser.xlsx
+STATFJORD,6,0.55,2025,2,np-2q-2025-endelige-normpriser.xlsx
+STATFJORD,7,0.1,2025,3,np-3q-2025-endelige-normpriser.xlsx
+STATFJORD,9,1.25,2025,3,np-3q-2025-endelige-normpriser.xlsx
+STATFJORD,10,-0.2,2025,4,np-4q-2025-endelige-normpriser.xlsx
+STATFJORD,11,-2.45,2025,4,np-4q-2025-endelige-normpriser.xlsx
+STATFJORD,12,-0.3,2025,4,np-4q-2025-endelige-normpriser.xlsx
+TROLL,4,3.450000047683716,2012,2,normpriser-2q-2012.xlsx
+TROLL,5,2.950000047683716,2012,2,normpriser-2q-2012.xlsx
+TROLL,6,3.450000047683716,2012,2,normpriser-2q-2012.xlsx
+TROLL,7,3.5999999046325684,2012,3,np-3q-2012.xlsx
+TROLL,8,3.6500000953674316,2012,3,np-3q-2012.xlsx
+TROLL,9,3.3499999046325684,2012,3,np-3q-2012.xlsx
+TROLL,1,4.300000190734863,2013,1,np-2013-1q.xlsx
+TROLL,2,4.0,2013,1,np-2013-1q.xlsx
+TROLL,3,3.75,2013,1,np-2013-1q.xlsx
+TROLL,1,1.05,2017,1,np-q1-2017-endelige-normpriser.xlsx
+TROLL,2,0.75,2017,1,np-q1-2017-endelige-normpriser.xlsx
+TROLL,3,1.2,2017,1,np-q1-2017-endelige-normpriser.xlsx
+TROLL,7,0.8,2017,3,np-q3-2017-endelige-normpriser.xlsx
+TROLL,8,1.0,2017,3,np-q3-2017-endelige-normpriser.xlsx
+TROLL,9,1.1,2017,3,np-q3-2017-endelige-normpriser.xlsx
+TROLL,4,1.8,2019,2,np-2q-2019-normpriser.xlsx
+TROLL,5,1.95,2019,2,np-2q-2019-normpriser.xlsx
+TROLL,6,2.2,2019,2,np-2q-2019-normpriser.xlsx
+TROLL,7,1.95,2019,3,np-3q-2019-normpriser.xlsx
+TROLL,8,1.4,2019,3,np-3q-2019-normpriser.xlsx
+TROLL,9,1.45,2019,3,np-3q-2019-normpriser.xlsx
+TROLL,10,2.25,2019,4,np-4q-2019-normpriser.xlsx
+TROLL,11,2.3,2019,4,np-4q-2019-normpriser.xlsx
+TROLL,12,3.45,2019,4,np-4q-2019-normpriser.xlsx
+TROLL,1,3.45,2020,1,np-1q-2020-normpriser.xlsx
+TROLL,2,3.2,2020,1,np-1q-2020-normpriser.xlsx
+TROLL,3,3.1,2020,1,np-1q-2020-normpriser.xlsx
+TROLL,4,0.85,2020,2,np-2q-2020-normpriser.xlsx
+TROLL,5,-2.15,2020,2,np-2q-2020-normpriser.xlsx
+TROLL,6,0.95,2020,2,np-2q-2020-normpriser.xlsx
+TROLL,6,-0.85,2020,2,np-2q-2020-normpriser.xlsx
+TROLL,7,1.15,2020,3,np-3q-2020-normpriser.xlsx
+TROLL,8,1.4,2020,3,np-3q-2020-normpriser.xlsx
+TROLL,9,0.8,2020,3,np-3q-2020-normpriser.xlsx
+TROLL,10,0.45,2020,4,np-4q-2020-normpriser.xlsx
+TROLL,11,0.65,2020,4,np-4q-2020-normpriser.xlsx
+TROLL,12,0.7,2020,4,np-4q-2020-normpriser.xlsx
+TROLL,1,0.7,2021,1,np-1q-2021-endelige-normpriser.xlsx
+TROLL,2,0.55,2021,1,np-1q-2021-endelige-normpriser.xlsx
+TROLL,3,1.05,2021,1,np-1q-2021-endelige-normpriser.xlsx
+TROLL,4,0.75,2021,2,np-2q-2021-endelige-normpriser.xlsx
+TROLL,5,0.9,2021,2,np-2q-2021-endelige-normpriser.xlsx
+TROLL,6,0.95,2021,2,np-2q-2021-endelige-normpriser.xlsx
+TROLL,7,0.85,2021,3,np-3q-2021-endelige-normpriser.xlsx
+TROLL,8,1.55,2021,3,np-3q-2021-endelige-normpriser.xlsx
+TROLL,9,1.1,2021,3,np-3q-2021-endelige-normpriser.xlsx
+TROLL,10,0.9,2021,4,np-4q-2021-endelige-normpriser.xlsx
+TROLL,11,1.35,2021,4,np-4q-2021-endelige-normpriser.xlsx
+TROLL,12,1.85,2021,4,np-4q-2021-endelige-normpriser.xlsx
+TROLL,1,1.8,2022,1,np-1q-2022-endelige-normpriser.xlsx
+TROLL,2,2.7,2022,1,np-1q-2022-endelige-normpriser.xlsx
+TROLL,3,3.85,2022,1,np-1q-2022-endelige-normpriser.xlsx
+TROLL,4,5.5,2022,2,np-2q-2022-endelige-normpriser.xlsx
+TROLL,5,3.9,2022,2,np-2q-2022-endelige-normpriser.xlsx
+TROLL,6,5.3,2022,2,np-2q-2022-endelige-normpriser.xlsx
+TROLL,7,7.0,2022,3,np-3q-2022-endelige-normpriser.xlsx
+TROLL,8,9.7,2022,3,np-3q-2022-endelige-normpriser.xlsx
+TROLL,9,6.1,2022,3,np-3q-2022-endelige-normpriser.xlsx
+TROLL,10,4.6,2022,4,np-4q-2022-endelige-normpriser.xlsx
+TROLL,11,5.1,2022,4,np-4q-2022-endelige-normpriser.xlsx
+TROLL,12,5.35,2022,4,np-4q-2022-endelige-normpriser.xlsx
+TROLL,1,5.0,2023,1,np-1q-2023-endelige-normpriser.xlsx
+TROLL,2,4.15,2023,1,np-1q-2023-endelige-normpriser.xlsx
+TROLL,3,4.65,2023,1,np-1q-2023-endelige-normpriser.xlsx
+TROLL,4,2.75,2023,2,np-2q-2023-endelige-normpriser.xlsx
+TROLL,5,3.85,2023,2,np-2q-2023-endelige-normpriser.xlsx
+TROLL,6,3.35,2023,2,np-2q-2023-endelige-normpriser.xlsx
+TROLL,7,2.65,2023,3,np-3q-2023-endelige-normpriser.xlsx
+TROLL,8,2.9,2023,3,np-3q-2023-endelige-normpriser.xlsx
+TROLL,9,2.85,2023,3,np-3q-2023-endelige-normpriser.xlsx
+TROLL,10,5.0,2023,4,np-4q-2023-endelige-normpriser.xlsx
+TROLL,11,5.45,2023,4,np-4q-2023-endelige-normpriser.xlsx
+TROLL,12,4.45,2023,4,np-4q-2023-endelige-normpriser.xlsx
+TROLL,1,3.45,2024,1,np-1q-2024-endelige-normpriser.xlsx
+TROLL,3,4.2,2024,1,np-1q-2024-endelige-normpriser.xlsx
+TROLL,4,2.2,2024,2,np-2q-2024-endelige-normpriser.xlsx
+TROLL,5,1.25,2024,2,np-2q-2024-endelige-normpriser.xlsx
+TROLL,6,2.6,2024,2,np-2q-2024-endelige-normpriser.xlsx
+TROLL,7,2.95,2024,3,np-3q-2024-endelige-normpriser.xlsx
+TROLL,8,3.15,2024,3,np-3q-2024-endelige-normpriser.xlsx
+TROLL,9,3.65,2024,3,np-3q-2024-endelige-normpriser.xlsx
+TROLL,10,3.1,2024,4,np-4q-2024-endelige-normpriser.xlsx
+TROLL,11,2.55,2024,4,np-4q-2024-endelige-normpriser.xlsx
+TROLL,12,2.2,2024,4,np-4q-2024-endelige-normpriser.xlsx
+TROLL,1,2.15,2025,1,np-1q-2025-endelige-normpriser.xlsx
+TROLL,2,2.3,2025,1,np-1q-2025-endelige-normpriser.xlsx
+TROLL,3,1.95,2025,1,np-1q-2025-endelige-normpriser.xlsx
+TROLL,4,2.7,2025,2,np-2q-2025-endelige-normpriser.xlsx
+TROLL,5,2.55,2025,2,np-2q-2025-endelige-normpriser.xlsx
+TROLL,6,2.85,2025,2,np-2q-2025-endelige-normpriser.xlsx
+TROLL,7,2.8,2025,3,np-3q-2025-endelige-normpriser.xlsx
+TROLL,8,3.2,2025,3,np-3q-2025-endelige-normpriser.xlsx
+TROLL,9,2.95,2025,3,np-3q-2025-endelige-normpriser.xlsx
+TROLL,10,1.75,2025,4,np-4q-2025-endelige-normpriser.xlsx
+TROLL,11,2.25,2025,4,np-4q-2025-endelige-normpriser.xlsx
+TROLL,12,2.05,2025,4,np-4q-2025-endelige-normpriser.xlsx
+VOLVE,4,-5.15339994430542,2012,2,normpriser-2q-2012.xlsx
+VOLVE,6,-3.299999952316284,2012,2,normpriser-2q-2012.xlsx
+VOLVE,7,-1.399999976158142,2012,3,np-3q-2012.xlsx
+VOLVE,8,-2.700000047683716,2012,3,np-3q-2012.xlsx
+VOLVE,2,-3.299999952316284,2013,1,np-2013-1q.xlsx
+YME,1,-2.0,2022,1,np-1q-2022-endelige-normpriser.xlsx
+YME,2,-6.0,2022,1,np-1q-2022-endelige-normpriser.xlsx
+YME,3,-7.62,2022,1,np-1q-2022-endelige-normpriser.xlsx
+YME,7,-4.05,2023,3,np-3q-2023-endelige-normpriser.xlsx
+YME,8,-3.75,2023,3,np-3q-2023-endelige-normpriser.xlsx
+YME,9,-2.15,2023,3,np-3q-2023-endelige-normpriser.xlsx
+YME,10,2.7,2023,4,np-4q-2023-endelige-normpriser.xlsx
+YME,11,-1.4,2023,4,np-4q-2023-endelige-normpriser.xlsx
+YME,12,-2.45,2023,4,np-4q-2023-endelige-normpriser.xlsx
+YME,1,-3.1,2024,1,np-1q-2024-endelige-normpriser.xlsx
+YME,2,-1.3,2024,1,np-1q-2024-endelige-normpriser.xlsx
+YME,3,-2.4,2024,1,np-1q-2024-endelige-normpriser.xlsx
+YME,4,-0.8,2024,2,np-2q-2024-endelige-normpriser.xlsx
+YME,5,-1.35,2024,2,np-2q-2024-endelige-normpriser.xlsx
+YME,6,-1.0,2024,2,np-2q-2024-endelige-normpriser.xlsx
+YME,7,-2.2,2024,3,np-3q-2024-endelige-normpriser.xlsx
+YME,8,-2.8,2024,3,np-3q-2024-endelige-normpriser.xlsx
+YME,9,-3.2,2024,3,np-3q-2024-endelige-normpriser.xlsx
+YME,10,-0.9,2024,4,np-4q-2024-endelige-normpriser.xlsx
+YME,11,-0.25,2024,4,np-4q-2024-endelige-normpriser.xlsx
+YME,12,-1.55,2024,4,np-4q-2024-endelige-normpriser.xlsx
+YME,1,-0.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+YME,2,-1.35,2025,1,np-1q-2025-endelige-normpriser.xlsx
+YME,3,-0.7,2025,1,np-1q-2025-endelige-normpriser.xlsx
+YME,4,-0.2,2025,2,np-2q-2025-endelige-normpriser.xlsx
+YME,5,-0.7,2025,2,np-2q-2025-endelige-normpriser.xlsx
+YME,6,-1.1,2025,2,np-2q-2025-endelige-normpriser.xlsx
+YME,7,-0.65,2025,3,np-3q-2025-endelige-normpriser.xlsx
+YME,10,-0.2,2025,4,np-4q-2025-endelige-normpriser.xlsx
+YME,11,-0.7,2025,4,np-4q-2025-endelige-normpriser.xlsx
+YME,12,-1.05,2025,4,np-4q-2025-endelige-normpriser.xlsx
+ÅSGARD,4,-0.75,2012,2,normpriser-2q-2012.xlsx
+ÅSGARD,5,-2.200000047683716,2012,2,normpriser-2q-2012.xlsx
+ÅSGARD,6,-1.75,2012,2,normpriser-2q-2012.xlsx
+ÅSGARD,7,-3.8499999046325684,2012,3,np-3q-2012.xlsx
+ÅSGARD,8,-3.4000000953674316,2012,3,np-3q-2012.xlsx
+ÅSGARD,9,-2.4000000953674316,2012,3,np-3q-2012.xlsx
+ÅSGARD,1,0.75,2013,1,np-2013-1q.xlsx
+ÅSGARD,2,-0.15000000596046448,2013,1,np-2013-1q.xlsx
+ÅSGARD,3,-0.20000000298023224,2013,1,np-2013-1q.xlsx
+ÅSGARD,1,-1.6,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ÅSGARD,2,-1.4,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ÅSGARD,3,-1.8,2017,1,np-q1-2017-endelige-normpriser.xlsx
+ÅSGARD,7,-3.2,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ÅSGARD,8,-2.5,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ÅSGARD,9,-2.55,2017,3,np-q3-2017-endelige-normpriser.xlsx
+ÅSGARD,4,-4.2,2019,2,np-2q-2019-normpriser.xlsx
+ÅSGARD,5,-4.75,2019,2,np-2q-2019-normpriser.xlsx
+ÅSGARD,6,-4.35,2019,2,np-2q-2019-normpriser.xlsx
+ÅSGARD,7,-6.3,2019,3,np-3q-2019-normpriser.xlsx
+ÅSGARD,8,-6.8,2019,3,np-3q-2019-normpriser.xlsx
+ÅSGARD,9,-5.05,2019,3,np-3q-2019-normpriser.xlsx
+ÅSGARD,10,-4.9,2019,4,np-4q-2019-normpriser.xlsx
+ÅSGARD,11,-5.1,2019,4,np-4q-2019-normpriser.xlsx
+ÅSGARD,12,-2.1,2019,4,np-4q-2019-normpriser.xlsx
+ÅSGARD,1,-2.1,2020,1,np-1q-2020-normpriser.xlsx
+ÅSGARD,2,-2.95,2020,1,np-1q-2020-normpriser.xlsx
+ÅSGARD,3,-5.7,2020,1,np-1q-2020-normpriser.xlsx
+ÅSGARD,4,-1.4,2020,2,np-2q-2020-normpriser.xlsx
+ÅSGARD,5,-13.7,2020,2,np-2q-2020-normpriser.xlsx
+ÅSGARD,5,2.5,2020,2,np-2q-2020-normpriser.xlsx
+ÅSGARD,6,-8.95,2020,2,np-2q-2020-normpriser.xlsx
+ÅSGARD,8,-2.85,2020,3,np-3q-2020-normpriser.xlsx
+ÅSGARD,9,-2.4,2020,3,np-3q-2020-normpriser.xlsx
+ÅSGARD,10,-4.05,2020,4,np-4q-2020-normpriser.xlsx
+ÅSGARD,11,-2.0,2020,4,np-4q-2020-normpriser.xlsx
+ÅSGARD,12,-1.95,2020,4,np-4q-2020-normpriser.xlsx
+ÅSGARD,1,-2.65,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ÅSGARD,2,-2.6,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ÅSGARD,3,-2.2,2021,1,np-1q-2021-endelige-normpriser.xlsx
+ÅSGARD,4,-3.15,2021,2,np-2q-2021-endelige-normpriser.xlsx
+ÅSGARD,5,-3.45,2021,2,np-2q-2021-endelige-normpriser.xlsx
+ÅSGARD,6,-3.65,2021,2,np-2q-2021-endelige-normpriser.xlsx
+ÅSGARD,7,-2.15,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ÅSGARD,8,-1.85,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ÅSGARD,9,-2.15,2021,3,np-3q-2021-endelige-normpriser.xlsx
+ÅSGARD,10,-1.9,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ÅSGARD,11,-1.9,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ÅSGARD,12,-0.6046,2021,4,np-4q-2021-endelige-normpriser.xlsx
+ÅSGARD,1,-0.45,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ÅSGARD,2,0.5,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ÅSGARD,3,0.55,2022,1,np-1q-2022-endelige-normpriser.xlsx
+ÅSGARD,4,-1.2,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ÅSGARD,5,-1.35,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ÅSGARD,6,-3.15,2022,2,np-2q-2022-endelige-normpriser.xlsx
+ÅSGARD,7,-12.8,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ÅSGARD,8,-8.55,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ÅSGARD,9,-6.7,2022,3,np-3q-2022-endelige-normpriser.xlsx
+ÅSGARD,10,-5.75,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ÅSGARD,11,-5.25,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ÅSGARD,12,-4.3,2022,4,np-4q-2022-endelige-normpriser.xlsx
+ÅSGARD,1,-4.85,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ÅSGARD,2,-5.9,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ÅSGARD,3,-6.0,2023,1,np-1q-2023-endelige-normpriser.xlsx
+ÅSGARD,4,-5.1,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ÅSGARD,5,-4.35,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ÅSGARD,6,-7.65,2023,2,np-2q-2023-endelige-normpriser.xlsx
+ÅSGARD,7,-4.8,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ÅSGARD,8,-4.5,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ÅSGARD,9,-4.35,2023,3,np-3q-2023-endelige-normpriser.xlsx
+ÅSGARD,10,-4.15,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ÅSGARD,11,-6.45,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ÅSGARD,12,-4.4,2023,4,np-4q-2023-endelige-normpriser.xlsx
+ÅSGARD,1,-5.5,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ÅSGARD,2,-3.8,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ÅSGARD,3,-5.55,2024,1,np-1q-2024-endelige-normpriser.xlsx
+ÅSGARD,4,-6.2,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ÅSGARD,5,-6.9,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ÅSGARD,6,-5.45,2024,2,np-2q-2024-endelige-normpriser.xlsx
+ÅSGARD,7,-5.45,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ÅSGARD,8,-4.75,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ÅSGARD,9,-5.2,2024,3,np-3q-2024-endelige-normpriser.xlsx
+ÅSGARD,10,-4.85,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ÅSGARD,11,-4.4,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ÅSGARD,12,-2.9,2024,4,np-4q-2024-endelige-normpriser.xlsx
+ÅSGARD,1,-2.85,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ÅSGARD,2,-4.05,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ÅSGARD,3,-4.05,2025,1,np-1q-2025-endelige-normpriser.xlsx
+ÅSGARD,4,-3.9,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ÅSGARD,5,-4.3,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ÅSGARD,6,-4.35,2025,2,np-2q-2025-endelige-normpriser.xlsx
+ÅSGARD,7,-4.25,2025,3,np-3q-2025-endelige-normpriser.xlsx
+ÅSGARD,8,-4.45,2025,3,np-3q-2025-endelige-normpriser.xlsx
+ÅSGARD,9,-3.15,2025,3,np-3q-2025-endelige-normpriser.xlsx
+ÅSGARD,10,-3.2,2025,4,np-4q-2025-endelige-normpriser.xlsx
+ÅSGARD,11,-2.8,2025,4,np-4q-2025-endelige-normpriser.xlsx
+ÅSGARD,12,-3.75,2025,4,np-4q-2025-endelige-normpriser.xlsx

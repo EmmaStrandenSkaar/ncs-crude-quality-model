@@ -1,0 +1,81 @@
+grade,primary_route,distance_band,is_landlocked,is_pipeline_constrained
+Brent Blend,NorthSea-Europe,short,0,0
+Forties,NorthSea-Europe,short,0,0
+Oseberg,NorthSea-Europe,short,0,0
+Ekofisk,NorthSea-Europe,short,0,0
+Troll,NorthSea-Europe,short,0,0
+Johan Sverdrup,NorthSea-Europe,short,0,0
+Statfjord,NorthSea-Europe,short,0,0
+Gullfaks,NorthSea-Europe,short,0,0
+Alvheim,NorthSea-Europe,short,0,0
+Grane,NorthSea-Europe,short,0,0
+Heidrun,NorthSea-Europe,short,0,0
+Norne,NorthSea-Europe,short,0,0
+Draugen,NorthSea-Europe,short,0,0
+Skarv,NorthSea-Europe,short,0,0
+Asgard,NorthSea-Europe,short,0,0
+Balder,NorthSea-Europe,short,0,0
+Gina Krog,NorthSea-Europe,short,0,0
+Goliat,NorthSea-Europe,short,0,0
+Gudrun,NorthSea-Europe,short,0,0
+Martin Linge,NorthSea-Europe,short,0,0
+Njord,NorthSea-Europe,short,0,0
+Knarr,NorthSea-Europe,short,0,0
+Yme,NorthSea-Europe,short,0,0
+Volve,NorthSea-Europe,short,0,0
+Jotun,NorthSea-Europe,short,0,0
+Valhall,NorthSea-Europe,short,0,0
+Ula,NorthSea-Europe,short,0,0
+WTI,Cushing-USGC,short,1,1
+Mars Blend,USGC-Local,short,0,0
+LLS,USGC-Local,short,0,0
+WCS,AB-USGC,long,1,1
+Bow River Heavy,AB-USGC,long,1,1
+Lloydminster,AB-USGC,long,1,1
+Cold Lake,AB-USGC,long,1,1
+Canadian Light Sour,AB-USGC,long,1,1
+Syncrude Sweet,AB-USGC,long,1,1
+Maya,Mex-USGC,short,0,0
+Isthmus,Mex-USGC,short,0,0
+Olmeca,Mex-USGC,short,0,0
+Oriente,Ecu-USGC,medium,0,0
+Napo,Ecu-USGC,medium,0,0
+Vasconia,Col-USGC,short,0,0
+Merey,Ven-USGC,short,0,0
+Furrial,Ven-USGC,short,0,0
+Leona,Ven-USGC,short,0,0
+Marlim,Brazil-Asia,long,0,0
+Arab Light,MidEast-Asia,long,0,0
+Arab Heavy,MidEast-Asia,long,0,0
+Arab Medium,MidEast-Asia,long,0,0
+Arab Extra Light,MidEast-Asia,long,0,0
+Dubai Fateh,MidEast-Asia,long,0,0
+Murban,MidEast-Asia,long,0,0
+Oman,MidEast-Asia,long,0,0
+Iran Light,MidEast-Asia,long,0,0
+Iran Heavy,MidEast-Asia,long,0,0
+Kuwait Export,MidEast-Asia,long,0,0
+Basrah Light,MidEast-Asia,long,0,0
+Basrah Heavy,MidEast-Asia,long,0,0
+Bonny Light,WAF-Europe,medium,0,0
+Qua Iboe,WAF-Europe,medium,0,0
+Forcados,WAF-Europe,medium,0,0
+Brass River,WAF-Europe,medium,0,0
+Girassol,WAF-Asia,long,0,0
+Cabinda,WAF-Asia,long,0,0
+Dalia,WAF-Asia,long,0,0
+Rabi Light,WAF-Europe,medium,0,0
+Djeno,WAF-Asia,long,0,0
+Saharan Blend,NAF-Europe,short,0,0
+Es Sider,NAF-Europe,short,0,0
+Urals,Baltic-Med,medium,0,1
+ESPO,RuFE-Asia,short,0,0
+CPC Blend,Caspian-Med,medium,0,1
+Azeri Light,Caspian-Med,medium,0,1
+Tengiz,Caspian-Med,medium,0,1
+Tapis,Asia-Local,short,0,0
+Minas,Asia-Local,short,0,0
+Daqing,Asia-Local,short,0,0
+Cossack,Asia-Local,short,0,0
+Bach Ho,Asia-Local,short,0,0
+Seria Light,Asia-Local,short,0,0

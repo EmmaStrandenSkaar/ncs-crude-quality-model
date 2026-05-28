@@ -1,0 +1,350 @@
+[
+  {
+    "grade": "Akpo Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/AKPO-BLEND.xlsx",
+    "local_file": "AKPO-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Al Jurf",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/AL-JURF.xlsx",
+    "local_file": "AL-JURF.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Amenam Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/AMENAM-BLEND.xlsx",
+    "local_file": "AMENAM-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Bonga",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BONGA.xlsx",
+    "local_file": "BONGA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Bonny Light",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BONNY-LIGHT.xlsx",
+    "local_file": "BONNY-LIGHT.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Brass River",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BRASS-RIVER.xlsx",
+    "local_file": "BRASS-RIVER.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Cabinda",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CABINDA.xlsx",
+    "local_file": "CABINDA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Clov",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CLOV.xlsx",
+    "local_file": "CLOV.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Dalia",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/DALIA.xlsx",
+    "local_file": "DALIA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Djeno",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/DJENO.xlsx",
+    "local_file": "DJENO.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Ea Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/EA-BLEND.xlsx",
+    "local_file": "EA-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Egina",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/EGINA.xlsx",
+    "local_file": "EGINA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "El Sharara",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/EL-SHARARA.xlsx",
+    "local_file": "EL-SHARARA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Es Sider",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/ES-SIDER.xlsx",
+    "local_file": "ES-SIDER.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Forcados",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/FORCADOS.xlsx",
+    "local_file": "FORCADOS.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Gindungo",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/GINDUNGO.xlsx",
+    "local_file": "GINDUNGO.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Girassol",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/GIRASSOL.xlsx",
+    "local_file": "GIRASSOL.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Mandji",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/MANDJI.xlsx",
+    "local_file": "MANDJI.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Mostarda",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/MOSTARDA.xlsx",
+    "local_file": "MOSTARDA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Nemba",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/NEMBA.xlsx",
+    "local_file": "NEMBA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "N'kossa Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/NKOSSA-BLEND.xlsx",
+    "local_file": "NKOSSA-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Badak",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BADAK.xlsx",
+    "local_file": "BADAK.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Bekapai",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BEKAPAI.xlsx",
+    "local_file": "BEKAPAI.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Bontang Return Condensate",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CONDENSATE-BONTANG-RETURN.xlsx",
+    "local_file": "CONDENSATE-BONTANG-RETURN.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Ichthys Condensate",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CONDENSATE-ICHTHYS.xlsx",
+    "local_file": "CONDENSATE-ICHTHYS.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Senipah Condensate",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CONDENSATE-SENIPAH.xlsx",
+    "local_file": "CONDENSATE-SENIPAH.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Handil Mix",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/HANDIL-MIX.xlsx",
+    "local_file": "HANDIL-MIX.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Seria Light",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/SERIA-LIGHT.xlsx",
+    "local_file": "SERIA-LIGHT.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Asgard Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/ASGARD-BLEND.xlsx",
+    "local_file": "ASGARD-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Brent",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/BRENT.xlsx",
+    "local_file": "BRENT.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Snohvit Condensate",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CONDENSATE-SNOHVIT.xlsx",
+    "local_file": "CONDENSATE-SNOHVIT.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Culzean",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CULZEAN.xlsx",
+    "local_file": "CULZEAN.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "DUC",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/DUC.xlsx",
+    "local_file": "DUC.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Dumbarton",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/DUMBARTON.xlsx",
+    "local_file": "DUMBARTON.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Ekofisk",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/EKOFISK.xlsx",
+    "local_file": "EKOFISK.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Flotta Gold",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/FLOTTA-GOLD.xlsx",
+    "local_file": "FLOTTA-GOLD.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Forties",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/FORTIES.xlsx",
+    "local_file": "FORTIES.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Gryphon",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/GRYPHON.xlsx",
+    "local_file": "GRYPHON.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Gudrun Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/GUDRUN-BLEND.xlsx",
+    "local_file": "GUDRUN-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Gullfaks",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/GULLFAKS.xlsx",
+    "local_file": "GULLFAKS.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Harding",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/HARDING.xlsx",
+    "local_file": "HARDING.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Johan Sverdrup",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/JOHAN-SVERDRUP.xlsx",
+    "local_file": "JOHAN-SVERDRUP.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Oseberg",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/OSEBERG.xlsx",
+    "local_file": "OSEBERG.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Troll",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/TROLL.xlsx",
+    "local_file": "TROLL.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Al Shaheen",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/AL-SHAHEEN.xlsx",
+    "local_file": "AL-SHAHEEN.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Das Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/DAS-BLEND.xlsx",
+    "local_file": "DAS-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Murban",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/MURBAN.xlsx",
+    "local_file": "MURBAN.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Oman",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/OMAN.xlsx",
+    "local_file": "OMAN.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Qatar Marine",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/QATAR-MARINE.xlsx",
+    "local_file": "QATAR-MARINE.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Upper Zakum",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/UPPER-ZAKHUM.xlsx",
+    "local_file": "UPPER-ZAKHUM.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Atapu",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/ATAPU.xlsx",
+    "local_file": "ATAPU.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Lapa",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/LAPA.xlsx",
+    "local_file": "LAPA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Mero",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/MERO.xlsx",
+    "local_file": "MERO.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Sepia",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/SEPIA.xlsx",
+    "local_file": "SEPIA.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Sururu",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/SURURU.xlsx",
+    "local_file": "SURURU.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Cascade Chinook Blend",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/CASCADE-CHINOOK-BLEND.xlsx",
+    "local_file": "CASCADE-CHINOOK-BLEND.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Fort Hills Dilbit",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/FORT-HILLS-REDUCED-CARBON-LIFE-CYCLE-DILBIT.xlsx",
+    "local_file": "FORT-HILLS-REDUCED-CARBON-LIFE-CYCLE-DILBIT.xlsx",
+    "source": "TotalEnergies"
+  },
+  {
+    "grade": "Synbit SHB",
+    "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/SYNBIT-SHB.xlsx",
+    "local_file": "SYNBIT-SHB.xlsx",
+    "source": "TotalEnergies"
+  }
+]
