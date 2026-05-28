@@ -1,0 +1,42 @@
+{
+  "yield_crack_interactions": [
+    {
+      "feature": "naphtha_x_gasoline_crack",
+      "in_model": true,
+      "coef": -0.0022631366326854507,
+      "se": 0.0009450186683574524,
+      "p_value": 0.016629148915873627
+    },
+    {
+      "feature": "kerosene_x_jet_crack",
+      "in_model": false,
+      "coef": null,
+      "se": null,
+      "p_value": null
+    },
+    {
+      "feature": "diesel_x_diesel_crack",
+      "in_model": true,
+      "coef": -0.004266264271390673,
+      "se": 0.0016376684601488993,
+      "p_value": 0.009185167770811601
+    },
+    {
+      "feature": "vacuum_resid_x_diesel_crack",
+      "in_model": true,
+      "coef": 0.0021280486304680827,
+      "se": 0.0012211636174063061,
+      "p_value": 0.08139650913158333
+    },
+    {
+      "feature": "middle_dist_x_diesel_crack",
+      "in_model": true,
+      "coef": 0.010375501204896742,
+      "se": 0.0017342060097166752,
+      "p_value": 2.192614146265606e-09
+    }
+  ],
+  "n_significant": 4,
+  "model_rmse": 2.886328683403128,
+  "model_oot_r2": 0.3318363418453466
+}
