@@ -1,0 +1,74 @@
+BASE MODEL: D_12 + ln(viscosity)
+  R²=0.242, n=51
+  Residual range: -0.155 to 0.192
+
+═════════════════════════════════════════════════════════════════
+LOADING SODIR FIELD DATA
+═════════════════════════════════════════════════════════════════
+  Facilities: 792 records, 130 fields
+  Facility types: {'Subsea tieback': 71, 'Fixed': 41, 'FPSO': 10, 'Semi-sub': 7, 'Other': 1}
+  Wells: 6214 wellbores, 132 fields
+  Reserves: 141 fields (latest version)
+  Recovery factor: 106 fields, median=0.40
+  CAPEX: 3642 records, 140 fields
+
+═════════════════════════════════════════════════════════════════
+MERGING FIELD CHARACTERISTICS
+═════════════════════════════════════════════════════════════════
+  Merged dataset: 51 fields
+  Facility type: {'Fixed': 24, 'Subsea tieback': 16, 'FPSO': 7, 'Semi-sub': 4}
+  Wells matched: 51
+  Recovery factor matched: 48
+
+═════════════════════════════════════════════════════════════════
+CORRELATIONS: field characteristics vs model residual
+═════════════════════════════════════════════════════════════════
+  Water depth (m)                     r=-0.005 (p=0.971)     n=51
+  Total wells                         r=-0.258 (p=0.067) *   n=51
+  Production wells                    r=-0.228 (p=0.107)     n=51
+  Injection wells                     r=-0.294 (p=0.036) **  n=51
+  Injection ratio                     r=-0.097 (p=0.500)     n=51
+  Recovery factor                     r=+0.214 (p=0.143)     n=48
+  Total CAPEX (MNOK)                  r=-0.279 (p=0.047) **  n=51
+  CAPEX per recoverable oil           r=+0.267 (p=0.058) *   n=51
+  Wells per recoverable oil           r=+0.176 (p=0.216)     n=51
+  Recoverable oil (Mill Sm3)          r=-0.271 (p=0.054) *   n=51
+  Reserves revision (%)               r=-0.041 (p=0.819)     n=33
+
+═════════════════════════════════════════════════════════════════
+CATEGORICAL: residual by facility type
+═════════════════════════════════════════════════════════════════
+  FPSO                 n= 7  mean resid=+0.0211  median D=0.107
+  Fixed                n=24  mean resid=+0.0004  median D=0.102
+  Semi-sub             n= 4  mean resid=-0.0371  median D=0.067
+  Subsea tieback       n=16  mean resid=-0.0006  median D=0.099
+
+  ANOVA F=0.50, p=0.686
+
+═════════════════════════════════════════════════════════════════
+CATEGORICAL: residual by operator (top operators)
+═════════════════════════════════════════════════════════════════
+  Aker BP ASA                              n=12  mean resid=+0.0235  median D=0.101
+  ConocoPhillips Skandinavia AS            n= 3  mean resid=-0.0816  median D=0.015
+  Equinor Energy AS                        n=28  mean resid=-0.0075  median D=0.095
+  Vår Energi ASA                           n= 3  mean resid=+0.0014  median D=0.131
+
+═════════════════════════════════════════════════════════════════
+AUGMENTED MODELS: D_12 + visc + field characteristics
+═════════════════════════════════════════════════════════════════
+  + Water depth (m)                CV R²=+0.065  R²=0.242  n=51
+  + Total wells                    CV R²=+0.129  R²=0.296  n=51
+  + Production wells               CV R²=+0.100  R²=0.284  n=51
+  + Injection wells                CV R²=+0.175  R²=0.310  n=51
+  + Injection ratio                CV R²=+0.073  R²=0.249  n=51
+  + Recovery factor                CV R²=+0.081  R²=0.260  n=48
+  + Total CAPEX (MNOK)             CV R²=+0.155  R²=0.307  n=51
+  + CAPEX per recoverable oil      CV R²=+0.146  R²=0.301  n=51
+  + Wells per recoverable oil      CV R²=+0.118  R²=0.267  n=51
+  + Recoverable oil (Mill Sm3)     CV R²=+0.143  R²=0.304  n=51
+  + Reserves revision (%)          CV R²=-0.324  R²=0.126  n=33
+
+  Baseline (D_12 + visc):      CV R²=+0.114  R²=0.242  n=51
+  Best addition: Injection wells (CV R²=0.175)
+
+Saved fig_field_characteristics.png
