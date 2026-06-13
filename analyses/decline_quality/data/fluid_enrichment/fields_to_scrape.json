@@ -1,0 +1,1422 @@
+[
+  {
+    "name": "ALBUSKJELL",
+    "npdid": 43437,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43437",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1972
+  },
+  {
+    "name": "TOMMELITEN GAMMA",
+    "npdid": 43444,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43444",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "VARG",
+    "npdid": 43451,
+    "operator": "Repsol Norge AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43451",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1984
+  },
+  {
+    "name": "SLEIPNER VEST",
+    "npdid": 43457,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43457",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "GUNGNE",
+    "npdid": 43464,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43464",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1982
+  },
+  {
+    "name": "SLEIPNER \u00d8ST",
+    "npdid": 43478,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43478",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1981
+  },
+  {
+    "name": "HOD",
+    "npdid": 43485,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43485",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "GYDA",
+    "npdid": 43492,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43492",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1980
+  },
+  {
+    "name": "EKOFISK",
+    "npdid": 43506,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43506",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1969
+  },
+  {
+    "name": "VEST EKOFISK",
+    "npdid": 43513,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43513",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1970
+  },
+  {
+    "name": "TOR",
+    "npdid": 43520,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43520",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1970
+  },
+  {
+    "name": "ELDFISK",
+    "npdid": 43527,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43527",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1970
+  },
+  {
+    "name": "EMBLA",
+    "npdid": 43534,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43534",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1988
+  },
+  {
+    "name": "EDDA",
+    "npdid": 43541,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43541",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1972
+  },
+  {
+    "name": "VALHALL",
+    "npdid": 43548,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43548",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1975
+  },
+  {
+    "name": "FRIGG",
+    "npdid": 43555,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43555",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1971
+  },
+  {
+    "name": "BALDER",
+    "npdid": 43562,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43562",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1967
+  },
+  {
+    "name": "NORD\u00d8ST FRIGG",
+    "npdid": 43568,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43568",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "\u00d8ST FRIGG",
+    "npdid": 43576,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43576",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1973
+  },
+  {
+    "name": "LILLE-FRIGG",
+    "npdid": 43583,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43583",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1975
+  },
+  {
+    "name": "HEIMDAL",
+    "npdid": 43590,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43590",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1972
+  },
+  {
+    "name": "FR\u00d8Y",
+    "npdid": 43597,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43597",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1987
+  },
+  {
+    "name": "JOTUN",
+    "npdid": 43604,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43604",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1994
+  },
+  {
+    "name": "ODIN",
+    "npdid": 43610,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43610",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "VESLEFRIKK",
+    "npdid": 43618,
+    "operator": "Equinor Energy AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43618",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1981
+  },
+  {
+    "name": "OSEBERG",
+    "npdid": 43625,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43625",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1979
+  },
+  {
+    "name": "OSEBERG \u00d8ST",
+    "npdid": 43639,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43639",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1981
+  },
+  {
+    "name": "OSEBERG S\u00d8R",
+    "npdid": 43645,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43645",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1984
+  },
+  {
+    "name": "BRAGE",
+    "npdid": 43651,
+    "operator": "OKEA ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43651",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1980
+  },
+  {
+    "name": "STATFJORD",
+    "npdid": 43658,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43658",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "MURCHISON",
+    "npdid": 43665,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43665",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1975
+  },
+  {
+    "name": "STATFJORD \u00d8ST",
+    "npdid": 43672,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43672",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1976
+  },
+  {
+    "name": "STATFJORD NORD",
+    "npdid": 43679,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43679",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1977
+  },
+  {
+    "name": "GULLFAKS",
+    "npdid": 43686,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43686",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "GULLFAKS S\u00d8R",
+    "npdid": 43699,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43699",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "SNORRE",
+    "npdid": 43718,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43718",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1979
+  },
+  {
+    "name": "TORDIS",
+    "npdid": 43725,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43725",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1987
+  },
+  {
+    "name": "VIGDIS",
+    "npdid": 43732,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43732",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1986
+  },
+  {
+    "name": "VISUND",
+    "npdid": 43745,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43745",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1986
+  },
+  {
+    "name": "NJORD",
+    "npdid": 43751,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43751",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1986
+  },
+  {
+    "name": "DRAUGEN",
+    "npdid": 43758,
+    "operator": "OKEA ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43758",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1984
+  },
+  {
+    "name": "\u00c5SGARD",
+    "npdid": 43765,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43765",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1981
+  },
+  {
+    "name": "HEIDRUN",
+    "npdid": 43771,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43771",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1985
+  },
+  {
+    "name": "NORNE",
+    "npdid": 43778,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43778",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1992
+  },
+  {
+    "name": "COD",
+    "npdid": 43785,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43785",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1968
+  },
+  {
+    "name": "MIME",
+    "npdid": 43792,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43792",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1982
+  },
+  {
+    "name": "ULA",
+    "npdid": 43800,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43800",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1976
+  },
+  {
+    "name": "YME",
+    "npdid": 43807,
+    "operator": "Repsol Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/43807",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1987
+  },
+  {
+    "name": "TROLL",
+    "npdid": 46437,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/46437",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1979
+  },
+  {
+    "name": "HULDRA",
+    "npdid": 97002,
+    "operator": "Equinor Energy AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/97002",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1982
+  },
+  {
+    "name": "SYGNA",
+    "npdid": 104718,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/104718",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1996
+  },
+  {
+    "name": "TUNE",
+    "npdid": 853376,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/853376",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1995
+  },
+  {
+    "name": "TAMBAR",
+    "npdid": 1028599,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1028599",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1983
+  },
+  {
+    "name": "GRANE",
+    "npdid": 1035937,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1035937",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1991
+  },
+  {
+    "name": "KVITEBJ\u00d8RN",
+    "npdid": 1036101,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1036101",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1994
+  },
+  {
+    "name": "GLITNE",
+    "npdid": 1272071,
+    "operator": "Equinor Energy AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1272071",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1995
+  },
+  {
+    "name": "FRAM",
+    "npdid": 1578840,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1578840",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1990
+  },
+  {
+    "name": "VALE",
+    "npdid": 1578893,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1578893",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1991
+  },
+  {
+    "name": "SIGYN",
+    "npdid": 1630100,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1630100",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1982
+  },
+  {
+    "name": "MIKKEL",
+    "npdid": 1630514,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1630514",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1987
+  },
+  {
+    "name": "KRISTIN",
+    "npdid": 1854729,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/1854729",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1997
+  },
+  {
+    "name": "SN\u00d8HVIT",
+    "npdid": 2053062,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/2053062",
+    "hc_type": "GAS",
+    "main_area": "Barents sea",
+    "discovery_year": 1984
+  },
+  {
+    "name": "SKIRNE",
+    "npdid": 2138816,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/2138816",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1990
+  },
+  {
+    "name": "ORMEN LANGE",
+    "npdid": 2762452,
+    "operator": "A/S Norske Shell",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/2762452",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1997
+  },
+  {
+    "name": "URD",
+    "npdid": 2834734,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/2834734",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2000
+  },
+  {
+    "name": "ALVHEIM",
+    "npdid": 2845712,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/2845712",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1998
+  },
+  {
+    "name": "VILJE",
+    "npdid": 3392471,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3392471",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2003
+  },
+  {
+    "name": "VOLVE",
+    "npdid": 3420717,
+    "operator": "Aker BP ASA",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3420717",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1993
+  },
+  {
+    "name": "BLANE",
+    "npdid": 3437650,
+    "operator": "Repsol Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3437650",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1989
+  },
+  {
+    "name": "ENOCH",
+    "npdid": 3437659,
+    "operator": "Bridge Petroleum 3 Limited",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3437659",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1985
+  },
+  {
+    "name": "RINGHORNE \u00d8ST",
+    "npdid": 3505505,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3505505",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2003
+  },
+  {
+    "name": "TYRIHANS",
+    "npdid": 3960848,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/3960848",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1983
+  },
+  {
+    "name": "GIMLE",
+    "npdid": 4005142,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4005142",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2004
+  },
+  {
+    "name": "VOLUND",
+    "npdid": 4380167,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4380167",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1994
+  },
+  {
+    "name": "ALVE",
+    "npdid": 4444332,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4444332",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1990
+  },
+  {
+    "name": "REV",
+    "npdid": 4467554,
+    "operator": "Repsol Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4467554",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2001
+  },
+  {
+    "name": "GJ\u00d8A",
+    "npdid": 4467574,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4467574",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1989
+  },
+  {
+    "name": "VEGA",
+    "npdid": 4467595,
+    "operator": "Harbour Energy Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4467595",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1981
+  },
+  {
+    "name": "SKARV",
+    "npdid": 4704482,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4704482",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1998
+  },
+  {
+    "name": "MORVIN",
+    "npdid": 4966234,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4966234",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2001
+  },
+  {
+    "name": "YTTERGRYTA",
+    "npdid": 4973114,
+    "operator": "Equinor Energy AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4973114",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2007
+  },
+  {
+    "name": "TAMBAR \u00d8ST",
+    "npdid": 4999528,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/4999528",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2007
+  },
+  {
+    "name": "OSELVAR",
+    "npdid": 5506919,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/5506919",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1991
+  },
+  {
+    "name": "GOLIAT",
+    "npdid": 5774394,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/5774394",
+    "hc_type": "OIL",
+    "main_area": "Barents sea",
+    "discovery_year": 2000
+  },
+  {
+    "name": "TRYM",
+    "npdid": 18081500,
+    "operator": "DNO Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/18081500",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1990
+  },
+  {
+    "name": "GUDRUN",
+    "npdid": 18116481,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/18116481",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1975
+  },
+  {
+    "name": "GAUPE",
+    "npdid": 18161341,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/18161341",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1985
+  },
+  {
+    "name": "MARULK",
+    "npdid": 18212090,
+    "operator": "DNO Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/18212090",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1992
+  },
+  {
+    "name": "VALEMON",
+    "npdid": 20460969,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/20460969",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1985
+  },
+  {
+    "name": "KNARR",
+    "npdid": 20460988,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/20460988",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2008
+  },
+  {
+    "name": "VISUND S\u00d8R",
+    "npdid": 20461008,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/20461008",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2008
+  },
+  {
+    "name": "HYME",
+    "npdid": 20474183,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/20474183",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "ISLAY",
+    "npdid": 21105675,
+    "operator": "TotalEnergies E&P UK Limited",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21105675",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 2008
+  },
+  {
+    "name": "ATLA",
+    "npdid": 21106284,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21106284",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 2010
+  },
+  {
+    "name": "BRYNHILD",
+    "npdid": 21123063,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21123063",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1992
+  },
+  {
+    "name": "SKULD",
+    "npdid": 21350124,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21350124",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2008
+  },
+  {
+    "name": "JETTE",
+    "npdid": 21613906,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21613906",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "EDVARD GRIEG",
+    "npdid": 21675433,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21675433",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2007
+  },
+  {
+    "name": "MARTIN LINGE",
+    "npdid": 21675447,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/21675447",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "B\u00d8YLA",
+    "npdid": 22492497,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/22492497",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "SVALIN",
+    "npdid": 22507971,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/22507971",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1992
+  },
+  {
+    "name": "IVAR AASEN",
+    "npdid": 23384520,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/23384520",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2008
+  },
+  {
+    "name": "GINA KROG",
+    "npdid": 23384544,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/23384544",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "AASTA HANSTEEN",
+    "npdid": 23395946,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/23395946",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1997
+  },
+  {
+    "name": "FRAM H-NORD",
+    "npdid": 23410947,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/23410947",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2007
+  },
+  {
+    "name": "FLYNDRE",
+    "npdid": 24635035,
+    "operator": null,
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/24635035",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1974
+  },
+  {
+    "name": "HANZ",
+    "npdid": 25307278,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/25307278",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1997
+  },
+  {
+    "name": "JOHAN SVERDRUP",
+    "npdid": 26376286,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/26376286",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2010
+  },
+  {
+    "name": "MARIA",
+    "npdid": 26465170,
+    "operator": "Harbour Energy Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/26465170",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2010
+  },
+  {
+    "name": "BYRDING",
+    "npdid": 28975067,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/28975067",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2005
+  },
+  {
+    "name": "UTGARD",
+    "npdid": 28975098,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/28975098",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1982
+  },
+  {
+    "name": "DVALIN",
+    "npdid": 29393934,
+    "operator": "Harbour Energy Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29393934",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2010
+  },
+  {
+    "name": "TRESTAKK",
+    "npdid": 29396445,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29396445",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 1986
+  },
+  {
+    "name": "TROLL BRENT B",
+    "npdid": 29398828,
+    "operator": "Equinor Energy AS",
+    "status": "Shut down",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29398828",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2005
+  },
+  {
+    "name": "SINDRE",
+    "npdid": 29401178,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29401178",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2017
+  },
+  {
+    "name": "ODA",
+    "npdid": 29412516,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29412516",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2011
+  },
+  {
+    "name": "BAUGE",
+    "npdid": 29446221,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/29446221",
+    "hc_type": "OIL",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2013
+  },
+  {
+    "name": "SKOGUL",
+    "npdid": 31164600,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/31164600",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2010
+  },
+  {
+    "name": "FENJA",
+    "npdid": 31164879,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/31164879",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2014
+  },
+  {
+    "name": "JOHAN CASTBERG",
+    "npdid": 32017325,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/32017325",
+    "hc_type": "OIL/GAS",
+    "main_area": "Barents sea",
+    "discovery_year": 2011
+  },
+  {
+    "name": "NOVA",
+    "npdid": 33197696,
+    "operator": "Harbour Energy Norge AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/33197696",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2012
+  },
+  {
+    "name": "SOLVEIG",
+    "npdid": 34833011,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/34833011",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 2013
+  },
+  {
+    "name": "DUVA",
+    "npdid": 34833026,
+    "operator": "V\u00e5r Energi ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/34833026",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2016
+  },
+  {
+    "name": "\u00c6RFUGL NORD",
+    "npdid": 38542241,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/38542241",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2012
+  },
+  {
+    "name": "BREIDABLIKK",
+    "npdid": 38702206,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/38702206",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1992
+  },
+  {
+    "name": "TOMMELITEN A",
+    "npdid": 40867462,
+    "operator": "ConocoPhillips Skandinavia AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/40867462",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 1977
+  },
+  {
+    "name": "TYRVING",
+    "npdid": 42002471,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002471",
+    "hc_type": "OIL",
+    "main_area": "North sea",
+    "discovery_year": 1973
+  },
+  {
+    "name": "BERLING",
+    "npdid": 42002473,
+    "operator": "OMV (Norge) AS",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002473",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2018
+  },
+  {
+    "name": "HUGIN",
+    "npdid": 42002474,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002474",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1986
+  },
+  {
+    "name": "MUNIN",
+    "npdid": 42002476,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002476",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2011
+  },
+  {
+    "name": "IDUN NORD",
+    "npdid": 42002477,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002477",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "FENRIS",
+    "npdid": 42002478,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002478",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 2012
+  },
+  {
+    "name": "FULLA",
+    "npdid": 42002479,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002479",
+    "hc_type": "OIL/CONDENSATE",
+    "main_area": "North sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "SYMRA",
+    "npdid": 42002480,
+    "operator": "Aker BP ASA",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002480",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2018
+  },
+  {
+    "name": "VERDANDE",
+    "npdid": 42002481,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002481",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2017
+  },
+  {
+    "name": "IRPA",
+    "npdid": 42002482,
+    "operator": "Equinor Energy AS",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002482",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2009
+  },
+  {
+    "name": "ALVE NORD",
+    "npdid": 42002483,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002483",
+    "hc_type": "OIL/GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2011
+  },
+  {
+    "name": "\u00d8RN",
+    "npdid": 42002484,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002484",
+    "hc_type": "GAS",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2019
+  },
+  {
+    "name": "EIRIN",
+    "npdid": 42002492,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002492",
+    "hc_type": "GAS",
+    "main_area": "North sea",
+    "discovery_year": 1978
+  },
+  {
+    "name": "BESTLA",
+    "npdid": 42002507,
+    "operator": "OKEA ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002507",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 2016
+  },
+  {
+    "name": "HUGIN SATELLITTER",
+    "npdid": 42002537,
+    "operator": "Aker BP ASA",
+    "status": "Approved for production",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42002537",
+    "hc_type": "OIL/GAS",
+    "main_area": "North sea",
+    "discovery_year": 1976
+  },
+  {
+    "name": "HALTEN \u00d8ST",
+    "npdid": 42148955,
+    "operator": "Equinor Energy AS",
+    "status": "Producing",
+    "factpage_url": "https://factpages.sodir.no/field/pageview/all/42148955",
+    "hc_type": "GAS/CONDENSATE",
+    "main_area": "Norwegian sea",
+    "discovery_year": 2001
+  }
+]

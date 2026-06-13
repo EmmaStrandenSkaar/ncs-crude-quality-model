@@ -1,0 +1,271 @@
+{
+  "operator": "Vår Energi ASA",
+  "research_date": "2026-06-12",
+  "scope": "Reservoir-level fluid data for Vår Energi NCS fields: BALDER, JOTUN, RINGHORNE, GOLIAT, MARULK",
+  "methodology": "Web research across Sodir factpages, Norwegian Petroleum, ExxonMobil/Equinor crude assays, SPE/OnePetro papers, operator press releases, industry trade press",
+
+  "fields": {
+    "BALDER": {
+      "operator": "Vår Energi (90%) + Mime Petroleum (10%) [as of 2024]; historically Esso/ExxonMobil",
+      "license": "PL001",
+      "discovered": 1967,
+      "production_start": 1999,
+      "field_life_extension": "Balder X / Future to 2045+",
+      "location": "Utsira High, central North Sea, ~190 km west of Stavanger",
+      "water_depth_m": 125,
+      "reservoir": {
+        "formation": "Heimdal and Hermod Formations (Paleocene turbidite sandstones) + injected sand complex (Eocene)",
+        "age": "Paleocene-Eocene",
+        "depth_m": 1700,
+        "porosity_pct": 34,
+        "net_to_gross": 0.90,
+        "quality": "good to very good"
+      },
+      "fluid": {
+        "api_gravity_blend": 26.4,
+        "api_gravity_range": "23-29 (varies by sample; ExxonMobil samples 26.5 Nov-2021 and 29.1 Jul-2021)",
+        "classification": "heavy, naphthenic, regular sulfur crude; similar to Alba, Harding, Captain",
+        "viscosity_note": "viscous; production challenging from this Heimdal/Hermod fluid",
+        "notes": "Balder Blend at terminal is 25.3% Balder + 74.7% Jotun storage (post Balder X startup)",
+        "reservoir_temp_c": null,
+        "reservoir_pressure_bar": null,
+        "gor_sm3_sm3": null
+      },
+      "recovery": {
+        "drive_mechanism": "natural aquifer drive + produced water reinjection (Utsira Fm disposal)",
+        "recoverable_reserves_mmbbl": 170,
+        "balder_x_additional_reserves_mmboe": 150
+      },
+      "sources_balder": [
+        "https://www.norskpetroleum.no/en/facts/field/balder/",
+        "https://www.offshore-technology.com/projects/balder-future-project-north-sea-norway/",
+        "https://www.nsenergybusiness.com/projects/balder-x-project/",
+        "https://www.gem.wiki/Balder_oil_field",
+        "https://kistosplc.com/operations/norway/",
+        "https://varenergi.no/en/operations/crude-oil-assays/"
+      ],
+      "confidence": {
+        "api_gravity": "high (multiple sources converge near 26)",
+        "formation_depth": "high (Sodir, Norwegian Petroleum agree)",
+        "temperature_pressure_gor": "low (not published)"
+      }
+    },
+
+    "JOTUN": {
+      "operator": "Vår Energi (90%) + Kistos (10%) [post Balder X]; historically Esso/Pertra",
+      "license": "PL103 area",
+      "discovered": 1994,
+      "production_start_original": 1999,
+      "redevelopment_start": "23-Jun-2025 (Jotun FPSO restart at Balder X)",
+      "location": "Utsira High western flank, ~25 km north of Balder",
+      "water_depth_m": 125,
+      "reservoir": {
+        "formation": "Heimdal Formation (Paleocene sandy turbidites, submarine fan)",
+        "age": "Paleocene",
+        "depth_m": 2000,
+        "quality": "good in west, deteriorating east (more shale)",
+        "notes": "High-porosity quartz-cemented sands shed from East Shetland Platform, deposited as high-density gravity flows on Utsira High"
+      },
+      "fluid": {
+        "api_gravity_blend": 40.5,
+        "api_gravity_source": "ExxonMobil 'Jotun Blend' crude assay",
+        "sulfur_wt_pct": 0.14,
+        "classification": "light, sweet crude",
+        "reservoir_temp_c": null,
+        "reservoir_pressure_bar": null,
+        "gor_sm3_sm3": null
+      },
+      "recovery": {
+        "drive_mechanism": "aquifer pressure support + gas lift; produced water disposal to Utsira Fm",
+        "original_recoverable_mmbbl": 200,
+        "original_recoverable_gas_bcm": 1.8
+      },
+      "sources_jotun": [
+        "https://www.norskpetroleum.no/en/facts/field/jotun/",
+        "https://corporate.exxonmobil.com/Crude-oils/Crude-trading/Jotun-Blend",
+        "https://www.lyellcollection.org/doi/abs/10.1144/0060099",
+        "https://varenergi.no/news/balder-x-project-update/"
+      ],
+      "confidence": {
+        "api_gravity": "high (ExxonMobil published assay)",
+        "formation_depth": "high",
+        "temperature_pressure_gor": "low"
+      }
+    },
+
+    "RINGHORNE": {
+      "operator": "Vår Energi (operator post-2022 acquisition from ExxonMobil); historically Esso/ExxonMobil 100%",
+      "production_start": 2003,
+      "location": "Central North Sea, tied to Balder FPSO and now Jotun FPSO",
+      "water_depth_m": 128,
+      "subfields": {
+        "Ringhorne_main": {
+          "reservoir_formations": "Ty, Hugin, Hermod Formations (Jurassic + Paleocene)",
+          "depth_m": 1900,
+          "age": "Jurassic to Paleocene-Eocene",
+          "quality": "excellent"
+        },
+        "Ringhorne_Ost": {
+          "reservoir_formation": "Statfjord Group (Jurassic sandstone)",
+          "depth_m": 1940,
+          "quality": "very good",
+          "discovered": 2003,
+          "production_start": "18-Mar-2006",
+          "ooip_msm3_oil": 25.60,
+          "original_recoverable_oil_msm3": 15.35,
+          "original_recoverable_gas_bcm": 0.25,
+          "implied_recovery_factor_pct": 60.0,
+          "drive": "natural water drive from regional aquifer N-E; gas lift"
+        }
+      },
+      "fluid": {
+        "api_gravity_estimate": "Likely 35-40 (Statfjord-Group analogue light/medium); blended into Balder Blend; specific Ringhorne assay not publicly disclosed by Vår Energi",
+        "api_gravity_confidence": "low-medium",
+        "reservoir_temp_c": null,
+        "reservoir_pressure_bar": null,
+        "gor_sm3_sm3": null
+      },
+      "recovery": {
+        "reserves_2P_mmboe": 74,
+        "produced_to_2017_mmboe": 206,
+        "drive_mechanism": "natural water drive + gas lift; water injection for pressure support",
+        "future_phases": "Ringhorne Phase IV (Balder X), Phase V (6 new wells, 30+ mmboe), Phase VI under consideration"
+      },
+      "sources_ringhorne": [
+        "https://www.norskpetroleum.no/en/facts/field/ringhorne-ost/",
+        "https://factpages.sodir.no/en/field/PageView/All/3505505",
+        "https://www.offshore-technology.com/projects/ringhorne-field-north-sea/",
+        "https://www.nsenergybusiness.com/projects/ringhorne-field-expansion-norway/"
+      ],
+      "confidence": {
+        "formation_depth": "high",
+        "api_gravity": "low (no published Ringhorne-specific assay)",
+        "ooip_rec_factor_Ost": "high (Sodir factpages)"
+      }
+    },
+
+    "GOLIAT": {
+      "operator": "Vår Energi (65%) + Equinor (35%)",
+      "license": "PL229",
+      "discovered": 2000,
+      "pdo_approved": 2009,
+      "production_start": "March 2016",
+      "location": "Norwegian Barents Sea, ~85 km NW of Hammerfest",
+      "water_depth_m": "360-420",
+      "reservoir": {
+        "primary_formations": ["Kobbe Formation (Triassic)", "Realgrunnen Subgroup / Kapp Toscana Group (Triassic-Jurassic): Fruholmen + lower Tubåen"],
+        "minor_formations": ["Snadd", "Klappmyss"],
+        "age": "Triassic to Jurassic",
+        "depth_m_realgrunnen": 1100,
+        "depth_m_kobbe": 1800,
+        "structure": "complex segmented; thin gas caps on each",
+        "depositional_setting_realgrunnen": "fluvial-dominated delta complex (fluvial channels, tidal channels, overbank lobes, crevasse splays, alluvial fan)",
+        "reservoir_quality_realgrunnen_thickness_m": "67-118 (upper reservoir)"
+      },
+      "fluid": {
+        "api_gravity_blend": 41.3,
+        "api_gravity_source": "Equinor Goliat Blend assay (issued 16-Jan-2023)",
+        "classification": "light, low-sulphur crude",
+        "reservoir_temp_c": 30,
+        "reservoir_temp_note": "~30°C (86°F) - very cool due to shallow burial in Arctic permafrost-influenced setting",
+        "reservoir_pressure_bar_realgrunnen": 123,
+        "reservoir_pressure_bar_kobbe": 192,
+        "pressure_classification": "low pressure / under-pressured",
+        "gor_sm3_sm3_kobbe_upper_zone": 95,
+        "gor_sm3_sm3_kobbe_middle_zone": 117,
+        "gor_note": "Reported from DST flow tests in Sodir well 7122/8-1S; ~95-117 Sm3/Sm3 from Kobbe Fm tests"
+      },
+      "recovery": {
+        "ooip_msm3_oil": 91.20,
+        "associated_gas_in_place_bcm": 11.00,
+        "free_gas_in_place_bcm": 9.40,
+        "original_recoverable_oil_msm3": 32.10,
+        "remaining_reserves_msm3_oil_2025": 10.28,
+        "implied_recovery_factor_pct": 35.2,
+        "recoverable_reserves_mmbbl_published": "174-180",
+        "drive_mechanism": "water injection + reinjection of produced gas (~1.3 bcm/yr)",
+        "wells": "22 (12 producers, 7 water injectors, 3 gas injectors)",
+        "production_capacity_bopd": 100000
+      },
+      "sources_goliat": [
+        "https://www.norskpetroleum.no/en/facts/field/goliat/",
+        "https://factpages.sodir.no/en/field/PageView/All/5774394",
+        "https://en.wikipedia.org/wiki/Goliat_field",
+        "https://www.offshore-technology.com/projects/goliat/",
+        "https://www.nsenergybusiness.com/projects/goliat-oil-field-norwegian-barents-sea/",
+        "https://www.equinor.com/news/crude-oil-assays-update-27-01-2023",
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://onepetro.org/SPEEURO/proceedings-abstract/10EURO/10EURO/SPE-130783-MS/106123",
+        "https://onepetro.org/SPEHSE/proceedings-abstract/10HSE/10HSE/SPE-126598-MS/106255"
+      ],
+      "confidence": {
+        "api_gravity": "high (Equinor published assay 41.3)",
+        "reservoir_pressures": "high (Sodir + multiple secondary sources agree on 123/192 bar)",
+        "reservoir_temperature": "medium (single secondary source for ~30°C; consistent with shallow burial)",
+        "ooip_recovery_factor": "high (Sodir factpages, computed RF ~35%)",
+        "gor": "medium (DST-derived flow test from 7122/8-1S; production-average GOR will differ once gas reinjection equilibrated)"
+      }
+    },
+
+    "MARULK": {
+      "operator": "Vår Energi (20% operator) + Equinor Energy (33%) + INEOS E&P Norge (30%) + DNO Norge (17%)",
+      "license": "PL122",
+      "discovered": 1992,
+      "pdo_approved": 2010,
+      "production_start": 2012,
+      "field_life_extended_until": "31-Dec-2030",
+      "location": "Norwegian Sea, ~30 km SW of Norne; tied back to Norne FPSO",
+      "water_depth_m": 370,
+      "reservoir": {
+        "formations": ["Lysing Formation", "Lange Formation"],
+        "age": "Cretaceous",
+        "depth_m": "2800-2850",
+        "depositional_setting": "turbidite fans",
+        "quality": "moderate to good"
+      },
+      "fluid": {
+        "type": "gas-condensate (rich gas with condensate; minor oil)",
+        "api_gravity_condensate_estimate": "Typical NCS Cretaceous gas-condensate: 50-65° API (no published Marulk-specific assay)",
+        "api_gravity_confidence": "low (industry-typical range only)",
+        "reservoir_temp_c": null,
+        "reservoir_pressure_bar": null,
+        "drive_mechanism": "pressure depletion (no injection)"
+      },
+      "recovery": {
+        "ooip_msm3_oil_recoverable": 0.84,
+        "free_gas_in_place_bcm": 15.80,
+        "remaining_reserves_gas_bcm_2025": 2.48,
+        "recoverable_reserves_mmboe_published": 73,
+        "drive_mechanism": "pressure depletion"
+      },
+      "sources_marulk": [
+        "https://www.norskpetroleum.no/en/facts/field/marulk/",
+        "https://factpages.sodir.no/en/field/pageview/all/18212090",
+        "http://abarrelfull.wikidot.com/marulk-gas-and-condensate-field",
+        "https://www.offshore-technology.com/projects/marulkgasfieldnorway/",
+        "https://varenergi.no/2010/07/22/marulk-approved-by-the-authorities/"
+      ],
+      "confidence": {
+        "formation_depth": "high",
+        "fluid_type": "high (gas-condensate confirmed)",
+        "api_gravity_condensate": "low (no published assay)",
+        "temperature_pressure": "low",
+        "reserves": "high (Sodir factpages)"
+      }
+    }
+  },
+
+  "cross_field_observations": {
+    "balder_jotun_blend": "Balder export blend = 25.3% Balder + 74.7% Jotun; explains why blended terminal API can shift dramatically with Balder X / Jotun FPSO ramp-up. Pre-Balder X, the volume mix was different and the export crude was heavier.",
+    "ringhorne_into_balder": "Ringhorne main + Ringhorne Øst are routed through Balder FPSO, now Jotun FPSO. Lighter Jurassic/Statfjord-sourced oil dilutes heavy Balder Heimdal/Hermod fluid.",
+    "goliat_unique": "Goliat sells as standalone Goliat Blend (41.3 API, low S). Crude is much lighter than reservoir would suggest based on depth — shallow Arctic burial with cool reservoir (~30°C) preserves light fluid.",
+    "marulk_gas": "Marulk is gas-condensate, not oil — recoverable oil component is tiny (0.84 mSm3). Should be excluded from oil-quality / API analyses for the decline model."
+  },
+
+  "data_gaps": {
+    "reservoir_temperatures": "Not published for Balder, Jotun, Ringhorne, Marulk — would require operator PVT reports or SPE papers behind paywall",
+    "gor_for_main_fields": "Production-average GOR not in public sources for Balder, Jotun, Ringhorne, Marulk; operator annual reports do not break this out per field",
+    "ringhorne_specific_api": "No standalone Ringhorne crude assay published — only blended Balder/Jotun assays available",
+    "marulk_condensate_assay": "Not publicly available"
+  }
+}

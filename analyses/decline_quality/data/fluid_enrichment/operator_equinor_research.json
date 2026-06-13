@@ -1,0 +1,422 @@
+{
+  "operator": "Equinor",
+  "research_date": "2026-06-12",
+  "methodology": "WebSearch + WebFetch across Equinor crude assay page, norskpetroleum.no, sodir.no, OGJ Guide to World Crudes, SPE/AAPG papers, offshore-technology.com, NS Energy, Wikipedia, ExxonMobil crude assays. API gravity values prefer the Equinor commercial blend assay (proxy for reservoir crude); reservoir-level data from norskpetroleum.no / Sodir / SPE papers.",
+  "sources_master_list": [
+    "https://www.equinor.com/energy/crude-oil-assays",
+    "https://www.norskpetroleum.no/en/facts/field/statfjord/",
+    "https://www.norskpetroleum.no/en/facts/field/gullfaks/",
+    "https://www.norskpetroleum.no/en/facts/field/oseberg/",
+    "https://www.norskpetroleum.no/en/facts/field/troll/",
+    "https://www.norskpetroleum.no/en/facts/field/johan-sverdrup/",
+    "https://www.norskpetroleum.no/en/facts/field/snorre/",
+    "https://www.norskpetroleum.no/en/facts/field/heidrun/",
+    "https://www.norskpetroleum.no/en/facts/field/asgard/",
+    "https://www.norskpetroleum.no/en/facts/field/norne/",
+    "https://www.norskpetroleum.no/en/facts/field/breidablikk/",
+    "https://www.norskpetroleum.no/en/facts/field/gina-krog/",
+    "https://www.norskpetroleum.no/en/facts/field/gudrun/",
+    "https://www.norskpetroleum.no/en/facts/field/kvitebjorn/",
+    "https://www.norskpetroleum.no/en/facts/field/visund/",
+    "https://www.norskpetroleum.no/en/facts/field/valemon/",
+    "https://www.norskpetroleum.no/en/facts/field/fram/",
+    "https://www.norskpetroleum.no/en/facts/field/grane/",
+    "https://www.norskpetroleum.no/en/facts/field/kristin/",
+    "https://www.norskpetroleum.no/en/facts/field/tyrihans/",
+    "https://www.norskpetroleum.no/en/facts/field/mikkel/",
+    "https://jpt.spe.org/recovering-more-70-johan-sverdrup-field",
+    "https://www.ipt.ntnu.no/~tpg5200/intro/gullfaks_introduksjon",
+    "https://en.wikipedia.org/wiki/Statfjord_oil_field",
+    "https://en.wikipedia.org/wiki/Gullfaks_oil_field",
+    "https://en.wikipedia.org/wiki/Grane_oil_field",
+    "https://en.wikipedia.org/wiki/Snorre_oil_field",
+    "https://www.nsenergybusiness.com/projects/breidablikk-field-development-project/",
+    "https://www.offshore-technology.com/projects/breidablikk-oil-field-north-sea/",
+    "https://www.offshore-technology.com/projects/visund/",
+    "https://www.offshore-technology.com/projects/valemonfieldnorthsea/",
+    "https://www.offshore-technology.com/projects/kvitebjorn-field/",
+    "https://www.offshore-technology.com/projects/granefieldnorway/",
+    "https://www.nsenergybusiness.com/projects/visund-oil-and-gas-field-north-sea/",
+    "https://www.nsenergybusiness.com/projects/gudrun-field-north-sea/",
+    "https://corporate.exxonmobil.com/crude-oils/crude-trading/oseberg-blend",
+    "https://corporate.exxonmobil.com/what-we-do/energy-supply/crude-trading/gullfaks-blend",
+    "https://corporate.exxonmobil.com/Crude-oils/Crude-trading/Statfjord-Blend"
+  ],
+  "fields": [
+    {
+      "field": "STATFJORD",
+      "api_gravity": 39.3,
+      "api_source": "Equinor commercial assay (Statfjord stream)",
+      "api_confidence": "high",
+      "formation": "Brent Group (Middle Jurassic) + Statfjord Group / Cook Fm (Lower Jurassic / Upper Triassic)",
+      "reservoir_depth_m": 2750,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": 0.66,
+      "notes": "Light, low-sulfur crude (~0.22 wt% S). Reservoirs at 2500-3000 m in tilted fault block. Discovered 1974, on stream 1979. Operator Equinor since 1987. Statfjord Blend is a commingled stream (Statfjord + Snorre + Sygna + Statfjord N/E).",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/statfjord/",
+        "https://en.wikipedia.org/wiki/Statfjord_oil_field"
+      ]
+    },
+    {
+      "field": "GULLFAKS",
+      "api_gravity": 39.3,
+      "api_source": "Equinor commercial assay (Gullfaks Blend)",
+      "api_confidence": "high",
+      "formation": "Brent Group (Middle Jurassic) dominant; Cook Fm + Statfjord Fm (Lower Jurassic)",
+      "reservoir_depth_m": 1850,
+      "reservoir_pressure_bar": 310,
+      "reservoir_temp_c": 70,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": 0.61,
+      "notes": "In-situ reservoir API ~32-36 (Brent), blend is 39.3 due to lighter Cook/Statfjord contribution and condensate stripping. Initial GOR reported 100 ft3/ft3 (~18 Sm3/Sm3). ~80% of reserves in Brent. Overpressured. Datum 1850 m bMSL.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.ipt.ntnu.no/~tpg5200/intro/gullfaks_introduksjon",
+        "https://en.wikipedia.org/wiki/Gullfaks_oil_field"
+      ]
+    },
+    {
+      "field": "OSEBERG",
+      "api_gravity": 39.9,
+      "api_source": "Equinor commercial assay (Oseberg Blend)",
+      "api_confidence": "high",
+      "formation": "Brent Group (Middle Jurassic): Oseberg, Rannoch, Etive, Ness, Tarbert Fms",
+      "reservoir_depth_m": 2500,
+      "reservoir_pressure_bar": 280.7,
+      "reservoir_temp_c": 99.8,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Reservoir at 2300-2700 m (locally to 3100). T/P at 2497 m MSL is 99.8 C, 280.7 bar. HC column 600 m (380 m gas + 210 m oil). Porosity ~24%, perm 1-4 D. Sulfur ~0.27 wt%. Oseberg Blend feeds the Brent-Oseberg basket.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/oseberg/",
+        "https://corporate.exxonmobil.com/crude-oils/crude-trading/oseberg-blend"
+      ]
+    },
+    {
+      "field": "TROLL",
+      "api_gravity": 38.8,
+      "api_source": "Equinor commercial assay (Troll Blend)",
+      "api_confidence": "high",
+      "formation": "Sognefjord Fm (Late Jurassic) + Fensfjord Fm (Middle Jurassic) - shallow marine sandstone",
+      "reservoir_depth_m": 1345,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Troll Ost: gas cap up to 250 m + thin oil rim 0-9 m. Troll Vest Gas: 210 m gas + 12 m oil. Troll Vest Oil: 43 m gas + 28 m oil. Porosity up to 35%, perm in darcy range. Oil produced via long horizontal wells; gas by pressure depletion. Reservoir depths Troll Ost 1330 m, Troll Vest 1360 m.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/troll/"
+      ]
+    },
+    {
+      "field": "JOHAN SVERDRUP",
+      "api_gravity": 28.7,
+      "api_source": "Equinor + TotalEnergies commercial assay",
+      "api_confidence": "high",
+      "formation": "Intra-Draupne Fm sandstone (Upper Jurassic); secondary in Statfjord Gp, Vestland Gp, Viking Gp spiculites, Zechstein carbonates",
+      "reservoir_depth_m": 1900,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": 40,
+      "ooip_msm3": null,
+      "recovery_factor": 0.7,
+      "notes": "Oil density 0.89 g/cc (~882.8 kg/m3 at 15 C). Hydrostatic pressure, undersaturated oil with low GOR (~40 Sm3/Sm3). Sulfur 0.8 wt% (medium sour). Porosity 28%, perm 0.5-40 Darcy. Net/gross 97%. Recovery target >70% (one of highest in NCS). Discovery 2010, on stream 2019.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/johan-sverdrup/",
+        "https://jpt.spe.org/recovering-more-70-johan-sverdrup-field",
+        "https://trading.totalenergies.com/wp-content/uploads/2025/11/JOHAN-SVERDRUP.pdf"
+      ]
+    },
+    {
+      "field": "SNORRE",
+      "api_gravity": 39.0,
+      "api_source": "Comingled into Statfjord Blend (Equinor assay) - proxy",
+      "api_confidence": "medium",
+      "formation": "Lunde Fm (Late Triassic) + Statfjord Gp (Lower Jurassic); minor Alke Fm",
+      "reservoir_depth_m": 2350,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": 490,
+      "recovery_factor": null,
+      "notes": "Reservoir 2000-2700 m. ~75% of OOIP in Lunde Fm. Undersaturated oil. GOR increases SW to NE across field. Perm 2000 mD upper Statfjord Fm, 125-380 mD below. Production blended into Statfjord stream.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/snorre/",
+        "https://en.wikipedia.org/wiki/Snorre_oil_field",
+        "https://archives.datapages.com/data/specpubs/fieldst2/data/a014/a014/0001/0400/0407.htm"
+      ]
+    },
+    {
+      "field": "HEIDRUN",
+      "api_gravity": 24.4,
+      "api_source": "Equinor commercial assay (Heidrun)",
+      "api_confidence": "high",
+      "formation": "Are Fm + Tilje Fm + Ile Fm + Garn Fm (Lower-Middle Jurassic, Fangst Gp)",
+      "reservoir_depth_m": 2300,
+      "reservoir_pressure_bar": 250,
+      "reservoir_temp_c": 85,
+      "gor": null,
+      "ooip_msm3": 343,
+      "recovery_factor": null,
+      "notes": "Heavy, medium-sulfur crude. Highly faulted/segmented. Lower Jurassic Are + Tilje OOIP ~2160 mmbbl (~343 Msm3). Gas cap above oil. Mid-Norway shelf, water depth 350 m. World's first concrete TLP. Recovery via gas inj (Garn/Ile) + water inj (Are/Tilje).",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/heidrun/",
+        "https://www.nsenergybusiness.com/projects/heidrun-field-development-norwegian-sea/"
+      ]
+    },
+    {
+      "field": "ASGARD",
+      "api_gravity": 47.5,
+      "api_source": "Equinor commercial assay (Aasgard Blend)",
+      "api_confidence": "high",
+      "formation": "Garn, Ile, Tofte, Tilje, Are Fms (Jurassic)",
+      "reservoir_depth_m": 4500,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Extra light, low-sulfur condensate blend (also incl. Kristin and Mikkel). Reservoir to 4850 m. Smorbukk, Smorbukk Sor, Midgard segments. Reserves: 830 mmbbl oil/condensate + 212 bcm gas. Garn Fm best quality. Halten Banken, Norwegian Sea.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/asgard/",
+        "https://www.ogj.com/general-interest/article/17281467/statoil-introduces-new-asgard-blend"
+      ]
+    },
+    {
+      "field": "NORNE",
+      "api_gravity": 34.0,
+      "api_source": "Equinor commercial assay (Norne Blend)",
+      "api_confidence": "high",
+      "formation": "Ile + Tofte Fms (oil); Not Fm (gas) - Lower-Middle Jurassic, Bat/Fangst Gps",
+      "reservoir_depth_m": 2550,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": 0.6,
+      "notes": "Light, low-sulfur sweet crude. Porosity 25-30%, perm 20-2500 mD. HC column to 135 m (110 m oil + 25 m gas). Reservoir 2500-2700 m. Water injection drive; expected ultimate recovery >60% (highest of subsea oil reservoirs). FPSO at 380 m water depth. Cape Vulture discovery (2018) doubled remaining reserves.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/norne/",
+        "https://en.wikipedia.org/wiki/Norne_oil_field"
+      ]
+    },
+    {
+      "field": "BREIDABLIKK",
+      "api_gravity": 22.0,
+      "api_source": "Inferred from Heimdal-Fm analog (Grane heavy oil region) - similar to Grane heavy crude",
+      "api_confidence": "low",
+      "formation": "Heimdal Fm (Paleocene) - marine turbidite sandstones",
+      "reservoir_depth_m": 1700,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Reserves ~200 mmbbl (~30 MSm3). Subsea tie-back to Grane platform. Same Heimdal Fm reservoir as Grane (which is 18.7 API) - suggests heavy oil, likely 20-25 API. Production from 22 wells. PDO 2021, first oil Oct 2023. Pressure depletion + gas lift. Field located NE of Grane.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/breidablikk/",
+        "https://www.nsenergybusiness.com/projects/breidablikk-field-development-project/",
+        "https://www.offshore-technology.com/projects/breidablikk-oil-field-north-sea/"
+      ]
+    },
+    {
+      "field": "GINA KROG",
+      "api_gravity": 48.0,
+      "api_source": "Typical Hugin Fm condensate range; not in Equinor commercial assay list",
+      "api_confidence": "low",
+      "formation": "Hugin Fm (Middle Jurassic) sandstone",
+      "reservoir_depth_m": 3600,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Gas/condensate field (oil rim under gas cap). Reservoir 3300-3900 m, 14 fault segments. Initially produced by gas injection, since 2021 by pressure depletion. Test rates 225 km3/d gas + 120 m3/d condensate. Came on stream June 2017. Tied to Sleipner A for processing.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/gina-krog/",
+        "https://www.nsenergybusiness.com/projects/gina-krog-oil-and-gas-field/"
+      ]
+    },
+    {
+      "field": "GUDRUN",
+      "api_gravity": 52.9,
+      "api_source": "Equinor commercial assay (Gudrun Blend)",
+      "api_confidence": "high",
+      "formation": "Draupne Fm (Upper Jurassic, main) + Hugin Fm (Middle Jurassic)",
+      "reservoir_depth_m": 4350,
+      "reservoir_pressure_bar": 820,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Extra light, low-sulfur HPHT condensate. Reservoir 4000-4700 m. Initial reservoir pressure ~820 bar. Draupne Fm hosts main recoverable resources (good quality); Hugin variable. Field reserves 184 mmboe. Tied to Sleipner A via two pipelines (oil + wet gas). 55 km N of Sleipner.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/gudrun/",
+        "https://www.nsenergybusiness.com/projects/gudrun-field-north-sea/"
+      ]
+    },
+    {
+      "field": "KVITEBJORN",
+      "api_gravity": 55.0,
+      "api_source": "Condensate typical (50-70 API range stated by source); not in Equinor commercial assay list",
+      "api_confidence": "low",
+      "formation": "Brent Group (Middle Jurassic); secondary Cook Fm + Statfjord Gp",
+      "reservoir_depth_m": 4000,
+      "reservoir_pressure_bar": 775,
+      "reservoir_temp_c": 155,
+      "gor": 1100,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "HPHT gas/condensate field. Initial pore pressure 775 bar, fracture 875 bar, T 155-163 C. Two-stage GOR 1100 Sm3/Sm3, dewpoint 452 bara at 163 C. 8.6 mol% C7+. Block 34/11, Tampen Spur. Rich gas to Kollsnes, condensate to Mongstad.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/kvitebjorn/",
+        "https://www.offshore-technology.com/projects/kvitebjorn-field/",
+        "https://www.equinor.com/energy/kvitebjorn"
+      ]
+    },
+    {
+      "field": "VISUND",
+      "api_gravity": 39.0,
+      "api_source": "Comingled into Gullfaks/Statfjord-area stream; using NCS Brent-area light proxy",
+      "api_confidence": "low",
+      "formation": "Lunde Fm + Statfjord Gp (Late Triassic-Early Jurassic) + Brent Gp (Middle Jurassic)",
+      "reservoir_depth_m": 2950,
+      "reservoir_pressure_bar": 450,
+      "reservoir_temp_c": 115,
+      "gor": 230,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Two reservoir groups: Statfjord/Amundsen and Brent. Multiple tilted fault blocks. P 425-450 bar, T 115 C. GOR 180-230 Sm3/Sm3 (some segments to 266/512). Mainly pressure depletion + partial water inj. PDO 1996, on stream Apr 1999. Tampen area.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/visund/",
+        "https://www.offshore-technology.com/projects/visund/",
+        "https://www.nsenergybusiness.com/projects/visund-oil-and-gas-field-north-sea/"
+      ]
+    },
+    {
+      "field": "VALEMON",
+      "api_gravity": 55.0,
+      "api_source": "Typical HPHT condensate range; not in Equinor commercial assay list",
+      "api_confidence": "low",
+      "formation": "Brent Group (Middle Jurassic) + Cook Fm (Lower Jurassic)",
+      "reservoir_depth_m": 4050,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "HPHT gas/condensate. Reservoir 3900-4200 m. Recovery ~18 bcm gas + 192 mmboe condensate. 160 km W of Bergen. Drilled longest HPHT well to date by Statoil (7380 m).",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/valemon/",
+        "https://www.offshore-technology.com/projects/valemonfieldnorthsea/",
+        "https://www.nsenergybusiness.com/projects/valemon-field-norwegian-north-sea/"
+      ]
+    },
+    {
+      "field": "FRAM",
+      "api_gravity": 38.0,
+      "api_source": "Likely commingled into Troll Blend stream (Troll C platform), proxy ~Troll",
+      "api_confidence": "low",
+      "formation": "Brent Group (Middle Jurassic) + Draupne Fm (Upper Jurassic marine fan) + Sognefjord Fm (Upper Jurassic shallow marine)",
+      "reservoir_depth_m": 2400,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": 66.3,
+      "recovery_factor": null,
+      "notes": "Originally 66.3 Msm3 o.e. recoverable (43.7 Msm3 oil + 19.5 Msm3 gas + 3.1 Msm3 NGL). Reservoirs 2300-2500 m. Tied to Troll C; oil to Mongstad via TOP-II; gas via Troll A to Kollsnes. Fram Ost: aquifer drive in Brent + Sognefjord. Fram Vest: pressure depletion.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/fram/",
+        "https://www.nsenergybusiness.com/projects/fram-field-north-sea/"
+      ]
+    },
+    {
+      "field": "GRANE",
+      "api_gravity": 27.1,
+      "api_source": "Equinor commercial assay (Grane Blend)",
+      "api_confidence": "high",
+      "formation": "Heimdal Fm (Paleocene) - marine turbidite sandstone",
+      "reservoir_depth_m": 1700,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Heavy, medium-sulfur crude. In-situ reservoir oil reported at 18.5-18.7 API by NSEnergy/Wiki sources (very heavy, viscosity 12 cp); commercial blend stream is 27.1 API after blending with other Heimdal feeds. Pay 50 m avg, porosity 33%, perm 5-10 D. Norway's first heavy oil field. Gas inj top + horizontal wells bottom + limited water inj.",
+      "sources": [
+        "https://www.equinor.com/energy/crude-oil-assays",
+        "https://www.norskpetroleum.no/en/facts/field/grane/",
+        "https://en.wikipedia.org/wiki/Grane_oil_field"
+      ]
+    },
+    {
+      "field": "KRISTIN",
+      "api_gravity": 47.5,
+      "api_source": "Comingled into Aasgard Blend (Equinor assay)",
+      "api_confidence": "medium",
+      "formation": "Garn, Ile, Tofte Fms (Middle Jurassic)",
+      "reservoir_depth_m": 4675,
+      "reservoir_pressure_bar": 911,
+      "reservoir_temp_c": 169,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Deeply buried HPHT condensate field. Reservoirs ~4500 m (Garn) and 4850 m (Ile). Ile Fm conditions 169 C / 911 bar. Reserves 42 bcm gas + 35 Msm3 condensate. Sub-Arctic, Halten Terrace. Condensate commingled into Aasgard Blend.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/kristin/",
+        "https://onepetro.org/OTCONF/proceedings-abstract/04OTC/All-04OTC/OTC-16688-MS/34939"
+      ]
+    },
+    {
+      "field": "TYRIHANS",
+      "api_gravity": 40.0,
+      "api_source": "Inferred Halten Banken light oil/condensate; not in Equinor commercial assay list",
+      "api_confidence": "low",
+      "formation": "Garn Fm (Middle Jurassic) main; Ile Fm secondary",
+      "reservoir_depth_m": 3500,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Oil + gas/condensate fields (Tyrihans N + Tyrihans S). Garn Fm main reservoir at 3500 m. Tied to Kristin platform. Recent 2025 discovery (6407/1-B-2 H) found 63 m gas/condensate in Ile + 6 m condensate/light oil in Garn.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/tyrihans/",
+        "https://www.sodir.no/en/whats-new/news/exploration-drilling-results/2025/oil-and-gascondensate-discovery-near-the-tyrihans-field-in-the-norwegian-sea-64071-b-2-h/"
+      ]
+    },
+    {
+      "field": "MIKKEL",
+      "api_gravity": 47.5,
+      "api_source": "Comingled into Aasgard Blend (Equinor assay)",
+      "api_confidence": "medium",
+      "formation": "Garn, Ile, Tofte Fms (Middle Jurassic)",
+      "reservoir_depth_m": 2500,
+      "reservoir_pressure_bar": null,
+      "reservoir_temp_c": null,
+      "gor": null,
+      "ooip_msm3": null,
+      "recovery_factor": null,
+      "notes": "Gas/condensate field with thin underlying oil zone. 300 m HC column. Six fault-segmented structures, all with good reservoir quality. Reserves 28 bcm gas + 40 mmbbl condensate. Pressure depletion. On stream 2003, tied to Aasgard B. Condensate commingled into Aasgard Blend.",
+      "sources": [
+        "https://www.norskpetroleum.no/en/facts/field/mikkel/",
+        "https://www.offshore-technology.com/projects/mikkel/"
+      ]
+    }
+  ]
+}

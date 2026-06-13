@@ -1,0 +1,55 @@
+════════════════════════════════════════════════════════════════════════════════
+HYBRID DECLINE MODEL — Selektiv reservoar-API oppdatering
+════════════════════════════════════════════════════════════════════════════════
+
+Felt med høy-konfidens API: 21/51
+Felt med medium-konfidens API: 32/51
+Felt med ALL ny API: 47/51
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+MODELL-SAMMENLIGNING
+═══════════════════════════════════════════════════════════════════════════════════════════════
+
+Versjon                Beskrivelse                           CV R²    RMSE   AkBP RMSE    ln(μ) β
+───────────────────────────────────────────────────────────────────────────────────────────────
+  V1_old               Original (blend API)                 0.713  0.0395      0.0559    +0.0601  
+  V2_all_new           Full reservoir-API replacement       0.701  0.0405      0.0638    -0.0533  
+  V3_hybrid_high       Hybrid: only high-confidence updates  0.713  0.0393      0.0564    +0.0528 ★
+  V4_hybrid_med        Hybrid: high + medium confidence     0.702  0.0406      0.0615    +0.0181  
+  V5_hybrid_T          Hybrid (med) + field-specific T      0.702  0.0406      0.0614    +0.0114  
+
+── AKER BP RMSE per versjon ──
+  V1_old                  0.0559
+  V2_all_new              0.0638
+  V3_hybrid_high          0.0564
+  V4_hybrid_med           0.0615
+  V5_hybrid_T             0.0614
+
+── Aker BP residual per modell-versjon ──
+
+Field               D_act     V1_old V2_all_new V3_hybrid_high V4_hybrid_med V5_hybrid_T
+───────────────────────────────────────────────────────────────────────────────────────────────
+ALVHEIM             0.056     -0.029     -0.019     -0.029     -0.027     -0.029
+BØYLA               0.050     -0.053     -0.044     -0.051     -0.050     -0.050
+EDVARD GRIEG        0.384     +0.163     +0.191     +0.165     +0.185     +0.184
+HOD                 0.053     +0.022     +0.016     +0.019     +0.015     +0.015
+IVAR AASEN          0.219     +0.029     +0.055     +0.031     +0.041     +0.042
+SKARV               0.107     -0.039     -0.036     -0.037     -0.040     -0.040
+SKOGUL              0.247     +0.058     +0.069     +0.058     +0.057     +0.057
+TAMBAR              0.096     +0.029     +0.014     +0.030     +0.024     +0.022
+ULA                 0.083     +0.004     -0.007     +0.006     -0.000     -0.001
+VALHALL             0.038     -0.004     -0.012     -0.009     -0.013     -0.013
+VILJE               0.222     +0.014     +0.006     +0.011     +0.006     +0.005
+VOLUND              0.243     -0.013     -0.020     -0.017     -0.023     -0.024
+
+── BEST MODELL: V3_hybrid_high (Hybrid: only high-confidence updates) ──
+   CV R² = 0.713
+   RMSE  = 0.0393
+   Aker BP RMSE = 0.0564
+   Koeffisienter:
+     Intercept:     0.0681
+     ln(viscosity): +0.0528
+     premium:       -0.0603
+     |premium|:     +0.0385
+
+Saved: fig_hybrid_comparison.png

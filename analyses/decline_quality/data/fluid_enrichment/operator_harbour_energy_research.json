@@ -1,0 +1,91 @@
+{
+  "operator": "Harbour Energy",
+  "research_date": "2026-06-12",
+  "notes": "Harbour Energy acquired Wintershall Dea upstream assets in September 2024. Maria was historically operated by Wintershall Dea Norge. Most public technical literature still references Wintershall.",
+  "fields": {
+    "MARIA": {
+      "field_name": "Maria",
+      "operator_current": "Harbour Energy (50%)",
+      "operator_historical": "Wintershall Dea Norge (until Sept 2024)",
+      "partners": "Petoro (30%), Spirit Energy Norway (20%)",
+      "discovery_year": 2010,
+      "appraisal_year": 2012,
+      "pdo_submitted": "May 2015",
+      "pdo_approved": "September 2015",
+      "first_oil": "December 2017",
+      "phase_2_first_oil": "May 2025",
+      "location": "Halten Terrace, Norwegian Sea, ~20 km east of Kristin, ~45 km south of Heidrun, ~200 km off Kristiansund, PL 475 BS / PL 475 CS",
+      "water_depth_m": 300,
+      "production_concept": "Subsea tieback (two templates) to Equinor-operated Kristin platform for processing; water injection from Heidrun; oil export via Asgard C FSU and shuttle tanker; gas via Asgard Transport to Karsto",
+      "drive_mechanism": "Water injection for pressure support; wells equipped with gas lift",
+      "reservoir": {
+        "formation": "Garn Formation (primary); also Ile/Tilje/Not formations in stratigraphy",
+        "age": "Middle Jurassic (Bajocian-Bathonian)",
+        "lithology": "Massive sandstone with shale layers",
+        "structure": "Well-defined horst block structure with moderate reservoir quality; low connectivity between geological layers (key issue reducing post-PDO reserves)",
+        "depth_m_subsea": 3800,
+        "depth_source": "Sodir Factpages / Norskpetroleum",
+        "depth_confidence": "high"
+      },
+      "fluid_properties": {
+        "api_gravity_deg": null,
+        "api_gravity_estimate_deg": 38,
+        "api_gravity_estimate_basis": "Garn Formation reservoirs on the Halten Terrace typically produce light, low-sulfur crude (Kristin condensate ~46 API; Tyrihans 40-42 API; Heidrun ~29 API from Are Fm). Maria is described as producing oil + associated gas with reservoir at 3800m depth, consistent with light crude/condensate (35-40 API). NOT publicly disclosed.",
+        "api_confidence": "low",
+        "gor_sm3_per_sm3": 149,
+        "gor_basis": "Calculated from Sodir original in-place: 6.16 Gsm3 associated gas / 41.30 Msm3 oil = 149 Sm3/Sm3 (~840 scf/bbl). Indicates a saturated/near-saturated light oil with substantial gas cap.",
+        "gor_confidence": "medium",
+        "reservoir_temperature_c": null,
+        "reservoir_pressure_bar": null,
+        "pressure_temperature_note": "Not publicly disclosed for Maria. Adjacent Kristin field (deeper, ~5000m) is HPHT at 900 bar/180C. Maria at 3800m would be lower - estimated 400-500 bar initial pressure and 130-150 C based on regional Halten Terrace gradient."
+      },
+      "volumetrics": {
+        "ooip_oil_msm3": 41.30,
+        "ooip_associated_gas_gsm3": 6.16,
+        "recoverable_oil_msm3_2025": 14.55,
+        "recoverable_gas_gsm3_2025": 1.73,
+        "recoverable_ngl_mt_2025": 0.90,
+        "recoverable_oe_msm3_2025": 17.99,
+        "recovery_factor_oil_pct": 35.2,
+        "recovery_factor_basis": "14.55 / 41.30 = 35.2% recoverable oil RF as of 2025. Original PDO estimated ~180 mmboe recoverable (~28.6 Msm3 oe), revised down significantly post-2018 due to poor inter-layer connectivity (per GeoExpro)",
+        "peak_production_kbpd": 20.77,
+        "peak_production_year": 2021,
+        "volumetrics_source": "Sodir Factpages (as of 31.12.2025)",
+        "confidence": "high"
+      },
+      "phase_2": {
+        "scope": "4-well subsea tieback to existing infrastructure",
+        "purpose": "Drain central part of Garn Formation previously not accessed",
+        "first_oil": "May 2025",
+        "additional_infill_drilling": "Two infill targets identified for 2027-2028"
+      },
+      "sources": [
+        "https://factpages.sodir.no/en/field/pageview/all/26465170",
+        "https://www.norskpetroleum.no/en/facts/field/maria/",
+        "https://www.harbourenergy.com/what-we-do/norway/",
+        "https://www.nsenergybusiness.com/projects/maria-oil-and-gas-field/",
+        "https://geoexpro.com/maria-still-shut-in/",
+        "https://www.wintershall.no/projects/maria.html",
+        "https://www.basf.com/global/en/media/news-releases/2015/05/p-WH-15-17",
+        "https://www.basf.com/no/en/media/news-releases/2015/09/p-WH-15-0904",
+        "https://www.offshore-technology.com/marketdata/maria-conventional-oil-field-norway/"
+      ]
+    }
+  },
+  "sources_consulted": [
+    "Sodir Factpages",
+    "Norskpetroleum.no",
+    "Harbour Energy corporate website (what-we-do/norway, capital markets update Mar 2025, full-year results 2025)",
+    "Wintershall Dea legacy website",
+    "BASF/Wintershall PDO press releases (2015)",
+    "GeoExpro (Maria still shut-in article on connectivity issues)",
+    "Offshore Technology / NS Energy Business / Offshore Energy industry coverage",
+    "ScienceDirect: Garn Formation in Maria and Lavrans fields (paywalled, not retrievable)"
+  ],
+  "data_gaps": [
+    "API gravity at reservoir - not publicly disclosed; Maria stream is co-processed with Kristin/Tyrihans so no separate blend assay exists",
+    "Initial reservoir pressure and temperature - not in public domain",
+    "Bubble point / saturation pressure",
+    "Specific reservoir studies/SPE papers - the Garn Formation Maria sedimentology paper exists but is paywalled"
+  ]
+}

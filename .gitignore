@@ -32,6 +32,11 @@ data/raw/sodir/*.csv
 data/raw/price_cache/
 data/raw/eia_cache/
 data/raw/world_bank_cache/
+data/raw/nsta_*.csv
+data/raw/equinor_assays/
+data/raw/exxonmobil_assays/
+data/raw/totalenergies_assays/
+data/raw/adios_assays/
 
 # Behold mappestruktur men ikke innholdet
 !data/raw/.gitkeep

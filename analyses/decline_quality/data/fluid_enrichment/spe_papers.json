@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "source": "SPE/OnePetro/JPT papers and related references for NCS reservoir fluid characterization",
+    "search_date": "2026-06-12",
+    "search_queries": [
+      "SPE paper Norwegian Continental Shelf reservoir fluid characterization",
+      "SPE oil viscosity North Sea reservoir Ekofisk Statfjord",
+      "SPE paper Troll field reservoir oil viscosity API gravity PVT",
+      "SPE paper Gullfaks Oseberg reservoir fluid PVT properties",
+      "SPE paper Johan Sverdrup reservoir oil properties API gravity GOR",
+      "SPE paper Valhall Heidrun reservoir fluid properties density viscosity",
+      "Snorre/Heidrun SPE reservoir oil API gravity bubble point",
+      "onepetro.org NCS reservoir fluid Norwegian Continental Shelf PVT viscosity correlation",
+      "Breidablikk SPE reservoir oil viscosity API NCS field"
+    ],
+    "notes": "Many full SPE papers are paywalled; extracted values come from abstracts, JPT summary articles, and freely available secondary references. Where a paper exists but no values were exposed in the abstract, the paper is listed as a reference with paper_url but null fluid fields."
+  },
+  "papers": [
+    {
+      "paper_id": "SPE-NCS-VISC-2018",
+      "title": "An Improved Correlation Approach to Predict Viscosity of Crude Oil Systems on the NCS",
+      "authors": "Moller, Meisingset, Arief (Equinor)",
+      "venue": "SPE Norway One Day Seminar (Bergen) 2018",
+      "paper_url": "https://onepetro.org/SPEBERG/proceedings-abstract/18BERG/1-18BERG/D011S010R003/214287",
+      "jpt_summary_url": "https://jpt.spe.org/correlation-approach-predicts-viscosity-crude-oil-systems-offshore-norway",
+      "field": "NCS (multiple, not disclosed individually)",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "NCS-wide PVT database. Reports temperatures below 190 F and low/high API gravity categories but does not disclose field-level numbers (proprietary)."
+    },
+    {
+      "paper_id": "SPWLA-2023-Breidablikk",
+      "title": "Holistic Evaluation of Reservoir Oil Viscosity in Breidablikk Field - Including Mud Gas Logging Approach",
+      "authors": "Cely, Skaar (Equinor)",
+      "venue": "SPWLA 64th Annual Logging Symposium 2023",
+      "paper_url": "https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA23/3-SPWLA23/D031S007R001/520476",
+      "field": "Breidablikk",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp_range": [4, 8],
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Two reservoir fluid samples from exploration wells, viscosities of 4 cp and 8 cp. Methane/propane ratio identified as best correlated parameter for reservoir oil viscosity. 20-30% recovery sensitivity to viscosity uncertainty."
+    },
+    {
+      "paper_id": "SPWLA-2023-Snorre",
+      "title": "Evaluation of PVT Comparisons and GOR Prediction Based on Advanced Mud Gas Data: A Case Study from Snorre Field",
+      "authors": "(Equinor / partners)",
+      "venue": "SPWLA 64th Annual Logging Symposium 2023",
+      "paper_url": "https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA23/SPWLA23/D031S005R002/520390",
+      "field": "Snorre",
+      "fluid_data": {
+        "api_gravity": 44,
+        "viscosity_cp": 0.86,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": 100,
+        "reservoir_pressure_bar_min": 300
+      },
+      "notes": "Cited reference values: API ~44, viscosity 0.86 cP, reservoir T ~100 C, formation T ~90 C with reservoir pressure >300 bar. Reservoir at 2000-2700 m depth, Statfjord/Lunde/Alke formations."
+    },
+    {
+      "paper_id": "SPE-38875-MS",
+      "title": "Reservoir Characterization of Ekofisk Field: A Giant, Fractured Chalk Reservoir in the Norwegian North Sea",
+      "authors": "(Phillips Petroleum / partners)",
+      "venue": "SPE Annual Technical Conference 1997",
+      "paper_url": "https://www.onepetro.org/conference-paper/SPE-38875-MS",
+      "field": "Ekofisk",
+      "fluid_data": {
+        "api_gravity": 36,
+        "api_gravity_alt": 38,
+        "viscosity_cp": 0.25,
+        "gor_scf_stb": 1547,
+        "bubble_point_psi": 5443,
+        "bubble_point_bar": 375.3,
+        "initial_reservoir_pressure_psi": 7135,
+        "initial_reservoir_pressure_bar": 491.9,
+        "reservoir_depth_ft_tvdss": 10400
+      },
+      "notes": "Discovered 1969. Initial reservoir pressure 7120-7135 psia at 10400 ft TVDSS, bubble point ~1600 psi below initial pressure. High-porosity (~30-40%) fractured chalk in Ekofisk and Tor formations, matrix perm ~1 mD, effective perm 1-50 mD."
+    },
+    {
+      "paper_id": "SPE-113260-MS",
+      "title": "Reservoir Management of the Gullfaks Main Field",
+      "authors": "(StatoilHydro)",
+      "venue": "SPE Europec/EAGE 2008",
+      "paper_url": "https://onepetro.org/SPEEURO/proceedings-abstract/08EURO/All-08EURO/SPE-113260-MS/143985",
+      "field": "Gullfaks",
+      "fluid_data": {
+        "api_gravity": null,
+        "stock_tank_oil_density_kg_m3": 860,
+        "viscosity_cp": null,
+        "gor_sm3_sm3_range": [90, 180],
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null,
+        "reservoir_depth_m": [1700, 2000]
+      },
+      "notes": "Brent Group (Middle Jurassic), Statfjord Group, Cook and Lunde formations. Reservoir at 1700-2000 m. Some areas contain high H2S. Stock tank oil ~860 kg/m3 ~ 33 API."
+    },
+    {
+      "paper_id": "JPT-Johan-Sverdrup-2020",
+      "title": "Recovering More Than 70% From the Johan Sverdrup Field / Toward a Recovery Ambition of More Than 70% for the Johan Sverdrup Field",
+      "authors": "Eikje, Nedrelid, Bratli (Equinor)",
+      "venue": "OTC 2020 / JPT 2020",
+      "paper_url": "https://jpt.spe.org/recovering-more-70-johan-sverdrup-field",
+      "field": "Johan Sverdrup",
+      "fluid_data": {
+        "api_gravity": 28,
+        "oil_density_g_cm3": 0.89,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": 40,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Hydrostatic pressure, undersaturated oil with low GOR (~40 Sm3/Sm3). Non-biodegraded, heavily undersaturated. Multi-darcy shallow marine sandstone (Upper Jurassic)."
+    },
+    {
+      "paper_id": "SPE-Heidrun-Wikipedia-Ref",
+      "title": "Heidrun field fluid characterization (Equinor / open references)",
+      "authors": "(Equinor)",
+      "venue": "Field development docs / Wikipedia / industry refs",
+      "paper_url": "https://en.wikipedia.org/wiki/Heidrun_oil_field",
+      "field": "Heidrun",
+      "fluid_data": {
+        "api_gravity": 25.0,
+        "oil_density_g_cm3": 0.9043,
+        "sulfur_pct": 0.52,
+        "tan_mgkoh_g": 2.90,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": 85,
+        "reservoir_depth_m": 2300
+      },
+      "notes": "Naphthenic crude. Lower/Middle Jurassic sandstone in Are, Tilje, Ile, Garn formations. Gas cap above oil. Haltenbanken, Norwegian Sea, water depth 350 m."
+    },
+    {
+      "paper_id": "AAPG-Valhall-1985",
+      "title": "The Valhall Field: a geological overview",
+      "authors": "J.W. Munns (Amoco Norway Oil Company)",
+      "venue": "Marine and Petroleum Geology 1985",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/0264817285900467",
+      "field": "Valhall",
+      "fluid_data": {
+        "api_gravity": 36,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_pressure_psig_initial": 6535,
+        "reservoir_pressure_bar_initial": 450.6,
+        "reservoir_depth_m": 2500,
+        "porosity_pct_range": [36, 50],
+        "permeability_md_range": [0.1, 15],
+        "overpressure_psi_per_ft": 0.8
+      },
+      "notes": "Paraffinic oil 36 API. Upper Cretaceous chalk (Tor and Hod formations). Very high primary porosity preserved by overpressure. Low matrix permeability."
+    },
+    {
+      "paper_id": "Statfjord-Open-Refs",
+      "title": "The Statfjord Field, Blocks 33/9, 33/12 Norwegian sector, Blocks 211/24, 211/25 UK sector, Northern North Sea",
+      "authors": "(Equinor / Mobil)",
+      "venue": "Field development references",
+      "paper_url": "https://www.researchgate.net/publication/240675799_The_Statfjord_Field_Blocks_339_3312_Norwegian_sector_Blocks_21124_21125_UK_sector_Northern_North_Sea",
+      "field": "Statfjord",
+      "fluid_data": {
+        "api_gravity_range": [38, 41],
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "formation_volume_factor_rbbl_stb": 2.7,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null,
+        "reservoir_depth_m_range": [2500, 3000]
+      },
+      "notes": "Light, low-sulfur crude. Undersaturated, no natural gas cap. High FVF (2.7 Rbbl/STB) indicates relatively high gas in solution. Brent and Statfjord Group Jurassic sandstones."
+    },
+    {
+      "paper_id": "SPE-185503-MS",
+      "title": "Dynamic Reservoir Characterization and Production Optimization by Integrating Intelligent Inflow Tracers and Pressure Transient Analysis in a Long Horizontal Well for the Ekofisk Field",
+      "authors": "(ConocoPhillips)",
+      "venue": "SPE Norway Subsurface Conference 2016",
+      "paper_url": "https://onepetro.org/SPEBERG/proceedings-abstract/16BERG/16BERG/D011S005R001/185503",
+      "field": "Ekofisk",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Paper reference; no fluid values exposed in abstract."
+    },
+    {
+      "paper_id": "SPE-101084-MS",
+      "title": "Focused Sampling of Reservoir Fluids Achieves Undetectable Levels of Contamination",
+      "authors": "(Schlumberger / NCS operators)",
+      "venue": "SPE Asia Pacific Oil and Gas Conference 2006",
+      "paper_url": "https://onepetro.org/SPEAPOG/proceedings-abstract/06APOGCE/06APOGCE/SPE-101084-MS/141524",
+      "field": "NCS (four wells, not named)",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Methodology paper on focused-probe sampling for clean PVT samples on NCS; no field-level values disclosed."
+    },
+    {
+      "paper_id": "JPT-Fluid-Profiling-NCS",
+      "title": "Fluid Profiling for Reservoir Evaluation: Two Norwegian Case Studies",
+      "authors": "(Schlumberger / NCS operators)",
+      "venue": "SPE ATCE 2013 / JPT",
+      "paper_url": "https://jpt.spe.org/formation-evaluation-fluid-profiling-reservoir-evaluation-norwegian-case-studies",
+      "field": "NCS (two cases, undisclosed)",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "DFA (downhole fluid analysis) case studies. Field names not disclosed; values not in abstract."
+    },
+    {
+      "paper_id": "SPE-Uncertainty-NCS",
+      "title": "Uncertainties in Reservoir Fluid Description for Reservoir Modeling",
+      "authors": "(Statoil)",
+      "venue": "SPE",
+      "paper_url": "https://search.spe.org/i2kweb/SPE/doc/onepetro:FD4975A2",
+      "field": "NCS (multi-field experience, Statoil-operated)",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Discusses lab analysis, sampling uncertainty, process description, and intra-reservoir variation for NCS Statoil-operated fields (would include Statfjord, Gullfaks, Heidrun, Snorre, Troll). No specific field values in abstract."
+    },
+    {
+      "paper_id": "SPE-470521",
+      "title": "Interpretation of Permanent Well Monitoring Data to Improve Characterization of a Giant Oil Field",
+      "authors": "(Equinor)",
+      "venue": "SPE Europec featured at EAGE 2021",
+      "paper_url": "https://onepetro.org/SPEEURO/proceedings-abstract/21EURO/21EURO/D031S008R002/470521",
+      "field": "Johan Sverdrup",
+      "fluid_data": {
+        "api_gravity": null,
+        "viscosity_cp": null,
+        "gor_sm3_sm3": null,
+        "bubble_point_bar": null,
+        "reservoir_temperature_c": null
+      },
+      "notes": "Permanent monitoring/characterization paper. No fluid values exposed in abstract."
+    }
+  ],
+  "field_summary_extracted": {
+    "Ekofisk": {
+      "api_gravity": 36,
+      "viscosity_cp": 0.25,
+      "gor_scf_stb": 1547,
+      "bubble_point_psi": 5443,
+      "initial_pressure_psi": 7135,
+      "source_paper": "SPE-38875-MS"
+    },
+    "Statfjord": {
+      "api_gravity_range": [38, 41],
+      "fvf_rbbl_stb": 2.7,
+      "depth_m": [2500, 3000],
+      "source_paper": "Statfjord-Open-Refs"
+    },
+    "Gullfaks": {
+      "stock_tank_density_kg_m3": 860,
+      "api_gravity_implied": 33,
+      "gor_sm3_sm3_range": [90, 180],
+      "depth_m": [1700, 2000],
+      "source_paper": "SPE-113260-MS"
+    },
+    "Johan_Sverdrup": {
+      "api_gravity": 28,
+      "oil_density_g_cm3": 0.89,
+      "gor_sm3_sm3": 40,
+      "undersaturated": true,
+      "source_paper": "JPT-Johan-Sverdrup-2020"
+    },
+    "Valhall": {
+      "api_gravity": 36,
+      "initial_pressure_psig": 6535,
+      "depth_m": 2500,
+      "porosity_pct": [36, 50],
+      "permeability_md": [0.1, 15],
+      "source_paper": "AAPG-Valhall-1985"
+    },
+    "Heidrun": {
+      "api_gravity": 25.0,
+      "density_g_cm3": 0.9043,
+      "sulfur_pct": 0.52,
+      "tan_mgkoh_g": 2.90,
+      "reservoir_temp_c": 85,
+      "depth_m": 2300,
+      "source_paper": "SPE-Heidrun-Wikipedia-Ref"
+    },
+    "Snorre": {
+      "api_gravity": 44,
+      "viscosity_cp": 0.86,
+      "reservoir_temp_c": 100,
+      "reservoir_pressure_bar": 300,
+      "depth_m": [2000, 2700],
+      "source_paper": "SPWLA-2023-Snorre"
+    },
+    "Breidablikk": {
+      "viscosity_cp_samples": [4, 8],
+      "source_paper": "SPWLA-2023-Breidablikk"
+    },
+    "Troll": {
+      "depth_m_east": 1330,
+      "porosity_pct_max": 35,
+      "permeability_darcy_range": true,
+      "oil_rim_m_east": [0, 4],
+      "oil_rim_m_west": 12,
+      "gas_cap_m_east_max": 250,
+      "notes": "No specific oil API/GOR/bubble point recovered from SPE-indexed open sources. Mostly gas with thin oil rim.",
+      "source_paper": null
+    },
+    "Oseberg": {
+      "depth_m": [2300, 2700],
+      "notes": "No SPE-paper-level open API/GOR/bubble point data recovered. Brent Group reservoir (Oseberg, Tarbert, Etive, Ness formations).",
+      "source_paper": null
+    }
+  }
+}

@@ -1,0 +1,58 @@
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║           NCS DECLINE RATE — ENDELIG ER-MODELL                            ║
+╠══════════════════════════════════════════════════════════════════════════╣
+
+FORMEL:
+  D_annual = +0.0664
+           +0.0601 × ln(viskositet)
+           -0.0597 × premium_12mnd
+           +0.0379 × |premium_12mnd|
+
+INPUTS:
+  1. API gravity → viskositet (Beggs-Robinson, T=194°F/90°C):
+       x = 10^(3.0324 − 0.02023 × API)
+       μ = 10^(x × T^(−1.163)) − 1   [cP]
+       ln_viscosity = ln(μ)
+
+  2. premium_12mnd:
+       For hver av siste 12 mnd post-peak:
+         expected_i = exp(−D_physics/12 × month_i)
+         log_premium_i = ln(actual_i / expected_i)
+       premium_12mnd = mean(log_premium_i)
+       
+  3. abs_premium_12mnd = |premium_12mnd|
+
+OUTPUT:
+  D_annual = årlig decline rate (eksponentiell)
+  Produksjon år T fra peak: exp(−D_annual × T)
+
+YTELSE:
+  In-sample R²:       0.770
+  LOO Cross-val R²:   0.713
+  RMSE:               0.0395
+  CV RMSE:            0.0441
+  N (NCS-felt):       49
+  
+  Aker BP (12 felt):
+    RMSE: 0.0559
+    MAE:  0.0381
+    Treffrate ±0.05: 75%
+
+STANDARDISERTE β:
+  ln(viskositet)       β = +0.027
+  premium_12mnd        β = -0.080
+  |premium_12mnd|      β = +0.034
+
+T-STATISTIKK:
+  Intercept            t = +5.81, p = 0.0000
+  ln(viskositet)       t = +4.61, p = 0.0000
+  premium_12mnd        t = -11.32, p = 0.0000
+  |premium_12mnd|      t = +4.82, p = 0.0000
+
+DATABEHOV FOR PROGNOSE:
+  ✓ API gravity (fra Sodir / oljedeklarasjoner)
+  ✓ Siste 12 mnd produksjonsdata (fra Sodir)
+  ✓ Peak-produksjonsdato (observerbart)
+  
+  Ingen forward-looking variabler kreves.

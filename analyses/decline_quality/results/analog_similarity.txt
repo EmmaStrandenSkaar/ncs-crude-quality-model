@@ -1,0 +1,61 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 14: ANALOG SIMILARITY SCORING
+════════════════════════════════════════════════════════════════════════════════
+
+Bibliotek: 69 felt, 31 kolonner
+
+════════════════════════════════════════════════════════════════════════════════
+VALIDERING: Leave-One-Out test
+════════════════════════════════════════════════════════════════════════════════
+
+Variabel                       MAE     RMSE       R²     n
+────────────────────────────────────────────────────────────
+  Ramp (mnd) — Vektet snitt             20.4    32.3   0.104    69
+  Ramp (mnd) — Vektet median            19.3    32.2   0.107    69
+
+  Platå (mnd) — Vektet snitt             7.0     9.7   0.271    69
+  Platå (mnd) — Vektet median            7.7    10.5   0.145    69
+
+  Decline (D) — Vektet snitt             0.1     0.2   0.018    66
+  Decline (D) — Vektet median            0.1     0.2   0.003    66
+
+════════════════════════════════════════════════════════════════════════════════
+EKSEMPEL: YGGDRASIL (Aker BP, planlagt 2027)
+════════════════════════════════════════════════════════════════════════════════
+
+Yggdrasil-input:
+  API gravity:        37.0°
+  Recoverable oil:    ~100 MSm³ (≈650 mboe)
+  Peak production:    ~2.0 MSm³/mnd (≈120 kboe/d)
+  Water depth:        120 m
+  Facility:           FPSO
+  Operator:           Aker BP ASA
+  Main area:          North sea
+  Online:             2027
+
+── TOPP 5 ANALOGER ──
+
+Field               Similarity Operator               Facility          API  Ramp  Platå      D
+─────────────────────────────────────────────────────────────────────────────────────────────────────────
+ALVHEIM                  0.527 Aker BP ASA            FPSO             34.5    10     16  0.054
+OSEBERG SØR              0.404 Equinor Energy AS      Fixed            39.9    33     24  0.067
+GOLIAT                   0.399 Vår Energi ASA         FPSO             41.3    24      4  0.120
+BREIDABLIKK              0.389 Equinor Energy AS      Other               —    12     15      —
+JOHAN SVERDRUP           0.376 Equinor Energy AS      Fixed            28.7    41     36      —
+
+── PREDIKSJON ──
+
+  Ramp-up (vektet snitt):       23 mnd  (1.9 år)
+  Ramp-up (vektet median):      24 mnd  (2.0 år)
+  Platå (vektet snitt):         19 mnd  (1.6 år)
+  Platå (vektet median):        16 mnd  (1.3 år)
+  Decline D (vektet snitt):  0.074
+  Decline D (vektet median): 0.067
+
+── TIDSLINJE ──
+  Første olje:          2027
+  Peak (ramp slutt):    2029.0
+  Platå slutt:          2030.3
+  Ved 50% av peak:      2040.8
+
+Saved: fig_analog_similarity.png

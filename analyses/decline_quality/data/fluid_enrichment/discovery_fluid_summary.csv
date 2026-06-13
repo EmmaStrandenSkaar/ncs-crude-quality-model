@@ -1,0 +1,646 @@
+discovery_name,discovery_npdid,field_name,field_npdid,wellbore_name,wellbore_npdid,hc_type,activity_status,discovery_year,operator,owner,oil_density_gcc_mean,oil_density_gcc_min,oil_density_gcc_max,api_gravity_mean,gas_density_mean,gor_sm3_sm3_mean,temperature_c_mean,dst_n_tests
+1/2-1 Blane,43814,BLANE,3437650.0,1/2-1,1382,OIL,Producing,1989,Repsol Norge AS,BLANE UNIT,0.81,0.81,0.81,43.19135802469134,,66.0,0.0,1.0
+1/3-1,43820,,,1/3-1,154,GAS,Production is unlikely,1968,,,,,,,,,0.0,3.0
+1/3-11 (Ipswich),4999216,,,1/3-11,5806,OIL,Production is unlikely,2008,,,,,,,,,,
+1/3-3 Tambar,43826,TAMBAR,1028599.0,1/3-3,87,OIL,Producing,1983,Aker BP ASA,065,0.829,0.829,0.829,39.18757539203861,0.82,196.0,41.25,4.0
+1/3-6 Oselvar,43832,OSELVAR,5506919.0,1/3-6,1521,GAS/CONDENSATE,Shut down,1991,,,0.7755000000000001,0.771,0.78,50.96292714377819,0.7575000000000001,1163.5,109.5,2.0
+1/3-K-5 Tambar Øst,4999519,TAMBAR ØST,4999528.0,1/3-K-5,5485,OIL,Producing,2007,Aker BP ASA,TAMBAR ØST UNIT,,,,,,,,
+1/5-2 Flyndre,43838,FLYNDRE,24635035.0,1/5-2,238,OIL,Shut down,1974,,,0.8333333333333334,0.81,0.87,38.29999999999998,,408.5,0.0,4.0
+1/5-3 S,3000726,,,1/5-3 S,3257,OIL,Production is unlikely,1998,,,,,,,,,,
+1/6-1 Albuskjell,43844,ALBUSKJELL,43437.0,1/6-1,239,GAS/CONDENSATE,Shut down,1972,ConocoPhillips Skandinavia AS,018 F,0.8073333333333333,0.794,0.832,43.768373245251865,0.7175,,0.0,4.0
+1/9-1 Tommeliten Alpha,43850,TOMMELITEN A,40867462.0,1/9-1,243,GAS/CONDENSATE,Producing,1977,ConocoPhillips Skandinavia AS,TOMMELITEN A UNIT,0.8118000000000001,0.76,0.849,42.80401576743037,0.6976,971.2,105.9,10.0
+1/9-4 Tommeliten Gamma,43856,TOMMELITEN GAMMA,43444.0,1/9-4,247,GAS/CONDENSATE,Shut down,1978,ConocoPhillips Skandinavia AS,TOMMELITEN UNIT,0.7833333333333333,0.77,0.79,49.13829787234042,0.69,,0.0,4.0
+15/12 (Flemming),48241,,,,0,,Production is unlikely,1991,,,,,,,,,,
+15/12-12 Rev,1626017,REV,4467554.0,15/12-12,3391,OIL/GAS,Producing,2001,Repsol Norge AS,038 C,,,,,,,,
+15/12-18 A,4554325,,,15/12-18 A,5608,OIL,Included in other discovery,2007,Equinor Energy AS,1200 S,,,,,,,,
+15/12-18 S (Storskrymten),4554315,,,15/12-18 S,5607,OIL,Production is unlikely,2007,Equinor Energy AS,1200 S,,,,,,,,
+15/12-19,4972729,GAUPE,18161341.0,15/12-19,5705,GAS,Included in other discovery,2008,,,,,,,0.68,811.3333333333334,129.66666666666666,3.0
+15/12-20 S,5010042,VARG,43451.0,15/12-20 S,5824,OIL,Included in other discovery,2008,Repsol Norge AS,,,,,,,,,
+15/12-21 (Grevling),5490719,,,15/12-21,6047,OIL,Production is unlikely,2009,Equinor Energy AS,1200 S,,,,,,28.5,118.5,2.0
+15/12-25 (Jerv),38653911,,,15/12-25,9203,GAS/CONDENSATE,Production is unlikely,2021,,,,,,,,,,
+15/12-4 Varg,43868,VARG,43451.0,15/12-4,438,OIL,Shut down,1984,Repsol Norge AS,,,,,,,,,
+15/12-8,43874,,,15/12-8,1778,GAS/CONDENSATE,Production is unlikely,1991,,,,,,,0.817,1308.0,123.0,1.0
+15/2-2 S (Eirik),42002467,,,15/2-2 S,9767,OIL,Production is unlikely,2023,,,,,,,,,,
+15/3-1 S Gudrun,43880,GUDRUN,18116481.0,15/3-1 S,309,GAS/CONDENSATE,Producing,1975,Equinor Energy AS,025,,,,,,,,
+15/3-12 S (Sigrun Øst),36986201,,,15/3-12 S,8947,OIL,Production likely but unclarified,2020,Equinor Energy AS,025 C,,,,,,,,
+15/3-13 S (Brokk-Mju),42002503,,,15/3-13 S,10074,OIL/GAS,Production is unlikely,2024,Equinor Energy AS,025,,,,,,,,
+15/3-4 (Sigrun),43886,,,15/3-4,314,OIL/GAS,Production likely but unclarified,1982,Equinor Energy AS,025,0.816,0.816,0.816,41.90686274509804,0.803,399.0,0.0,1.0
+15/3-9,18212532,GUDRUN,18116481.0,15/3-9,6354,OIL/GAS,Included in other discovery,2010,Equinor Energy AS,025,,,,,,,,
+15/5 (J-Struktur),5268233,,,,0,GAS,Production is unlikely,1984,,,,,,,,,,
+15/5 Enoch,48253,ENOCH,3437659.0,,0,OIL,Producing,1985,Bridge Petroleum 3 Limited,ENOCH UNIT,,,,,,,,
+15/5-1 Gina Krog,43892,GINA KROG,23384544.0,15/5-1,315,OIL/GAS,Producing,1978,Equinor Energy AS,GINA KROG UNIT,0.805,0.8,0.81,44.27639751552795,,1590.5,0.0,2.0
+15/5-2 Eirin,43898,EIRIN,42002492.0,15/5-2,316,GAS,Approved for production,1978,Equinor Energy AS,048 E,,,,,,,,
+15/5-5 Glitne,43904,GLITNE,1272071.0,15/5-5,2635,OIL,Shut down,1995,Equinor Energy AS,1140,0.864,0.864,0.864,32.27314814814815,0.868,63.0,79.0,1.0
+15/5-8 A (Langemann),42002531,,,15/5-8 A,10295,GAS/CONDENSATE,Production not evaluated,2025,Equinor Energy AS,1140,,,,,,,,
+15/5-8 S (Lofn),42002530,,,15/5-8 S,10294,GAS/CONDENSATE,Production not evaluated,2025,Equinor Energy AS,1140,,,,,,,,
+15/6-10 (Freke),5490439,,,15/6-10,6030,GAS/CONDENSATE,Production is unlikely,2009,Aker BP ASA,1139,,,,,,,,
+15/6-12 (McHenry),20415304,,,15/6-12,6518,OIL,Production is unlikely,2011,Equinor Energy AS,GINA KROG UNIT,,,,,,,,
+15/6-13,26443908,,,15/6-13,7667,OIL/GAS,Production is unlikely,2015,Equinor Energy AS,GINA KROG UNIT,,,,,,,,
+15/6-3 Sleipner Vest,43910,SLEIPNER VEST,43457.0,15/6-3,318,GAS,Producing,1974,Equinor Energy AS,SLEIPNER VEST UNIT,0.817,0.817,0.817,41.694614443084475,,5903.0,0.0,1.0
+15/8-1 Utgard,43916,UTGARD,28975098.0,15/8-1,321,GAS,Producing,1982,Equinor Energy AS,UTGARD UNIT,0.8025,0.754,0.846,44.8239875389408,0.8667499999999999,1519.0,0.0,4.0
+15/8-3 S (Sissel),42002535,,,15/8-3 S,10332,GAS/CONDENSATE,Production not evaluated,2026,Equinor Energy AS,1137,,,,,,,,
+15/9-15 Gungne,43922,GUNGNE,43464.0,15/9-15,74,GAS,Producing,1982,Equinor Energy AS,046,0.7685,0.767,0.77,52.62491867273911,0.738,2529.0,0.0,2.0
+15/9-17 Loke,43928,SLEIPNER ØST,43478.0,15/9-17,60,GAS/CONDENSATE,Included in other discovery,1983,Equinor Energy AS,SLEIPNER ØST UNIT,,,,,,2485.0,0.0,3.0
+15/9-19 S Volve,43934,VOLVE,3420717.0,15/9-19 SR,2105,OIL,Shut down,1993,Aker BP ASA,1282,0.87,0.87,0.87,31.143678160919535,0.74,98.0,0.0,1.0
+15/9-20 S,43940,GUNGNE,43464.0,15/9-20 S,2319,GAS/CONDENSATE,Included in other discovery,1994,Equinor Energy AS,046,,,,,,,,
+15/9-9 Sleipner Øst,43946,SLEIPNER ØST,43478.0,15/9-9,328,GAS/CONDENSATE,Producing,1981,Equinor Energy AS,SLEIPNER ØST UNIT,0.74,0.74,0.74,59.716216216216225,0.74,,0.0,3.0
+15/9-B-1,17250040,SLEIPNER VEST,43457.0,15/9-B-1,5870,GAS/CONDENSATE,Included in other discovery,2009,Equinor Energy AS,SLEIPNER VEST UNIT,,,,,,,,
+16/1-12 Troldhaugen,17196400,,,16/1-12,6166,OIL,Production not evaluated,2009,Aker BP ASA,338 C,,,,,,,,
+16/1-14 (Apollo),18437181,,,16/1-14,6399,OIL,Production is unlikely,2010,Aker BP ASA,338,,,,,,,,
+16/1-26 S,28245194,,,16/1-26 S,7915,OIL/GAS,Production not evaluated,2016,Aker BP ASA,001 B,,,,,,,,
+16/1-29 S Symra,32017087,SYMRA,42002480.0,16/1-29 S,8383,OIL/GAS,Producing,2018,Aker BP ASA,167,,,,,,,,
+16/1-34 S (Lillefix),39073001,,,16/1-34 S,9326,OIL,Production not evaluated,2021,Aker BP ASA,167,,,,,,,,
+16/1-4,3000757,,,16/1-4,2072,GAS/CONDENSATE,Production is unlikely,1993,Aker BP ASA,338,,,,,,,,
+16/1-6 S (Verdandi),2449370,,,16/1-6 S,4711,GAS,Production not evaluated,2003,Aker BP ASA,167,,,,,,,,
+16/1-7,2819923,IVAR AASEN,23384520.0,16/1-7,4928,OIL,Included in other discovery,2004,Aker BP ASA,IVAR AASEN UNIT,,,,,,,,
+16/1-8 Edvard Grieg,4530554,EDVARD GRIEG,21675433.0,16/1-8,5612,OIL,Producing,2007,Aker BP ASA,338,,,,,,,,
+16/1-9 Ivar Aasen,4972697,IVAR AASEN,23384520.0,16/1-9,5773,OIL,Producing,2008,Aker BP ASA,IVAR AASEN UNIT,,,,,,,,
+16/2-3 (Ragnarock),4527337,,,16/2-3,5551,OIL,Production is unlikely,2007,Equinor Energy AS,265,,,,,,,,
+16/2-4,17237080,,,16/2-4,5625,OIL/GAS,Production is unlikely,2007,Equinor Energy AS,265,,,,,,,,
+16/2-5 (P-Graben),5490457,,,16/2-5,6042,GAS,Production is unlikely,2009,Equinor Energy AS,265,,,,,,,71.0,1.0
+16/2-6 Johan Sverdrup,18387202,JOHAN SVERDRUP,26376286.0,16/2-6,6374,OIL,Producing,2010,Equinor Energy AS,JOHAN SVERDRUP UNIT,,,,,,,0.0,1.0
+16/4-13 S,38653902,SOLVEIG,34833011.0,16/4-13 S,9209,OIL,Included in other discovery,2021,Aker BP ASA,359,,,,,,,,
+16/4-4 (Biotitt),4445817,,,16/4-4,5441,GAS/CONDENSATE,Production is unlikely,2007,,1174 SB,,,,,,,,
+16/4-6 S Solveig,23295901,SOLVEIG,34833011.0,16/4-6 S,7098,OIL,Producing,2013,Aker BP ASA,359,,,,,,180.0,0.0,1.0
+16/5-8 S (Goddo),34949135,,,16/5-8 S,8704,OIL,Production is unlikely,2019,,,,,,,,,,
+16/7-10,21060729,,,16/7-10,6607,GAS,Production is unlikely,2011,Equinor Energy AS,1281,,,,,,,,
+16/7-2,43952,,,16/7-2,40,GAS,Production is unlikely,1982,Equinor Energy AS,1281,,,,,,,,
+16/7-4 Sigyn,45625,SIGYN,1630100.0,16/7-4,91,GAS/CONDENSATE,Producing,1982,Equinor Energy AS,072,0.745,0.74,0.75,58.43288590604027,0.795,1904.5,0.0,2.0
+16/7-7 S,45641,SIGYN,1630100.0,16/7-7 S,3244,OIL,Included in other discovery,1997,Equinor Energy AS,072,0.74,0.74,0.74,59.716216216216225,0.94,483.5,100.0,2.0
+17/12-1 Vette,43964,,,17/12-1 R,514,OIL,Production is unlikely,1972,,,0.8666666666666667,0.86,0.88,31.769230769230774,,43.666666666666664,0.0,3.0
+17/12-2 (Brisling),43970,,,17/12-2,340,OIL,Production is unlikely,1973,,,0.887,0.887,0.887,28.02649379932356,,87.0,0.0,2.0
+17/3-1,43976,,,17/3-1,2576,GAS,Production is unlikely,1995,,,,,,,,,,
+18/10-1 (Mackerel),43982,,,18/10-1,342,OIL,Production is unlikely,1980,,,0.834,0.834,0.834,38.16426858513191,0.724,9.0,67.0,1.0
+2/1-11,43988,,,2/1-11,2699,OIL,Production is unlikely,1997,Aker BP ASA,1088,,,,,,,,
+2/11-10 S,43994,HOD,43485.0,2/11-10 S,2297,OIL,Included in other discovery,1994,Aker BP ASA,033,,,,,,,,
+2/11-2 Hod,44000,HOD,43485.0,2/11-2,285,OIL,Producing,1974,Aker BP ASA,033,0.83,0.83,0.83,38.981927710843394,,194.0,0.0,2.0
+2/1-17 S (Kark),35318586,,,2/1-17 S,8851,OIL,Production is unlikely,2019,Aker BP ASA,1199,,,,,,,,
+2/12-1 Mjølner,44006,,,2/12-1,1014,OIL,Production is unlikely,1987,Aker BP ASA,1171,0.828,0.828,0.828,39.3937198067633,0.8314999999999999,149.5,0.0,2.0
+2/1-3 Gyda,44012,GYDA,43492.0,2/1-3,251,OIL,Shut down,1980,,,0.8283333333333333,0.82,0.835,39.32494969818916,,124.66666666666667,0.0,3.0
+2/1-9 Gyda Sør,44018,GYDA,43492.0,2/1-9,1667,OIL,Included in other discovery,1991,,,,,,,,549.0,160.0,1.0
+2/2-1 (Møyfrid),44024,,,2/2-1,46,OIL/GAS,Production is unlikely,1982,,,0.827,0.827,0.827,39.60036275695285,0.86,70.0,136.0,1.0
+2/2-2 (Desmond),44030,,,2/2-2,80,GAS,Production is unlikely,1982,ORLEN Upstream Norway AS,1135,,,,,0.57,,0.0,1.0
+2/2-5 (Bumblebee),44036,,,2/2-5,1846,OIL,Production is unlikely,1992,,,,,,,,44.0,141.0,1.0
+2/3-1 (Løven),44042,,,2/3-1,162,GAS,Production is unlikely,1969,ORLEN Upstream Norway AS,1135,,,,,,,0.0,2.0
+2/4-10,44048,,,2/4-10,254,OIL,Production is unlikely,1973,ConocoPhillips Skandinavia AS,018,0.84,0.834,0.846,36.95238095238096,0.856,4.5,0.0,2.0
+2/4-11 (Espen),44054,,,2/4-11,255,OIL,Production is unlikely,1974,Aker BP ASA,146,0.822,0.822,0.822,40.6411192214112,,,0.0,5.0
+2/4-14,34735108,,,2/4-14,1343,OIL,Production is unlikely,1989,Aker BP ASA,146,,,,,,,,
+2/4-17 Tjalve,44066,,,2/4-17,1792,GAS/CONDENSATE,Production not evaluated,1992,ConocoPhillips Skandinavia AS,018,0.799,0.799,0.799,45.59637046307884,0.735,1097.0,42.0,8.0
+2/4-2 Ekofisk,44072,EKOFISK,43506.0,2/4-2,172,OIL,Producing,1969,ConocoPhillips Skandinavia AS,018,0.839,0.839,0.839,37.15315852205006,,,0.0,4.0
+2/4-21 Fenris,21669700,FENRIS,42002478.0,2/4-21,6736,GAS/CONDENSATE,Approved for production,2012,Aker BP ASA,146,,,,,,,,
+2/4-22 S (Romeo),26264813,FENRIS,42002478.0,2/4-22 S,7535,OIL,Included in other discovery,2015,Aker BP ASA,146,,,,,,,,
+2/4-23 S (Julius),26463461,FENRIS,42002478.0,2/4-23 S,7657,GAS/CONDENSATE,Included in other discovery,2015,Aker BP ASA,146,,,,,,,,
+2/4-6 Vest Ekofisk,44078,VEST EKOFISK,43513.0,2/4-6,181,GAS/CONDENSATE,Shut down,1970,ConocoPhillips Skandinavia AS,018 F,0.8116666666666666,0.804,0.819,42.83264887063655,,451.6666666666667,79.0,5.0
+2/5-1 Tor,44084,TOR,43520.0,2/5-1,178,OIL,Producing,1970,ConocoPhillips Skandinavia AS,TOR UNIT,,,,,,224.66666666666666,17.285714285714285,7.0
+2/5-11 (Tjatse),46293,,,2/5-11,3084,OIL,Production is unlikely,1997,Aker BP ASA,1199,0.8145,0.8,0.829,42.226212400245544,,120.0,130.0,2.0
+2/5-3 (Sørøst Tor),44090,,,2/5-3,258,OIL,Production is unlikely,1972,DNO Norge AS,006 C,0.837,0.83,0.844,37.55615292712068,,321.5,0.0,3.0
+2/5-4 (Siv),44096,,,2/5-4,259,OIL,Production is unlikely,1972,,,0.8,0.8,0.8,45.375,,53.0,0.0,3.0
+2/5-7,44102,,,2/5-7,25,OIL,Production is unlikely,1984,Aker BP ASA,1199,0.82,0.82,0.82,41.0609756097561,0.895,37.5,0.0,3.0
+2/6-5 (Sundal),44108,,,2/6-5,2885,OIL,Production is unlikely,1997,Aker BP ASA,1171,0.831,0.831,0.831,38.77677496991578,,,117.0,1.0
+2/6-7 S (Othello),42002508,,,2/6-7 S,10171,OIL,Production not evaluated,2024,DNO Norge AS,1086,,,,,,,,
+2/7-1 Eldfisk,44114,ELDFISK,43527.0,2/7-1,179,OIL,Producing,1970,ConocoPhillips Skandinavia AS,018,,,,,,,0.0,1.0
+2/7-19 (Ebba),44120,,,2/7-19,1367,OIL,Production is unlikely,1981,,,,,,,,,,
+2/7-2,44126,,,2/7-2,187,OIL/GAS,Production is unlikely,1971,Aker BP ASA,1198,,,,,,,0.0,1.0
+2/7-20 Embla,44132,EMBLA,43534.0,2/7-20,1062,OIL,Producing,1988,ConocoPhillips Skandinavia AS,018,,,,,,365.0,0.0,1.0
+2/7-22,44138,,,2/7-22,1495,GAS,Production is unlikely,1990,Aker BP ASA,1198,0.79,0.79,0.79,47.6139240506329,0.8,1181.0,163.0,1.0
+2/7-29,44144,,,2/7-29,2124,OIL,Production is unlikely,1994,Aker BP ASA,1198,,,,,,,,
+2/7-31,105311,,,2/7-31,3573,OIL,Included in other discovery,1999,,,,,,,0.702,426.0,163.0,1.0
+2/7-4 Edda,44150,EDDA,43541.0,2/7-4,263,OIL,Shut down,1972,ConocoPhillips Skandinavia AS,018,,,,,,,0.0,6.0
+2/7-8,44156,ELDFISK,43527.0,2/7-8,267,OIL,Included in other discovery,1973,ConocoPhillips Skandinavia AS,018,0.915,0.86,0.97,23.144808743169392,,,0.0,4.0
+2/8-19 (Overly),40847328,,,2/8-19,9572,OIL/GAS,Production is unlikely,2022,Aker BP ASA,1085,,,,,,,,
+2/8-6 Valhall,44162,VALHALL,43548.0,2/8-6,276,OIL,Producing,1975,Aker BP ASA,VALHALL UNIT,0.84,0.83,0.85,36.95238095238096,,1012.0,0.0,5.0
+24/12-3 S,44168,,,24/12-3 S,2823,OIL,Production is unlikely,1996,Aker BP ASA,1097,,,,,,,,
+24/12-7 (Lyderhorn),39201504,,,24/12-7,9429,OIL,Production is unlikely,2021,DNO Norge AS,984 C,,,,,,,,
+24/6-1 (Peik),44174,,,24/6-1,443,GAS/CONDENSATE,Production likely but unclarified,1985,Equinor Energy AS,918 S,0.785,0.785,0.785,48.75477707006368,0.64,5690.0,0.0,1.0
+24/6-2 Alvheim,45828,ALVHEIM,2845712.0,24/6-2,3397,OIL/GAS,Producing,1998,Aker BP ASA,203,0.86,0.86,0.86,33.034883720930225,0.69,80.0,69.0,1.0
+24/6-4 Alvheim,2472552,ALVHEIM,2845712.0,24/6-4,4745,OIL/GAS,Included in other discovery,2003,Aker BP ASA,203,,,,,,,,
+24/9-10 S (Caterpillar),20415286,,,24/9-10 S,6531,OIL,Production not evaluated,2011,Aker BP ASA,340 BS,,,,,,,,
+24/9-12 S (Frosk),31140456,BØYLA,22492497.0,24/9-12 S,8331,OIL,Included in other discovery,2018,Aker BP ASA,340,,,,,,,,
+24/9-13 (Rumpetroll),34925894,,,24/9-13,8613,GAS,Production not evaluated,2019,Aker BP ASA,869,,,,,,,,
+24/9-14 S (Froskelår),34750020,,,24/9-14 S,8621,OIL/GAS,Production likely but unclarified,2019,Aker BP ASA,869,,,,,,,,
+24/9-15 S (Froskelår Nordøst),34925263,,,24/9-15 S,8675,OIL,Production not evaluated,2019,Aker BP ASA,340,,,,,,,,
+24/9-3,44180,,,24/9-3,346,OIL,Production is unlikely,1981,Aker BP ASA,869,0.9205000000000001,0.916,0.925,22.220803910917965,0.614,27.0,0.0,3.0
+24/9-5 Volund,44186,VOLUND,4380167.0,24/9-5,2244,OIL,Producing,1994,Aker BP ASA,150,,,,,,,,
+24/9-9 S Bøyla,17237206,BØYLA,22492497.0,24/9-9 S,6222,OIL,Producing,2009,Aker BP ASA,340,,,,,,,,
+25/10-11,20499806,,,25/10-11,6563,GAS,Production is unlikely,2011,Equinor Energy AS,782 S,,,,,,,138.0,1.0
+25/10-17 S,42148344,,,25/10-17 S,9717,OIL,Production is unlikely,2023,,,,,,,,,,
+25/10-8 Hanz,44198,HANZ,25307278.0,25/10-8,2955,OIL/GAS,Producing,1997,Aker BP ASA,028 B,0.84,0.84,0.84,36.95238095238096,0.7,116.0,94.0,1.0
+25/1-1 Frigg,44204,FRIGG,43555.0,25/1-1,190,GAS,Shut down,1971,Aker BP ASA,1249,,,,,,,0.0,1.0
+25/11-1 Balder,44210,BALDER,43562.0,25/11-1,143,OIL,Producing,1967,Vår Energi ASA,001,,,,,,,,
+25/1-11 R Skogul,18086221,SKOGUL,31164600.0,25/1-11 R,6368,OIL,Producing,2010,Aker BP ASA,460,,,,,,,,
+25/11-15 Grane,44216,GRANE,1035937.0,25/11-15,1872,OIL,Producing,1991,Equinor Energy AS,GRANE UNIT,0.94,0.94,0.94,19.031914893617028,0.64,14.0,76.0,1.0
+25/11-16 Svalin,44222,SVALIN,22507971.0,25/11-16,1920,OIL,Producing,1992,Equinor Energy AS,169,,,,,,,,
+25/11-24 (Jakob Sør),4457094,,,25/11-24,5470,OIL,Production is unlikely,2007,Equinor Energy AS,169,,,,,,,,
+25/11-25 S Svalin,4972673,SVALIN,22507971.0,25/11-25 S,5642,OIL,Included in other discovery,2008,Equinor Energy AS,169,,,,,,,,
+25/11-27 (F-struktur),23395692,BREIDABLIKK,38702206.0,25/11-27,7179,OIL,Included in other discovery,2013,Equinor Energy AS,BREIDABLIKK UNIT,,,,,,,,
+25/1-14 (Omega),42002521,,,25/1-14,10279,OIL/GAS,Production not evaluated,2025,Aker BP ASA,873 B,,,,,,,,
+25/1-14 A (Alfa),42002522,,,25/1-14 A,10288,OIL,Production not evaluated,2025,Aker BP ASA,873,,,,,,,,
+25/1-14 C (Sigma NE),42002523,,,25/1-14 C,10290,OIL,Production not evaluated,2025,Aker BP ASA,1249,,,,,,,,
+25/1-14 G (Sigma),42002524,,,25/1-14 G,10398,OIL,Production not evaluated,2025,Aker BP ASA,1249,,,,,,,,
+25/1-4 Nordøst Frigg,44228,NORDØST FRIGG,43568.0,25/1-4,350,GAS,Shut down,1974,Aker BP ASA,1250 S,,,,,,,0.0,1.0
+25/1-9 (Litjklakken),2786238,,,25/1-9,1001,OIL/GAS,Production is unlikely,1986,Aker BP ASA,1144,,,,,,,,
+25/2-1 Øst Frigg,44234,ØST FRIGG,43576.0,25/2-1,353,GAS,Shut down,1973,Aker BP ASA,873,,,,,0.84,157000.0,0.0,1.0
+25/2-10 S Hugin,2429169,HUGIN,42002474.0,25/2-10 S,855,OIL/GAS,Approved for production,1986,Aker BP ASA,HUGIN UNIT,,,,,,,,
+25/2-17,17237215,HUGIN,42002474.0,25/2-17,6215,OIL,Included in other discovery,2009,Aker BP ASA,HUGIN UNIT,,,,,,,,
+25/2-18 S (Langfjellet),28245710,HUGIN SATELLITTER,42002537.0,25/2-18 S,8023,OIL,Included in other discovery,2016,Aker BP ASA,442,,,,,,,,
+25/2-21 (Liatårnet),34925272,,,25/2-21,8814,OIL,Production is unlikely,2019,Aker BP ASA,442,,,,,,,,
+25/2-24 B,42002504,HUGIN,42002474.0,25/2-24 B,9845,OIL,Included in other discovery,2023,Aker BP ASA,HUGIN UNIT,,,,,,,,
+25/2-4 Lille-Frigg,44240,FULLA,42002479.0,25/2-4,356,GAS/CONDENSATE,Shut down,1975,Aker BP ASA,873,,,,,,,0.0,1.0
+25/2-5 Lille Frøy (Rind),44246,HUGIN SATELLITTER,42002537.0,25/2-5,357,OIL/GAS,Approved for production,1976,Aker BP ASA,442,0.813,0.813,0.813,42.546740467404675,,265.0,0.0,3.0
+25/4-1 Heimdal,44252,HEIMDAL,43590.0,25/4-1,359,GAS,Shut down,1972,Aker BP ASA,1175 B,,,,,0.797,2432.0,0.0,3.0
+25/4-10 A,17312260,,,25/4-10 A,6255,GAS,Production is unlikely,2009,Aker BP ASA,203,,,,,,,,
+25/4-10 S,17256863,ALVHEIM,2845712.0,25/4-10 S,6253,OIL,Included in other discovery,2009,Aker BP ASA,203,,,,,,,,
+25/4-15 (Ve),42002466,,,25/4-15,9791,OIL,Production is unlikely,2023,Aker BP ASA,919,,,,,,,,
+25/4-2 Tyrving,21076955,TYRVING,42002471.0,25/4-2,360,OIL,Producing,1973,Aker BP ASA,TYRVING UNIT,,,,,,,,
+25/4-3 (Gekko),1630312,ALVHEIM,2845712.0,25/4-3,361,OIL/GAS,Included in other discovery,1974,Aker BP ASA,203,,,,,,,,
+25/4-6 S Vale,44258,VALE,1578893.0,25/4-6 S,1703,GAS/CONDENSATE,Shut down,1991,Aker BP ASA,,0.81,0.81,0.81,43.19135802469134,0.72,671.0,126.0,1.0
+25/4-7 Alvheim,2420578,ALVHEIM,2845712.0,25/4-7,4716,OIL,Included in other discovery,2003,Aker BP ASA,203,,,,,,,,
+25/4-9 S Vilje,2472606,VILJE,3392471.0,25/4-9 S,4278,OIL,Producing,2003,Aker BP ASA,036 D,,,,,,,,
+25/5-1 Frøy,44264,HUGIN SATELLITTER,42002537.0,25/5-1,884,OIL,Shut down,1987,Aker BP ASA,442,0.8285,0.825,0.837,39.29058539529271,0.7537499999999999,195.5,0.0,5.0
+25/5-3 Skirne,44270,SKIRNE,2138816.0,25/5-3,1488,GAS/CONDENSATE,Shut down,1990,,,0.8,0.8,0.8,45.375,0.75,5100.0,0.0,1.0
+25/5-4 Byggve,44276,SKIRNE,2138816.0,25/5-4,1691,GAS/CONDENSATE,Included in other discovery,1991,,,0.76,0.76,0.76,54.68421052631578,0.72,3398.0,104.0,1.0
+25/5-5 (Tir),44282,,,25/5-5,2661,OIL,Production is unlikely,1995,Aker BP ASA,102 H,0.88,0.88,0.88,29.295454545454533,0.7,36.0,0.0,1.0
+25/5-7 Atla,18404420,ATLA,21106284.0,25/5-7,6423,GAS/CONDENSATE,Shut down,2010,,,,,,,,,,
+25/5-9 (Trell),24567425,TYRVING,42002471.0,25/5-9,7345,OIL,Included in other discovery,2014,Aker BP ASA,TYRVING UNIT,,,,,,,,
+25/6-1,44288,,,25/6-1,524,OIL,Production is unlikely,1986,,,0.725,0.725,0.725,63.67241379310346,,130.0,0.0,1.0
+25/6-5 S (Skirne Øst),26336791,,,25/6-5 S,7662,GAS/CONDENSATE,Production is unlikely,2015,Vår Energi ASA,,,,,,,,,
+25/7-11 S (Norma),42002486,,,25/7-11 S,9842,GAS/CONDENSATE,Production not evaluated,2023,DNO Norge AS,984,,,,,,,,
+25/7-2,44294,,,25/7-2,1494,GAS/CONDENSATE,Production is unlikely,1990,Equinor Energy AS,1285 S,0.781,0.781,0.781,49.677976952624846,0.732,1121.0,129.0,1.0
+25/7-3 Jotun,44300,JOTUN,43604.0,25/7-3,2623,OIL,Included in other discovery,1995,Vår Energi ASA,1203,0.839,0.839,0.839,37.15315852205006,,39.0,83.0,1.0
+25/7-5,44306,ALVHEIM,2845712.0,25/7-5,3132,OIL,Included in other discovery,1997,Aker BP ASA,203,0.87,0.87,0.87,31.143678160919535,0.671,88.0,67.0,1.0
+25/7-7 (Busta),35318602,,,25/7-7,8846,GAS/CONDENSATE,Production not evaluated,2019,Equinor Energy AS,1285 S,,,,,,,,
+25/7-8 S (Enniberg),36503081,,,25/7-8 S,8933,OIL/GAS,Production is unlikely,2020,,,,,,,,,,
+25/8-1 (Ringhorne Forseti),44312,BALDER,43562.0,25/8-1,173,OIL,Included in other discovery,1970,Vår Energi ASA,001,0.93,0.93,0.93,20.650537634408607,,23.0,0.0,1.0
+25/8-10 S Ringhorne,52316,BALDER,43562.0,25/8-10 S,3062,OIL,Included in other discovery,1997,Vår Energi ASA,001,0.9,0.9,0.9,25.72222222222223,0.68,,70.0,1.0
+25/8-11 Ringhorne,44318,BALDER,43562.0,25/8-11,3209,OIL,Included in other discovery,1997,Vår Energi ASA,001,,,,,,44.0,78.0,1.0
+25/8-14 S,2472571,RINGHORNE ØST,3505505.0,25/8-14 S,4805,OIL,Producing,2003,Vår Energi ASA,RINGHORNE ØST UNIT,,,,,,,,
+25/8-16 S (Eitri),5506890,,,25/8-16 S,6082,OIL,Production is unlikely,2009,Vår Energi ASA,956,,,,,,,,
+25/8-17 Jette,17238186,JETTE,21613906.0,25/8-17,6185,OIL,Shut down,2009,,,,,,,,,,
+25/8-19 S (Iving),36997934,,,25/8-19 S,8932,OIL/GAS,Production is unlikely,2019,Vår Energi ASA,820 S,,,,,,,,
+25/8-20 B,38701855,BALDER,43562.0,25/8-20 B,9277,OIL/GAS,Included in other discovery,2021,Vår Energi ASA,001,,,,,,,,
+25/8-20 S,38701846,BALDER,43562.0,25/8-20 S,9275,OIL,Included in other discovery,2021,Vår Energi ASA,001,,,,,,,,
+25/8-23 B (Ringhorne N Nansen),42002528,,,25/8-23 B,10046,OIL,Included in other discovery,2024,Vår Energi ASA,956,,,,,,,,
+25/8-23 S (Ringhorne Nord),42002495,,,25/8-23 S,10044,OIL,Production likely but unclarified,2024,Vår Energi ASA,956,,,,,,,,
+25/8-4 Breidablikk,44324,BREIDABLIKK,38702206.0,25/8-4,1986,OIL,Producing,1992,Equinor Energy AS,BREIDABLIKK UNIT,,,,,,,,
+25/8-5 S Jotun,44330,JOTUN,43604.0,25/8-5 S,2390,OIL,Shut down,1994,Vår Energi ASA,1203,0.85,0.85,0.85,34.970588235294116,,38.0,82.0,1.0
+25/8-8 S Jotun,44336,JOTUN,43604.0,25/8-8 S,2646,OIL,Included in other discovery,1995,Vår Energi ASA,1203,0.85,0.85,0.85,34.970588235294116,0.73,71.0,0.0,1.0
+25/8-9,44342,,,25/8-9,2988,OIL,Production is unlikely,1997,,985,,,,,,,,
+25/8-C-20,2455295,BALDER,43562.0,25/8-C-20,4727,OIL,Included in other discovery,2003,Vår Energi ASA,001,,,,,,,,
+26/10-1 (Zulu Øst),26264822,,,26/10-1,7609,GAS,Production is unlikely,2015,,,,,,,,,,
+29/3-1,44348,,,29/3-1,904,OIL/GAS,Production is unlikely,1986,,,0.8636666666666667,0.845,0.878,32.33635661906598,0.6966666666666667,1535.0,125.5,4.0
+29/6 Islay,21104520,ISLAY,21105675.0,,0,GAS,Producing,2008,TotalEnergies E&P UK Limited,ISLAY UNIT,,,,,,,,
+29/6-1,2770139,MARTIN LINGE,21675447.0,29/6-1,375,GAS/CONDENSATE,Included in other discovery,1982,Equinor Energy AS,MARTIN LINGE UNIT,0.808,0.808,0.808,43.62376237623761,0.705,1363.0,0.0,3.0
+3/7-4 Trym,44354,TRYM,18081500.0,3/7-4,1467,GAS/CONDENSATE,Producing,1990,DNO Norge AS,147,0.8,0.796,0.804,45.375,0.72,1351.0,131.0,2.0
+3/7-8 S (Trym Sør),23286464,,,3/7-8 S,7058,OIL/GAS,Production in clarification phase,2013,DNO Norge AS,147,,,,,,,,
+30/10-2 Odin,44360,ODIN,43610.0,30/10-2,392,GAS,Shut down,1974,Aker BP ASA,1250 S,,,,,0.585,,0.0,1.0
+30/10-6,44366,,,30/10-6,1816,GAS,Production is unlikely,1992,Equinor Energy AS,1147,,,,,0.6,,22.0,7.0
+30/11-10 (Krafla Nord),25612576,MUNIN,42002476.0,30/11-10,7595,OIL,Included in other discovery,2014,Aker BP ASA,272,,,,,,,,
+30/11-11 S (Madam Felle),28160390,MUNIN,42002476.0,30/11-11 S,7896,OIL,Included in other discovery,2016,Aker BP ASA,272,,,,,,,,
+30/11-12 S (Askja Sørøst),28184810,MUNIN,42002476.0,30/11-12 S,7921,OIL,Included in other discovery,2016,Aker BP ASA,272,,,,,,,,
+30/11-13 (Beerenberg),28185156,MUNIN,42002476.0,30/11-13,7948,GAS/CONDENSATE,Included in other discovery,2016,Aker BP ASA,272,,,,,,,,
+30/11-14 (Slemmestad),28222393,MUNIN,42002476.0,30/11-14,7982,GAS,Included in other discovery,2016,Aker BP ASA,272,,,,,,,,
+30/11-14 B (Haraldsplass),28222402,MUNIN,42002476.0,30/11-14 B,7984,OIL/GAS,Included in other discovery,2016,Aker BP ASA,272,,,,,,,,
+30/11-5 (Steinbit),23296145,MUNIN,42002476.0,30/11-5,2986,GAS/CONDENSATE,Included in other discovery,1997,Aker BP ASA,272,,,,,,,,
+30/11-7 Fulla,5490395,FULLA,42002479.0,30/11-7,5919,GAS/CONDENSATE,Approved for production,2009,Aker BP ASA,873,,,,,,,,
+30/11-8 A,20484993,MUNIN,42002476.0,30/11-8 A,6611,OIL/GAS,Included in other discovery,2011,Aker BP ASA,272,,,,,,,,
+30/11-8 S Munin,20460100,MUNIN,42002476.0,30/11-8 S,6540,OIL,Approved for production,2011,Aker BP ASA,272,,,,,,,,
+30/11-9 A (Askja Øst),24216071,MUNIN,42002476.0,30/11-9 A,7281,OIL,Included in other discovery,2014,Aker BP ASA,272,,,,,,,,
+30/11-9 S (Askja),23892654,MUNIN,42002476.0,30/11-9 S,7280,GAS,Included in other discovery,2013,Aker BP ASA,272,,,,,,,,
+30/12-3 S (Surtsey),42002493,,,30/12-3 S,9994,OIL,Production is unlikely,2023,Aker BP ASA,272 B,,,,,,,,
+30/2-1 Huldra,44372,HULDRA,97002.0,30/2-1,72,GAS/CONDENSATE,Shut down,1982,Equinor Energy AS,878,0.8083333333333332,0.804,0.814,43.551546391752595,0.694,2413.3333333333335,0.0,3.0
+30/2-5 S (Atlantis),37065800,,,30/2-5 S,9051,GAS/CONDENSATE,Production in clarification phase,2020,Equinor Energy AS,878,,,,,,,,
+30/3-2  Veslefrikk,44378,VESLEFRIKK,43618.0,30/3-2 R,508,OIL,Shut down,1981,Equinor Energy AS,052,0.8285,0.826,0.831,39.29058539529271,0.712,86.0,0.0,3.0
+30/3-6 S,44384,VESLEFRIKK,43618.0,30/3-6 S,2269,OIL,Included in other discovery,1994,Equinor Energy AS,052,,,,,,,,
+30/3-7 A,46312,VESLEFRIKK,43618.0,30/3-7 A,3176,GAS,Included in other discovery,1998,Equinor Energy AS,052,,,,,,,,
+30/3-7 B,46322,VESLEFRIKK,43618.0,30/3-7 B,3229,OIL,Included in other discovery,1998,Equinor Energy AS,052,,,,,,,,
+30/3-7 S,44390,VESLEFRIKK,43618.0,30/3-7 S,2632,GAS,Included in other discovery,1995,Equinor Energy AS,052,,,,,,,,
+30/3-9,1036262,,,30/3-9,4053,GAS/CONDENSATE,Included in other discovery,2000,Equinor Energy AS,,,,,,,,,
+30/4-3 S,28546131,MARTIN LINGE,21675447.0,30/4-3 S,7961,OIL/GAS,Included in other discovery,2016,Equinor Energy AS,MARTIN LINGE UNIT,,,,,,,,
+30/5-3 A,5490728,,,30/5-3 A,6055,GAS,Production is unlikely,2009,Equinor Energy AS,309 C,,,,,,,,
+30/5-3 S (Corvus),5490430,,,30/5-3 S,6043,GAS,Production likely but unclarified,2009,Equinor Energy AS,309 C,,,,,,,,
+30/5-4 S (Oswig),41319247,,,30/5-4 S,9647,GAS/CONDENSATE,Production is unlikely,2022,,,,,,,,,,
+30/6-1 Oseberg,44396,OSEBERG,43625.0,30/6-1,380,OIL/GAS,Producing,1979,Equinor Energy AS,OSEBERG AREA UNIT,0.7475,0.73,0.765,57.79765886287623,0.66,3608.0,90.0,2.0
+30/6-14,44402,,,30/6-14,53,OIL,Production is unlikely,1984,Equinor Energy AS,053,0.84,0.835,0.845,36.95238095238096,,,0.0,2.0
+30/6-15 Oseberg Vest,44408,OSEBERG,43625.0,30/6-15,110,OIL/GAS,Included in other discovery,1984,Equinor Energy AS,OSEBERG AREA UNIT,0.8170000000000001,0.76,0.85,41.69461444308445,0.68,2018.5,0.0,3.0
+30/6-16,44414,,,30/6-16,333,OIL,Production is unlikely,1985,Equinor Energy AS,OSEBERG AREA UNIT,0.8666666666666667,0.84,0.88,31.769230769230774,0.7513333333333333,121.66666666666667,0.0,3.0
+30/6-17 R,44420,OSEBERG,43625.0,30/6-17 R,849,OIL/GAS,Included in other discovery,1986,Equinor Energy AS,OSEBERG AREA UNIT,0.82,0.82,0.82,41.0609756097561,0.66,157.0,0.0,1.0
+30/6-18 (Kappa),44426,OSEBERG,43625.0,30/6-18,488,OIL/GAS,Included in other discovery,1985,Equinor Energy AS,OSEBERG AREA UNIT,0.8280000000000001,0.811,0.845,39.39371980676327,0.705,231.5,122.33333333333333,3.0
+30/6-19 (Beta Sadel),44432,OSEBERG ØST,43639.0,30/6-19,489,OIL,Included in other discovery,1986,Equinor Energy AS,OSEBERG AREA UNIT,0.8416666666666667,0.831,0.861,36.61881188118812,0.8300000000000001,49.333333333333336,0.0,3.0
+30/6-26 (Gamma Vest),1632058,OSEBERG,43625.0,30/6-26,4416,OIL/GAS,Included in other discovery,2001,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/6-27,1632112,OSEBERG,43625.0,30/6-27,4425,OIL/GAS,Included in other discovery,2001,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/6-28 S,21660341,OSEBERG,43625.0,30/6-28 S,6768,OIL,Included in other discovery,2012,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/6-29 S (Alfa Nord Cook),27115569,OSEBERG,43625.0,30/6-29 S,7801,OIL,Included in other discovery,2015,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/6-30 (Rungne),33341464,,,30/6-30,8569,GAS/CONDENSATE,Production is unlikely,2018,DNO Norge AS,1209,,,,,,,,
+30/6-5 Oseberg Øst,44438,OSEBERG ØST,43639.0,30/6-5,118,OIL,Producing,1981,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/6-9,2770154,OSEBERG,43625.0,30/6-9,83,OIL/GAS,Included in other discovery,1982,Equinor Energy AS,OSEBERG AREA UNIT,0.8038000000000001,0.738,0.859,44.538815625777545,0.6728000000000001,1425.2,99.8,5.0
+30/6-C-2 A (Lambda),42002489,OSEBERG,43625.0,30/6-C-2 A,9790,OIL/GAS,Included in other discovery,2023,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/7-2,44444,MARTIN LINGE,21675447.0,30/7-2,385,OIL,Included in other discovery,1975,Equinor Energy AS,MARTIN LINGE UNIT,,,,,,,0.0,2.0
+30/7-6 Martin Linge,44450,MARTIN LINGE,21675447.0,30/7-6 R,507,GAS/CONDENSATE,Producing,1978,Equinor Energy AS,MARTIN LINGE UNIT,,,,,,,,
+30/8-1 S Tune,44456,TUNE,853376.0,30/8-1 S,2430,GAS/CONDENSATE,Producing,1995,Equinor Energy AS,190,,,,,,,,
+30/8-1 SR,23465984,TUNE,853376.0,30/8-1 SR,2719,GAS/CONDENSATE,Included in other discovery,1996,Equinor Energy AS,190,,,,,,,0.0,1.0
+30/8-3,45614,,,30/8-3,3246,GAS,Production is unlikely,1998,Equinor Energy AS,190,,,,,,,,
+30/8-4 S,5466601,,,30/8-4 S,5974,OIL,Production is unlikely,2009,Equinor Energy AS,190,,,,,,,,
+30/9-10 Oseberg Sør,44468,OSEBERG SØR,43645.0,30/9-10,1514,OIL,Included in other discovery,1990,Equinor Energy AS,OSEBERG AREA UNIT,0.861,0.861,0.861,32.8437862950058,0.754,98.5,0.0,2.0
+30/9-13 S Oseberg Sør,44474,OSEBERG SØR,43645.0,30/9-13 S,1811,OIL/GAS,Included in other discovery,1991,Equinor Energy AS,OSEBERG AREA UNIT,0.8233333333333333,0.78,0.85,40.362348178137665,0.7366666666666667,1817.6666666666667,103.33333333333333,3.0
+30/9-15 Oseberg Sør,44480,OSEBERG SØR,43645.0,30/9-15,2223,OIL,Included in other discovery,1994,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-16 K Oseberg Sør,44486,OSEBERG SØR,43645.0,30/9-16,2361,OIL/GAS,Included in other discovery,1994,Equinor Energy AS,OSEBERG AREA UNIT,0.7929999999999999,0.75,0.836,46.93631778058008,,1597.5,0.0,2.0
+30/9-19,96300,OSEBERG,43625.0,30/9-19,3561,OIL/GAS,Included in other discovery,1998,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-20 S,2066145,OSEBERG SØR,43645.0,30/9-20 S,4463,OIL,Included in other discovery,2002,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-21 A,5010058,,,30/9-21 A,5805,OIL,Production is unlikely,2008,Equinor Energy AS,104,,,,,,,,
+30/9-22 Stjerne,5490404,OSEBERG SØR,43645.0,30/9-22,6034,OIL/GAS,Included in other discovery,2009,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-27 S (Parkes),26464991,OSEBERG,43625.0,30/9-27 S,7522,OIL,Included in other discovery,2015,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-28 S,28123140,OSEBERG SØR,43645.0,30/9-28 S,7869,GAS,Included in other discovery,2016,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-3 Oseberg Sør,44492,OSEBERG SØR,43645.0,30/9-3,55,OIL,Producing,1984,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-4 S Oseberg Sør,44498,OSEBERG SØR,43645.0,30/9-4 S,452,OIL/GAS,Included in other discovery,1985,Equinor Energy AS,OSEBERG AREA UNIT,0.8,0.8,0.8,45.375,0.75,2704.5,0.0,2.0
+30/9-5 S Oseberg Sør,44504,OSEBERG SØR,43645.0,30/9-5 S,478,GAS,Included in other discovery,1985,Equinor Energy AS,OSEBERG AREA UNIT,,,,,,,,
+30/9-6 Oseberg Sør,44510,OSEBERG SØR,43645.0,30/9-6,1027,OIL,Included in other discovery,1987,Equinor Energy AS,OSEBERG AREA UNIT,0.8554999999999999,0.855,0.856,33.90035067212159,0.698,97.5,0.0,2.0
+30/9-7 Oseberg Sør,44516,OSEBERG SØR,43645.0,30/9-7,1306,OIL,Included in other discovery,1988,Equinor Energy AS,OSEBERG AREA UNIT,0.849,0.849,0.849,35.16666666666666,0.693,140.0,0.0,1.0
+30/9-9 Oseberg Sør,44522,OSEBERG SØR,43645.0,30/9-9,1442,OIL,Included in other discovery,1989,Equinor Energy AS,OSEBERG AREA UNIT,0.821,0.82,0.822,40.85079171741779,0.744,165.0,100.0,2.0
+31/1-2 S (Røver Nord),38216372,,,31/1-2 S,9178,OIL/GAS,Production likely but unclarified,2021,Equinor Energy AS,923,,,,,,,,
+31/1-3 S (Røver Sør),42148093,,,31/1-3 S,9663,OIL/GAS,Included in other discovery,2023,Equinor Energy AS,923,,,,,,,,
+31/1-4 (Ringand),42002510,,,31/1-4,10144,OIL/GAS,Production not evaluated,2024,Equinor Energy AS,923 B,,,,,,,,
+31/2-1 (Troll Vest),44534,TROLL,46437.0,31/2-1,398,OIL/GAS,Producing,1979,Equinor Energy AS,TROLL UNIT,,,,,,,,
+31/2-22 S (Blasto),38653521,FRAM,1578840.0,31/2-22 S,9185,OIL,Included in other discovery,2021,Equinor Energy AS,090,,,,,,,,
+31/2-N-11 H,3465918,TROLL BRENT B,29398828.0,31/2-N-11 H,5102,OIL,Shut down,2005,Equinor Energy AS,054,,,,,,,,
+31/4-11,1626899,BRAGE,43651.0,31/4-11,4147,OIL,Included in other discovery,2000,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-3 Brage,44546,BRAGE,43651.0,31/4-3,402,OIL,Producing,1980,OKEA ASA,BRAGE UNIT,0.838,0.825,0.851,37.35441527446301,0.702,352.5,0.0,2.0
+31/4-A-1 A,5081894,BRAGE,43651.0,31/4-A-1 A,5843,OIL,Included in other discovery,2008,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-1 B (Talisker),42002475,BRAGE,43651.0,31/4-A-1 B,9311,OIL,Included in other discovery,2021,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-12 B,42002469,BRAGE,43651.0,31/4-A-12 B,8910,OIL,Included in other discovery,2020,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-13 E (Kim),42002488,BRAGE,43651.0,31/4-A-13 E,9891,OIL,Included in other discovery,2023,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-15 B (Talisker),42002527,BRAGE,43651.0,31/4-A-15 B,10352,OIL,Included in other discovery,2025,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-15 D (Knockando Fensfjord),42002536,BRAGE,43651.0,31/4-A-15 D,10354,OIL/GAS,Production not evaluated,2025,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-23 G (Prince Sør),42002517,BRAGE,43651.0,31/4-A-23 G,10193,OIL,Included in other discovery,2025,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/4-A-30 B,2820014,BRAGE,43651.0,31/4-A-30 B,4890,OIL,Included in other discovery,2004,OKEA ASA,BRAGE UNIT,,,,,,,,
+31/6-1 (Troll Øst),44552,TROLL,46437.0,31/6-1,22,OIL/GAS,Included in other discovery,1983,Equinor Energy AS,TROLL UNIT,,,,,0.6325000000000001,,0.0,2.0
+31/7-1 Bestla,28222384,BESTLA,42002507.0,31/7-1,7954,OIL/GAS,Approved for production,2016,OKEA ASA,740,,,,,,,,
+33/12-1 Statfjord,44558,STATFJORD,43658.0,33/12-1,417,OIL,Producing,1974,Equinor Energy AS,STATFJORD UNIT,0.588,0.084,0.84,109.14625850340138,0.685,,0.0,4.0
+33/12-8 A Skinfaks,2074147,GULLFAKS SØR,43699.0,33/12-8 A,4532,OIL/GAS,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+33/12-8 S Skinfaks,2074087,GULLFAKS SØR,43699.0,33/12-8 S,4493,OIL/GAS,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+33/12-9 S (Skinfaks Sør),21334454,GULLFAKS SØR,43699.0,33/12-9 S,6729,OIL,Included in other discovery,2012,Equinor Energy AS,050,,,,,,,,
+33/12-N-3 HH (Granat),42002538,,,33/12-N-3 HH,10514,OIL/GAS,Production in clarification phase,2026,Equinor Energy AS,277,,,,,,,,
+33/12-N-4 AH,42002494,GULLFAKS SØR,43699.0,33/12-N-4 AH,9939,OIL,Included in other discovery,2024,Equinor Energy AS,050,,,,,,,,
+33/2-2 S (Morkel),26375958,,,33/2-2 S,7630,OIL,Production is unlikely,2015,,,,,,,,,121.0,1.0
+33/9  Murchison,44570,MURCHISON,43665.0,,0,OIL,Shut down,1975,,,,,,,,,,
+33/9-19 S Sygna,44564,SYGNA,104718.0,33/9-19 S,2830,OIL,Producing,1996,Equinor Energy AS,SYGNA UNIT,,,,,,,,
+33/9-6 DELTA,44576,,,33/9-6,411,OIL,Shut down,1976,,,,,,,,,,
+33/9-7 Statfjord Øst,44582,STATFJORD ØST,43672.0,33/9-7,412,OIL,Producing,1976,Equinor Energy AS,STATFJORD ØST UNIT,0.836,0.836,0.836,37.758373205741634,,,0.0,2.0
+33/9-8 Statfjord Nord,44588,STATFJORD NORD,43679.0,33/9-8,413,OIL,Producing,1977,Equinor Energy AS,037,0.83,0.82,0.84,38.981927710843394,0.7545,,0.0,3.0
+34/10-1 Gullfaks,44594,GULLFAKS,43686.0,34/10-1,424,OIL,Producing,1978,Equinor Energy AS,050,0.88175,0.879,0.885,28.97632548908419,0.622,95.5,52.5,4.0
+34/10-17 Rimfaks,44600,GULLFAKS SØR,43699.0,34/10-17,5,OIL/GAS,Included in other discovery,1983,Equinor Energy AS,050,0.7933333333333333,0.76,0.82,46.861344537815114,0.7233333333333333,756.6666666666666,0.0,4.0
+34/10-2 Gullfaks Sør,44606,GULLFAKS SØR,43699.0,34/10-2,425,OIL/GAS,Producing,1978,Equinor Energy AS,050,0.8375,0.81,0.865,37.455223880597,0.6677500000000001,3026.25,95.8,5.0
+34/10-23 Valemon,44618,VALEMON,20460969.0,34/10-23,476,GAS/CONDENSATE,Producing,1985,Equinor Energy AS,VALEMON UNIT,0.82,0.82,0.82,41.0609756097561,0.65,11400.0,0.0,1.0
+34/10-34 Gullfaks Vest,44624,GULLFAKS,43686.0,34/10-34,1747,OIL,Included in other discovery,1991,Equinor Energy AS,050,0.86,0.86,0.86,33.034883720930225,0.68,87.0,75.0,1.0
+34/10-37 Gullveig,44630,GULLFAKS SØR,43699.0,34/10-37,2431,OIL/GAS,Included in other discovery,1995,Equinor Energy AS,050,,,,,,,,
+34/10-40 S,44636,,,34/10-40 S,2634,GAS,Production is unlikely,1995,Equinor Energy AS,050,,,,,,,,
+34/10-43 S,1628630,GULLFAKS SØR,43699.0,34/10-43 S,4247,OIL,Included in other discovery,2001,Equinor Energy AS,050,,,,,,,,
+34/10-44 S (Rimfaks Lunde),1630418,GULLFAKS SØR,43699.0,34/10-44 S,4422,OIL/GAS,Included in other discovery,2001,Equinor Energy AS,050,0.7825,0.77,0.795,49.33067092651757,0.7435,781.0,0.0,2.0
+34/10-45 B,2482767,GULLFAKS,43686.0,34/10-45 B,4824,GAS/CONDENSATE,Included in other discovery,2003,Equinor Energy AS,050,,,,,,,,
+34/10-45 S,1853762,GULLFAKS,43686.0,34/10-45 S,4450,GAS/CONDENSATE,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+34/10-46 A,2066044,GULLFAKS,43686.0,34/10-46 A,4500,OIL/GAS,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+34/10-46 S,23296579,GULLFAKS,43686.0,34/10-46 S,4489,GAS,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+34/10-47 S Gulltopp,2144184,GULLFAKS SØR,43699.0,34/10-47 S,4609,OIL,Included in other discovery,2002,Equinor Energy AS,050,,,,,,,,
+34/10-48 S Gimle,3000688,GIMLE,4005142.0,34/10-48 S,4902,OIL,Producing,2004,Equinor Energy AS,BRIME UNIT,,,,,,,,
+34/10-49 S (Alun),4038603,GULLFAKS SØR,43699.0,34/10-49 S,5140,OIL,Included in other discovery,2006,Equinor Energy AS,050,,,,,,,,
+34/10-49 S (Epidot),4038668,GULLFAKS SØR,43699.0,34/10-49 S,5140,OIL,Included in other discovery,2006,Equinor Energy AS,050,,,,,,,,
+34/10-52 A,21060702,GULLFAKS SØR,43699.0,34/10-52 A,6657,GAS,Included in other discovery,2011,Equinor Energy AS,050,,,,,,,,
+34/10-52 B,21060720,GULLFAKS SØR,43699.0,34/10-52 B,6658,OIL/GAS,Included in other discovery,2011,Equinor Energy AS,050,,,,,,,,
+34/10-53 A,20474194,GULLFAKS SØR,43699.0,34/10-53 A,6495,GAS/CONDENSATE,Included in other discovery,2011,Equinor Energy AS,050,,,,,,,,
+34/10-53 S,20415280,GULLFAKS SØR,43699.0,34/10-53 S,6212,GAS/CONDENSATE,Included in other discovery,2011,Equinor Energy AS,050,,,,,,,,
+34/10-54 A,24617709,,,34/10-54 A,7254,GAS,Included in other discovery,2014,Equinor Energy AS,VALEMON UNIT,,,,,,,,
+34/10-54 S (Valemon Nord),24617878,,,34/10-54 S,7253,GAS/CONDENSATE,Production likely but unclarified,2014,Equinor Energy AS,VALEMON UNIT,,,,,,,,
+34/10-55 S,29394737,GIMLE,4005142.0,34/10-55 S,8102,OIL/GAS,Producing,2017,Equinor Energy AS,BRIME UNIT,,,,,,,,
+34/10-A-8,23375060,GULLFAKS,43686.0,34/10-A-8,1053,OIL,Included in other discovery,2012,Equinor Energy AS,050,,,,,,,,
+34/10-C-18 A,24618030,GIMLE,4005142.0,34/10-C-18 A,6795,OIL/GAS,Included in other discovery,2013,Equinor Energy AS,BRIME UNIT,,,,,,,,
+34/10-C-52 D,42002490,SINDRE,29401178.0,34/10-C-52 D,8167,OIL/GAS,Included in other discovery,2017,Equinor Energy AS,BRIME UNIT,,,,,,,,
+34/10-J-1 BH,39099523,GULLFAKS SØR,43699.0,34/10-J-1 BH,9336,GAS,Included in other discovery,2021,Equinor Energy AS,050,,,,,,,,
+34/10-K-2 H (Gullveig),2417063,GULLFAKS SØR,43699.0,34/10-K-2 H,3360,GAS,Included in other discovery,1998,Equinor Energy AS,050,,,,,,,,
+34/11-1 Kvitebjørn,44642,KVITEBJØRN,1036101.0,34/11-1,2377,GAS/CONDENSATE,Producing,1994,Equinor Energy AS,193,0.794,0.794,0.794,46.71158690176321,0.69,1728.0,69.0,1.0
+34/11-2 S (Nøkken),44648,,,34/11-2 S,2733,GAS,Production likely but unclarified,1996,Equinor Energy AS,193 GS,0.796,0.791,0.801,46.26381909547737,0.7,1657.0,86.0,3.0
+34/11-6 S (Valemon Vest),29027071,VALEMON,20460969.0,34/11-6 S,8059,GAS,Included in other discovery,2017,Equinor Energy AS,VALEMON UNIT,,,,,,,,
+34/12-1 (Afrodite),4972705,,,34/12-1,5684,GAS/CONDENSATE,Production likely but unclarified,2008,Equinor Energy AS,293,0.78,0.78,0.78,49.91025641025641,,6600.0,0.0,1.0
+34/3-1 S Knarr,4999474,KNARR,20460988.0,34/3-1 S,5811,OIL,Shut down,2008,,,0.798,0.798,0.798,45.81829573934837,0.795,35.0,134.0,1.0
+34/3-3 S,21124644,KNARR,20460988.0,34/3-3 S,6588,OIL,Included in other discovery,2011,,,0.778,0.778,0.778,50.376606683804624,0.832,62.0,137.0,1.0
+34/4-1 Snorre,44654,SNORRE,43718.0,34/4-1,422,OIL,Producing,1979,Equinor Energy AS,SNORRE UNIT,0.82,0.82,0.82,41.0609756097561,0.712,120.0,47.0,2.0
+34/4-10 (Beta Brent),1030530,,,34/4-10 R,4051,OIL,Production is unlikely,2000,Vår Energi ASA,375,,,,,,,,
+34/4-11 (Beta),17826500,,,34/4-11,6227,OIL,Production likely but unclarified,2010,Vår Energi ASA,375,,,,,,,,
+34/4-12 S,18012830,,,34/4-12 S,6283,OIL,Production is unlikely,2010,Equinor Energy AS,057,,,,,,,,
+34/4-15 A (Sjøpølse),38158511,,,34/4-15 A,9061,OIL,Included in other discovery,2020,Vår Energi ASA,882,,,,,,,,
+34/4-15 S (Dugong),37086976,,,34/4-15 S,9060,OIL,Production likely but unclarified,2020,Vår Energi ASA,882,,,,,,,,
+34/4-19 S (Omega Sør Alfa),42002539,,,34/4-19 S,10422,OIL,Production not evaluated,2026,Equinor Energy AS,057,,,,,,,,
+34/4-5,44660,,,34/4-5,37,OIL,Production is unlikely,1984,Wellesley Petroleum AS,1262,0.834,0.834,0.834,38.16426858513191,0.82,240.0,130.0,2.0
+34/5-1 S,18082198,,,34/5-1 S,6307,OIL,Production is unlikely,2010,,,,,,,,,,
+34/6-2 S (Garantiana),22506411,,,34/6-2 S,6971,OIL,Production in clarification phase,2012,Equinor Energy AS,554,,,,,,,0.0,1.0
+34/6-3 A (Akkar),25307119,,,34/6-3 A,7587,OIL,Production is unlikely,2014,Equinor Energy AS,554,,,,,,,,
+34/6-5 S,38684274,,,34/6-5 S,9253,OIL,Included in other discovery,2021,Equinor Energy AS,554,0.88,0.88,0.88,29.295454545454533,,79.0,0.0,1.0
+34/7-12 Tordis,44666,TORDIS,43725.0,34/7-12,1187,OIL,Producing,1987,Equinor Energy AS,089,0.8405,0.84,0.841,36.852171326591304,0.7084999999999999,67.0,83.0,3.0
+34/7-18,44684,TORDIS,43725.0,34/7-18,1819,OIL,Included in other discovery,1991,Equinor Energy AS,089,0.89,0.89,0.89,27.48876404494382,,,61.0,1.0
+34/7-21 Borg,44690,TORDIS,43725.0,34/7-21,2026,OIL,Included in other discovery,1992,Equinor Energy AS,089,0.85,0.85,0.85,34.970588235294116,0.89,95.0,91.0,1.0
+34/7-22 Tordis Øst,44696,TORDIS,43725.0,34/7-22,2167,OIL,Included in other discovery,1993,Equinor Energy AS,089,0.84,0.84,0.84,36.95238095238096,0.69,67.0,84.0,1.0
+34/7-23 S,44702,VIGDIS,43732.0,34/7-23 S,2296,OIL,Included in other discovery,1994,Equinor Energy AS,089,,,,,,,,
+34/7-25 S,44708,TORDIS,43725.0,34/7-25 S,2863,OIL,Included in other discovery,1996,Equinor Energy AS,089,0.84,0.84,0.84,36.95238095238096,0.73,98.0,82.0,1.0
+34/7-34,5490421,VIGDIS,43732.0,34/7-34,5973,OIL,Included in other discovery,2009,Equinor Energy AS,089,,,,,,,,
+34/7-8 Vigdis,44714,VIGDIS,43732.0,34/7-8,878,OIL,Producing,1986,Equinor Energy AS,089,0.844,0.83,0.855,36.15402843601896,,51.5,42.75,4.0
+34/7-E-4 AH (Lomre),37086521,VIGDIS,43732.0,34/7-E-4 AH,9010,OIL,Included in other discovery,2020,Equinor Energy AS,089,,,,,,,,
+34/7-H-2,23395970,,,34/7-H-2 H,6811,OIL,Production is unlikely,2013,Equinor Energy AS,089,,,,,,,,
+34/7-I-10 AH,37350441,TORDIS,43725.0,34/7-I-10 AH,9028,OIL,Included in other discovery,2020,Equinor Energy AS,089,,,,,,,,
+34/8-1 Visund,44720,VISUND,43745.0,34/8-1,854,OIL/GAS,Producing,1986,Equinor Energy AS,VISUND INSIDE,0.7895,0.745,0.834,47.7273590880304,0.65,904.0,104.33333333333333,3.0
+34/8-12 S,1853123,GIMLE,4005142.0,34/8-12 S,4424,OIL,Included in other discovery,2001,Equinor Energy AS,BRIME UNIT,,,,,,,,
+34/8-14 S Visund Sør,5081135,VISUND SØR,20461008.0,34/8-14 S,5943,OIL/GAS,Producing,2008,Equinor Energy AS,VISUND INSIDE,,,,,,,,
+34/8-16 S (Iapetus Øst),27116419,,,34/8-16 S,7800,GAS/CONDENSATE,Production is unlikely,2015,Equinor Energy AS,120,,,,,,,,
+34/8-17 S,24612277,VISUND,43745.0,34/8-17 S,7310,GAS,Included in other discovery,2014,Equinor Energy AS,VISUND INSIDE,,,,,,,,
+34/8-18 S (Telesto),34736238,VISUND,43745.0,34/8-18 S,8607,OIL,Included in other discovery,2019,Equinor Energy AS,VISUND INSIDE,,,,,,,,
+34/8-4 S,44726,VISUND,43745.0,34/8-4 S,1683,GAS/CONDENSATE,Included in other discovery,1991,Equinor Energy AS,VISUND INSIDE,0.7804,0.77,0.788,49.81727319323423,0.7258,1147.4,89.8,5.0
+34/8-7,44732,,,34/8-7,1941,GAS,Production is unlikely,1992,,,,,,,,,,
+35/10-1,23296174,,,35/10-1,1822,OIL,Production is unlikely,1992,Equinor Energy AS,293 B,,,,,,,,
+35/10-10 S (Carmen),42002472,,,35/10-10 S,9794,GAS/CONDENSATE,Production in clarification phase,2023,Wellesley Petroleum AS,1148,,,,,,,,
+35/10-13 S (Angel),42002505,,,35/10-13 S,10128,OIL/GAS,Production is unlikely,2024,Equinor Energy AS,827 SB,,,,,,,,
+35/10-15 S (Kjøttkake),42002515,,,35/10-15 S,10218,OIL/GAS,Production not evaluated,2025,Aker BP ASA,1182 S,,,,,,,,
+35/10-2,44738,,,35/10-2,2783,GAS,Production is unlikely,1996,Equinor Energy AS,293,,,,,,,,
+35/10-4 A (Gnomoria),33362751,,,35/10-4 A,8500,OIL,Production is unlikely,2018,Wellesley Petroleum AS,1184 S,,,,,,,,
+35/10-7 S (Toppand),39280996,,,35/10-7 S,9403,GAS/CONDENSATE,Production likely but unclarified,2021,Equinor Energy AS,630,,,,,,,,
+35/10-8 S (Kveikje),40786982,,,35/10-8 S,9534,OIL/GAS,Production likely but unclarified,2022,Equinor Energy AS,293 B,,,,,,,,
+35/10-9 (Heisenberg),42002465,,,35/10-9,9739,OIL/GAS,Production not evaluated,2023,Equinor Energy AS,827 S,,,,,,,,
+35/11-13 Byrding,3465388,BYRDING,28975067.0,35/11-13,5063,OIL/GAS,Producing,2005,Equinor Energy AS,090 B,,,,,,,,
+35/11-15 S Fram H-Nord,4475297,FRAM H-NORD,23410947.0,35/11-15 S,5517,OIL,Producing,2007,Equinor Energy AS,FRAM H-NORD UNIT,,,,,,,,
+35/11-17 (F-Vest),24624369,FRAM,1578840.0,35/11-17,7408,OIL/GAS,Included in other discovery,2014,Equinor Energy AS,090,,,,,,,,
+35/11-18 (Syrah),27122993,,,35/11-18,7771,OIL,Production not evaluated,2015,Harbour Energy Norge AS,248 F,,,,,,,,
+35/11-2 Vega Sør,44744,VEGA,4467595.0,35/11-2,893,OIL/GAS,Included in other discovery,1987,Harbour Energy Norge AS,VEGA UNIT,0.8202499999999999,0.811,0.828,41.00838159097839,0.7444999999999999,747.6,133.4,5.0
+35/11-20 B (Beaujolais),28543133,,,35/11-20 B,8036,OIL,Included in other discovery,2016,Harbour Energy Norge AS,248 F,,,,,,,,
+35/11-20 S (Orion),28543142,,,35/11-20 S,7978,OIL,Included in other discovery,2016,Harbour Energy Norge AS,248 F,,,,,,,,
+35/11-22 S (Bergand),34353155,,,35/11-22 S,8627,OIL,Production is unlikely,2019,Equinor Energy AS,248 C,,,,,,,,
+35/11-23 (Echino Sør),35318442,FRAM,1578840.0,35/11-23,8929,OIL/GAS,Included in other discovery,2019,Equinor Energy AS,090,,,,,,,,
+35/11-24 S (Swisher),37704421,,,35/11-24 S,9065,OIL/GAS,Production likely but unclarified,2020,Equinor Energy AS,248 C,,,,,,,,
+35/11-26 S (Mulder),42002485,,,35/11-26 S,9878,OIL/GAS,Production likely but unclarified,2023,Equinor Energy AS,090,,,,,,,,
+35/11-27 S (Cuvette),42002496,,,35/11-27 S,9923,OIL/GAS,Production not evaluated,2024,Harbour Energy Norge AS,248,,,,,,,,
+35/11-30 A,42002509,FRAM,1578840.0,35/11-30 A,10164,OIL,Production not evaluated,2024,Equinor Energy AS,090,,,,,,,,
+35/11-30 S (Rhombi),42002506,FRAM,1578840.0,35/11-30 S,10162,GAS,Production not evaluated,2024,Equinor Energy AS,090,,,,,,,,
+35/11-31 S (F-Sør),42002525,,,35/11-31 S,10296,OIL/GAS,Production not evaluated,2025,Equinor Energy AS,090,,,,,,,,
+35/11-32 S (Byrding C),42002540,,,35/11-32 S,10531,OIL,Production not evaluated,2026,Equinor Energy AS,090 HS,,,,,,,,
+35/11-4 Fram,44750,FRAM,1578840.0,35/11-4,1523,OIL/GAS,Producing,1990,Equinor Energy AS,090,,,,,,,,
+35/11-5,20460562,,,35/11-5,1780,OIL/GAS,Production is unlikely,1991,Equinor Energy AS,248 C,,,,,,,,
+35/11-7,44756,FRAM,1578840.0,35/11-7,1979,OIL/GAS,Included in other discovery,1992,Equinor Energy AS,090,0.802,0.802,0.802,44.93391521197006,0.715,178.5,82.5,2.0
+35/11-8 S,44762,FRAM,1578840.0,35/11-8 S,2772,OIL/GAS,Included in other discovery,1996,Equinor Energy AS,090,0.85,0.85,0.85,34.970588235294116,0.7053333333333333,106.33333333333333,104.0,3.0
+35/11-B-23 H,4972656,FRAM,1578840.0,35/11-B-23 H,5641,OIL,Included in other discovery,2008,Equinor Energy AS,090,,,,,,,,
+35/12-2 (Grosbeak),5818175,,,35/12-2,6095,OIL/GAS,Production likely but unclarified,2009,Equinor Energy AS,925,,,,,,,,
+35/12-6 S (Kallåsen),32036437,,,35/12-6 S,8431,OIL,Production is unlikely,2018,Equinor Energy AS,925,,,,,,,,
+35/2-1 (Peon),3465397,,,35/2-1,5135,GAS,Production likely but unclarified,2005,Equinor Energy AS,318,,,,,,,,
+35/3-2 Agat,44768,,,35/3-2,136,GAS,Production is unlikely,1980,INPEX Idemitsu Norge AS,1217,0.819,0.819,0.819,41.27167277167277,0.62,,0.0,2.0
+35/3-7 S,17221700,,,35/3-7 S,6154,GAS,Included in other discovery,2009,,,,,,,,,,
+35/6-3 S (Ofelia),40915842,,,35/6-3 S,9659,OIL,Production likely but unclarified,2022,Vår Energi ASA,929,,,,,,,,
+35/6-4 A (Ofelia Kyrre),42002491,,,35/6-4 A,10009,GAS,Included in other discovery,2023,Vår Energi ASA,929,,,,,,,,
+35/8-1 Vega,44774,VEGA,4467595.0,35/8-1,205,GAS/CONDENSATE,Producing,1981,Harbour Energy Norge AS,VEGA UNIT,0.8027500000000001,0.799,0.804,44.76907505450015,0.656,3415.25,0.0,4.0
+35/8-2 Vega,44780,VEGA,4467595.0,35/8-2,434,GAS/CONDENSATE,Included in other discovery,1982,Harbour Energy Norge AS,VEGA UNIT,0.797,0.797,0.797,46.040777917189445,0.67,1255.5,129.5,2.0
+35/8-3 (Aurora),1333027,,,35/8-3,1288,GAS,Production likely but unclarified,1988,OKEA ASA,195,,,,,,,,
+35/8-6 A (Robbins),28183437,,,35/8-6 A,7941,OIL,Production is unlikely,2016,Harbour Energy Norge AS,248,,,,,,,,
+35/8-8 S (Camilla Nord),42002532,,,35/8-8 S,9985,GAS/CONDENSATE,Production not evaluated,2025,Harbour Energy Norge AS,248 B,,,,,,,,
+35/9-1 Gjøa,44786,GJØA,4467574.0,35/9-1,1375,OIL/GAS,Producing,1989,Vår Energi ASA,153,,,,,,,,
+35/9-14,31164621,,,35/9-14,8358,OIL,Production is unlikely,2018,,,,,,,,,,
+35/9-2,2449421,GJØA,4467574.0,35/9-2,1600,OIL/GAS,Included in other discovery,1991,Vår Energi ASA,153,0.751,0.72,0.826,56.915446071904114,0.651,3401.0,20.75,4.0
+35/9-3 (Gjøa Nord),45651,GJØA,4467574.0,35/9-3,3206,OIL/GAS,Production likely but unclarified,1997,Vår Energi ASA,153,,,,,,,,
+35/9-6 S,18449542,,,35/9-6 S,6429,OIL/GAS,Production is unlikely,2010,,,,,,,,,,
+35/9-7 Nova,21667341,NOVA,33197696.0,35/9-7,6776,OIL,Producing,2012,Harbour Energy Norge AS,418,,,,,,,,
+36/7-1,44792,GJØA,4467574.0,36/7-1,1794,OIL/GAS,Included in other discovery,1996,Vår Energi ASA,153,0.82,0.82,0.82,41.0609756097561,0.8,167.0,83.0,1.0
+36/7-2 (Ulven),44798,,,36/7-2,2990,OIL,Production is unlikely,1997,,,,,,,,,,
+36/7-4 Duva,28543124,DUVA,34833026.0,36/7-4,7988,OIL/GAS,Producing,2016,Vår Energi ASA,636,0.801,0.801,0.801,45.1541822721598,0.637,15592.0,0.0,1.0
+36/7-5 B (Cerisa West),42002500,,,36/7-5 B,10102,OIL,Production likely but unclarified,2024,Vår Energi ASA,636,,,,,,,,
+36/7-5 S (Cerisa),42002498,,,36/7-5 S,10063,OIL/GAS,Production likely but unclarified,2024,Vår Energi ASA,636,,,,,,,,
+5604/22 (Lulita),48247,,,,0,,Production is unlikely,1991,,,,,,,,,,
+6/3-1 PI,44804,GAUPE,18161341.0,6/3-1,450,OIL/GAS,Shut down,1985,,,0.8293333333333334,0.768,0.86,39.11897106109325,,829.6666666666666,0.0,4.0
+6201/11-1,44810,,,6201/11-1,1134,OIL,Production is unlikely,1987,,,0.835,0.835,0.835,37.961077844311376,0.63,798.0,0.0,1.0
+6201/11-3 R (Albert),22492626,,,6201/11-3 R,7110,OIL,Production is unlikely,2012,,,,,,,,,,
+6204/10-2,45664,,,6204/10-2 R,3258,GAS,Production is unlikely,1997,INPEX Idemitsu Norge AS,1217,,,,,,,,
+6204/11-1,44816,,,6204/11-1,2205,GAS,Production is unlikely,1994,Vår Energi ASA,1219,,,,,,,,
+6302/6-1 (Tulipan),3505670,,,6302/6-1,5086,GAS,Production is unlikely,2005,,,,,,,,,,
+6305/5-1 Ormen lange,44822,ORMEN LANGE,2762452.0,6305/5-1,3144,GAS,Producing,1997,A/S Norske Shell,ORMEN LANGE UNIT,,,,,,,,
+6306/5-1,44828,,,6306/5-1,3060,GAS,Production is unlikely,1997,Petrolia NOCO AS,1221,,,,,,,,
+6405/10-1 (Midnattsol),4527324,,,6405/10-1,5565,GAS,Production is unlikely,2007,,,,,,,,,,
+6405/7-1 (Ellida),2472532,,,6405/7-1,4749,OIL,Production is unlikely,2003,Aker BP ASA,1005,,,,,,175.0,72.0,1.0
+6406/1-1 (Erlend Nord),1630215,KRISTIN,1854729.0,6406/1-1,4262,GAS/CONDENSATE,Included in other discovery,2001,Equinor Energy AS,HALTENBANKEN VEST UNIT,,,,,,,,
+6406/11-2 S (Vidsyn),42002520,,,6406/11-2 S,10293,GAS/CONDENSATE,Production not evaluated,2025,Vår Energi ASA,586,,,,,,,,
+6406/1-2 (Sklinna),2455593,,,6406/1-2,4762,GAS/CONDENSATE,Production is unlikely,2003,,,,,,,,,,
+6406/12-3 A (Bue),24689696,FENJA,31164879.0,6406/12-3 A,7432,OIL,Included in other discovery,2014,Vår Energi ASA,586,,,,,,,,
+6406/12-3 S Fenja,24617697,FENJA,31164879.0,6406/12-3 S,7322,OIL/GAS,Producing,2014,Vår Energi ASA,586,0.845,0.845,0.845,35.95562130177515,,160.0,0.0,1.0
+6406/12-G-1 H (Fenja Nord),37740897,,,6406/12-G-1 H,9036,OIL,Production not evaluated,2020,Vår Energi ASA,586,,,,,,,,
+6406/2-1 Lavrans,44834,KRISTIN,1854729.0,6406/2-1,2444,GAS/CONDENSATE,Included in other discovery,1995,Equinor Energy AS,HALTENBANKEN VEST UNIT,,,,,,,,
+6406/2-3 Kristin,44840,KRISTIN,1854729.0,6406/2-3,2849,GAS/CONDENSATE,Producing,1997,Equinor Energy AS,HALTENBANKEN VEST UNIT,0.7915000000000001,0.791,0.792,47.27447883765001,0.72,873.5,166.5,2.0
+6406/2-6 Ragnfrid,105682,,,6406/2-6,3407,GAS/CONDENSATE,Production not evaluated,1998,Equinor Energy AS,199,,,,,,,,
+6406/2-7 (Erlend),916112,KRISTIN,1854729.0,6406/2-7,3878,GAS/CONDENSATE,Included in other discovery,1999,Equinor Energy AS,HALTENBANKEN VEST UNIT,0.806,0.806,0.806,44.05831265508684,,731.0,164.0,1.0
+6406/2-8 (Imsa),26337302,,,6406/2-8,7618,OIL,Production is unlikely,2015,,,,,,,,,,
+6406/2-9 S (Ragnfrid Nord),33913959,,,6406/2-9 S,8562,GAS/CONDENSATE,Production is unlikely,2019,Equinor Energy AS,199,,,,,,,,
+6406/2-L-2 H,42002502,KRISTIN,1854729.0,6406/2-L-2 H,10000,GAS/CONDENSATE,Included in other discovery,2024,Equinor Energy AS,HALTENBANKEN VEST UNIT,,,,,,,,
+6406/3-10 (Bergknapp),36998822,,,6406/3-10,8928,OIL,Production likely but unclarified,2020,Harbour Energy Norge AS,836 S,,,,,,,153.66666666666666,3.0
+6406/3-10 A (Åre),38748600,,,6406/3-10 A,9273,OIL/GAS,Production not evaluated,2021,Harbour Energy Norge AS,836 S,,,,,,,,
+6406/3-2 Trestakk,44846,TRESTAKK,29396445.0,6406/3-2,863,OIL,Producing,1986,Equinor Energy AS,091 G,0.825,0.825,0.825,40.01515151515153,,200.0,145.5,2.0
+6406/3-8 Maria,18212080,MARIA,26465170.0,6406/3-8,6350,OIL,Producing,2010,Harbour Energy Norge AS,475 BS,,,,,,,,
+6406/3-9 (T-Rex),21636940,,,6406/3-9,6594,OIL,Production is unlikely,2012,Harbour Energy Norge AS,836 SB,,,,,,,,
+6406/5-1 (Tott Øst),2074021,,,6406/5-1,4451,GAS/CONDENSATE,Production is unlikely,2002,Equinor Energy AS,1269,,,,,,,,
+6406/5-2 S (Tott Vest),42002468,,,6406/5-2 S,9806,GAS/CONDENSATE,Production is unlikely,2023,,,,,,,,,,
+6406/6-3 (Mjøsa),23411075,,,6406/6-3,7156,GAS,Production is unlikely,2013,Aker BP ASA,1268,,,,,,,,
+6406/6-4 S (Tvillingen Sør),27052647,,,6406/6-4 S,7658,GAS/CONDENSATE,Production is unlikely,2015,Equinor Energy AS,1119,,,,,,,,
+6406/6-6 S (Jasper),33984359,,,6406/6-6 S,8550,GAS,Production is unlikely,2018,,,,,,,,,,
+6406/6-7 S (Mistral Sør),42002514,,,6406/6-7 S,10178,GAS/CONDENSATE,Production not evaluated,2025,Equinor Energy AS,1119,,,,,,,,
+6406/9-1 Linnorm,3435686,,,6406/9-1,4927,GAS,Production likely but unclarified,2005,Equinor Energy AS,255,,,,,,,46.0,2.0
+6406/9-3 (Onyx Sør),23761877,,,6406/9-3,7141,GAS,Production is unlikely,2013,Equinor Energy AS,1265,,,,,,,,
+6407/1-2 Tyrihans Sør,44852,TYRIHANS,3960848.0,6407/1-2,61,GAS/CONDENSATE,Producing,1983,Equinor Energy AS,TYRIHANS UNIT,0.792,0.792,0.792,47.161616161616166,0.735,869.0,134.0,1.0
+6407/1-3 Tyrihans Nord,44858,TYRIHANS,3960848.0,6407/1-3,29,GAS/CONDENSATE,Included in other discovery,1984,Equinor Energy AS,TYRIHANS UNIT,0.8240000000000001,0.776,0.872,40.223300970873765,0.66,1808.0,0.0,2.0
+6407/1-6 S (Rodriguez),23137754,,,6407/1-6 S,7086,GAS/CONDENSATE,Production is unlikely,2013,Equinor Energy AS,263 D,,,,,,,,
+6407/1-7 (Solberg),24670839,,,6407/1-7,7412,GAS/CONDENSATE,Production not evaluated,2014,Equinor Energy AS,263 G,,,,,,,,
+6407/1-8 S (Sierra),37741493,,,6407/1-8 S,9093,GAS,Production not evaluated,2020,Equinor Energy AS,263 D,,,,,,,,
+6407/1-9 (Egyptian Vulture),39200813,,,6407/1-9,9329,OIL,Production not evaluated,2021,Harbour Energy Norge AS,1225 S,,,,,,,,
+6407/1-A-3 BH,38668816,TYRIHANS,3960848.0,6407/1-A-3 BH,9244,OIL/GAS,Included in other discovery,2021,Equinor Energy AS,TYRIHANS UNIT,,,,,,,,
+6407/1-B-2 H (Tyrihans Øst),42002533,,,6407/1-B-2 H,10417,GAS/CONDENSATE,Production not evaluated,2025,Equinor Energy AS,1121,,,,,,,,
+6407/2-5 S (Nona),17115700,HALTEN ØST,42148955.0,6407/2-5 S,6151,OIL/GAS,Included in other discovery,2009,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6407/2-6 S (Flyndretind),18104628,HALTEN ØST,42148955.0,6407/2-6 S,6351,OIL/GAS,Included in other discovery,2010,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6407/4-1 (Spinell Sør),44864,,,6407/4-1,490,GAS/CONDENSATE,Production is unlikely,1985,Aker BP ASA,1268,0.807,0.807,0.807,43.84076827757124,0.81,1625.0,145.0,2.0
+6407/5-2 S (Cortina),21076978,,,6407/5-2 S,6648,GAS,Production is unlikely,2011,DNO Norge AS,1267,,,,,,,,
+6407/6-3 Mikkel,44870,MIKKEL,1630514.0,6407/6-3,1024,GAS/CONDENSATE,Producing,1987,Equinor Energy AS,MIKKEL UNIT,0.7703333333333333,0.741,0.818,52.186715707485945,0.7483333333333334,2388.0,0.0,3.0
+6407/6-6 (Gamma),4972665,HALTEN ØST,42148955.0,6407/6-6,5636,GAS,Included in other discovery,2008,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6407/6-7 S (Harepus),5506872,HALTEN ØST,42148955.0,6407/6-7 S,6100,GAS,Included in other discovery,2009,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6407/7-1 S Njord,44876,NJORD,43751.0,6407/7-1 S,474,OIL,Producing,1986,Equinor Energy AS,NJORD UNIT,0.826,0.823,0.832,39.80750605326878,0.733,214.75,0.0,5.0
+6407/7-6,1341958,NJORD,43751.0,6407/7-6,4172,GAS/CONDENSATE,Included in other discovery,2000,Equinor Energy AS,NJORD UNIT,0.815,0.815,0.815,42.119631901840506,,705.0,136.0,1.0
+6407/7-7 S,4527314,NJORD,43751.0,6407/7-7 S,5550,GAS/CONDENSATE,Included in other discovery,2007,Equinor Energy AS,NJORD UNIT,,,,,,,,
+6407/7-8 (Noatun),5071896,,,6407/7-8,5844,GAS,Production in clarification phase,2008,Equinor Energy AS,107 D,,,,,,,,
+6407/7-9 A,28576514,,,6407/7-9 A,8050,GAS,Included in other discovery,2016,Equinor Energy AS,NJORD UNIT,,,,,,,,
+6407/7-9 S,28576505,,,6407/7-9 S,8029,OIL/GAS,Production in clarification phase,2016,Equinor Energy AS,NJORD UNIT,,,,,,,,
+6407/8-2 (Tau),44882,,,6407/8-2,2434,OIL/GAS,Production is unlikely,1994,,,,,,,,,,
+6407/8-4 A,5010050,,,6407/8-4 A,5814,GAS,Included in other discovery,2008,OKEA ASA,1223,,,,,,,,
+6407/8-4 S (Galtvort),5010066,,,6407/8-4 S,5813,GAS,Production likely but unclarified,2008,OKEA ASA,1223,,,,,,,,
+6407/8-5 A,28578601,HYME,20474183.0,6407/8-5 A,6153,OIL,Included in other discovery,2009,Equinor Energy AS,348,,,,,,,,
+6407/8-5 S Hyme,5506881,HYME,20474183.0,6407/8-5 S,6110,OIL,Producing,2009,Equinor Energy AS,348,,,,,,,,
+6407/8-6 Bauge,23867160,BAUGE,29446221.0,6407/8-6,7265,OIL,Producing,2013,Equinor Energy AS,348,,,,,,,,
+6407/8-8 S (Calypso),41354975,,,6407/8-8 S,9712,OIL/GAS,Production likely but unclarified,2022,,,,,,,,,,
+6407/9-1 Draugen,44888,DRAUGEN,43758.0,6407/9-1,133,OIL,Producing,1984,OKEA ASA,093,0.82,0.82,0.82,41.0609756097561,0.89,38.0,68.0,1.0
+6407/9-9 (Hasselmus),110258,DRAUGEN,43758.0,6407/9-9,1990,OIL/GAS,Included in other discovery,1999,OKEA ASA,093,,,,,,,,
+6506/11-10 Berling,31164710,BERLING,42002473.0,6506/11-10,8317,GAS/CONDENSATE,Approved for production,2018,OMV (Norge) AS,644 B,,,,,,,,
+6506/11-2 (Isbjørn),44894,ÅSGARD,43765.0,6506/11-2,1754,OIL/GAS,Included in other discovery,1991,Equinor Energy AS,ÅSGARD UNIT,0.80825,0.78,0.826,43.56959480358799,0.7625,886.0,120.16666666666667,6.0
+6506/11-7 Morvin,1630175,MORVIN,4966234.0,6506/11-7,3322,OIL/GAS,Producing,2001,Equinor Energy AS,134 B,,,,,,450.5,165.0,3.0
+6506/12-1 Smørbukk,44900,ÅSGARD,43765.0,6506/12-1,1004,GAS/CONDENSATE,Included in other discovery,1985,Equinor Energy AS,ÅSGARD UNIT,0.793,0.79,0.805,46.936317780580055,0.75,1355.0,0.0,8.0
+6506/12-12 S (Smørbukk Nordøst),18104901,ÅSGARD,43765.0,6506/12-12 S,6144,GAS/CONDENSATE,Included in other discovery,2009,Equinor Energy AS,ÅSGARD UNIT,,,,,,,,
+6506/12-3 (Blåbjørn),116294,ÅSGARD,43765.0,6506/12-3,468,OIL,Included in other discovery,1985,Equinor Energy AS,ÅSGARD UNIT,0.8105714285714285,0.785,0.83,43.06820585125135,0.803,644.4285714285714,85.57142857142857,7.0
+6506/12-3 Smørbukk Sør,45846,ÅSGARD,43765.0,6506/12-3,468,OIL,Included in other discovery,1985,Equinor Energy AS,ÅSGARD UNIT,0.8105714285714285,0.785,0.83,43.06820585125135,0.803,644.4285714285714,85.57142857142857,7.0
+6506/12-PB-3 H (Smørbukk Midt),42002526,ÅSGARD,43765.0,6506/12-PB-3 H,10350,OIL/CONDENSATE,Included in other discovery,2025,Equinor Energy AS,ÅSGARD UNIT,,,,,,,,
+6506/5-1 S (Nidhogg),36998831,,,6506/5-1 S,8961,GAS,Production is unlikely,2020,,,,,,,,,,
+6506/6-1 (Victoria),1340823,,,6506/6-1,4122,GAS,Production is unlikely,2000,Aker BP ASA,1304,,,,,,,,
+6506/9-2 S (Fogelberg),18086230,,,6506/9-2 S,6332,GAS/CONDENSATE,Production not evaluated,2010,Equinor Energy AS,1227,,,,,,,,
+6506/9-3 (Smørbukk Nord),23465876,ÅSGARD,43765.0,6506/9-3,7207,GAS/CONDENSATE,Included in other discovery,2013,Equinor Energy AS,ÅSGARD UNIT,,,,,,,,
+6507/10-2 S (Novus),24218006,,,6507/10-2 S,7300,OIL/GAS,Production is unlikely,2014,,,,,,,,,,
+6507/11-1 Midgard,44912,ÅSGARD,43765.0,6507/11-1,68,OIL/GAS,Producing,1981,Equinor Energy AS,ÅSGARD UNIT,,,,,,,0.0,1.0
+6507/11-6 Halten Øst,1630057,HALTEN ØST,42148955.0,6507/11-6,4321,GAS/CONDENSATE,Producing,2001,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6507/11-8,4475288,YTTERGRYTA,4973114.0,6507/11-8,5562,GAS,Shut down,2007,Equinor Energy AS,062,,,,,,,,
+6507/11-9 (Natalia),4972689,HALTEN ØST,42148955.0,6507/11-9,5766,GAS,Included in other discovery,2008,Equinor Energy AS,HALTEN ØST UNIT,,,,,,,,
+6507/2-2 Marulk,44918,MARULK,18212090.0,6507/2-2,1840,GAS,Producing,1992,DNO Norge AS,122,0.785,0.78,0.79,48.75477707006368,0.635,3699.0,0.0,2.0
+6507/2-5 S Ørn,34975034,ØRN,42002484.0,6507/2-5 S,8775,GAS,Approved for production,2019,Aker BP ASA,942,,,,,,,,
+6507/2-6,40889098,,,6507/2-6,9596,GAS,Production likely but unclarified,2022,Aker BP ASA,261,,,,,,,,
+6507/3-1 Alve,44924,ALVE,4444332.0,6507/3-1,1533,GAS/CONDENSATE,Producing,1990,Equinor Energy AS,159 B,0.8,0.8,0.8,45.375,0.71,3121.0,34.0,4.0
+6507/3-10 (Klara),23465884,,,6507/3-10,7212,OIL,Production is unlikely,2013,Aker BP ASA,1306,,,,,,,,
+6507/3-12 (Osprey),29382152,,,6507/3-12,8097,GAS,Production is unlikely,2017,Aker BP ASA,1306,,,,,,,,
+6507/3-13,34781361,,,6507/3-13,8720,OIL/GAS,Production is unlikely,2019,Equinor Energy AS,159 B,,,,,,,,
+6507/3-15,40889640,,,6507/3-15,9603,OIL/GAS,Production is unlikely,2022,Aker BP ASA,941,,,,,,,,
+6507/3-3 (Idun),105867,SKARV,4704482.0,6507/3-3,3668,GAS,Included in other discovery,1999,Aker BP ASA,SKARV UNIT,,,,,,,,
+6507/3-5 S,4972713,ALVE,4444332.0,6507/3-5 S,5307,OIL/GAS,Included in other discovery,2008,Equinor Energy AS,159 B,,,,,,,,
+6507/3-7 Idun Nord,5818184,IDUN NORD,42002477.0,6507/3-7,6123,GAS,Approved for production,2009,Aker BP ASA,159 D,,,,,,,,
+6507/3-8 Andvare,17341840,ALVE,4444332.0,6507/3-8,6258,GAS,Included in other discovery,2009,Equinor Energy AS,159 B,,,,,,,,
+6507/3-9 S Ærfugl Nord,21695900,ÆRFUGL NORD,38542241.0,6507/3-9 S,6951,GAS/CONDENSATE,Producing,2012,Aker BP ASA,212 E,,,,,,,,
+6507/4-1 (Warka),37741945,,,6507/4-1,9110,GAS,Production is unlikely,2020,Aker BP ASA,1304,,,,,,,,
+6507/4-2 S (Adriana Sabina),42147289,,,6507/4-2 S,9251,GAS/CONDENSATE,Production likely but unclarified,2021,Harbour Energy Norge AS,211 CS,,,,,,,,
+6507/4-2 S (Dvalin Nord),38683461,DVALIN,29393934.0,6507/4-2 S,9251,GAS,Included in other discovery,2021,Harbour Energy Norge AS,435,,,,,,,,
+6507/4-3 S,40853630,,,6507/4-3 S,9570,GAS,Production is unlikely,2022,,,,,,,,,,
+6507/5-1 Skarv,45801,SKARV,4704482.0,6507/5-1,3683,OIL/GAS,Producing,1998,Aker BP ASA,SKARV UNIT,0.8029999999999999,0.759,0.857,44.714196762141995,0.67875,2126.25,0.0,4.0
+6507/5-10 S (Slagugle),37817141,,,6507/5-10 S,9149,OIL,Production not evaluated,2020,ConocoPhillips Skandinavia AS,891,,,,,,,,
+6507/5-13 S,42002516,SKARV,4704482.0,6507/5-13 S,10212,OIL,Included in other discovery,2025,Aker BP ASA,SKARV UNIT,,,,,,,,
+6507/5-3 Ærfugl,1036252,SKARV,4704482.0,6507/5-3,4059,GAS,Included in other discovery,2000,Aker BP ASA,SKARV UNIT,,,,,,,,
+6507/5-9 S (Shrek),35315268,,,6507/5-9 S,8866,OIL/GAS,Production in clarification phase,2019,Aker BP ASA,838,,,,,,,,
+6507/7-13 (Alpha Horst),1628221,HEIDRUN,43771.0,6507/7-13,4213,OIL,Included in other discovery,2001,Equinor Energy AS,HEIDRUN UNIT,,,,,,,,
+6507/7-14 S Dvalin,18229140,DVALIN,29393934.0,6507/7-14 S,6367,GAS,Producing,2010,Harbour Energy Norge AS,435,,,,,0.647,22600.0,0.0,1.0
+6507/7-15 S Dvalin,21667407,DVALIN,29393934.0,6507/7-15 S,6730,GAS,Included in other discovery,2012,Harbour Energy Norge AS,435,,,,,,,,
+6507/7-16 S (Canela),35392734,,,6507/7-16 S,8909,OIL/GAS,Production is unlikely,2019,Equinor Energy AS,1303,,,,,,,,
+6507/7-2 Heidrun,44930,HEIDRUN,43771.0,6507/7-2,464,OIL/GAS,Producing,1985,Equinor Energy AS,HEIDRUN UNIT,0.8648888888888888,0.754,0.982,32.10483042137719,0.649,2478.6666666666665,0.0,10.0
+6507/8-12 S (Othello Sør),42002534,,,6507/8-12 S,10421,OIL,Production not evaluated,2026,Equinor Energy AS,124 B,,,,,,,,
+6507/8-4 Heidrun Nord,44936,HEIDRUN,43771.0,6507/8-4,1340,OIL/GAS,Included in other discovery,1990,Equinor Energy AS,HEIDRUN UNIT,0.874,0.78,0.908,30.399313501144178,0.6505000000000001,11813.25,0.0,6.0
+6507/8-9 (Carmen),29491636,,,6507/8-9,8218,GAS,Production likely but unclarified,2017,Equinor Energy AS,124,,,,,,,,
+6508/1-2,21077280,,,6508/1-2,6551,OIL/GAS,Production is unlikely,2011,,,,,,,,,,
+6603/12-1 (Gro),5798448,,,6603/12-1,5985,GAS,Production is unlikely,2009,,,,,,,,,,
+6604/10-1,20472522,,,6604/10-1,6356,GAS,Production is unlikely,2010,,,,,,,,,,
+6604/5-1 (Balderbrå),31164612,,,6604/5-1,8318,GAS,Production is unlikely,2018,,,,,,,,,,
+6605/1-2 S (Obelix),41691090,,,6605/1-2 S,9673,GAS,Production not evaluated,2022,Equinor Energy AS,1128,,,,,,,,
+6605/6-1 S,42002501,,,6605/6-1 S,10114,GAS,Production not evaluated,2024,OMV (Norge) AS,1194,,,,,,,,
+6605/8-1,3490643,,,6605/8-1,4984,GAS,Production is unlikely,2005,,,,,,,,230000.0,0.0,1.0
+6607/12-2 S Alve Nord,21104629,ALVE NORD,42002483.0,6607/12-2 S,6642,OIL/GAS,Approved for production,2011,Aker BP ASA,127 C,,,,,,,,
+6607/12-3,22528465,,,6607/12-3,7039,GAS,Production is unlikely,2012,,,,,,,,,,
+6607/12-4 (Alve Nordøst),37741976,,,6607/12-4,9077,OIL/GAS,Production is unlikely,2020,DNO Norge AS,127 DS,,,,,,,,
+6607/3-1 S (Velocette),42002487,,,6607/3-1 S,9896,GAS,Production is unlikely,2023,,,,,,,,,,
+6608/10-11 S (Trost),4055854,URD,2834734.0,6608/10-11 S,5386,GAS,Included in other discovery,2006,Equinor Energy AS,128,,,,,,,,
+6608/10-12 Skuld,5818165,SKULD,21350124.0,6608/10-12,5949,OIL,Producing,2008,Equinor Energy AS,128,,,,,,,,
+6608/10-14 S Skuld,18086080,SKULD,21350124.0,6608/10-14 S,6306,OIL/GAS,Included in other discovery,2010,Equinor Energy AS,128,,,,,,,,
+6608/10-15 (Svale Nord),23761901,URD,2834734.0,6608/10-15,7245,OIL,Included in other discovery,2013,Equinor Energy AS,128,,,,,,,,
+6608/10-17 S Verdande,28975188,VERDANDE,42002481.0,6608/10-17 S,8065,OIL/GAS,Producing,2017,Equinor Energy AS,VERDANDE UNIT,,,,,,,,
+6608/10-2 Norne,44942,NORNE,43778.0,6608/10-2,1782,OIL/GAS,Producing,1992,Equinor Energy AS,NORNE INSIDE,0.847,0.847,0.847,35.56021251475798,0.655,93.0,96.0,4.0
+6608/10-4,44948,NORNE,43778.0,6608/10-4,2256,OIL,Included in other discovery,1994,Equinor Energy AS,NORNE INSIDE,0.858,0.858,0.858,33.418414918414925,0.648,83.0,23.5,4.0
+6608/10-6 Svale,1030536,URD,2834734.0,6608/10-6,3260,OIL,Producing,2000,Equinor Energy AS,128,,,,,,,,
+6608/10-8 Stær,2074060,URD,2834734.0,6608/10-8,4439,OIL,Included in other discovery,2002,Equinor Energy AS,128,,,,,,,,
+6608/10-9 Lerke,2391586,URD,2834734.0,6608/10-9,4668,OIL,Included in other discovery,2003,Equinor Energy AS,128,,,,,,,,
+6608/11-2 (Falk),1340747,,,6608/11-2,4189,OIL,Production is unlikely,2000,,,,,,,,,,
+6608/11-4 Linerle,2820030,,,6608/11-4,4939,OIL,Included in other discovery,2004,,,,,,,,,,
+6611/1-1 (Toutatis),35351868,,,6611/1-1,8887,OIL,Production is unlikely,2019,Vår Energi ASA,1275,,,,,,,,
+6705/10-1 Irpa,5466760,IRPA,42002482.0,6705/10-1,6044,GAS,Approved for production,2009,Equinor Energy AS,327 B,,,,,,,,
+6706/11-2 (Gymir),26376004,,,6706/11-2,7709,GAS,Production is unlikely,2015,,,,,,,,,,
+6706/12-1,5010082,AASTA HANSTEEN,23395946.0,6706/12-1,5867,GAS,Included in other discovery,2008,Equinor Energy AS,218,,,,,,,,
+6706/12-2 (Snefrid Nord),26311166,AASTA HANSTEEN,23395946.0,6706/12-2,7651,OIL/GAS,Included in other discovery,2015,Equinor Energy AS,218,,,,,,,,
+6706/12-3 (Roald Rygg),26336800,,,6706/12-3,7666,GAS,Production is unlikely,2015,Harbour Energy Norge AS,1234,,,,,,,,
+6706/6-1 (Hvitveis),2450045,,,6706/6-1,4705,GAS,Production is unlikely,2003,,,,,,,,,,
+6707/10-1 Aasta Hansteen,44954,AASTA HANSTEEN,23395946.0,6707/10-1,3075,GAS,Producing,1997,Equinor Energy AS,218,,,,,,,,
+6707/10-2 A,5125172,,,6707/10-2 A,5931,GAS,Production is unlikely,2008,Equinor Energy AS,218,,,,,,,,
+6707/10-2 S,5081127,AASTA HANSTEEN,23395946.0,6707/10-2 S,5918,GAS,Included in other discovery,2008,Equinor Energy AS,218,,,,,,,,
+6707/10-3 S (Ivory),25594096,,,6707/10-3 S,7550,GAS,Production is unlikely,2014,Vår Energi ASA,1310,,,,,,,,
+7/11-1 Cod,44960,COD,43785.0,7/11-1,149,GAS/CONDENSATE,Shut down,1968,,,,,,,,3089.0,66.4,5.0
+7/11-12 A,21139643,,,7/11-12 A,6655,GAS,Production is unlikely,2011,,,,,,,,,,
+7/11-14 S (Mugnetind),39201622,,,7/11-14 S,9421,OIL,Production is unlikely,2021,,,,,,,,,,
+7/11-5 Mime,44966,MIME,43792.0,7/11-5,42,OIL,Shut down,1982,,,0.828,0.828,0.828,39.3937198067633,0.876,251.0,0.0,2.0
+7/11-7,23296230,COD,43785.0,7/11-7,57,OIL,Included in other discovery,1983,,,0.82,0.82,0.82,41.0609756097561,,,0.0,3.0
+7/12-2 Ula,44972,ULA,43800.0,7/12-2,295,OIL,Producing,1976,Aker BP ASA,019,0.82,0.82,0.82,41.0609756097561,0.7719999999999999,102.0,96.83333333333333,6.0
+7/12-5 (Ula North),44978,,,7/12-5,299,OIL,Production is unlikely,1981,,,0.828,0.828,0.828,39.3937198067633,0.876,251.0,0.0,1.0
+7/7-2 Brynhild,44984,BRYNHILD,21123063.0,7/7-2,1868,OIL,Shut down,1992,,,0.877,0.877,0.877,29.845496009122,0.84,20.0,80.0,1.0
+7/8-3 (Krabbe),44990,,,7/8-3,28,OIL,Production is unlikely,1983,,,0.882,0.882,0.882,28.93083900226756,0.88,32.0,0.0,2.0
+7019/1-1,1340799,,,7019/1-1,4145,GAS,Production is unlikely,2000,,,,,,,,,,
+7119/12-3,44996,,,7119/12-3,17,GAS,Production is unlikely,1983,,,0.797,0.797,0.797,46.040777917189445,0.722,,0.0,1.0
+7120/1-2,3000739,,,7120/1-2,1366,OIL,Production is unlikely,1989,,,,,,,0.673,,0.0,1.0
+7120/12-2 (Alke Sør),45002,,,7120/12-2,122,GAS,Production in clarification phase,1981,Vår Energi ASA,489,0.7384999999999999,0.722,0.755,60.10460392687884,0.625,15524.5,69.66666666666667,3.0
+7120/12-3 (Alke Nord),45008,,,7120/12-3,8,GAS,Included in other discovery,1983,Vår Energi ASA,489,,,,,,,,
+7120/1-3 (Gohta),23761885,,,7120/1-3,7210,OIL/GAS,Production likely but unclarified,2013,Aker BP ASA,492,,,,,,322.0,41.0,1.0
+7120/2-3 S (Skalle),20485020,,,7120/2-3 S,6592,GAS,Production is unlikely,2011,,,,,,,,,,
+7120/7-1 (Askeladd Vest),45014,SNØHVIT,2053062.0,7120/7-1,85,GAS,Included in other discovery,1982,Equinor Energy AS,SNØHVIT UNIT,0.78,0.78,0.78,49.91025641025641,0.68,26010.0,90.0,2.0
+7120/7-2 (Gamma),45020,SNØHVIT,2053062.0,7120/7-2,18,GAS,Included in other discovery,1983,Equinor Energy AS,SNØHVIT UNIT,0.77,0.77,0.77,52.26623376623377,0.68,23400.0,28.333333333333332,3.0
+7120/8-1 (Askeladd),45026,SNØHVIT,2053062.0,7120/8-1,120,GAS,Included in other discovery,1981,Equinor Energy AS,SNØHVIT UNIT,0.7786666666666667,0.777,0.78,50.2208904109589,0.6646666666666667,20514.333333333332,76.66666666666667,3.0
+7120/9-1 (Albatross),45032,SNØHVIT,2053062.0,7120/9-1,82,GAS,Included in other discovery,1982,Equinor Energy AS,SNØHVIT UNIT,0.764,0.764,0.764,53.70942408376962,0.72,26697.0,0.0,2.0
+7121/4-1 Snøhvit,45038,SNØHVIT,2053062.0,7121/4-1,135,OIL/GAS,Producing,1984,Equinor Energy AS,SNØHVIT UNIT,0.82,0.76,0.85,41.0609756097561,0.7200000000000001,6740.666666666667,64.5,4.0
+7121/4-2 (Snøhvit Nord),45044,SNØHVIT,2053062.0,7121/4-2,461,GAS,Included in other discovery,1985,Equinor Energy AS,SNØHVIT UNIT,0.769,0.769,0.769,52.50520156046812,0.647,27300.0,65.0,1.0
+7121/5-2 (Snøhvit Beta),45050,SNØHVIT,2053062.0,7121/5-2,907,OIL/GAS,Included in other discovery,1986,Equinor Energy AS,SNØHVIT UNIT,,,,,,,,
+7121/7-2 (Albatross Sør),45062,SNØHVIT,2053062.0,7121/7-2,881,GAS,Included in other discovery,1986,Equinor Energy AS,SNØHVIT UNIT,0.775,0.775,0.775,51.080645161290306,0.78,18800.0,0.0,1.0
+7121/8-1 (Blåmann),29468757,,,7121/8-1,8159,GAS,Production is unlikely,2017,Vår Energi ASA,1168,,,,,,,,
+7122/6-1 (Tornerose),45068,SNØHVIT,2053062.0,7122/6-1,1140,GAS/CONDENSATE,Included in other discovery,1987,Equinor Energy AS,SNØHVIT UNIT,0.749,0.749,0.749,57.418558077436586,0.68,8397.0,76.0,2.0
+7122/6-3 S (Rødhette),39100522,,,7122/6-3 S,9388,OIL/GAS,Production is unlikely,2021,,,,,,,,,,
+7122/7-1 Goliat,1340775,GOLIAT,5774394.0,7122/7-1,4173,OIL/GAS,Producing,2000,Vår Energi ASA,229,,,,,,,,
+7122/7-3,4001397,GOLIAT,5774394.0,7122/7-3,5214,OIL,Included in other discovery,2006,Vår Energi ASA,229,,,,,,,,
+7122/7-4 S (Klappmys),4213452,GOLIAT,5774394.0,7122/7-4 S,5406,OIL,Included in other discovery,2006,Vår Energi ASA,229,,,,,,,,
+7122/7-8 (Goliat Nord),42002529,,,7122/7-8,10186,OIL/GAS,Production not evaluated,2025,Vår Energi ASA,229,,,,,,,,
+7122/8-1 S (Countach S2),42002464,,,7122/8-1 S,9688,OIL/GAS,Production not evaluated,2023,Vår Energi ASA,229,,,,,,,,
+7122/8-2 S (Countach S3),42002511,,,7122/8-2 S,10184,OIL,Production not evaluated,2024,Vår Energi ASA,229,,,,,,,,
+7122/8-3 S (Zagato Sør),42002513,,,7122/8-3 S,10187,OIL,Production not evaluated,2025,Vår Energi ASA,229,,,,,,,,
+7122/9-1 (Lupa),41392222,,,7122/9-1,9689,GAS,Production not evaluated,2022,Vår Energi ASA,229 E,,,,,,,,
+7122/9-2 (Elgol),42002512,,,7122/9-2,10200,GAS,Production not evaluated,2025,Vår Energi ASA,1131,,,,,,,,
+7124/3-1 (Bamse),45074,,,7124/3-1,1066,OIL/GAS,Production is unlikely,1987,,,,,,,,,,
+7125/1-1 (Binne),4055254,,,7125/1-1,1350,OIL,Production is unlikely,1988,,,,,,,,,,
+7125/4-1 (Nucula),4445929,,,7125/4-1,5450,OIL/GAS,Production is unlikely,2007,Vår Energi ASA,393,,,,,,,,
+7128/4-1 (Omd Vest),45080,,,7128/4-1,2049,OIL/GAS,Production is unlikely,1994,,,0.797,0.797,0.797,46.040777917189445,0.638,16578.0,0.0,2.0
+7130/4-1 (Ørnen),27395608,,,7130/4-1,7788,GAS,Production is unlikely,2016,,,,,,,,,,
+7219/12-1 (Filicudi),29346456,,,7219/12-1,8024,OIL/GAS,Production is unlikely,2017,,,,,,,,,,
+7219/12-2 S (Hufsa),29927530,,,7219/12-2 S,8216,GAS,Production is unlikely,2017,,,,,,,,,,
+7219/8-2 (Iskrystall),23762803,,,7219/8-2,7225,GAS,Production likely but unclarified,2013,Equinor Energy AS,608,,,,,,,,
+7219/9-2 (Kayak),29447699,,,7219/9-2,8193,OIL,Production not evaluated,2017,Equinor Energy AS,532,,,,,,,,
+7220/10-1 (Salina),22468264,,,7220/10-1,7015,GAS,Production is unlikely,2012,,,,,,,,,,
+7220/11-1 (Alta),25288497,,,7220/11-1,7503,OIL/GAS,Production in clarification phase,2014,Aker BP ASA,609,,,,,,92.5,44.0,2.0
+7220/2-1 (Isfjell),25165539,,,7220/2-1,7558,GAS,Production is unlikely,2014,Equinor Energy AS,,,,,,,,,
+7220/4-1 (Kramsnø),24567434,,,7220/4-1,7307,GAS,Production likely but unclarified,2014,Equinor Energy AS,532,,,,,,,,
+7220/5-2 (Nunatak),23411997,,,7220/5-2,7166,GAS,Production is unlikely,2013,Equinor Energy AS,532,,,,,,,,
+7220/5-3 (Skruis),33310096,,,7220/5-3,8539,OIL,Production likely but unclarified,2018,Equinor Energy AS,532,,,,,,,,
+7220/5-4 (Skred),42002519,,,7220/5-4,10292,GAS,Production not evaluated,2025,Equinor Energy AS,532,,,,,,,,
+7220/6-2 R (Neiden),28608758,,,7220/6-2 R,8026,OIL/GAS,Production not evaluated,2016,Aker BP ASA,609,,,,,,,,
+7220/7-1 (Havis),21334480,JOHAN CASTBERG,32017325.0,7220/7-1,6756,OIL/GAS,Included in other discovery,2012,Equinor Energy AS,532,,,,,,,,
+7220/7-2 S (Skavl),23873319,JOHAN CASTBERG,32017325.0,7220/7-2 S,7252,OIL/GAS,Included in other discovery,2013,Equinor Energy AS,532,,,,,,,,
+7220/7-3 S (Drivis),24624378,JOHAN CASTBERG,32017325.0,7220/7-3 S,7414,OIL/GAS,Included in other discovery,2014,Equinor Energy AS,532,,,,,,,,
+7220/7-4 Isflak,38641159,JOHAN CASTBERG,32017325.0,7220/7-4,9220,OIL,Included in other discovery,2021,Equinor Energy AS,532,,,,,,,,
+7220/7-5 (Polynya),42002541,,,7220/7-5,10456,OIL,Production not evaluated,2026,Equinor Energy AS,532,,,,,,,,
+7220/7-CD-1 H,42002518,JOHAN CASTBERG,32017325.0,7220/7-CD-1 H,10242,OIL,Production not evaluated,2025,Equinor Energy AS,532,,,,,,,,
+7220/8-1 Johan Castberg,20441001,JOHAN CASTBERG,32017325.0,7220/8-1,6484,OIL/GAS,Producing,2011,Equinor Energy AS,532,,,,,,,,
+7220/8-2 S (Snøfonn Nord),40847103,JOHAN CASTBERG,32017325.0,7220/8-2 S,9535,OIL,Included in other discovery,2022,Equinor Energy AS,532,,,,,,,,
+7220/8-3 (Skavl Stø),40848123,JOHAN CASTBERG,32017325.0,7220/8-3,9551,OIL/GAS,Included in other discovery,2022,Equinor Energy AS,532,,,,,,,,
+7221/12-1 (Svanefjell),32016591,,,7221/12-1,8441,GAS,Production is unlikely,2018,,,,,,,,,,
+7222/11-1 (Caurus),5081995,,,7222/11-1,5916,GAS,Production is unlikely,2008,,,,,,,,,,
+7222/11-2 (Langlitinden),24612286,,,7222/11-2,7317,OIL,Production is unlikely,2014,,,,,,,,,,
+7222/6-1 S (Obesum),4972681,,,7222/6-1 S,5755,OIL/GAS,Production is unlikely,2008,,,,,,,,,,
+7223/5-1,18400160,,,7223/5-1,5960,GAS,Production is unlikely,2009,,,,,,,,,,
+7224/6-1 (Arenaria),5010074,,,7224/6-1,5835,GAS,Production is unlikely,2008,,,,,,,,,,
+7225/3-1 (Norvarg),20499790,,,7225/3-1,6587,GAS,Production is unlikely,2011,Aker BP ASA,1313,,,,,0.618,,0.0,1.0
+7226/11-1,45086,,,7226/11-1,1177,GAS,Production is unlikely,1988,,,,,,,0.62,,98.0,2.0
+7226/2-1 (Ververis),5010034,,,7226/2-1,5807,GAS,Production is unlikely,2008,Aker BP ASA,1313,,,,,,,,
+7228/7-1 (Pandora),1630384,,,7228/7-1 A,4257,OIL/GAS,Production is unlikely,2001,,,,,,,,,,
+7234/6-1 (Stangnestind),38723541,,,7234/6-1,9316,GAS,Production is unlikely,2021,,,,,,,,,,
+7316/5-1,45092,,,7316/5-1,1987,GAS,Production is unlikely,1992,,,0.6,0.6,0.6,104.33333333333334,,,0.0,1.0
+7319/12-1 (Pingvin),25143600,,,7319/12-1,7555,GAS,Production is unlikely,2014,,,,,,,,,,
+7324/3-1 (Intrepid Eagle),33341442,,,7324/3-1,8568,GAS,Production is unlikely,2018,,,,,,,,,,
+7324/6-1 (Sputnik),34949172,,,7324/6-1,8741,OIL,Production is unlikely,2019,,,,,,,,,,
+7324/6-2 (Ferdinand Nord),42002497,,,7324/6-2,10097,GAS,Production is unlikely,2024,Aker BP ASA,1170,,,,,,,,
+7324/7-2 (Hanssen),24700556,,,7324/7-2,7450,OIL,Included in other discovery,2014,Equinor Energy AS,537,0.846,0.846,0.846,35.757683215130015,0.731,38.0,17.0,1.0
+7324/8-1 (Wisting),23761893,,,7324/8-1,7221,OIL,Production in clarification phase,2013,Equinor Energy AS,537,,,,,,,,
+7324/8-4 (Hassel),42002499,,,7324/8-4,10096,GAS,Production is unlikely,2024,Aker BP ASA,1170,,,,,,,,
+7324/9-1 (Mercury),24700566,,,7324/9-1,7527,GAS,Production is unlikely,2014,,,,,,,,,,
+7325/1-1 (Atlantis),24689817,,,7325/1-1,7501,GAS,Production is unlikely,2014,,,,,,,,,,
+7325/4-1 (Gemini Nord),29469097,,,7325/4-1,8211,GAS,Production is unlikely,2017,,,,,,,,,,
+7435/12-1 (Korpfjell),29491696,,,7435/12-1,8228,GAS,Production is unlikely,2017,,,,,,,,,,
+8/10-4 S Oda,21118177,ODA,29412516.0,8/10-4 S,6630,OIL,Producing,2011,Aker BP ASA,405,,,,,,,,
+9/2-1 Yme,45098,YME,43807.0,9/2-1,1038,OIL,Producing,1987,Repsol Norge AS,316,0.83075,0.825,0.835,38.828016852241944,0.831,25.666666666666668,0.0,5.0
+9/2-3,45104,YME,43807.0,9/2-3,1294,OIL,Included in other discovery,1990,Repsol Norge AS,316,,,,,,,0.0,1.0
+9/2-6 S,45110,YME,43807.0,9/2-6 S,2867,OIL,Included in other discovery,1996,Repsol Norge AS,316,,,,,,,,
+9/2-7 S,45116,YME,43807.0,9/2-7 S,3087,OIL,Included in other discovery,1997,Repsol Norge AS,316,,,,,,,,
+9/2-9 S,112160,YME,43807.0,9/2-9 S,3703,OIL,Included in other discovery,1999,Repsol Norge AS,316,,,,,,,,

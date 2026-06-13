@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "search_date": "2026-06-12",
+    "purpose": "Gather public consultant reports (McKinsey, Wood Mackenzie, Rystad Energy) and related sources on NCS crude quality, reservoir characteristics, and decline rates for the decline_quality analysis.",
+    "consultancies_searched": ["Wood Mackenzie", "Rystad Energy", "McKinsey & Company"],
+    "search_queries_run": [
+      "\"Wood Mackenzie\" Norway NCS oil reservoir API gravity field characteristics",
+      "\"Rystad Energy\" NCS Norway field development reservoir characteristics oil quality",
+      "Norway oil production crude quality API gravity report 2024 2025",
+      "McKinsey Norway oil gas production decline NCS report",
+      "Johan Sverdrup Ekofisk Troll API gravity GOR reservoir properties",
+      "\"Rystad Energy\" Johan Sverdrup decline rate field characteristics",
+      "Grane Heidrun Draugen NCS heavy oil API gravity reservoir properties",
+      "\"Wood Mackenzie\" North Sea crude quality grades Brent Forties Oseberg",
+      "NCS oil field formation Jurassic Cretaceous chalk sandstone reservoir characteristics",
+      "Equinor Edvard Grieg Ivar Aasen Martin Linge reservoir characteristics API gravity",
+      "Aker BP Valhall Skarv Alvheim crude oil API gravity GOR reservoir",
+      "Norwegian crude assay Snorre Statfjord Gullfaks Asgard API gravity sulfur",
+      "\"Rystad Energy\" NCS resource report 2024 2025 production outlook field"
+    ]
+  },
+  "consultant_reports": {
+    "wood_mackenzie": {
+      "reports_identified": [
+        {
+          "title": "Norway upstream summary Report",
+          "url": "https://www.woodmac.com/reports/upstream-oil-and-gas-norway-upstream-summary-754951/",
+          "access": "paywalled (subscription required)",
+          "scope": "Norway covered as Europe's largest oil and gas producer, with high development activity across the shelf. Detailed field-level data not accessible publicly."
+        },
+        {
+          "title": "Northern Fields Report",
+          "url": "https://www.woodmac.com/reports/upstream-oil-and-gas-northern-fields-3072789/",
+          "access": "paywalled (subscription required)",
+          "scope": "Northern NCS fields"
+        }
+      ],
+      "public_data_extracted": "No reservoir-level API/GOR/formation data accessible without subscription. Wood Mackenzie's NCS work is referenced in third-party media coverage but specific field parameters are behind paywall."
+    },
+    "rystad_energy": {
+      "reports_identified": [
+        {
+          "title": "Cooldown on the horizon after NCS spending surge",
+          "url": "https://www.rystadenergy.com/insights/cooldown-on-the-horizon-after-ncs-spending-surge",
+          "access": "public insight piece",
+          "key_findings": [
+            "Offshore NCS spending peaks NOK 262 bn in 2025; declines to NOK 160 bn in 2030 (-39%).",
+            "29 projects sanctioned under temporary tax regime (Jun 2020–end 2022) including Aker BP Yggdrasil hub and Valhall PWP-Fenris.",
+            "Most NCS oil output still comes from giants sanctioned under standard tax regime (esp. Johan Sverdrup, Phase 2 online Dec 2022).",
+            "Exploration capex rises from NOK 29 bn (2024) to NOK 37 bn (2025)."
+          ]
+        },
+        {
+          "title": "Technologies to improve NCS competitiveness (OG21/Rystad Energy)",
+          "url": "https://www.og21.no/contentassets/e1765573b1044740ae5425fc27e80dab/technologies-to-improve-ncs-competitiveness_rystad-energy_final.pdf",
+          "access": "public PDF (not parsed - binary format)",
+          "scope": "NCS competitiveness, technology, recovery factors. May contain field-level reservoir data but not extracted by WebFetch (PDF binary)."
+        },
+        {
+          "title": "Oil Service Report Norway",
+          "url": "https://www.rystadenergy.com/Products/Regional-Solutions/OSRNorway/Default",
+          "access": "paywalled",
+          "scope": "Field-level production, costs, reserves"
+        },
+        {
+          "title": "Norway has lowest upstream CO2 emission intensity (Rystad)",
+          "key_findings": ["Johan Sverdrup emits <5% of world-average upstream CO2/bbl."]
+        }
+      ],
+      "field_specific_data": {
+        "johan_sverdrup": {
+          "decline_rate_2026_forecast": "10-20% YoY decline expected in 2026 (Equinor guidance, Rystad referenced).",
+          "secondary_recovery": "Water and gas injection support high offtake rates and plateau beyond 2025 conditional on Phase 3.",
+          "share_of_norway_oil_production": "~1/3 of Norway's total oil production",
+          "source": "Equinor / Rystad commentary, gcaptain.com, worldoil.com"
+        }
+      }
+    },
+    "mckinsey": {
+      "reports_identified": [
+        {
+          "title": "McKinsey on North Sea cost competitiveness (referenced in Carnegie Endowment piece, 2016)",
+          "url": "https://carnegieendowment.org/europe/posts/2016/03/news-assessing-the-future-of-north-sea-oil-and-gas",
+          "access": "secondary reference",
+          "key_findings": [
+            "North Sea was, ~15 yrs ago, on par with the most economic oil-producing regions globally.",
+            "As province entered long-term decline, costs grew faster than in any other oil & gas region in the world.",
+            "Cost inefficiencies identified; McKinsey recommended increased operator cooperation as mitigation.",
+            "UKCS peaked at 2.9 Mb/d (1999); NCS peaked at 3.4 Mb/d (2001)."
+          ]
+        }
+      ],
+      "public_data_extracted": "McKinsey's NCS-specific work focuses on cost and decline economics; no public reservoir-level API/GOR data found in this search."
+    }
+  },
+  "field_level_reservoir_data": {
+    "note": "Aggregated from public sources surfaced during consultant searches; not all data is from consultancies directly.",
+    "fields": [
+      {
+        "field": "Johan Sverdrup",
+        "operator": "Equinor",
+        "api_gravity": 28.7,
+        "sulfur_pct": 0.8,
+        "oil_density_g_cc": 0.89,
+        "gor_sm3_sm3": 40,
+        "formation": "Upper Jurassic intra-Draupne Formation sandstone",
+        "porosity_pct": 28,
+        "net_gross": 0.97,
+        "permeability_darcy": "0.5 to 40 (median core perm range across wells)",
+        "in_place_bbo": 3.5,
+        "reservoir_quality_notes": "Multi-darcy, exceptional reservoir quality; supports plateau via water + gas injection.",
+        "decline_outlook": "10-20% YoY decline expected 2026 (Equinor); revised 13% YoY full year 2026 average.",
+        "sources": ["totalenergies.com assay PDF", "ScienceDirect Olaussen et al.", "Argus Media", "S&P Global", "Equinor", "worldoil.com"]
+      },
+      {
+        "field": "Ekofisk",
+        "operator": "ConocoPhillips",
+        "api_gravity": 39.9,
+        "sulfur": "low (sweet)",
+        "formation": "Upper Cretaceous chalk on salt-dome",
+        "porosity_pct": "25-40",
+        "permeability_notes": "Primary perm low due to constricted pore connections; fracture network materially improves productivity.",
+        "benchmark_status": "Part of BFOET / Dated Brent basket",
+        "sources": ["Argus Media", "Ekofisk industriminne", "CME Group"]
+      },
+      {
+        "field": "Troll (Blend)",
+        "operator": "Equinor",
+        "api_gravity": 35.9,
+        "sulfur": "light/sweet",
+        "benchmark_status": "Part of BFOET / Dated Brent basket",
+        "sources": ["Argus Media"]
+      },
+      {
+        "field": "Brent (benchmark grade)",
+        "api_gravity": 39.8,
+        "sulfur_pct": 0.37,
+        "classification": "light sweet",
+        "sources": ["Wikipedia Brent Crude", "BrentChart.com"]
+      },
+      {
+        "field": "Forties",
+        "api_gravity_note": "Slightly denser than Brent; structural discount vs. Brent/Oseberg.",
+        "sulfur_pct": 0.54,
+        "sources": ["Argus Media", "S&P Global"]
+      },
+      {
+        "field": "Oseberg",
+        "operator": "Equinor",
+        "classification": "light sweet",
+        "benchmark_status": "Part of BFOET / Dated Brent basket",
+        "sources": ["Argus Media"]
+      },
+      {
+        "field": "Grane",
+        "operator": "Equinor",
+        "api_gravity": 19,
+        "classification": "heavy",
+        "formation": "Poorly consolidated turbidite sandstone at ~5,500 ft TVD",
+        "porosity_pct": 33,
+        "permeability_darcy": "1-12",
+        "oil_column_ft": 100,
+        "areal_extent_acres": 6700,
+        "reservoir_temp_F": 170,
+        "reservoir_pressure_psi": 2550,
+        "gor_scf_bbl": 83,
+        "oiip_mmbbl": 1200,
+        "estimated_recoverable_mmbbl": "500-750",
+        "blend_post_2015": "Grane blend now commingled with Edvard Grieg and Ivar Aasen volumes, lifting blend API to ~31.5 (medium).",
+        "sources": ["Oil & Gas Journal CO2 injection study", "S&P Global"]
+      },
+      {
+        "field": "Edvard Grieg",
+        "operator": "Aker BP (transferred from Lundin)",
+        "api_gravity_grane_blend_after_addition": 31.5,
+        "notes": "Volumes routed into Grane blend, lifting blend quality from heavy to medium.",
+        "sources": ["S&P Global", "Argus Media"]
+      },
+      {
+        "field": "Ivar Aasen",
+        "operator": "Aker BP (with OKEA partner)",
+        "formation": "Middle Jurassic Hugin Formation shallow marine sandstone",
+        "reservoir_depth_m": 2400,
+        "pressure_support": "Water injection",
+        "sources": ["Norskpetroleum.no", "OKEA"]
+      },
+      {
+        "field": "Skarv",
+        "operator": "Aker BP",
+        "api_gravity_skarv_branded_crude": 48.2,
+        "classification": "very light (lighter than Dated Brent basket)",
+        "location": "Northern Norwegian Sea, water depth 350-450 m",
+        "sources": ["Aker BP", "S&P Global"]
+      },
+      {
+        "field": "Alvheim",
+        "operator": "Aker BP",
+        "issue_2024": "Production below 2P estimate due to higher GOR in newer wells (gas breakthrough/coning).",
+        "vilje_satellite": "Sand reservoir with very good properties; undersaturated oil.",
+        "sources": ["Aker BP ASR 2024"]
+      },
+      {
+        "field": "Statfjord Blend (Statfjord + Snorre + Sygna + Statfjord N/E)",
+        "operator": "Equinor",
+        "classification": "light, low-sulfur (similar to Brent Blend, slightly lower S, less atmospheric residue).",
+        "sources": ["Oil & Gas Journal 'Guide to World Crudes'"]
+      },
+      {
+        "field": "Gullfaks",
+        "operator": "Equinor",
+        "classification": "medium naphthenic, low-sulfur; light",
+        "refining_value": "Well-suited for gasoline/diesel/jet plus LPG and naphtha petrochem feed.",
+        "sources": ["JPT/SPE", "Equinor industriminne", "ExxonMobil crude assay library"]
+      },
+      {
+        "field": "Asgard",
+        "operator": "Equinor",
+        "ranking": "Among Norway's six largest fields by total resources.",
+        "sources": ["Oil & Gas Journal"]
+      }
+    ]
+  },
+  "ncs_reservoir_geology_summary": {
+    "source": "Search synthesis (Ekofisk industriminne; ScienceDirect 'The habitat of North Sea oil'; Norskpetroleum)",
+    "main_play_types": [
+      {
+        "type": "Upper Cretaceous chalk on salt domes",
+        "examples": ["Ekofisk", "Eldfisk", "Tor", "Valhall (Greater Ekofisk area)"],
+        "porosity_pct": "25-40 (well-preserved due to overpressure)",
+        "permeability": "Low primary; fracture-enhanced",
+        "region": "Southern NCS"
+      },
+      {
+        "type": "Jurassic sandstones on crests of faulted horsts / tilted blocks",
+        "examples": ["Statfjord", "Gullfaks", "Oseberg", "Troll", "Snorre", "Johan Sverdrup", "Ivar Aasen", "Edvard Grieg"],
+        "porosity_pct": "~30 (typical good NCS sandstone)",
+        "region": "Central and northern NCS"
+      },
+      {
+        "type": "Paleocene/Eocene turbidite sandstones",
+        "examples": ["Grane", "Alvheim (Heimdal Fm)"],
+        "porosity_pct": "30-33",
+        "permeability_darcy": "1-12 (Grane)",
+        "region": "South/central NCS"
+      }
+    ]
+  },
+  "decline_and_quality_macro_findings": {
+    "ncs_production_history": {
+      "peak_year": 2001,
+      "peak_mb_d": 3.4,
+      "ukcs_peak_year": 1999,
+      "ukcs_peak_mb_d": 2.9
+    },
+    "current_volumes": {
+      "norway_2024_crude_b_d": 2002062,
+      "norway_dec_2024_oil_ngl_cond_b_d": 2017000,
+      "norway_dec_2025_oil_ngl_cond_b_d": 2190000
+    },
+    "outlook": "Sodir 2024 Resource Report scenarios all show decline; pace depends on exploration and technology.",
+    "crude_quality_trend": "Johan Sverdrup (medium-sour, 28.7 API, 0.8% S) increasingly dominates NCS output, pulling Norwegian export basket toward heavier/more-sour grades vs. legacy light sweet Brent/Ekofisk/Oseberg/Troll. This crude-quality shift is well-documented by S&P Global and Hellenic Shipping News."
+  },
+  "gaps_and_limitations": [
+    "Wood Mackenzie and Rystad Energy field-level NCS databases (Asset Service, OSR Norway) are paywalled; only summary insights and media references are publicly accessible.",
+    "OG21/Rystad PDF on NCS competitiveness was retrieved but returned as binary; not parsed in this search.",
+    "Public APIs for Heidrun, Draugen, Martin Linge, Yggdrasil API/GOR data not surfaced in this batch of searches - recommend operator annual reports + ExxonMobil/TotalEnergies assay libraries + Sodir factpages as next step.",
+    "No quantitative McKinsey field-level reservoir data exists publicly; their NCS work is cost/efficiency oriented."
+  ],
+  "key_sources": [
+    {"title": "Johan Sverdrup TotalEnergies trading assay PDF", "url": "https://trading.totalenergies.com/wp-content/uploads/2025/11/JOHAN-SVERDRUP.pdf"},
+    {"title": "Argus North Sea Dated assessment methodology", "url": "https://www.argusmedia.com/en/methodology/key-commodity-prices/argus-north-sea-dated"},
+    {"title": "S&P Global - North Sea crude quality shift", "url": "https://www.spglobal.com/commodityinsights/en/market-insights/blogs/oil/101921-fft-north-sea-oil-equinor-lundin-wti-brent"},
+    {"title": "Sodir Resource Report 2024", "url": "https://www.sodir.no/en/whats-new/publications/reports/resource-report/resource-report-2024/three-potential-scenarios-for-the-ncs-leading-up-to-2050/"},
+    {"title": "Rystad Energy - Cooldown on the horizon after NCS spending surge", "url": "https://www.rystadenergy.com/insights/cooldown-on-the-horizon-after-ncs-spending-surge"},
+    {"title": "OG21 / Rystad - Technologies to improve NCS competitiveness", "url": "https://www.og21.no/contentassets/e1765573b1044740ae5425fc27e80dab/technologies-to-improve-ncs-competitiveness_rystad-energy_final.pdf"},
+    {"title": "Wood Mackenzie - Norway upstream summary", "url": "https://www.woodmac.com/reports/upstream-oil-and-gas-norway-upstream-summary-754951/"},
+    {"title": "Wood Mackenzie - Northern Fields", "url": "https://www.woodmac.com/reports/upstream-oil-and-gas-northern-fields-3072789/"},
+    {"title": "Aker BP Annual Statement of Reserves 2024", "url": "https://akerbp.com/wp-content/uploads/2025/04/annual-statement-of-reserves-2024.pdf"},
+    {"title": "Sodir - Oil and gas on the NCS moving forward (The Shelf 2025)", "url": "https://www.sodir.no/en/whats-new/publications/reports/the-shelf/the-shelf-in-2025/oil-and-gas-on-the-ncs-moving-forward/"},
+    {"title": "Equinor - Johan Sverdrup", "url": "https://www.equinor.com/energy/johan-sverdrup"},
+    {"title": "Olaussen et al. - Johan Sverdrup reservoir characterization", "url": "https://www.sciencedirect.com/science/article/pii/S0264817217301162"},
+    {"title": "ExxonMobil Gullfaks Blend assay", "url": "https://corporate.exxonmobil.com/crude-oils/crude-trading/gullfaks-blend"},
+    {"title": "Oil & Gas Journal - Important Norwegian crude assays updated", "url": "https://www.ogj.com/drilling-production/production-operations/article/17213392/important-norwegian-crude-assays-updated"},
+    {"title": "Oil & Gas Journal - CO2 injection studied for Norwegian field (Grane)", "url": "https://www.ogj.com/home/article/17226173/co-2-injection-studied-for-norwegian-field"},
+    {"title": "Carnegie Endowment - North Sea future (McKinsey reference)", "url": "https://carnegieendowment.org/europe/posts/2016/03/news-assessing-the-future-of-north-sea-oil-and-gas"}
+  ]
+}

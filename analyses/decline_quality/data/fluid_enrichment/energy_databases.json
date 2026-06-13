@@ -1,0 +1,190 @@
+{
+  "source": "Energy database web searches for NCS crude oil quality",
+  "search_date": "2026-06-12",
+  "queries_executed": [
+    "EIA Norwegian crude oil quality API gravity sulfur",
+    "IEA North Sea oil benchmark grade quality specifications",
+    "BP Statistical Review Norway oil characteristics crude blend",
+    "North Sea oil benchmark Forties Brent Ekofisk Oseberg API gravity sulfur",
+    "Statfjord Gullfaks Heidrun Snorre crude oil API gravity sulfur assay",
+    "Johan Sverdrup crude oil quality medium heavy API gravity sulfur",
+    "Troll Grane Goliat crude oil assay specifications Norway",
+    "EIA Norway country analysis brief crude oil production grades"
+  ],
+  "general_findings": {
+    "eia_classification": {
+      "api_gravity_bands": {
+        "heavy": "< 25 deg API",
+        "medium": "25-35 deg API",
+        "light": "> 35 deg API"
+      },
+      "sulfur_classification": {
+        "sweet": "< 1.0% sulfur by weight",
+        "sour": "> 1.0% sulfur by weight"
+      },
+      "norway_overview": "Norway's oil blends are generally light and sweet to medium in density and sulfur content (0.0%-0.2% low to 0.2%-0.9% medium sulfur by weight). Ekofisk, Oseberg, and Troll blends produced offshore Norway. The three Norwegian streams account for ~55% of North Sea Brent crude oil loadings (~1.2 million b/d total).",
+      "source_url": "https://www.eia.gov/international/content/analysis/countries_long/Norway/pdf/Norway%20CAB%202024.pdf",
+      "publication_date": "2024-08-21"
+    },
+    "brent_benchmark_bfoet": {
+      "components": ["Brent", "Forties", "Oseberg", "Ekofisk", "Troll"],
+      "blend_api_gravity": "~38 deg",
+      "blend_sulfur_pct": "< 0.4%",
+      "classification": "light sweet",
+      "history": {
+        "originals": "Brent only",
+        "added_2002": ["Forties", "Oseberg"],
+        "added_2007": ["Ekofisk"],
+        "added_2018_jan": ["Troll"]
+      },
+      "global_pricing_share": ">65% of global physical crude is priced off BFOET",
+      "source_url": "https://www.spglobal.com/content/dam/spglobal/ci/en/documents/platts/en/our-methodology/methodology-specifications/crude-oil/emea-crude-specifications.pdf"
+    }
+  },
+  "field_crude_grades": {
+    "Statfjord_Blend": {
+      "api_gravity": 39.1,
+      "sulfur_pct_wt": null,
+      "sulfur_note": "low-sulfur, slightly lower than Brent Blend",
+      "classification": "light sweet",
+      "commingled_fields": ["Statfjord", "Snorre", "Sygna", "Statfjord North", "Statfjord East"],
+      "source": "Equinor / Oil & Gas Journal assay update 2023-11-29",
+      "source_url": "https://www.equinor.com/news/crude-oil-assay-update-29-11-2023"
+    },
+    "Gullfaks_Blend": {
+      "api_gravity": 39.6,
+      "sulfur_pct_wt": null,
+      "sulfur_note": "low-sulfur, medium naphthenic crude",
+      "classification": "light sweet",
+      "source": "Oil & Gas Journal Guide to World Crudes",
+      "source_url": "https://www.ogj.com/refining-processing/petrochemicals/article/17213392/important-norwegian-crude-assays-updated"
+    },
+    "Troll_Blend": {
+      "api_gravity": null,
+      "sulfur_pct_wt": null,
+      "viscosity_kinematic_20C_cst": 9.16,
+      "viscosity_kinematic_40C_cst": 4.75,
+      "classification": "light sweet (added to BFOET January 2018)",
+      "commingled_fields": ["Troll B", "Troll C", "Fram", "Kvitebjorn"],
+      "source": "Equinor commercial assay 2022-08-01 sample, OGJ",
+      "source_url": "https://www.equinor.com/news/crude-oil-assay-update-26-08-2022"
+    },
+    "Grane_Blend": {
+      "api_gravity": 23.7,
+      "density_kg_per_l_15C": 0.911,
+      "sulfur_pct_wt": 0.73,
+      "nitrogen_ppm": 2187,
+      "classification": "heavy sour (first heavy crude on NCS)",
+      "discovery": "1991 Norsk Hydro",
+      "first_oil": "2003-09",
+      "source": "Statoil/Equinor assay via Oil & Gas Journal",
+      "source_url": "https://www.ogj.com/refining-processing/petrochemicals/article/17227019/guide-to-world-crudes-statoil-updates-grane-crude-oil-assay"
+    },
+    "Johan_Sverdrup": {
+      "api_gravity": 28.7,
+      "sulfur_pct_wt": 0.8,
+      "classification": "medium sour",
+      "reserves_billion_bbl": 2.7,
+      "plateau_kbpd": 755,
+      "yield_profile": {
+        "jet_kerosene_pct": 13,
+        "gas_oil_pct": 26,
+        "fuel_oil_pct": 47
+      },
+      "market_notes": "Popular with complex refiners; firm favorite in Asia (esp. China). Comparable to Grane in API and to Forties in sulfur. Used for IMO 2020 bunker blending.",
+      "source_url_total": "https://ts.totalenergies.com/wp-content/uploads/2021/07/JOHAN-SVERDRUP.pdf",
+      "source_url_argus": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2224380-johan-sverdrup-emerges-as-potential-benchmark-saviour"
+    },
+    "Forties_Blend": {
+      "api_gravity_min": 37,
+      "api_gravity_current_approx": 41,
+      "sulfur_pct_wt_max": 0.6,
+      "sulfur_pct_wt_current_approx": 0.55,
+      "buzzard_contribution_pct": 18,
+      "classification": "light sweet (Platts assessment specification)",
+      "source": "S&P Global Platts / Argus / EIA Today In Energy",
+      "source_url": "https://www.spglobal.com/content/dam/spglobal/ci/en/documents/platts/en/our-methodology/methodology-specifications/crude-oil/emea-crude-specifications.pdf",
+      "note": "UK grade, not NCS, but a Brent benchmark component"
+    },
+    "Ekofisk_Blend": {
+      "api_gravity": null,
+      "sulfur_pct_wt": null,
+      "classification": "classic light sweet North Sea crude",
+      "source": "EIA / S&P Global commentary",
+      "source_url": "https://www.eia.gov/international/content/analysis/countries_long/Norway/pdf/Norway%20CAB%202024.pdf",
+      "note": "Specific assay numbers not retrieved in search results; Ekofisk is part of BFOET basket and is broadly characterized as light sweet (API ~35-40, sulfur ~0.1-0.4%)."
+    },
+    "Oseberg_Blend": {
+      "api_gravity": null,
+      "sulfur_pct_wt": null,
+      "classification": "classic light sweet North Sea crude",
+      "source": "EIA / S&P Global commentary",
+      "source_url": "https://www.eia.gov/international/content/analysis/countries_long/Norway/pdf/Norway%20CAB%202024.pdf",
+      "note": "Specific assay numbers not retrieved in search results; part of BFOET basket; broadly light sweet."
+    },
+    "Heidrun": {
+      "api_gravity": null,
+      "sulfur_pct_wt": null,
+      "classification": "not retrieved in this search round",
+      "note": "Norwegian Sea field; assay available from Equinor / ExxonMobil libraries but not surfaced in search results."
+    },
+    "Snorre": {
+      "note": "Commingled into Statfjord Blend (API 39.1, low sulfur)"
+    },
+    "Goliat": {
+      "api_gravity": null,
+      "sulfur_pct_wt": null,
+      "classification": "not retrieved in this search round",
+      "note": "Barents Sea field operated by Vaar Energi (Eni). Assay not surfaced in this search; deeper queries needed."
+    }
+  },
+  "primary_assay_libraries": [
+    {
+      "name": "Equinor Crude Oil Assays",
+      "url": "https://www.equinor.com/energy/crude-oil-assays",
+      "covers": ["Statfjord Blend", "Troll Blend", "Grane Blend", "Heidrun", "Johan Sverdrup", "Oseberg", "Gullfaks"],
+      "note": "Equinor publishes commercial assays for all operated streams; periodically updated (e.g. Statfjord updated Nov 2023; Troll updated Aug 2022)."
+    },
+    {
+      "name": "ExxonMobil Crude Trading Assays",
+      "url": "https://corporate.exxonmobil.com/en/crude-oils/crude-trading/statfjord-blend",
+      "covers": ["Statfjord Blend", "various North Sea blends"],
+      "note": "Downloadable assay PDFs by blend name."
+    },
+    {
+      "name": "BP Crude Assays Library",
+      "url": "https://www.bp.com/en/global/bp-supply-trading-and-shipping/documents-and-downloads/technical-downloads/crudes-assays.html",
+      "covers": ["BP-marketed grades including UK and NCS streams"],
+      "note": "Technical downloads via BP Supply, Trading & Shipping."
+    },
+    {
+      "name": "Oil & Gas Journal: Guide to World Crudes",
+      "url": "https://www.ogj.com/",
+      "covers": ["All major Norwegian assays at update events"],
+      "note": "Editorial summaries of operator assay releases."
+    },
+    {
+      "name": "S&P Global Platts EMEA Crude Methodology",
+      "url": "https://www.spglobal.com/content/dam/spglobal/ci/en/documents/platts/en/our-methodology/methodology-specifications/crude-oil/emea-crude-specifications.pdf",
+      "covers": ["BFOET basket spec, quality adjustment factors"],
+      "note": "Defines API/sulfur quality adjustments used in Dated Brent assessment."
+    },
+    {
+      "name": "Argus Media North Sea Dated",
+      "url": "https://www.argusmedia.com/en/methodology/key-commodity-prices/argus-north-sea-dated",
+      "covers": ["North Sea Dated benchmark methodology"]
+    }
+  ],
+  "gaps_and_next_steps": [
+    "Numeric API/sulfur for Ekofisk, Oseberg, Heidrun, Goliat not directly surfaced; must hit Equinor/ConocoPhillips assay PDFs and ExxonMobil library directly.",
+    "BP Statistical Review of World Energy does NOT publish per-field crude assays; it only covers reserves/production/consumption aggregates. For per-field quality, primary sources are operator assay PDFs (Equinor/ExxonMobil/BP Trading/ConocoPhillips/Vaar Energi/Aker BP).",
+    "IEA does not publish per-field crude assays either; their oil quality material is aggregated at country/region level.",
+    "EIA Company Level Imports data file does contain per-cargo API gravity and sulfur for crude imported into the US, including Norwegian cargoes; this is a usable historical time series."
+  ],
+  "key_takeaways_for_ncs_decline_quality_analysis": [
+    "NCS crude is bimodal: (a) light sweet Brent-like streams (Statfjord ~39 API, Gullfaks ~40 API, Troll, Oseberg, Ekofisk, all <0.4% S) and (b) heavier sour streams (Grane 23.7 API / 0.73% S, Johan Sverdrup 28.7 API / 0.8% S).",
+    "Light sweet NCS volume share is declining as legacy Brent fields decline and heavier fields (Grane 2003, Johan Sverdrup 2019) ramp; this is the documented North Sea quality shift driving customer base changes.",
+    "Light sweet grades historically priced at premium to Dated Brent; heavier sour grades (Grane, JS) trade at discount but find strong demand from complex Asian refiners.",
+    "For decline_quality model: API gravity is a usable single-axis quality proxy across NCS; light sweet vs. heavy sour split is the main quality signal that maps onto field-level decline curves."
+  ]
+}

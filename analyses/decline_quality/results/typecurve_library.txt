@@ -1,0 +1,117 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 13: TYPE-CURVE BIBLIOTEK (utvidet med full Sodir)
+════════════════════════════════════════════════════════════════════════════════
+
+Sodir total: 27925 rader, 132 felt
+Oljefelt etter filtrering: 69
+  Krav: ≥ 0.5 MSm³ olje totalt
+        ≥ 24 mnd produksjon
+        ≥ 50% av OE er olje
+
+Final panel: 17498 rader, 69 felt
+Tidsperiode: 1971-06 – 2026-02
+
+Analyserer faser for alle felt...
+Behandlet: 69 felt
+
+════════════════════════════════════════════════════════════════════════════════
+BIBLIOTEK-SAMMENDRAG
+════════════════════════════════════════════════════════════════════════════════
+
+── Status-fordeling ──
+  Producing:     57
+  Shut in:       11
+  Annet/ukjent:  1
+
+── Fase-fordeling ──
+  Felt med platå:         68/69
+  Felt med decline-data:  66/69
+  Felt med ramp-fit:      53/69
+
+── Ramp-up (alle felt) ──
+  Median:       17 mnd  (1.4 år)
+  25-75 pct:     6 – 39 mnd
+  Min–maks:      0 – 175 mnd
+
+── Platå-lengde (felt med platå) ──
+  Median:       13 mnd  (1.1 år)
+  25-75 pct:     8 – 20 mnd
+
+── Decline (etter platå) ──
+  Median D:  0.111
+  25-75 pct: 0.072 – 0.215
+
+── Arketyper ──
+  Standard development       n= 41  median ramp=  23 mnd  platå=  15 mnd
+  Quick-peak small           n= 14  median ramp=   4 mnd  platå=   8 mnd
+  Slow ramp mega             n=  7  median ramp=  89 mnd  platå=  21 mnd
+  Fast FPSO                  n=  3  median ramp=   5 mnd  platå=  12 mnd
+  Subsea satellite           n=  3  median ramp=   4 mnd  platå=   9 mnd
+  Long-plateau giant         n=  1  median ramp=  39 mnd  platå=  71 mnd
+
+── Etter facility type ──
+  FPSO                n=  7  ramp=  13 mnd  platå=  12 mnd
+  Other               n= 22  ramp=  10 mnd  platå=  10 mnd
+  Fixed               n= 22  ramp=  18 mnd  platå=  16 mnd
+  Subsea tieback      n= 11  ramp=  49 mnd  platå=  11 mnd
+  Semi-sub            n=  3  ramp=  21 mnd  platå=  21 mnd
+
+── Decade-effekt (når feltet kom online) ──
+  1970s:  n=  5  ramp=   8 mnd  platå=   8 mnd
+  1980s:  n=  6  ramp=  53 mnd  platå=  30 mnd
+  1990s:  n= 20  ramp=  20 mnd  platå=  15 mnd
+  2000s:  n= 14  ramp=  12 mnd  platå=  15 mnd
+  2010s:  n= 17  ramp=  12 mnd  platå=   8 mnd
+  2020s:  n=  7  ramp=   5 mnd  platå=   9 mnd
+
+Saved: /Users/emmastrandenskaar/Documents/Claude/Projects/Oljepris/analyses/decline_quality/data/typecurve_library.csv
+  (69 felt × 31 kolonner)
+Saved: fig_typecurve_library.png
+
+════════════════════════════════════════════════════════════════════════════════
+AKER BP-FELT (potensielle analoger)
+════════════════════════════════════════════════════════════════════════════════
+
+Field              Arketype               Facility          API  Ramp  Platå      D
+──────────────────────────────────────────────────────────────────────────────────────────
+SKOGUL             Subsea satellite       Subsea tieback   34.5     0      9  0.295
+BØYLA              Quick-peak small       Other            34.5     5      8  0.061
+HUGIN SATELLITTER  Standard development   Fixed               —     5     14  0.555
+HOD                Quick-peak small       Fixed            38.9     6     11  0.055
+TAMBAR             Standard development   Fixed            38.9     6     17  0.096
+VOLVE              Standard development   Other               —     8     16  0.145
+ALVHEIM            Fast FPSO              FPSO             34.5    10     16  0.054
+IVAR AASEN         Standard development   Fixed            27.1    12     31  0.214
+VOLUND             Standard development   Other            34.5    13     29  0.262
+VILJE              Standard development   Other            34.5    32     20  0.228
+ODA                Standard development   Other               —    43      2  0.489
+SOLVEIG            Standard development   Subsea tieback   27.1    49      4      —
+EDVARD GRIEG       Standard development   Fixed            27.1    58     16  0.415
+ULA                Standard development   Fixed            38.9    60     28  0.082
+VALE               Slow ramp mega         Other               —   149      9  0.068
+VALHALL            Slow ramp mega         Fixed            38.9   175     33  0.038
+
+── Klassiske historiske felt (gode analoger) ──
+
+Field              Operator                  Years         Ramp  Platå      D
+──────────────────────────────────────────────────────────────────────────────────────────
+EKOFISK            ConocoPhillips Skandinavi 1971-2026       58      8  0.014
+TOR                ConocoPhillips Skandinavi 1978-2026        8     14  0.032
+EDDA               ConocoPhillips Skandinavi 1979-1998        0      6  0.096
+ELDFISK            ConocoPhillips Skandinavi 1979-2026        5      8  0.011
+STATFJORD          Equinor Energy AS         1979-2026       80     47  0.133
+MURCHISON                                    1980-2014       38     12  0.109
+VALHALL            Aker BP ASA               1982-2026      175     33  0.038
+ULA                Aker BP ASA               1986-2026       60     28  0.082
+GULLFAKS           Equinor Energy AS         1986-2026       76     28  0.102
+OSEBERG            Equinor Energy AS         1986-2026       39     71  0.082
+VESLEFRIKK         Equinor Energy AS         1989-2025       46     31  0.121
+GYDA                                         1990-2025       49      8  0.172
+HOD                Aker BP ASA               1990-2026        6     11  0.055
+BALDER             Vår Energi ASA            1991-2026       59     27  0.064
+SNORRE             Equinor Energy AS         1992-2026      121     21  0.029
+EMBLA              ConocoPhillips Skandinavi 1993-2026        6      7  0.085
+DRAUGEN            OKEA ASA                  1993-2026       89     18  0.111
+BRAGE              OKEA ASA                  1993-2026       20     16  0.081
+STATFJORD ØST      Equinor Energy AS         1994-2026       32     21  0.115
+TORDIS             Equinor Energy AS         1994-2026       84     11  0.067
