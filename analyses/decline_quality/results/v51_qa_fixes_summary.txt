@@ -1,0 +1,108 @@
+════════════════════════════════════════════════════════════════════════════════
+V5.1 — QA-FIXES APPLIED
+════════════════════════════════════════════════════════════════════════════════
+
+[FIX 1] Rebygger master fluid library med dedup + TROLL fix + gas exclusion
+  Original library: 110 felt
+  Etter dedup: 108 felt (fjernet 2 duplikater)
+  Fjernede: ASGARD/ÅSGARD → kept ÅSGARD (DST n=47), KVITEBJORN → kept KVITEBJØRN
+
+  TROLL fix:
+    Gammel: API=38.8° (tier=operator_direct)
+    Ny:     API=27.9° (tier=dst_robust)
+
+  Gass-/kondensat-flagg satt på 4 felt (GOR > 5000 eller kjent gass-felt)
+  Disse beholdes i bibliotek men flagges for ekskludering fra decline-modell
+
+  Skjerper DST-akseptkriterium: 24 felt med dst_limited n<3 nedgrades til 'dst_single_unreliable'
+
+  Saved: master_fluid_library_v51.csv (108 felt)
+  Tier-fordeling:
+    dst_robust                 n=31
+    dst_single_unreliable      n=24
+    operator_direct            n=16
+    dst_limited                n=14
+    operator_low               n=12
+    operator_medium            n=6
+    blend_inherited            n=5
+
+════════════════════════════════════════════════════════════════════════════════
+STEP 2: REFIT V5.1 MODEL
+════════════════════════════════════════════════════════════════════════════════
+
+  Ekskluderte 1 gass-/kondensatfelt fra modell-trening
+  Felt med oppdatert API: 31/50
+  Felt med felt-spesifikk T: 15/50
+  Etter premium-beregning: 48 felt med fulle features
+
+════════════════════════════════════════════════════════════════════════════════
+STEP 3: NESTED LOO-CV (refit physics + premium per fold)
+════════════════════════════════════════════════════════════════════════════════
+
+  Simple LOO (premium global):   CV R² = 0.6764
+  Nested LOO (premium per fold): CV R² = 0.6617
+  Forskjell: +0.0147
+
+  ✓ Nested CV R² er det ÆRLIGE anslaget
+
+── Bootstrap koeffisient-CIs (n=2000) ──
+  Variabel                 Estimat                  95% CI  Signifikant
+  Intercept                +0.0938   [+0.0740, +0.1116]  ✓
+  ln(viskositet)           +0.0106   [-0.0053, +0.0293]  ✗
+  premium_12m              -0.0612   [-0.0845, -0.0503]  ✓
+  abs_premium_12m          +0.0399   [+0.0252, +0.0680]  ✓
+
+════════════════════════════════════════════════════════════════════════════════
+STEP 4: AKER BP RESULTATER (med Wilson CI)
+════════════════════════════════════════════════════════════════════════════════
+
+  Aker BP RMSE: 0.0619
+  Aker BP MAE:  0.0404
+  Aker BP hit-rate (±0.05): 10/12 = 83%
+  Wilson 95% CI: [55%, 95%]
+  → ÆRLIG rapportering: 'hit-rate 83% (95% CI: [55%, 95%])'
+
+── Aker BP per-felt prediksjoner ──
+  Field                API   D_act  D_pred    Miss   Prem
+  EDVARD GRIEG        36.5   0.384   0.199  +0.185 -0.98
+  SKOGUL              34.5   0.247   0.192  +0.056 -0.90
+  VOLUND              34.5   0.243   0.270  -0.027 -1.67
+  VILJE               34.5   0.222   0.218  +0.004 -1.16
+  IVAR AASEN          27.1   0.219   0.177  +0.042 -0.69
+  SKARV               43.3   0.107   0.149  -0.042 -0.54
+  TAMBAR              40.0   0.096   0.072  +0.023 +1.14
+  ULA                 40.0   0.083   0.084  -0.001 +0.59
+  ALVHEIM             33.9   0.056   0.085  -0.028 +0.90
+  HOD                 36.0   0.053   0.039  +0.014 +2.87
+  BØYLA               34.5   0.050   0.100  -0.049 +0.05
+  VALHALL             36.0   0.038   0.051  -0.013 +2.29
+
+  Saved: predictions_v51.csv
+
+════════════════════════════════════════════════════════════════════════════════
+V5.1 — ÆRLIG OPPSUMMERING
+════════════════════════════════════════════════════════════════════════════════
+
+  ── KOEFFISIENTER ──
+  D = +0.0938
+    +0.0106 × ln(viskositet)
+    -0.0612 × premium_12m
+    +0.0399 × |premium_12m|
+
+  ── YTELSE ──
+  In-sample R²:        0.742
+  Simple LOO CV R²:    0.676
+  Nested LOO CV R²:    0.662  ← ærlig out-of-sample
+  RMSE:                0.0415
+  N (etter ekskludering): 48 felt (var 49)
+  Aker BP RMSE:        0.0619
+  Aker BP hit-rate:    83% (Wilson 95% CI: [55%, 95%])
+
+  ── FIKSER APPLISERT ──
+  H1 ✓ TROLL API: 38.8° → 27.9° (DST oljerim)
+  H2 ✓ Dedupliserte ASGARD/ÅSGARD, KVITEBJORN/KVITEBJØRN
+  H3 ✓ Flagget 4 gass-/kondensatfelt, ekskludert fra modell
+  H5 ✓ 24 dst_single felt nedgrades fra dst_limited
+  M1 ✓ Premium-vindu fra 13 → 12 mnd
+  A1/A2 ✓ Nested LOO-CV implementert
+  Stat ✓ Bootstrap CIs + Wilson hit-rate CI
