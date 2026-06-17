@@ -1,0 +1,74 @@
+======================================================================
+SCRIPT 63: NCS FIELD → CRUDE QUALITY IMPUTATION
+======================================================================
+
+Assay-bibliotek: 170 grades
+Field→blend-mapping: 52 felt
+DST API: 85 felt
+
+Univers (NCS oljefelt): 104
+Analog-pool (felt m/ assay): 50
+
+======================================================================
+VALIDERING: nærmeste-API-analog for lab-variabler (leave-one-out)
+======================================================================
+Unike assay-grades for validering: 21
+
+Testbare analog-imputeringer: 21 felt
+
+Variabel                median |feil|  median rel.feil    n
+------------------------------------------------------------
+  sulfur_pct                     0.080              32%   21
+  vacuum_resid_pct               2.000              25%   21
+  ccr_pct                        0.383              42%   17
+  vanadium_ppm                   0.743              74%   17
+  nickel_ppm                     0.372              35%   17
+  middle_distillate_pct          2.934               9%   21
+
+  Sammenligning: analog vs ren geografi-median (baseline)
+  Variabel                 analog MAE    geo MAE   forbedring
+  --------------------------------------------------------
+  sulfur_pct                   0.080     0.060         -33%
+  vacuum_resid_pct             2.000     3.484         +43%
+  ccr_pct                      0.383     0.289         -33%
+  vanadium_ppm                 0.743     0.743          +0%
+  nickel_ppm                   0.372     0.738         +50%
+  middle_distillate_pct        2.934     4.955         +41%
+
+======================================================================
+ANVENDER PÅ ALLE NCS OLJEFELT
+======================================================================
+
+Tier-fordeling:
+  1_STANDALONE        20 felt
+  2_BLEND             30 felt
+  3_ANALOG            54 felt
+
+Lagret: 63_ncs_field_quality.csv (104 felt)
+
+── Aker BP-felt — tier per felt ──
+
+  Felt               Tier              API  Svovel Provenance                    
+  ALVHEIM            1_STANDALONE     34.5   0.40% assay:Alvheim                 
+  SKARV              1_STANDALONE     50.8   0.06% assay:Skarv                   
+  BØYLA              2_BLEND          34.5   0.40% blend:Alvheim                 
+  EDVARD GRIEG       2_BLEND          27.1   0.67% blend:Grane                   
+  HOD                2_BLEND          38.9   0.21% blend:Ekofisk                 
+  IVAR AASEN         2_BLEND          27.1   0.67% blend:Grane                   
+  SKOGUL             2_BLEND          34.5   0.40% blend:Alvheim                 
+  SOLVEIG            2_BLEND          27.1   0.67% blend:Grane                   
+  TAMBAR             2_BLEND          38.9   0.21% blend:Ekofisk                 
+  ULA                2_BLEND          38.9   0.21% blend:Ekofisk                 
+  VALHALL            2_BLEND          38.9   0.21% blend:Ekofisk                 
+  VILJE              2_BLEND          34.5   0.40% blend:Alvheim                 
+  VOLUND             2_BLEND          34.5   0.40% blend:Alvheim                 
+  FRØY               3_ANALOG         38.0   0.13% analog-k3:FRAM H-NORD+(ΔAPI=0.
+  FULLA              3_ANALOG         43.0   0.19% analog-k3:OSEBERG ØST+(ΔAPI=3.
+  HANZ               3_ANALOG         36.8   0.13% analog-k3:GINA KROG+(ΔAPI=0.2,
+  HUGIN SATELLITTER  3_ANALOG         39.8   0.19% analog-k3:OSEBERG ØST+(ΔAPI=0.
+  MUNIN              3_ANALOG         38.0   0.13% analog-k3:FRAM H-NORD+(ΔAPI=0.
+  SYMRA              3_ANALOG         34.0   0.40% analog-k3:ALVHEIM+(ΔAPI=0.5,om
+  VALE               3_ANALOG         43.0   0.19% analog-k3:OSEBERG ØST+(ΔAPI=3.
+  VOLVE              3_ANALOG         27.0   0.67% analog-k3:IVAR AASEN+(ΔAPI=0.1
+
+Lagret figur: 63_field_quality_imputation.png
