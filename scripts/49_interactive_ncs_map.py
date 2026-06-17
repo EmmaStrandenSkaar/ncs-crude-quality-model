@@ -38,7 +38,7 @@ OUT_HTML     = PROC_DIR / "49_ncs_interactive_map.html"
 
 MODEL_JSON   = PROC_DIR / "34b_brent_model.json"
 IMPUTED_CSV  = PROC_DIR / "63_ncs_field_quality.csv"                              # Script 63 felt→kvalitet
-DECLINE_CSV  = PROJECT_ROOT / "analyses" / "decline_quality" / "data" / "predictions_v51.csv"  # V5.1 decline
+PROFILES_JSON = PROC_DIR / "64_field_production_profiles.json"                    # Script 64 produksjonsprofiler
 
 # ── DIREKTE assay-mapping (★★★ Equinor lab-assay) ──────────────────────────
 # Felt med egen publisert offisiell Equinor XLSX-assay
@@ -547,79 +547,114 @@ def load_imputed_quality() -> dict:
         )
     return out
 
-def load_decline_predictions() -> dict:
-    """V5.1 decline-modell: felt → {D_pred, D_actual, tier, is_akerbp}."""
-    if not DECLINE_CSV.exists():
+def load_production_profiles() -> dict:
+    """Script 64: felt → produksjonsprofil (historikk + predikert / forward forecast)."""
+    if not PROFILES_JSON.exists():
         return {}
-    df = pd.read_csv(DECLINE_CSV)
-    out = {}
-    for _, r in df.iterrows():
-        out[str(r["field"]).upper().strip()] = dict(
-            D_pred=float(r["D_pred"]),
-            D_actual=float(r["D_annual"]) if pd.notna(r.get("D_annual")) else None,
-            tier=str(r.get("api_quality_tier", "")),
-        )
-    return out
+    with open(PROFILES_JSON) as f:
+        return json.load(f)
 
-def decline_sparkline_svg(D_pred: float, D_actual: float | None = None,
-                           years: int = 10, w: int = 240, h: int = 60) -> str:
-    """Inline SVG: projisert produksjonskurve exp(-D·t) over `years` år."""
-    pad = 6
-    def pts(D):
-        xs = np.linspace(0, years, 40)
-        ys = np.exp(-D * xs)
-        coords = []
-        for x, y in zip(xs, ys):
-            px = pad + x / years * (w - 2 * pad)
-            py = pad + (1 - y) * (h - 2 * pad)
-            coords.append(f"{px:.1f},{py:.1f}")
-        return " ".join(coords)
-    # halveringstid
-    half_life = np.log(2) / D_pred if D_pred > 0 else float("inf")
-    hl_str = f"{half_life:.1f} år" if np.isfinite(half_life) else "—"
-    # 5-års gjenværende
-    rem5 = np.exp(-D_pred * 5) * 100
-    actual_path = ""
-    if D_actual is not None and D_actual > 0:
-        actual_path = (f"<polyline points='{pts(D_actual)}' fill='none' "
-                       f"stroke='#9b59b6' stroke-width='1.2' stroke-dasharray='3,2' opacity='0.7'/>")
-    # gridlinjer (peak og halv)
-    y_half = pad + 0.5 * (h - 2 * pad)
-    return f"""
-    <svg width='{w}' height='{h}' style='display:block;'>
-      <line x1='{pad}' y1='{pad}' x2='{w-pad}' y2='{pad}' stroke='#eee' stroke-width='1'/>
-      <line x1='{pad}' y1='{y_half:.0f}' x2='{w-pad}' y2='{y_half:.0f}' stroke='#f3f3f3' stroke-width='1'/>
-      {actual_path}
-      <polyline points='{pts(D_pred)}' fill='none' stroke='#e74c3c' stroke-width='2'/>
-    </svg>
-    <div style='font-size:8.5px;color:#999;margin-top:-2px;'>
-      Peak → {years} år · halveringstid {hl_str} · ~{rem5:.0f}% igjen etter 5 år
-    </div>
+
+def production_chart_svg(profile: dict, w: int = 280, h: int = 110) -> str:
     """
+    Inline SVG: historisk produksjon + modell-predikert decline (produserende),
+    eller full lifecycle-forecast (forward). x = år, y = % av peak.
+    """
+    padL, padR, padT, padB = 26, 8, 8, 16
+    plot_w, plot_h = w - padL - padR, h - padT - padB
 
-def decline_block_html(decline: dict | None) -> str:
-    """HTML-blokk for estimert decline-kurve i popup."""
-    if not decline:
+    hist = profile.get("hist") or []
+    pred = profile.get("pred") or []
+    fcst = profile.get("forecast") or []
+
+    # samle alle x/y for akse-skalering
+    all_pts = hist + pred + fcst
+    if not all_pts:
         return ""
-    D_pred = decline["D_pred"]
-    D_act = decline.get("D_actual")
-    spark = decline_sparkline_svg(D_pred, D_act)
-    actual_line = ""
-    if D_act is not None:
-        actual_line = (f"<span style='color:#9b59b6;'>&nbsp;·&nbsp;observert "
-                       f"{D_act*100:.1f}%/år</span>")
+    xmax = max(p[0] for p in all_pts) or 1.0
+    ymax = max(110.0, max(p[1] for p in all_pts))
+
+    def sx(x): return padL + x / xmax * plot_w
+    def sy(y): return padT + (1 - y / ymax) * plot_h
+    def path(pts, **kw):
+        if not pts: return ""
+        d = " ".join(f"{sx(x):.1f},{sy(y):.1f}" for x, y in pts)
+        attrs = " ".join(f"{k.replace('_','-')}='{v}'" for k, v in kw.items())
+        return f"<polyline points='{d}' fill='none' {attrs}/>"
+
+    # akse-gridlinjer ved 0%, 50%, 100%
+    grids = ""
+    for yv in (0, 50, 100):
+        yy = sy(yv)
+        grids += (f"<line x1='{padL}' y1='{yy:.0f}' x2='{w-padR}' y2='{yy:.0f}' "
+                  f"stroke='#eee' stroke-width='1'/>"
+                  f"<text x='{padL-3}' y='{yy+3:.0f}' font-size='7' fill='#bbb' text-anchor='end'>{yv}</text>")
+
+    # peak-markør (produserende)
+    peak_marker = ""
+    if profile.get("type") == "producing" and profile.get("peak_t") is not None:
+        px = sx(profile["peak_t"])
+        peak_marker = (f"<line x1='{px:.0f}' y1='{padT}' x2='{px:.0f}' y2='{padT+plot_h}' "
+                       f"stroke='#ddd' stroke-width='1' stroke-dasharray='2,2'/>"
+                       f"<text x='{px:.0f}' y='{padT+plot_h+11:.0f}' font-size='6.5' fill='#aaa' text-anchor='middle'>peak</text>")
+
+    layers = grids + peak_marker
+    if profile.get("type") == "forward":
+        # full lifecycle-forecast (grønn)
+        layers += path(fcst, stroke="#16a085", stroke_width="2")
+    else:
+        # historisk faktisk (blå) + predikert decline (rød stiplet)
+        layers += path(pred, stroke="#e74c3c", stroke_width="1.6", stroke_dasharray="4,2", opacity="0.85")
+        layers += path(hist, stroke="#2471a3", stroke_width="2")
+
+    return f"<svg width='{w}' height='{h}' style='display:block;margin-top:2px;'>{layers}</svg>"
+
+
+def decline_block_html(profile: dict | None) -> str:
+    """HTML-blokk: produksjonskurve + spesifikk modell-predikert decline rate."""
+    if not profile:
+        return ""
+    D_pred = profile.get("D_pred")
+    if D_pred is None:
+        return ""
+    is_fwd = profile.get("type") == "forward"
+    stage = profile.get("stage", "")
+    chart = production_chart_svg(profile)
+
+    half_life = np.log(2) / D_pred if D_pred and D_pred > 0 else float("inf")
+    hl_str = f"{half_life:.1f} år" if np.isfinite(half_life) else "—"
+    rem5 = np.exp(-D_pred * 5) * 100 if D_pred else 0
+
+    header = "📈 PRODUKSJONS-FORECAST (V5.1 + lifecycle)" if is_fwd else "📉 PRODUKSJON: HISTORIKK vs MODELL"
+    # eksplisitt decline-setning
+    decline_sentence = (
+        f"Modellen predikerer en decline rate på <b style='color:#e74c3c;'>{D_pred*100:.1f}%/år</b> "
+        f"etter platå.")
+    if not is_fwd and profile.get("D_actual") is not None:
+        d_act = profile["D_actual"]
+        decline_sentence += (f" Observert hittil: <b style='color:#9b59b6;'>{d_act*100:.1f}%/år</b>.")
+
+    if is_fwd:
+        legend = "<span style='color:#16a085;'>━ forecast (ramp→platå→decline)</span>"
+        extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
+                 f"Peak ~{profile.get('peak_p50_msm3',0)*209.67:.0f} kboe/d · "
+                 f"ramp {profile.get('ramp_p50',0):.0f} mnd · platå {profile.get('plateau_p50',0):.0f} mnd · "
+                 f"first oil {profile.get('first_oil','?')}</div>")
+    else:
+        legend = ("<span style='color:#2471a3;'>━ faktisk</span> &nbsp; "
+                  "<span style='color:#e74c3c;'>┄ predikert decline</span>")
+        extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
+                 f"halveringstid {hl_str} · ~{rem5:.0f}% av peak igjen etter 5 år</div>")
+
     return f"""
       <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:6px;'>
-        📉 ESTIMERT DECLINE (V5.1-modell)
+        {header}
       </div>
-      <div style='font-size:15px;font-weight:bold;color:#e74c3c;margin-top:1px;line-height:1.1;'>
-        {D_pred*100:.1f}%<span style='font-size:10px;color:#888;font-weight:normal;'> /år</span>
-        {actual_line}
-      </div>
-      {spark}
-      <div style='font-size:8px;color:#aaa;font-style:italic;'>
-        Rød = modell-estimat · lilla stiplet = observert decline
-      </div>
+      <div style='font-size:9.5px;color:#555;margin-top:2px;'>{decline_sentence}</div>
+      <div style='font-size:8.5px;color:#888;margin-top:1px;'>Nåværende fase: <b>{stage}</b></div>
+      {chart}
+      <div style='font-size:8.5px;'>{legend}</div>
+      {extra}
     """
 
 
@@ -922,8 +957,10 @@ def main() -> None:
     imputed_quality = load_imputed_quality()
     print(f"  Script 63 kvalitets-fallback: {len(imputed_quality)} felt")
 
-    decline_preds = load_decline_predictions()
-    print(f"  V5.1 decline-prediksjoner: {len(decline_preds)} felt")
+    prod_profiles = load_production_profiles()
+    n_prod_prof = sum(1 for p in prod_profiles.values() if p.get("type") == "producing")
+    n_fwd_prof = sum(1 for p in prod_profiles.values() if p.get("type") == "forward")
+    print(f"  Produksjonsprofiler: {n_prod_prof} produserende + {n_fwd_prof} forward")
 
     fields_fc      = load_geojson("fields")
     discoveries_fc = load_geojson("discoveries")
@@ -1066,16 +1103,16 @@ def main() -> None:
             "source_label":  source_label,
             "proxy_grade":   assay_grade,
             "is_fpso":       is_fpso,
-            "decline":       decline_preds.get(name),
+            "profile":       prod_profiles.get(name),
         }
 
-    n_decline = sum(1 for n in field_predictions if decline_preds.get(n))
+    n_decline = sum(1 for n in field_predictions if prod_profiles.get(n))
     print(f"  ★★★ DIRECT (egen assay):       {n_direct:>3}")
     print(f"  ★★  BLEND-PROXY:                {n_blend:>3}")
     print(f"  ★★  SCRIPT 63 / proxy:          {n_proxy:>3}")
     print(f"  —   uten data:                  {n_none:>3}")
     print(f"  TOTAL m/ modellprediksjon:    {n_direct + n_blend + n_proxy:>3} / {len(fields_fc['features'])}")
-    print(f"  📉  m/ V5.1 decline-kurve:      {n_decline:>3}")
+    print(f"  📈  m/ produksjonsprofil:       {n_decline:>3}")
 
     # ── Bygg Folium-kart ─────────────────────────────────────────────────────
     print("\n[3] Bygger kart...")
@@ -1173,11 +1210,13 @@ def main() -> None:
                 is_forward=True,
                 forward_label=fwd_q.get("label", fld_name.title()),
                 baseline_pred=baseline_pred,
+                decline=prod_profiles.get(fld_name),
             )
         else:
             popup_html = popup_html_field(
                 props, None, None, None, None,
-                is_forward=True, forward_label="Under utbygging"
+                is_forward=True, forward_label="Under utbygging",
+                decline=prod_profiles.get(fld_name),
             )
 
         folium.GeoJson(
@@ -1298,12 +1337,12 @@ def main() -> None:
                 source_type=pred_info["source_type"],
                 source_label=pred_info["source_label"],
                 baseline_pred=baseline_pred,
-                decline=pred_info.get("decline"),
+                decline=pred_info.get("profile"),
             )
         else:
             style = style_field(None, status, cm)
             popup_html = popup_html_field(props, None, None, None, normpris.get(name),
-                                          decline=decline_preds.get(name))
+                                          decline=prod_profiles.get(name))
 
         folium.GeoJson(
             f,
