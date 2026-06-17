@@ -18,22 +18,22 @@ Testbare analog-imputeringer: 21 felt
 
 Variabel                median |feil|  median rel.feil    n
 ------------------------------------------------------------
-  sulfur_pct                     0.080              32%   21
-  vacuum_resid_pct               2.000              25%   21
-  ccr_pct                        0.383              42%   17
-  vanadium_ppm                   0.743              74%   17
-  nickel_ppm                     0.372              35%   17
-  middle_distillate_pct          2.934               9%   21
+  sulfur_pct                     0.060              32%   21
+  vacuum_resid_pct               3.484              37%   21
+  ccr_pct                        0.289              27%   17
+  vanadium_ppm                   0.743              78%   17
+  nickel_ppm                     0.738              73%   17
+  middle_distillate_pct          4.955              14%   21
 
-  Sammenligning: analog vs ren geografi-median (baseline)
-  Variabel                 analog MAE    geo MAE   forbedring
+  Sammenligning: område-median (valgt) vs NCS-bred median
+  Variabel                 område MAE   NCS-bred   forbedring
   --------------------------------------------------------
-  sulfur_pct                   0.080     0.060         -33%
-  vacuum_resid_pct             2.000     3.484         +43%
-  ccr_pct                      0.383     0.289         -33%
-  vanadium_ppm                 0.743     0.743          +0%
-  nickel_ppm                   0.372     0.738         +50%
-  middle_distillate_pct        2.934     4.955         +41%
+  sulfur_pct                   0.060     0.080         +25%
+  vacuum_resid_pct             3.484     4.556         +24%
+  ccr_pct                      0.289     0.457         +37%
+  vanadium_ppm                 0.743     0.854         +13%
+  nickel_ppm                   0.738     0.744          +1%
+  middle_distillate_pct        4.955     5.268          +6%
 
 ======================================================================
 ANVENDER PÅ ALLE NCS OLJEFELT
@@ -42,7 +42,7 @@ ANVENDER PÅ ALLE NCS OLJEFELT
 Tier-fordeling:
   1_STANDALONE        20 felt
   2_BLEND             30 felt
-  3_ANALOG            54 felt
+  3_MEDIAN+DST        54 felt
 
 Lagret: 63_ncs_field_quality.csv (104 felt)
 
@@ -62,13 +62,13 @@ Lagret: 63_ncs_field_quality.csv (104 felt)
   VALHALL            2_BLEND          38.9   0.21% blend:Ekofisk                 
   VILJE              2_BLEND          34.5   0.40% blend:Alvheim                 
   VOLUND             2_BLEND          34.5   0.40% blend:Alvheim                 
-  FRØY               3_ANALOG         38.0   0.13% analog-k3:FRAM H-NORD+(ΔAPI=0.
-  FULLA              3_ANALOG         43.0   0.19% analog-k3:OSEBERG ØST+(ΔAPI=3.
-  HANZ               3_ANALOG         36.8   0.13% analog-k3:GINA KROG+(ΔAPI=0.2,
-  HUGIN SATELLITTER  3_ANALOG         39.8   0.19% analog-k3:OSEBERG ØST+(ΔAPI=0.
-  MUNIN              3_ANALOG         38.0   0.13% analog-k3:FRAM H-NORD+(ΔAPI=0.
-  SYMRA              3_ANALOG         34.0   0.40% analog-k3:ALVHEIM+(ΔAPI=0.5,om
-  VALE               3_ANALOG         43.0   0.19% analog-k3:OSEBERG ØST+(ΔAPI=3.
-  VOLVE              3_ANALOG         27.0   0.67% analog-k3:IVAR AASEN+(ΔAPI=0.1
+  FRØY               3_MEDIAN+DST     38.0   0.25% median:North sea(40 grades,omr
+  FULLA              3_MEDIAN+DST     43.0   0.25% median:North sea(40 grades,omr
+  HANZ               3_MEDIAN+DST     36.8   0.25% median:North sea(40 grades,omr
+  HUGIN SATELLITTER  3_MEDIAN+DST     39.8   0.25% median:North sea(40 grades,omr
+  MUNIN              3_MEDIAN+DST     38.0   0.25% median:North sea(40 grades,omr
+  SYMRA              3_MEDIAN+DST     34.0   0.25% median:North sea(40 grades,omr
+  VALE               3_MEDIAN+DST     43.0   0.25% median:North sea(40 grades,omr
+  VOLVE              3_MEDIAN+DST     27.0   0.25% median:North sea(40 grades,omr
 
 Lagret figur: 63_field_quality_imputation.png

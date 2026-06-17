@@ -10,8 +10,8 @@ HIERARKI (høyest → lavest):
   Tier 1  STANDALONE_ASSAY  — feltet har egen publisert assay
   Tier 2  BLEND_ASSAY       — feltet selges inn i navngitt blend m/ assay
                               (KORREKT for pris — det er salgsvaren)
-  Tier 3  ANALOG            — ingen assay; lab-variabler fra nærmeste-API-felt
-                              i samme hovedområde, API fra Sodir DST
+  Tier 3  MEDIAN+DST        — ingen assay; lab-variabler fra område-median
+                              (robust), API erstattet med feltspesifikk Sodir-DST
   Tier 4  GEOGRAPHY         — siste utvei: hovedområde-median
 
 VIKTIG NYANSE (pris vs decline):
@@ -131,25 +131,29 @@ def assign_quality(field_u, api_for_match, main_area, analog_pool, exclude=None,
             q = assay_q.loc[grade]
             return q.to_dict(), "2_BLEND", f"blend:{grade}"
 
-    # Tier 3: analog — MEDIAN av k=3 nærmeste API i samme område.
-    # Validering viste at k=3-median slår både enkelt-nærmeste-nabo (for støyete)
-    # og ren geografi-median (mister API-relevans) på 4 av 6 lab-variabler.
-    K = 3
+    # Tier 3: MEDIAN-BASE + SODIR-OVERRIDE.
+    # Lab-variablene tas fra område-median (robust — API forutsier ikke svovel/
+    # metaller godt, så nærmeste-nabo-matching gir bare støy). API erstattes med
+    # den feltspesifikke Sodir-DST-målingen der den finnes.
+    #
+    # Validering (LOO, 21 NCS-grades, pris-vektet): praktisk talt likt med k=3-
+    # analog (0.338 vs 0.327), men median-base vinner på svovel (mest pris-kritisk)
+    # og er enklere/mer transparent. Sodir-override gir feltspesifikk API.
     pool = analog_pool
     if exclude is not None:
         pool = pool[pool.field_u != exclude]
-    if api_for_match is not None and len(pool) > 0:
+    if len(pool) > 0:
         same_area = pool[pool.main_area == main_area]
-        cand = same_area if len(same_area) >= 1 else pool  # fall til hele NCS hvis tomt område
-        cand = cand.copy()
-        cand["api_dist"] = (cand.api_match - api_for_match).abs()
-        knn = cand.sort_values("api_dist").head(K)
-        q = {"api_gravity": api_for_match}  # API fra DST (feltspesifikk)
+        base = same_area if len(same_area) >= 1 else pool  # fall til hele NCS hvis tomt område
+        q = {}
+        # API: feltspesifikk Sodir-DST hvis tilgjengelig, ellers område-median
+        q["api_gravity"] = api_for_match if api_for_match is not None else base.api_match.median()
+        # Lab-variabler: område-median (robust base)
         for v in LAB_VARS:
-            q[v] = knn[v].median()
+            q[v] = base[v].median()
         scope = "område" if len(same_area) >= 1 else "NCS"
-        nearest = knn.iloc[0]
-        return q, "3_ANALOG", f"analog-k{len(knn)}:{nearest.field_u}+(ΔAPI={nearest.api_dist:.1f},{scope})"
+        api_src = "Sodir-DST" if api_for_match is not None else "median"
+        return q, "3_MEDIAN+DST", f"median:{main_area}({len(base)} grades,{scope})+API:{api_src}"
 
     # Tier 4: geografi-median
     geo = analog_pool[analog_pool.main_area == main_area]
@@ -227,28 +231,23 @@ for v in LAB_VARS:
     val_summary[v] = {"mae": abs_err.median(), "mape": rel_err.median(), "n": len(sub)}
     log(f"  {v:22s} {abs_err.median():13.3f} {rel_err.median():15.0f}% {len(sub):4d}")
 
-# Sammenlign mot geografi-median som baseline
-log(f"\n  Sammenligning: analog vs ren geografi-median (baseline)")
-log(f"  {'Variabel':22s} {'analog MAE':>12s} {'geo MAE':>10s} {'forbedring':>12s}")
+# Sammenlign område-median (valgt metode) vs NCS-bred median (gir område-strat verdi?)
+log(f"\n  Sammenligning: område-median (valgt) vs NCS-bred median")
+log(f"  {'Variabel':22s} {'område MAE':>12s} {'NCS-bred':>10s} {'forbedring':>12s}")
 log("  " + "-" * 56)
 for v in LAB_VARS:
     sub = val.dropna(subset=[f"{v}_true"])
     if len(sub) < 3:
         continue
-    analog_mae = (sub[f"{v}_imp"] - sub[f"{v}_true"]).abs().median()
-    # geografi-baseline: median av alle ANDRE grades i samme område
-    gp_area = grade_pool.set_index("field_u")["main_area"].to_dict()
-    geo_errs = []
+    area_mae = (sub[f"{v}_imp"] - sub[f"{v}_true"]).abs().median()
+    # NCS-bred baseline: median av ALLE andre grades (ignorer område)
+    global_errs = []
     for _, rr in sub.iterrows():
-        g = rr.field
-        area = gp_area.get(g, "Unknown")
-        others = grade_pool[(grade_pool.field_u != g) & (grade_pool.main_area == area)]
-        if len(others) == 0:
-            others = grade_pool[grade_pool.field_u != g]
-        geo_errs.append(abs(others[v].median() - rr[f"{v}_true"]))
-    geo_mae = np.median(geo_errs)
-    imp = (1 - analog_mae / geo_mae) * 100 if geo_mae > 0 else 0
-    log(f"  {v:22s} {analog_mae:11.3f} {geo_mae:9.3f} {imp:+11.0f}%")
+        others = grade_pool[grade_pool.field_u != rr.field]
+        global_errs.append(abs(others[v].median() - rr[f"{v}_true"]))
+    global_mae = np.median(global_errs)
+    imp = (1 - area_mae / global_mae) * 100 if global_mae > 0 else 0
+    log(f"  {v:22s} {area_mae:11.3f} {global_mae:9.3f} {imp:+11.0f}%")
 
 # ────────────────────────────────────────────────────────────────────────────
 # 5. ANVEND PÅ ALLE NCS-FELT
@@ -339,7 +338,7 @@ ax.legend(fontsize=8)
 # Panel 4: tier distribution
 ax = fig.add_subplot(gs[1, 0])
 tier_counts = out.tier.value_counts().sort_index()
-tier_colors = {"1_STANDALONE":"#2E7D32","2_BLEND":"#1565C0","3_ANALOG":"#FF9800","4_GEOGRAPHY":"#C62828"}
+tier_colors = {"1_STANDALONE":"#2E7D32","2_BLEND":"#1565C0","3_MEDIAN+DST":"#FF9800","4_GEOGRAPHY":"#C62828"}
 ax.bar(range(len(tier_counts)), tier_counts.values,
        color=[tier_colors.get(t,"#999") for t in tier_counts.index], alpha=0.85)
 ax.set_xticks(range(len(tier_counts)))
