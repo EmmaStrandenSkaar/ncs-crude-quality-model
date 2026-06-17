@@ -49,6 +49,7 @@ PANEL_CSV      = PROJECT_ROOT / "data" / "processed" / "regression_panel.csv"
 ASSAY_CSV      = PROJECT_ROOT / "data" / "processed" / "unified_crude_assays.csv"
 MODEL_JSON     = PROJECT_ROOT / "data" / "processed" / "34b_brent_model.json"
 SODIR_MONTHLY  = PROJECT_ROOT / "data" / "raw" / "sodir" / "sodir_field_production_monthly.csv"
+IMPUTED_CSV    = PROJECT_ROOT / "data" / "processed" / "63_ncs_field_quality.csv"  # Script 63 fallback
 OUT_DIR        = PROJECT_ROOT / "data" / "processed"
 FIG_DIR        = PROJECT_ROOT / "data" / "processed"
 
@@ -347,15 +348,63 @@ AKRBP_FPSO_FIELDS = {
 }
 
 
+# ── Fallback-kilde: imputert kvalitet for felt uten hardkodet assay (Script 63) ──
+# main_area → log(avstand til Rotterdam) estimat, avledet fra hardkodede
+# FIELD_QUALITY-verdier per region (North Sea 6.26-6.87, Skarv/Norwegian 7.34).
+AREA_LOG_DIST = {
+    "North sea":     6.50,   # Sture/Mongstad/Teesside ~600-900 km
+    "Norwegian sea": 7.30,   # Skarv-nivå ~1500 km
+    "Barents sea":   7.70,   # ~2200 km
+    "Unknown":       6.60,   # NCS-median
+}
+
+_IMPUTED_CACHE = None
+def load_imputed_quality() -> dict:
+    """Last Script 63 imputeringstabell → {FELT: quality-dict} (samme nøkler som FIELD_QUALITY)."""
+    global _IMPUTED_CACHE
+    if _IMPUTED_CACHE is not None:
+        return _IMPUTED_CACHE
+    _IMPUTED_CACHE = {}
+    if not IMPUTED_CSV.exists():
+        return _IMPUTED_CACHE
+    df = pd.read_csv(IMPUTED_CSV)
+    for _, r in df.iterrows():
+        area = str(r.get("main_area", "Unknown"))
+        _IMPUTED_CACHE[str(r["field"]).upper().strip()] = dict(
+            api=r["api_gravity"], sulfur=r["sulfur_pct"],
+            vacuum_resid=r["vacuum_resid_pct"], ccr=r["ccr_pct"],
+            vanadium=r["vanadium_ppm"], nickel=r["nickel_ppm"],
+            middle_distillate_pct=r["middle_distillate_pct"],
+            log_dist_rotterdam=AREA_LOG_DIST.get(area, AREA_LOG_DIST["Unknown"]),
+            confidence=f"imputed ({r['tier']})", tier=r["tier"],
+        )
+    return _IMPUTED_CACHE
+
+
+def resolve_field_quality(field: str):
+    """
+    Hent kvalitetsvektor med fallback-hierarki:
+      1. Hardkodet FIELD_QUALITY (offisiell assay/blend) — høyest prioritet, uendret
+      2. Script 63 imputeringstabell (standalone/blend/median+DST)
+    Returnerer (quality_dict, source) eller (None, None).
+    """
+    if field in FIELD_QUALITY:
+        return FIELD_QUALITY[field], "hardcoded"
+    imp = load_imputed_quality()
+    if field in imp:
+        return imp[field], "imputed"
+    return None, None
+
+
 def build_field_features(field: str, mts: pd.DataFrame, coefs: dict, features: list) -> pd.DataFrame:
     """
     Bygg full feature-matrise for ett felt × alle måneder.
     Returnerer DataFrame med predicted_differential per måned.
     """
-    if field not in FIELD_QUALITY:
+    q, _src = resolve_field_quality(field)
+    if q is None:
         return None
 
-    q = FIELD_QUALITY[field]
     api      = q["api"]
     sulfur   = q["sulfur"]
     vac_res  = q["vacuum_resid"]
@@ -861,17 +910,24 @@ def main():
     # 2. Prediker differensial per felt per måned
     print("\n[2] Predikerer felt-differensialer...")
     field_diffs = {}
+    n_hardcoded = n_imputed = 0
     for field in AKER_BP_WI:
-        if field not in FIELD_QUALITY:
+        q, src = resolve_field_quality(field)
+        if q is None:
             continue
         diff_df = build_field_features(field, mts, coefs, features)
         field_diffs[field] = diff_df
         q_mean = diff_df["diff_pred"].mean() if diff_df is not None else np.nan
-        conf = FIELD_QUALITY[field].get("confidence", "?")
-        api  = FIELD_QUALITY[field]["api"]
-        sulf = FIELD_QUALITY[field]["sulfur"]
-        print(f"  {field:22s} | API {api:4.1f} | S {sulf:.3f}% | "
+        conf = q.get("confidence", "?")
+        api  = q["api"]
+        sulf = q["sulfur"]
+        flag = "  " if src == "hardcoded" else " ⟲"   # ⟲ = fallback fra Script 63
+        n_hardcoded += src == "hardcoded"
+        n_imputed += src == "imputed"
+        print(f" {flag}{field:21s} | API {api:4.1f} | S {sulf:.3f}% | "
               f"Avg diff {q_mean:+5.2f} USD/bbl | {conf}")
+    print(f"\n  → {n_hardcoded} felt hardkodet (offisiell assay), "
+          f"{n_imputed} via Script 63 fallback (⟲)")
 
     # 3. Vektet blending per kvartal
     print("\n[3] Beregner kvartalsvise blendede priser...")
