@@ -1,0 +1,51 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 23: YGGDRASIL FULL LIFECYCLE FORECAST
+════════════════════════════════════════════════════════════════════════════════
+
+── HUB-NIVÅ FORECAST ──
+  Input: 70 MSm³ olje (av ~100 MSm³ total OE)
+         70 brønner planlagt, FPSO, API=37°
+
+  Point estimate:
+    Peak rate:    0.823 MSm³/mnd  = 173 bbl/d  = 173 kboe/d olje
+    Ramp:         34 måneder
+    Plateau:      15 måneder
+    Decline rate: 0.112/år
+    Cumulative P50: 64.6 MSm³  (rec. check 0.92)
+
+  P10 / P50 / P90:
+    Peak (MSm³/mnd):   0.34 / 0.82 / 2.10
+    Peak (kboe/d):     71 / 172 / 440
+    Ramp (mnd):        1 / 33 / 1626
+    Plateau (mnd):     1 / 15 / 118
+    Decline (/år):     0.010 / 0.114 / 0.800
+
+  ── Sammenligning med Aker BP guidance ──
+    Operatør guidance peak (olje):     ~85 kboe/d = ~0.4 MSm³/mnd
+    Vår P50 peak:                       172 kboe/d = 0.82 MSm³/mnd
+    Vår P50 vs guidance:                205% av guidance
+    P10-P90 range:                      71-440 kboe/d
+
+════════════════════════════════════════════════════════════════════════════════
+KOMPONENT-NIVÅ FORECAST
+════════════════════════════════════════════════════════════════════════════════
+
+  Krafla (hovedreservoar)         Peak=0.412  Ramp=19mo  Plat=11mo  D=0.150
+
+  Fulla (subsea tieback)          Peak=0.244  Ramp=19mo  Plat=9mo  D=0.213
+
+  Frøy (re-utbygging)             Peak=0.262  Ramp=12mo  Plat=9mo  D=0.167
+
+  Munin + Symra (satellitter)     Peak=0.193  Ramp=14mo  Plat=8mo  D=0.200
+
+  Hugin + Fenris (satellitter)    Peak=0.166  Ramp=13mo  Plat=8mo  D=0.227
+
+── AGGREGERT HUB-PROGNOSE (sum av komponenter, staggered) ──
+  Aggregert peak (P50):  0.61 MSm³/mnd = 128 kboe/d
+  Aggregert peak (P10):  0.08
+  Aggregert peak (P90):  1.75
+  Total cumulative P50:  96.5 MSm³
+  Sum av components recoverable:  70 MSm³
+
+Saved: fig_yggdrasil_forecast.png
+Saved: yggdrasil_forecast.csv

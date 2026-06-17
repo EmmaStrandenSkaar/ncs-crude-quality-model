@@ -1,0 +1,76 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 20: PEAK PRODUCTION FORECAST MODEL
+Kun ex-ante variabler — kan kjøres på nye felt før produksjon
+════════════════════════════════════════════════════════════════════════════════
+
+Typecurve library: 69 felt
+  Med recoverable_msm3: 69
+
+Felt med komplett ex-ante data: 64
+
+── Feature engineering ──
+  Facility dummies: ['fac_Fixed', 'fac_Other', 'fac_Semi-sub', 'fac_Subsea tieback']
+  Major operators (n≥4): ['Equinor Energy AS', 'Aker BP ASA', 'Vår Energi ASA', 'ConocoPhillips Skandinavia AS']
+  Operator dummies: ['op_ConocoPhillips Skandinavia AS', 'op_Equinor Energy AS', 'op_Other', 'op_Vår Energi ASA']
+
+Feature matrix: (64, 13)
+Features used: ['log_recoverable', 'log_n_wells', 'log_water_depth', 'api', 'decade_scaled', 'fac_Fixed', 'fac_Other', 'fac_Semi-sub', 'fac_Subsea tieback', 'op_ConocoPhillips Skandinavia AS', 'op_Equinor Energy AS', 'op_Other', 'op_Vår Energi ASA']
+NaN in features: 0
+
+════════════════════════════════════════════════════════════════════════════════
+MODEL FIT
+════════════════════════════════════════════════════════════════════════════════
+  In-sample R² (log-space):    0.884
+  In-sample R² (linear-space): 0.802
+  Median absolute % error:     25%
+
+  LOO CV R² (log-space):       0.800
+  LOO CV R² (linear-space):    0.686
+  CV median absolute % error:  30%
+
+── Bootstrap koeffisient-CIs (n=2000) ──
+  Variable                             β                  95% CI   Sig.
+───────────────────────────────────────────────────────────────────────────
+  Intercept                      -3.3821  [-5.2089, -1.1554]  ✓
+  log_recoverable                +0.5521  [+0.3046, +0.7738]  ✓
+  log_n_wells                    +0.1173  [-0.1582, +0.3819]  ✗
+  log_water_depth                +0.0921  [-0.2945, +0.3833]  ✗
+  api                            -0.0009  [-0.0350, +0.0251]  ✗
+  decade_scaled                  -0.0152  [-0.1792, +0.1207]  ✗
+  fac_Fixed                      -0.1436  [-0.6163, +0.2661]  ✗
+  fac_Other                      -0.4048  [-0.8350, +0.0627]  ✗
+  fac_Semi-sub                   -0.3617  [-0.7798, +0.1270]  ✗
+  fac_Subsea tieback             -0.2096  [-0.6025, +0.2158]  ✗
+  op_ConocoPhillips Skandinavia AS   -0.2561  [-0.8052, +0.3535]  ✗
+  op_Equinor Energy AS           -0.0134  [-0.4158, +0.4143]  ✗
+  op_Other                       -0.2159  [-0.6781, +0.3062]  ✗
+  op_Vår Energi ASA              +0.0581  [-0.5792, +0.6862]  ✗
+
+  Saved: peak_forecast_model.pkl
+  Saved: peak_predictions.csv
+
+════════════════════════════════════════════════════════════════════════════════
+AKER BP-FELT — peak forecast i historisk perspektiv
+════════════════════════════════════════════════════════════════════════════════
+
+Felt                R (MSm³)   Actual     Pred   CV pred     Err
+───────────────────────────────────────────────────────────────────────────
+  ULA                   78.2    0.706    0.736     0.743     +5%
+  EDVARD GRIEG          26.2    0.530    0.374     0.352    -34%
+  ALVHEIM               23.5    0.524    0.493     0.479     -9%
+  VALHALL              171.5    0.484    1.364     1.664   +244%
+  IVAR AASEN            18.3    0.286    0.324     0.332    +16%
+  VOLVE                 11.9    0.277    0.183     0.170    -39%
+  VOLUND                 7.2    0.179    0.141     0.136    -24%
+  VILJE                  8.3    0.171    0.136     0.132    -23%
+  TAMBAR                 6.7    0.162    0.146     0.143    -12%
+  HOD                    8.3    0.159    0.201     0.210    +32%
+  ODA                    7.2    0.156    0.113     0.106    -32%
+  SOLVEIG                7.0    0.116    0.151     0.167    +44%
+  BØYLA                  3.4    0.086    0.089     0.089     +3%
+  SKOGUL                 1.3    0.065    0.054     0.050    -23%
+  VALE                   1.8    0.041    0.049     0.051    +25%
+
+  Aker BP CV median |%-err|: 26%
+
+Saved: fig_peak_forecast.png

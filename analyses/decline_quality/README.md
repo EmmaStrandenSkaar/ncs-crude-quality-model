@@ -1,20 +1,45 @@
 # NCS Decline Rate Model
 
-A quantitative decline rate forecasting model for the Norwegian Continental Shelf, combining reservoir physics (Beggs-Robinson viscosity) with a feltspesifikk premium framework calibrated on 49 NCS oil fields.
+A quantitative full-lifecycle production forecasting framework for the Norwegian Continental Shelf. Two complementary engines:
 
-## Final model (V5)
+1. **Decline model (V5.1)** — for fields with ≥12 months post-peak history. Physics (Beggs-Robinson viscosity) + a field-specific premium framework.
+2. **Pre-peak forecast (V2)** — for new fields from PDO data alone. Predicts peak / ramp / plateau / decline using only ex-ante variables.
+
+## Decline model (V5.1) — for producing fields
 
 ```
-D_annual = 0.0939 + 0.0114·ln(μ) − 0.0611·P₁₂ + 0.0401·|P₁₂|
+D_annual = 0.0938 + 0.0106·ln(μ) − 0.0612·P₁₂ + 0.0399·|P₁₂|
 ```
 
 | Metric | Value |
 |--------|-------|
-| LOO Cross-validated R² | 0.702 |
-| In-sample R² | 0.756 |
-| RMSE | 0.041 |
-| Aker BP RMSE (n=12) | 0.061 |
-| Aker BP hit rate (±0.05) | 83% |
+| Nested LOO Cross-validated R² | 0.662 (honest, post-QA) |
+| In-sample R² | 0.742 |
+| RMSE | 0.042 |
+| Aker BP RMSE (n=12) | 0.062 |
+| Aker BP hit rate (±0.05) | 83% (Wilson CI: 55–95%) |
+
+## Pre-peak forecast (V2) — for new fields from PDO
+
+Predicts the full production curve from only pre-production variables (recoverable
+reserves, planned wells, facility type, operator). Validated with genuine out-of-sample
+hold-out (model never saw the test field).
+
+| Phase | Out-of-sample accuracy | Use |
+|-------|------------------------|-----|
+| **Ramp duration** | median error ±5 months | point estimate |
+| **Plateau duration** | median error ±4 months | point estimate |
+| **Peak level** | median error ~35% | **range tool / triangulation only** |
+| **Decline** | calibrated to recoverable | derived, not free |
+
+**Honest caveat on peak:** log-space CV R²=0.84 (gets order of magnitude right), but
+linear median error ~35% out-of-sample. Mega-fields (Johan Sverdrup) and tiny tie-back
+fields are hardest. Peak should be used to *triangulate against operator guidance*, not
+as a standalone NPV point estimate. A Duan smearing correction removes the systematic
+log-retransformation bias (−17% → −11%).
+
+Key methodological discipline: **only variables knowable before first oil are used** —
+no post-hoc production data leaks into the forecast.
 
 ## Master fluid library
 

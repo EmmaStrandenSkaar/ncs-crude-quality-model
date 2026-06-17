@@ -1,0 +1,63 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 28: EKTE OUT-OF-SAMPLE HOLD-OUT VALIDERING
+════════════════════════════════════════════════════════════════════════════════
+
+Datasett: 63 felt
+
+Testfelt tilgjengelig: 13 av 17 ønskede
+
+════════════════════════════════════════════════════════════════════════════════
+HOLD-OUT RESULTATER — PEAK (viktigst)
+════════════════════════════════════════════════════════════════════════════════
+
+Felt                  År      R   Faktisk  Predikert   %-feil   Status
+───────────────────────────────────────────────────────────────────────────
+  FENJA             2022   10.9     0.146      0.201     +38%        🚩
+  DUVA              2021    3.7     0.148      0.084     -43%        🚩
+  JOHAN SVERDRUP    2019  279.5     3.682      1.163     -68%        🚩
+  MARIA             2017   25.0     0.142      0.269     +89%        🚩
+  GOLIAT            2016   30.6     0.488      0.499      +2%        ✓
+  IVAR AASEN        2016   18.3     0.286      0.313     +10%        ✓
+  BØYLA             2015    3.4     0.086      0.101     +17%        ✓
+  EDVARD GRIEG      2015   26.2     0.530      0.336     -37%        🚩
+  KNARR             2015    8.3     0.299      0.171     -43%        🚩
+  GUDRUN            2014   11.2     0.337      0.206     -39%        🚩
+  ALVHEIM           2008   23.5     0.524      0.519      -1%        ✓
+  VOLUND            2008    7.2     0.179      0.149     -17%        ✓
+  YME               1996    7.9     0.329      0.159     -51%        🚩
+
+════════════════════════════════════════════════════════════════════════════════
+SAMMENDRAG
+════════════════════════════════════════════════════════════════════════════════
+
+  PEAK:
+    Median absolutt %-feil:  38%
+    Median bias:             -17%
+    Innenfor ±25%:           38% av felt
+    Innenfor ±35%:           38% av felt
+
+  RAMP:    median absolutt feil = 5 mnd
+  PLATEAU: median absolutt feil = 4 mnd
+
+  BIAS-ANALYSE (er modellen systematisk skjev?):
+    Felt overpredikert (>0):  5/13
+    Felt underpredikert (<0): 8/13
+    → Median bias -17% — modellen underpredikerer systematisk
+
+  ── JOHAN SVERDRUP (gull-standard test) ──
+    Recoverable: 280 MSm³
+    Faktisk peak: 3.682 MSm³/mnd = 772 kboe/d
+    Predikert:    1.163 MSm³/mnd = 244 kboe/d
+    Feil:         -68%
+    NB: JS er et atypisk mega-felt (lavt trykk, høy RF) — vanskelig case
+
+Saved: fig_holdout_validation.png
+Saved: holdout_validation.csv
+
+════════════════════════════════════════════════════════════════════════════════
+VERDIKT
+════════════════════════════════════════════════════════════════════════════════
+
+  🟠 PEAK-MODELLEN ER BRUKBAR men med stor usikkerhet
+     Median |feil| 38%, 38% innen ±35%
+     → Bruk kun som sanity-check mot operatør-guidance, ikke standalone

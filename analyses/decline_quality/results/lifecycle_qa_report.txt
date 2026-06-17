@@ -1,0 +1,217 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 24: QA REVIEW — LIFECYCLE FORECAST MODELLEN
+════════════════════════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════════════════════════
+QA #1: HVOR MYE BIDRAR HVER VARIABEL TIL PEAK-MODELLEN?
+════════════════════════════════════════════════════════════════════════════════
+
+  Modell                                 In-R²    CV R²   p (vs basis)
+  ───────────────────────────────────────────────────────────────────────────
+  Bare intercept                         0.000    0.000               
+  Bare log_recoverable                   0.846    0.835         +0.835
+  + log_n_wells                          0.863    0.843         +0.008
+  + facility dummies                     0.873    0.843        +-0.001
+
+  KONKLUSJON: log_recoverable alene gir CV R² ~0.83
+            Komplekse modeller legger til marginalt — modellen er
+            i praksis 'peak ≈ funksjon av recoverable + facility/n_wells små justeringer'
+
+════════════════════════════════════════════════════════════════════════════════
+QA #2: ER BOOTSTRAP-PROPAGERINGEN I SCRIPT 22 RIKTIG?
+════════════════════════════════════════════════════════════════════════════════
+
+  Bootstrap-samples (5000) for Yggdrasil-input:
+    peak        P1=0.172  P10=0.340  P50=0.826  P90=2.065  P99=4.014
+       → spread P10-P90: 6.1x
+    ramp        P1=1.000  P10=1.000  P50=31.783  P90=1592.024  P99=37402.221
+       → spread P10-P90: 1592.0x
+    plateau     P1=0.000  P10=1.288  P50=14.771  P90=112.954  P99=596.610
+       → spread P10-P90: 87.7x
+    decline     P1=0.010  P10=0.010  P50=0.115  P90=0.800  P99=0.800
+       → spread P10-P90: 80.0x
+
+  🚩 PROBLEM IDENTIFISERT:
+     Ramp P10/P90 ratio er enorm (1592x)
+     Decline P10/P90 ratio er enorm (80x)
+
+     Årsak: Normal-fordelingen brukt for sampling (basert på 95% CI ±1.96 SD)
+     gir 'fat tails' i log-skala når CIene allerede er vide.
+     Når CIene multipliseres med antall variabler → ekstrem variasjon.
+
+  Bredden på sub-modellenes 95% CI for INTERCEPTET (log-skala):
+    peak_forecast_simplified        intercept CI: [-3.50, -2.64]  (bredde=0.85)
+    submodel_ramp                   intercept CI: [-2.29, +5.91]  (bredde=8.20)
+    submodel_plateau                intercept CI: [-0.19, +3.57]  (bredde=3.76)
+    submodel_decline                intercept CI: [-3.66, +2.42]  (bredde=6.07)
+
+════════════════════════════════════════════════════════════════════════════════
+QA #3: ER SUB-MODELL-PARAMETRENE FAKTISK UAVHENGIGE?
+════════════════════════════════════════════════════════════════════════════════
+
+  Empirisk korrelasjoner (n=60 felt med all data):
+                       peak_oil_msm3  ramp_length_months  plateau_length_months  D_decline_fit
+peak_oil_msm3               1.000000            0.384417               0.671835      -0.227937
+ramp_length_months          0.384417            1.000000               0.342899      -0.219585
+plateau_length_months       0.671835            0.342899               1.000000      -0.214382
+D_decline_fit              -0.227937           -0.219585              -0.214382       1.000000
+
+  🚩 PROBLEM:
+     Script 22 sampler peak/ramp/plateau/decline UAVHENGIG.
+     Men empirisk: store felt har lenger platå (r=+0.67)
+                    OG høyere peak. Independent sampling kan generere
+                    'umulige' kombinasjoner som høy peak + kort platå.
+
+════════════════════════════════════════════════════════════════════════════════
+QA #4: HVOR MANGE AV SAMPLES REKOMMER FORNUFTIG RECOVERABLE?
+════════════════════════════════════════════════════════════════════════════════
+
+  Recovery (cumulative/recoverable) per sample:
+    Median:  1.25
+    Mean:    2.10
+    P10-P90: 0.21-5.10
+    >2.0:    1751 av 5000 samples
+    <0.3:    824 av 5000 samples
+
+  🚩 PROBLEM:
+     Mange samples har umulig recovery. Bør filtreres ut etter sampling.
+     Eller: bedre å sample med bunden constraint.
+
+════════════════════════════════════════════════════════════════════════════════
+QA #5: HOLD UT 1 AKER BP-FELT, PREDIKTER, SAMMENLIGN
+════════════════════════════════════════════════════════════════════════════════
+
+  Test: hold ut hvert Aker BP-felt, fit modeller på resten, predikter
+
+  Felt                  R(MSm³)    Faktisk       Pred    %-err
+  ────────────────────────────────────────────────────────────
+  ALVHEIM                  23.5      0.524      0.519      -1%
+  BØYLA                     3.4      0.086      0.101     +17%
+  EDVARD GRIEG             26.2      0.530      0.336     -37%
+  HOD                       8.3      0.159      0.208     +31%
+  IVAR AASEN               18.3      0.286      0.313     +10%
+  ODA                       7.2      0.156      0.119     -24%
+  SKOGUL                    1.3      0.065      0.060      -9%
+  SOLVEIG                   7.0      0.116      0.176     +52%
+  TAMBAR                    6.7      0.162      0.135     -17%
+  ULA                      78.2      0.706      0.654      -7%
+  VALE                      1.8      0.041      0.051     +24%
+  VALHALL                 171.5      0.484      1.369    +183%
+  VILJE                     8.3      0.171      0.135     -21%
+  VOLUND                    7.2      0.179      0.149     -17%
+  VOLVE                    11.9      0.277      0.191     -31%
+
+  Aker BP median |%-err| (peak):  21%
+  Aker BP gjennomsnittlig %-err:    +10% (bias)
+
+════════════════════════════════════════════════════════════════════════════════
+QA #6: VALHALL — HVOR MYE BIAS GIR DET MODELLEN?
+════════════════════════════════════════════════════════════════════════════════
+
+  Valhall i datasettet:
+    Recoverable: 171 MSm³ (5x mer enn medianfelt)
+    Peak:        0.484 MSm³/mnd
+    Modell-pred: ~1.4 MSm³/mnd (3x for høy)
+
+  Koeffisient-endring uten Valhall:
+    log_recoverable            full=+0.4920  uten Valhall=+0.4971
+    log_n_wells                full=+0.1805  uten Valhall=+0.1946
+    fac_Fixed                  full=-0.1074  uten Valhall=-0.0873
+    fac_Other                  full=-0.1074  uten Valhall=-0.0873
+    fac_Semi-sub               full=-0.1792  uten Valhall=-0.1665
+    fac_Subsea tieback         full=-0.1792  uten Valhall=-0.1665
+
+════════════════════════════════════════════════════════════════════════════════
+QA #7: ER YGGDRASIL-INPUT FORSVARLIG?
+════════════════════════════════════════════════════════════════════════════════
+
+  Vi brukte: recoverable=70 MSm³ olje (av 100 MSm³ OE)
+
+  Aker BP Investor materials (2023-2024) sier:
+    Gross resources: ~650 mboe = ~100 MSm³ OE
+    Splitt: ~60-70% olje, resten gass+kondensat
+    → 60-70 MSm³ olje gross er forsvarlig
+
+  ALTERNATIVT: Hva sier modellen for forskjellige recoverable-anslag?
+    R= 30 MSm³ → P50 peak = 0.56 MSm³/mnd = 118 kboe/d
+    R= 50 MSm³ → P50 peak = 0.72 MSm³/mnd = 151 kboe/d
+    R= 70 MSm³ → P50 peak = 0.85 MSm³/mnd = 179 kboe/d
+    R=100 MSm³ → P50 peak = 1.00 MSm³/mnd = 211 kboe/d
+    R=150 MSm³ → P50 peak = 1.22 MSm³/mnd = 256 kboe/d
+
+  Aker BP CMD-guidance: ~85 kboe/d olje peak
+  → Vår modell på R=30 MSm³ ville matchet ~bedre. Sannsynligvis vi overestimerer R.
+
+════════════════════════════════════════════════════════════════════════════════
+QA #8: KAN VI FORENKLE UNDERMODELLENE YTTERLIGERE?
+════════════════════════════════════════════════════════════════════════════════
+
+  RAMP — kan vi predikere bare fra recoverable + facility?
+    Bare log_recoverable:       CV R²=0.293
+    + facility dummies:         CV R²=0.205
+    Full (8 features):          CV R²=0.104
+
+  PLATEAU — samme test
+    Bare log_recoverable:       CV R²=0.279
+    Full (8 features):          CV R²=0.187
+
+════════════════════════════════════════════════════════════════════════════════
+VERDIKT: SVAKHETER OG FORBEDRINGSOMRÅDER
+════════════════════════════════════════════════════════════════════════════════
+
+  🚩 HØY  P10-P90 BÅND ER URIMELIG VIDE
+     Ramp 1-1626 mnd, decline 0.01-0.80. Bootstrap-sampling med ±1.96 SD genererer ekstreme verdier når CIene allerede er brede.
+
+  🚩 HØY  PARAMETER-SAMPLING ER UAVHENGIG
+     Script 22 sampler peak/ramp/platå/decline uavhengig.
+     Empirisk er de korrelerte (recoverable ↑ → platå ↑ + peak ↑).
+     Independent sampling gir umulige kombinasjoner.
+
+  🟠 MED  MANGE BOOTSTRAP-SAMPLES HAR UMULIG RECOVERY
+     Recovery ratio P10-P90: 0.07-2.0+. Bør filtreres til ~0.5-1.5.
+
+  🟠 MED  YGGDRASIL RECOVERABLE OVERESTIMERT
+     70 MSm³ → P50 172 kboe/d > Aker BP guidance 85.
+     R=30 ville matchet guidance, men da underestimerer vi sannsynligvis.
+
+  🟡 LAV  RAMP/PLATEAU SUB-MODELLER ER SVAKE
+     Ramp CV R²=0.10, Platå CV R²=0.19. Forventet — feltspesifikt.
+
+  🟡 LAV  VALHALL BIASS MODELLEN
+     Valhall er 5x medianfelt på recoverable men 3x lavere peak.
+     Som klassisk platå-felt skrur det opp koeffisienten på recoverable.
+
+  ✅ OK  PEAK-MODELLEN ER ROBUST
+     CV R²=0.84 log-space, peak ≈ log_recoverable + n_wells + facility.
+
+  ✅ OK  INTERN KONSISTENS
+     Recovery check 0.92 sier ramp+platå+decline integrerer pent.
+
+════════════════════════════════════════════════════════════════════════════════
+ANBEFALTE FIKSER FØR VI BRUKER MODELLEN
+════════════════════════════════════════════════════════════════════════════════
+
+  1. FIX BOOTSTRAP-PROPAGERING (kritisk):
+     - Bytt til JOINT bootstrap: sample fra (peak, ramp, platå, decline)
+       som vektor heller enn uavhengig
+     - Bruk faktiske bootstrap-runs (refit modellene på resamples) i stedet for
+       normal-tilnærming basert på CI-bredder
+     - Filtrer ut samples med recovery utenfor [0.5, 1.5]
+
+  2. REGULARISER SAMPLES (medium):
+     - Hard cap på ramp [3, 96 mnd] og decline [0.02, 0.40]
+     - Disse er empiriske grenser fra typecurve_library
+
+  3. FORENKLE SUB-MODELLENE (lav):
+     - Ramp: nesten ingen forbedring av kompliserte features
+     - Behold log_recoverable + facility som default
+     - Reduserer overfitting
+
+  4. BEDRE INPUT-KALIBRERING (medium):
+     - For Yggdrasil-input: triangulere recoverable fra flere kilder
+     - Bruk Aker BP CMD som guidance + modell som sanity check
+     - Vis BÅDE 'modell-forecast' og 'guidance-justert' tall
+
+  5. ADD POST-HOC CONSTRAINT (kritisk for ER-bruk):
+     - Sum av forecasted produksjon må være ≈ recoverable
+     - Hvis ikke: omkalibrere decline (eller flag at PDO-recoverable er feil)

@@ -1,0 +1,115 @@
+════════════════════════════════════════════════════════════════════════════════
+SCRIPT 25: LIFECYCLE V2 SUB-MODELS
+Forenklede modeller med joint bootstrap (B=2000)
+════════════════════════════════════════════════════════════════════════════════
+
+Grunn-data: 63 felt
+Facility dummies: ['fac_Fixed', 'fac_Other', 'fac_Semi-sub', 'fac_Subsea tieback']
+Facility-distribusjon:
+facility_type
+Other             21
+Fixed             21
+Subsea tieback    11
+FPSO               7
+Semi-sub           3
+Operator dummies (n≥4 felt): ['op_ConocoPhillips Skandinavia AS', 'op_Equinor Energy AS', 'op_Other', 'op_Vår Energi ASA']
+
+Joint bootstrap dataset (alle 4 targets): 57 felt
+
+════════════════════════════════════════════════════════════════════════════════
+MODEL: PEAK
+════════════════════════════════════════════════════════════════════════════════
+  N = 63
+  Features (6): ['log_recoverable', 'log_n_wells', 'fac_Fixed', 'fac_Other', 'fac_Semi-sub', 'fac_Subsea tieback']
+  In-sample R²: 0.873
+  LOO CV R²:    0.843
+  Intercept:    -3.0517
+    log_recoverable                 +0.4920
+    log_n_wells                     +0.1805
+    fac_Fixed                       -0.2149
+    fac_Other                       -0.3584
+    fac_Semi-sub                    -0.2386
+    fac_Subsea tieback              -0.1412
+  Bootstrap fits: 2000/2000
+  95% CI on intercept: [-3.398, -2.503]
+  95% CI log_recoverable                 [+0.309, +0.624]  ✓
+  95% CI log_n_wells                     [-0.031, +0.352]  ✗
+  95% CI fac_Fixed                       [-0.508, +0.037]  ✗
+  95% CI fac_Other                       [-0.675, -0.012]  ✓
+  95% CI fac_Semi-sub                    [-0.431, +0.069]  ✗
+  95% CI fac_Subsea tieback              [-0.370, +0.206]  ✗
+  Smearing factor: 1.0701
+
+════════════════════════════════════════════════════════════════════════════════
+MODEL: RAMP
+════════════════════════════════════════════════════════════════════════════════
+  N = 63
+  Features (1): ['log_recoverable']
+  In-sample R²: 0.349
+  LOO CV R²:    0.293
+  Intercept:    +1.3330
+    log_recoverable                 +0.4837
+  Bootstrap fits: 2000/2000
+  95% CI on intercept: [+0.463, +2.187]
+  95% CI log_recoverable                 [+0.266, +0.723]  ✓
+  Smearing factor: 1.7765
+
+════════════════════════════════════════════════════════════════════════════════
+MODEL: PLATEAU
+════════════════════════════════════════════════════════════════════════════════
+  N = 62
+  Features (1): ['log_recoverable']
+  In-sample R²: 0.332
+  LOO CV R²:    0.279
+  Intercept:    +1.7986
+    log_recoverable                 +0.2641
+  Bootstrap fits: 2000/2000
+  95% CI on intercept: [+1.496, +2.235]
+  95% CI log_recoverable                 [+0.134, +0.352]  ✓
+  Smearing factor: 1.1337
+
+════════════════════════════════════════════════════════════════════════════════
+MODEL: DECLINE
+════════════════════════════════════════════════════════════════════════════════
+  N = 58
+  Features (10): ['log_recoverable', 'log_n_wells', 'fac_Fixed', 'fac_Other', 'fac_Semi-sub', 'fac_Subsea tieback', 'op_ConocoPhillips Skandinavia AS', 'op_Equinor Energy AS', 'op_Other', 'op_Vår Energi ASA']
+  In-sample R²: 0.562
+  LOO CV R²:    0.354
+  Intercept:    -1.0475
+    log_recoverable                 +0.0217
+    log_n_wells                     -0.3781
+    fac_Fixed                       +0.1800
+    fac_Other                       -0.0120
+    fac_Semi-sub                    -0.1246
+    fac_Subsea tieback              +0.0224
+    op_ConocoPhillips Skandinavia AS  -1.1601
+    op_Equinor Energy AS            +0.1872
+    op_Other                        +0.0693
+    op_Vår Energi ASA               +0.6471
+  Bootstrap fits: 2000/2000
+  95% CI on intercept: [-2.023, -0.275]
+  95% CI log_recoverable                 [-0.200, +0.348]  ✗
+  95% CI log_n_wells                     [-0.695, -0.088]  ✓
+  95% CI fac_Fixed                       [-0.446, +0.710]  ✗
+  95% CI fac_Other                       [-0.571, +0.659]  ✗
+  95% CI fac_Semi-sub                    [-1.157, +0.720]  ✗
+  95% CI fac_Subsea tieback              [-0.622, +0.701]  ✗
+  95% CI op_ConocoPhillips Skandinavia AS  [-1.903, -0.502]  ✓
+  95% CI op_Equinor Energy AS            [-0.408, +0.582]  ✗
+  95% CI op_Other                        [-0.532, +0.549]  ✗
+  95% CI op_Vår Energi ASA               [-0.208, +1.324]  ✗
+  Smearing factor: 1.1596
+
+══════════════════════════════════════════════════════════════════════════
+SAMMENLIGNING: V1 vs V2 CV R²
+══════════════════════════════════════════════════════════════════════════
+
+  Model           V1 (full)   V2 (forenklet)        Δ
+  ───────────────────────────────────────────────────────
+  peak                0.843            0.843   -0.000
+  ramp                0.104            0.293   +0.189 ✓
+  plateau             0.187            0.279   +0.092 ✓
+  decline             0.285            0.354   +0.069 ✓
+
+Saved: lifecycle_v2_models.pkl
+  → 6 modeller, hver med 2000 bootstrap fits
