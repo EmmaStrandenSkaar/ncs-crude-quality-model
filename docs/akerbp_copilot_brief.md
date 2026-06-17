@@ -11,35 +11,28 @@ kommentar "Oppdatert fra V5.1 decline-modell / realisert-pris-modell, juni 2026"
 
 ## DEL A — Decline-rater per felt
 
-Bruk **"Effektiv årlig decline"**-kolonnen som den årlige nedgangsraten i produksjonsforecasten.
+Decline-raten modellen predikerer per felt. Legg disse rett inn i decline-rate-inputene —
+modellen har allerede formelen som omgjør raten til produksjonsforecast.
 
-> **Viktig:** Modellens decline-rate er en *kontinuerlig* eksponentiell rate (D). Den effektive
-> årlige nedgangen er `1 − EXP(−D)`. Jeg har allerede regnet om — bruk "Eff. årlig decline"-kolonnen
-> direkte. Produksjonsformel: **Produksjon(år t+1) = Produksjon(år t) × (1 − eff_decline)**.
-> (Tilsvarer `Produksjon(t) = Peak × EXP(−D × t)` hvis du heller bruker kontinuerlig form.)
-
-| Felt | Aker BP WI | Eff. årlig decline | (kont. D) | Datakvalitet |
-|------|-----------:|-------------------:|----------:|--------------|
-| Volund | 65 %* | **23.7 %** | 27.0 % | estimert |
-| Vilje | 65 %* | **19.6 %** | 21.8 % | estimert |
-| Edvard Grieg | 65 % | **18.0 %** | 19.9 % | operatør-data |
-| Skogul | 65 % | **17.4 %** | 19.2 % | estimert |
-| Ivar Aasen | 34.8 % | **16.2 %** | 17.7 % | estimert |
-| Skarv | 23.8 % | **13.8 %** | 14.9 % | direkte assay |
-| Bøyla | 65 % | **9.5 %** | 10.0 % | estimert |
-| Alvheim | 65 % | **8.1 %** | 8.5 % | direkte assay |
-| Ula | 80 % | **8.1 %** | 8.4 % | direkte assay |
-| Tambar | 55 % | **7.0 %** | 7.2 % | operatør-data |
-| Valhall | 90 % | **5.0 %** | 5.1 % | direkte assay |
-| Hod | 90 % | **3.8 %** | 3.9 % | direkte assay |
-
-\* Volund/Vilje: verifiser eierandel (antatt 65 % som Alvheim-området).
+| Felt | Decline-rate | Datakvalitet |
+|------|-------------:|--------------|
+| Volund | **27.0 %** | estimert |
+| Vilje | **21.8 %** | estimert |
+| Edvard Grieg | **19.9 %** | operatør-data |
+| Skogul | **19.2 %** | estimert |
+| Ivar Aasen | **17.7 %** | estimert |
+| Skarv | **14.9 %** | direkte assay |
+| Bøyla | **10.0 %** | estimert |
+| Alvheim | **8.5 %** | direkte assay |
+| Ula | **8.4 %** | direkte assay |
+| Tambar | **7.2 %** | operatør-data |
+| Valhall | **5.1 %** | direkte assay |
+| Hod | **3.9 %** | direkte assay |
 
 **Instruksjon til Copilot:**
-1. Finn raden/kolonnen for hvert felts årlige decline-rate i produksjonsforecast-arket.
-2. Erstatt med "Eff. årlig decline"-verdien over.
-3. Sørg for at produksjonsforecasten bruker formelen `= forrige_år × (1 − decline_rate)`.
-4. For felt som ikke er i listen (rene gass-/NGL-felt eller felt utenfor porteføljen): behold eksisterende.
+1. Finn decline-rate-inputcellen for hvert felt i modellen.
+2. Erstatt med decline-rate-verdien over.
+3. For felt som ikke er i listen (rene gass-/NGL-felt eller felt utenfor porteføljen): behold eksisterende.
 
 ---
 
@@ -100,11 +93,10 @@ Prisdifferensial for forward-felt: bruk Alvheim-/Brent-blend-nivå (~+0.4 USD/bb
   tillit; "estimert" = modell-prediksjon med større usikkerhet.
 - **Pris-kilde:** Brent-linket differensial-modell, validert mot Aker BPs rapporterte realiserte
   priser (R² = 0.989, MAE 1.56 USD/bbl).
-- **Decline-formen:** eksponentiell. For felt fortsatt i platå-fase, start decline først etter
-  platå-slutt (Valhall/Hod holder seg flate lenger — lav decline reflekterer dette).
-- **Edvard Grieg:** modellen predikerer 18 % vs observert 38 % — feltet decliner raskere enn
+- **Edvard Grieg:** modellen predikerer 19.9 % vs observert 38 % — feltet decliner raskere enn
   modellen fanger. Vurder en manuell oppjustering hvis du vil være konservativ.
-- **Enheter:** differensialer i USD/bbl; legges til Brent-scenarioet ditt (uansett nivå).
+- **Enheter:** decline-rater i % (legg rett i modellens decline-input). Differensialer i USD/bbl;
+  legges til Brent-scenarioet ditt (uansett nivå).
 
 ---
 
