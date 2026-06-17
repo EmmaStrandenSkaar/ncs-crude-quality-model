@@ -555,6 +555,34 @@ def load_production_profiles() -> dict:
         return json.load(f)
 
 
+def indicative_discovery_profile(D_pred: float, analog_field: str,
+                                  ramp_mo: float = 9, plat_mo: float = 9,
+                                  horizon_yr: float = 18) -> dict:
+    """
+    Indikativ produksjons-TYPEKURVE for et ikke-besluttet funn (normalisert til peak%).
+    Ressursvolum er ukjent for funn → vi viser FORMEN (ramp→platå→decline) med
+    decline-raten fra nærmeste analog-felt. Tydelig merket som indikativ.
+    """
+    t = np.linspace(0, horizon_yr, 55)
+    curve = []
+    for ti in t:
+        m = ti * 12
+        if m < ramp_mo:
+            y = 100.0 / (1 + np.exp(-0.6 * (m - ramp_mo / 2)))   # logistisk ramp
+        elif m < ramp_mo + plat_mo:
+            y = 100.0
+        else:
+            y = 100.0 * np.exp(-D_pred * (ti - (ramp_mo + plat_mo) / 12.0))
+        curve.append([round(float(ti), 2), round(float(y), 1)])
+    return {
+        "type": "discovery",
+        "stage": "funn (ikke besluttet utbygd)",
+        "D_pred": round(float(D_pred), 4),
+        "analog_field": analog_field,
+        "forecast": curve,
+    }
+
+
 def production_chart_svg(profile: dict, w: int = 280, h: int = 110) -> str:
     """
     Inline SVG: historisk produksjon + modell-predikert decline (produserende),
@@ -599,9 +627,13 @@ def production_chart_svg(profile: dict, w: int = 280, h: int = 110) -> str:
                        f"<text x='{px:.0f}' y='{padT+plot_h+11:.0f}' font-size='6.5' fill='#aaa' text-anchor='middle'>peak</text>")
 
     layers = grids + peak_marker
-    if profile.get("type") == "forward":
+    ptype = profile.get("type")
+    if ptype == "forward":
         # full lifecycle-forecast (grønn)
         layers += path(fcst, stroke="#16a085", stroke_width="2")
+    elif ptype == "discovery":
+        # indikativ type-kurve (lilla stiplet — ikke-besluttet funn)
+        layers += path(fcst, stroke="#8e44ad", stroke_width="1.8", stroke_dasharray="5,3")
     else:
         # historisk faktisk (blå) + predikert decline (rød stiplet)
         layers += path(pred, stroke="#e74c3c", stroke_width="1.6", stroke_dasharray="4,2", opacity="0.85")
@@ -617,7 +649,9 @@ def decline_block_html(profile: dict | None) -> str:
     D_pred = profile.get("D_pred")
     if D_pred is None:
         return ""
-    is_fwd = profile.get("type") == "forward"
+    ptype = profile.get("type")
+    is_fwd = ptype == "forward"
+    is_disc = ptype == "discovery"
     stage = profile.get("stage", "")
     chart = production_chart_svg(profile)
 
@@ -625,16 +659,31 @@ def decline_block_html(profile: dict | None) -> str:
     hl_str = f"{half_life:.1f} år" if np.isfinite(half_life) else "—"
     rem5 = np.exp(-D_pred * 5) * 100 if D_pred else 0
 
-    header = "📈 PRODUKSJONS-FORECAST (V5.1 + lifecycle)" if is_fwd else "📉 PRODUKSJON: HISTORIKK vs MODELL"
+    if is_disc:
+        header = "📐 INDIKATIV PRODUKSJONS-TYPEKURVE (analog)"
+    elif is_fwd:
+        header = "📈 PRODUKSJONS-FORECAST (V5.1 + lifecycle)"
+    else:
+        header = "📉 PRODUKSJON: HISTORIKK vs MODELL"
+
     # eksplisitt decline-setning
     decline_sentence = (
         f"Modellen predikerer en decline rate på <b style='color:#e74c3c;'>{D_pred*100:.1f}%/år</b> "
         f"etter platå.")
-    if not is_fwd and profile.get("D_actual") is not None:
+    if not is_fwd and not is_disc and profile.get("D_actual") is not None:
         d_act = profile["D_actual"]
         decline_sentence += (f" Observert hittil: <b style='color:#9b59b6;'>{d_act*100:.1f}%/år</b>.")
 
-    if is_fwd:
+    if is_disc:
+        analog = profile.get("analog_field", "?")
+        legend = "<span style='color:#8e44ad;'>┄ indikativ type-kurve (ramp→platå→decline)</span>"
+        decline_sentence = (
+            f"Analog-felt: <b>{analog}</b>. Modellen predikerer ~"
+            f"<b style='color:#8e44ad;'>{D_pred*100:.1f}%/år</b> decline for denne klassen.")
+        extra = (f"<div style='font-size:8px;color:#aaa;font-style:italic;margin-top:1px;'>"
+                 f"⚠ Ikke-besluttet funn — ressursvolum ukjent. Kurven viser forventet "
+                 f"PRODUKSJONSFORM (normalisert), ikke volum. Halveringstid ~{hl_str}.</div>")
+    elif is_fwd:
         legend = "<span style='color:#16a085;'>━ forecast (ramp→platå→decline)</span>"
         extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
                  f"Peak ~{profile.get('peak_p50_msm3',0)*209.67:.0f} kboe/d · "
@@ -651,7 +700,7 @@ def decline_block_html(profile: dict | None) -> str:
         {header}
       </div>
       <div style='font-size:9.5px;color:#555;margin-top:2px;'>{decline_sentence}</div>
-      <div style='font-size:8.5px;color:#888;margin-top:1px;'>Nåværende fase: <b>{stage}</b></div>
+      <div style='font-size:8.5px;color:#888;margin-top:1px;'>Fase: <b>{stage}</b></div>
       {chart}
       <div style='font-size:8.5px;'>{legend}</div>
       {extra}
@@ -962,6 +1011,10 @@ def main() -> None:
     n_fwd_prof = sum(1 for p in prod_profiles.values() if p.get("type") == "forward")
     print(f"  Produksjonsprofiler: {n_prod_prof} produserende + {n_fwd_prof} forward")
 
+    # field → V5.1 D_pred (for indikative funn-typekurver via analog)
+    d_pred_by_field = {n: p["D_pred"] for n, p in prod_profiles.items()
+                       if p.get("type") == "producing" and p.get("D_pred")}
+
     fields_fc      = load_geojson("fields")
     discoveries_fc = load_geojson("discoveries")
     licences_fc    = load_geojson("licences")
@@ -1267,6 +1320,7 @@ def main() -> None:
         pred = None
         top5 = None
 
+        disc_profile = None
         if disc_cen:
             # Lag en temp dict-entry for å bruke find_nearest_proxy
             disc_key = f"__DISC__{dsc_name}"
@@ -1286,6 +1340,16 @@ def main() -> None:
                         top5 = quality_impact_decomposition(assay, ncs_baseline, coefs)
                         proxy_label = f"Geografisk proxy: {proxy_name.title()} ({dist_km:.0f} km unna)"
 
+                # Indikativ type-kurve: bruk analog-feltets V5.1 decline-rate
+                D_analog = d_pred_by_field.get(proxy_name)
+                if D_analog is None:
+                    # nærmeste analog manglet D_pred → bruk klasse-typisk subsea-tieback
+                    D_analog = 0.22
+                    analog_lbl = f"{proxy_name.title()} (klasse-typisk decline)"
+                else:
+                    analog_lbl = proxy_name.title()
+                disc_profile = indicative_discovery_profile(D_analog, analog_lbl)
+
         if proxy_label is None:
             proxy_label = "Ingen proxy funnet"
 
@@ -1304,6 +1368,7 @@ def main() -> None:
             is_forward=True,
             forward_label=nav_label,
             baseline_pred=baseline_pred,
+            decline=disc_profile,
         )
 
         folium.GeoJson(
