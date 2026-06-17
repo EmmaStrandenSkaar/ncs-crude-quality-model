@@ -563,54 +563,65 @@ def indicative_discovery_profile(D_pred: float, analog_field: str,
     Ressursvolum er ukjent for funn → vi viser FORMEN (ramp→platå→decline) med
     decline-raten fra nærmeste analog-felt. Tydelig merket som indikativ.
     """
-    t = np.linspace(0, horizon_yr, 55)
-    curve = []
-    for ti in t:
+    def shape(ti):
         m = ti * 12
         if m < ramp_mo:
-            y = 100.0 / (1 + np.exp(-0.6 * (m - ramp_mo / 2)))   # logistisk ramp
-        elif m < ramp_mo + plat_mo:
-            y = 100.0
-        else:
-            y = 100.0 * np.exp(-D_pred * (ti - (ramp_mo + plat_mo) / 12.0))
-        curve.append([round(float(ti), 2), round(float(y), 1)])
+            return 100.0 / (1 + np.exp(-0.6 * (m - ramp_mo / 2)))   # logistisk ramp
+        if m < ramp_mo + plat_mo:
+            return 100.0
+        return 100.0 * np.exp(-D_pred * (ti - (ramp_mo + plat_mo) / 12.0))
+    # årlige forecast-søyler
+    fcst_bars = [[y, round(float(shape(y)), 1)] for y in range(0, int(horizon_yr) + 1)]
+    # jevn stiplet linje
+    t = np.linspace(0, horizon_yr, 50)
+    dline = [[round(float(ti), 2), round(float(shape(ti)), 1)] for ti in t]
     return {
         "type": "discovery",
         "stage": "funn (ikke besluttet utbygd)",
         "D_pred": round(float(D_pred), 4),
         "analog_field": analog_field,
-        "forecast": curve,
+        "fcst_bars": fcst_bars,
+        "decline_line": dline,
     }
 
 
-def production_chart_svg(profile: dict, w: int = 280, h: int = 110) -> str:
+def production_chart_svg(profile: dict, w: int = 280, h: int = 120) -> str:
     """
-    Inline SVG: historisk produksjon + modell-predikert decline (produserende),
-    eller full lifecycle-forecast (forward). x = år, y = % av peak.
+    Inline SVG SØYLEDIAGRAM: produksjon (% av peak) per år.
+      · Mørke søyler = historisk faktisk produksjon
+      · Lyse søyler  = forecast (predikert decline anvendt på siste faktiske prod.)
+      · Stiplet linje = predikert decline-kurve over søylene
+    Forward/funn: alle søyler er forecast (lyse), stiplet linje = lifecycle-kurve.
     """
     padL, padR, padT, padB = 26, 8, 8, 16
     plot_w, plot_h = w - padL - padR, h - padT - padB
 
-    hist = profile.get("hist") or []
-    pred = profile.get("pred") or []
-    fcst = profile.get("forecast") or []
+    ptype = profile.get("type", "producing")
+    hist_bars = profile.get("hist_bars") or []
+    fcst_bars = profile.get("fcst_bars") or []
+    dline = profile.get("decline_line") or []
 
-    # samle alle x/y for akse-skalering
-    all_pts = hist + pred + fcst
-    if not all_pts:
+    all_bars = hist_bars + fcst_bars
+    if not all_bars:
         return ""
-    xmax = max(p[0] for p in all_pts) or 1.0
-    ymax = max(110.0, max(p[1] for p in all_pts))
+    years = [b[0] for b in all_bars]
+    x0, x1 = min(years), max(years)
+    span = max(1, x1 - x0 + 1)
+    ymax = max(110.0, max(b[1] for b in all_bars), max((p[1] for p in dline), default=0))
 
-    def sx(x): return padL + x / xmax * plot_w
+    bw = plot_w / span                       # søylebredde per år
+    def bx(yr): return padL + (yr - x0) / span * plot_w
     def sy(y): return padT + (1 - y / ymax) * plot_h
-    def path(pts, **kw):
-        if not pts: return ""
-        d = " ".join(f"{sx(x):.1f},{sy(y):.1f}" for x, y in pts)
-        attrs = " ".join(f"{k.replace('_','-')}='{v}'" for k, v in kw.items())
-        return f"<polyline points='{d}' fill='none' {attrs}/>"
 
-    # akse-gridlinjer ved 0%, 50%, 100%
+    # fargevalg per type
+    if ptype == "forward":
+        hist_col, fcst_col, line_col = "#2471a3", "#a9dfbf", "#16a085"
+    elif ptype == "discovery":
+        hist_col, fcst_col, line_col = "#2471a3", "#d7bde2", "#8e44ad"
+    else:
+        hist_col, fcst_col, line_col = "#2471a3", "#aed6f1", "#e74c3c"
+
+    # gridlinjer + y-akse-labels (0/50/100)
     grids = ""
     for yv in (0, 50, 100):
         yy = sy(yv)
@@ -618,28 +629,36 @@ def production_chart_svg(profile: dict, w: int = 280, h: int = 110) -> str:
                   f"stroke='#eee' stroke-width='1'/>"
                   f"<text x='{padL-3}' y='{yy+3:.0f}' font-size='7' fill='#bbb' text-anchor='end'>{yv}</text>")
 
-    # peak-markør (produserende)
-    peak_marker = ""
-    if profile.get("type") == "producing" and profile.get("peak_t") is not None:
-        px = sx(profile["peak_t"])
-        peak_marker = (f"<line x1='{px:.0f}' y1='{padT}' x2='{px:.0f}' y2='{padT+plot_h}' "
-                       f"stroke='#ddd' stroke-width='1' stroke-dasharray='2,2'/>"
-                       f"<text x='{px:.0f}' y='{padT+plot_h+11:.0f}' font-size='6.5' fill='#aaa' text-anchor='middle'>peak</text>")
+    # søyler
+    bars_svg = ""
+    gap = bw * 0.16
+    for yr, val in hist_bars:
+        x = bx(yr) + gap / 2
+        y = sy(val)
+        bh = (padT + plot_h) - y
+        bars_svg += f"<rect x='{x:.1f}' y='{y:.1f}' width='{bw-gap:.1f}' height='{max(bh,0):.1f}' fill='{hist_col}' opacity='0.9'/>"
+    for yr, val in fcst_bars:
+        x = bx(yr) + gap / 2
+        y = sy(val)
+        bh = (padT + plot_h) - y
+        bars_svg += f"<rect x='{x:.1f}' y='{y:.1f}' width='{bw-gap:.1f}' height='{max(bh,0):.1f}' fill='{fcst_col}' opacity='0.85'/>"
 
-    layers = grids + peak_marker
-    ptype = profile.get("type")
-    if ptype == "forward":
-        # full lifecycle-forecast (grønn)
-        layers += path(fcst, stroke="#16a085", stroke_width="2")
-    elif ptype == "discovery":
-        # indikativ type-kurve (lilla stiplet — ikke-besluttet funn)
-        layers += path(fcst, stroke="#8e44ad", stroke_width="1.8", stroke_dasharray="5,3")
-    else:
-        # historisk faktisk (blå) + predikert decline (rød stiplet)
-        layers += path(pred, stroke="#e74c3c", stroke_width="1.6", stroke_dasharray="4,2", opacity="0.85")
-        layers += path(hist, stroke="#2471a3", stroke_width="2")
+    # forecast-skille (vertikal markør der historikk slutter)
+    sep = ""
+    if hist_bars and fcst_bars:
+        xs = bx(fcst_bars[0][0])
+        sep = (f"<line x1='{xs:.1f}' y1='{padT}' x2='{xs:.1f}' y2='{padT+plot_h}' "
+               f"stroke='#ccc' stroke-width='1' stroke-dasharray='2,2'/>")
 
-    return f"<svg width='{w}' height='{h}' style='display:block;margin-top:2px;'>{layers}</svg>"
+    # stiplet decline-linje (sentrert over søylene → +bw/2)
+    line_svg = ""
+    if dline:
+        d = " ".join(f"{bx(x)+bw/2:.1f},{sy(y):.1f}" for x, y in dline)
+        line_svg = (f"<polyline points='{d}' fill='none' stroke='{line_col}' "
+                    f"stroke-width='1.6' stroke-dasharray='4,2' opacity='0.9'/>")
+
+    return (f"<svg width='{w}' height='{h}' style='display:block;margin-top:2px;'>"
+            f"{grids}{bars_svg}{sep}{line_svg}</svg>")
 
 
 def decline_block_html(profile: dict | None) -> str:
@@ -676,21 +695,24 @@ def decline_block_html(profile: dict | None) -> str:
 
     if is_disc:
         analog = profile.get("analog_field", "?")
-        legend = "<span style='color:#8e44ad;'>┄ indikativ type-kurve (ramp→platå→decline)</span>"
+        legend = ("<span style='color:#d7bde2;'>▮</span> indikativ forecast &nbsp; "
+                  "<span style='color:#8e44ad;'>┄ decline</span>")
         decline_sentence = (
             f"Analog-felt: <b>{analog}</b>. Modellen predikerer ~"
             f"<b style='color:#8e44ad;'>{D_pred*100:.1f}%/år</b> decline for denne klassen.")
         extra = (f"<div style='font-size:8px;color:#aaa;font-style:italic;margin-top:1px;'>"
-                 f"⚠ Ikke-besluttet funn — ressursvolum ukjent. Kurven viser forventet "
-                 f"PRODUKSJONSFORM (normalisert), ikke volum. Halveringstid ~{hl_str}.</div>")
+                 f"⚠ Ikke-besluttet funn — ressursvolum ukjent. Søylene viser forventet "
+                 f"PRODUKSJONSFORM (% av peak), ikke volum. Halveringstid ~{hl_str}.</div>")
     elif is_fwd:
-        legend = "<span style='color:#16a085;'>━ forecast (ramp→platå→decline)</span>"
+        legend = ("<span style='color:#a9dfbf;'>▮</span> forecast-produksjon &nbsp; "
+                  "<span style='color:#16a085;'>┄ lifecycle</span>")
         extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
                  f"Peak ~{profile.get('peak_p50_msm3',0)*209.67:.0f} kboe/d · "
                  f"ramp {profile.get('ramp_p50',0):.0f} mnd · platå {profile.get('plateau_p50',0):.0f} mnd · "
                  f"first oil {profile.get('first_oil','?')}</div>")
     else:
-        legend = ("<span style='color:#2471a3;'>━ faktisk</span> &nbsp; "
+        legend = ("<span style='color:#2471a3;'>▮</span> historisk &nbsp; "
+                  "<span style='color:#aed6f1;'>▮</span> forecast &nbsp; "
                   "<span style='color:#e74c3c;'>┄ predikert decline</span>")
         extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
                  f"halveringstid {hl_str} · ~{rem5:.0f}% av peak igjen etter 5 år</div>")

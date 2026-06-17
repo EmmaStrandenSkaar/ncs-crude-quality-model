@@ -41,9 +41,11 @@ preds = pd.read_csv(DQ / "predictions_v51.csv")
 D_pred_map = preds.set_index(preds.field.str.upper())["D_pred"].to_dict()
 D_act_map = preds.set_index(preds.field.str.upper())["D_annual"].to_dict()
 
-def downsample(xs, ys, step=3):
-    """Behold hver `step`-te måned for kompakt JSON."""
-    return [[round(float(x), 2), round(float(y), 1)] for x, y in zip(xs[::step], ys[::step])]
+def annual_bars(t_years, pct):
+    """Aggreger månedlig produksjon til årlige søyler: [[år, snitt-%], ...]."""
+    df = pd.DataFrame({"yr": np.floor(t_years).astype(int), "pct": pct})
+    agg = df.groupby("yr")["pct"].mean()
+    return [[int(y), round(float(v), 1)] for y, v in agg.items()]
 
 profiles = {}
 
@@ -70,20 +72,32 @@ for field, g in panel.groupby("field"):
     D_pred = D_pred_map.get(fu)
     D_act = D_act_map.get(fu)
 
-    # predikert decline-kurve fra peak (kun hvis vi har D_pred)
-    pred_curve = []
-    if D_pred is not None and D_pred > 0:
-        t_max = float(t_years.max())
-        tp = np.linspace(peak_t, t_max + 2, 40)   # litt forbi siste data
-        yp = 100.0 * np.exp(-D_pred * (tp - peak_t))
-        pred_curve = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tp, yp)]
+    # Historiske årlige søyler
+    hist_bars = annual_bars(t_years.values, pct)
+    last_yr = hist_bars[-1][0]
+    last_pct = hist_bars[-1][1]
 
-    # livssyklus-stadium: hvor er feltet nå?
-    last_pct = float(g.oil_pct_peak.iloc[-1])
+    # FORECAST-søyler: anvend predikert decline på siste faktiske produksjon
+    fcst_bars = []
+    decline_line = []
+    FORECAST_YEARS = 12
+    if D_pred is not None and D_pred > 0:
+        for k in range(1, FORECAST_YEARS + 1):
+            y = last_yr + k
+            v = last_pct * np.exp(-D_pred * k)
+            fcst_bars.append([int(y), round(float(v), 1)])
+        # stiplet decline-linje: jevn exp-kurve fra peak gjennom forecast (viser fit + projeksjon)
+        t_end = last_yr + FORECAST_YEARS
+        tp = np.linspace(peak_t, t_end, 50)
+        yp = 100.0 * np.exp(-D_pred * (tp - peak_t))
+        decline_line = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tp, yp)]
+
+    # livssyklus-stadium
     months_post = float(g.months_since_peak.iloc[-1])
+    last_actual_pct = float(g.oil_pct_peak.iloc[-1])
     if months_post <= 0:
         stage = "pre-peak / ramp"
-    elif last_pct > 85 and months_post < 36:
+    elif last_actual_pct > 85 and months_post < 36:
         stage = "platå"
     else:
         stage = "decline"
@@ -94,8 +108,9 @@ for field, g in panel.groupby("field"):
         "D_pred": round(float(D_pred), 4) if D_pred is not None else None,
         "D_actual": round(float(D_act), 4) if D_act is not None else None,
         "peak_t": round(peak_t, 2),
-        "hist": downsample(t_years.values, pct, step=3),
-        "pred": pred_curve,
+        "hist_bars": hist_bars,
+        "fcst_bars": fcst_bars,
+        "decline_line": decline_line,
     }
     n_prod += 1
 print(f"  {n_prod} produserende felt med profil")
@@ -122,14 +137,16 @@ for field, inp in FORWARD_INPUTS.items():
         print(f"  {field}: forecast feilet ({e})")
         continue
     ps = r["param_stats"]
-    # P50-kurve, normalisert til peak (%) — vis ~20 år
     t_months = r["t_months"]
     p50 = r["p50"]
     peak = max(p50.max(), 1e-9)
-    horizon = min(len(p50), 240)
+    horizon = min(len(p50), 240)   # ~20 år
     tf = (t_months[:horizon]) / 12.0
     yf = p50[:horizon] / peak * 100.0
-    forecast = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tf[::3], yf[::3])]
+    # årlige forecast-søyler (alle "fcst" → lys farge)
+    fcst_bars = annual_bars(tf, yf)
+    # stiplet linje = jevn lifecycle-kurve
+    decline_line = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tf[::3], yf[::3])]
     profiles[field] = {
         "type": "forward",
         "stage": "forward (pre-produksjon)",
@@ -138,7 +155,8 @@ for field, inp in FORWARD_INPUTS.items():
         "peak_p50_msm3": round(float(ps["peak"]["p50"]), 4),
         "ramp_p50": round(float(ps["ramp"]["p50"]), 1),
         "plateau_p50": round(float(ps["plat"]["p50"]), 1),
-        "forecast": forecast,
+        "fcst_bars": fcst_bars,
+        "decline_line": decline_line,
     }
     n_fwd += 1
     print(f"  {field:10s} → peak {ps['peak']['p50']:.2f} MSm³/mnd, ramp {ps['ramp']['p50']:.0f}mo, "
