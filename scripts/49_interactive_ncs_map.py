@@ -662,12 +662,28 @@ def production_chart_svg(profile: dict, w: int = 280, h: int = 120) -> str:
 
 
 def decline_block_html(profile: dict | None) -> str:
-    """HTML-blokk: produksjonskurve + spesifikk modell-predikert decline rate."""
+    """HTML-blokk: produksjonssøyler + spesifikk modell-predikert decline rate."""
     if not profile:
         return ""
     D_pred = profile.get("D_pred")
+    # Historikk-only (for nye felt uten decline-estimat ennå)
     if D_pred is None:
-        return ""
+        if not profile.get("hist_bars"):
+            return ""
+        chart = production_chart_svg(profile)
+        reason = profile.get("decline_src", "ingen decline-estimat")
+        note = ("for tidlig for decline-forecast (ennå i ramp/platå)"
+                if reason == "ennå ikke i decline"
+                else "decline-rate ikke estimert (utenfor modellens datagrunnlag)")
+        return f"""
+      <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:6px;'>
+        📊 PRODUKSJONSHISTORIKK
+      </div>
+      <div style='font-size:9px;color:#888;margin-top:2px;'>Fase: <b>{profile.get('stage','')}</b>
+        — <i>{note}</i></div>
+      {chart}
+      <div style='font-size:8.5px;'><span style='color:#2471a3;'>▮</span> historisk produksjon (% av peak)</div>
+    """
     ptype = profile.get("type")
     is_fwd = ptype == "forward"
     is_disc = ptype == "discovery"

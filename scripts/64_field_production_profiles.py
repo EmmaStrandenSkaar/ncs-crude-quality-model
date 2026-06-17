@@ -36,10 +36,30 @@ lc2 = importlib.util.module_from_spec(spec); spec.loader.exec_module(lc2)
 
 print("=" * 60); print("SCRIPT 64: Felt-produksjonsprofiler"); print("=" * 60)
 
-panel = pd.read_csv(DQ / "panel_monthly.csv", parse_dates=["date"])
+# FULL Sodir månedlig produksjon (alle 132 felt) — ikke det begrensede 52-felts panelet
+sodir = pd.read_csv(ROOT / "data" / "raw" / "sodir" / "sodir_field_production_monthly.csv")
+sodir["date"] = pd.to_datetime(
+    sodir.prfYear.astype(str) + "-" + sodir.prfMonth.astype(str) + "-01", errors="coerce")
+sodir = sodir.rename(columns={"prfInformationCarrier": "field", "prfPrdOilNetMillSm3": "oil"})
+sodir = sodir.sort_values(["field", "date"])
+# normaliser til peak + months_since_start/peak per felt
+sodir["field_u"] = sodir.field.str.upper().str.strip()
+sodir["peak_oil"] = sodir.groupby("field_u").oil.transform("max")
+sodir = sodir[sodir.peak_oil > 0]
+sodir["oil_pct_peak"] = sodir.oil / sodir.peak_oil * 100
+sodir["mss"] = sodir.groupby("field_u").cumcount()
+# months_since_peak: indeks relativt til peak-måned
+peak_idx = sodir.loc[sodir.groupby("field_u").oil_pct_peak.idxmax()].set_index("field_u")["mss"].to_dict()
+sodir["msp"] = sodir.mss - sodir.field_u.map(peak_idx)
+
 preds = pd.read_csv(DQ / "predictions_v51.csv")
 D_pred_map = preds.set_index(preds.field.str.upper())["D_pred"].to_dict()
 D_act_map = preds.set_index(preds.field.str.upper())["D_annual"].to_dict()
+
+# typecurve observert decline (fallback for felt utenfor V5.1-treningssettet)
+tc = pd.read_csv(DQ / "typecurve_library.csv")
+tc_decline_map = tc.dropna(subset=["D_decline_fit"]).set_index(
+    tc.dropna(subset=["D_decline_fit"]).field.str.upper())["D_decline_fit"].to_dict()
 
 def annual_bars(t_years, pct):
     """Aggreger månedlig produksjon til årlige søyler: [[år, snitt-%], ...]."""
@@ -49,71 +69,65 @@ def annual_bars(t_years, pct):
 
 profiles = {}
 
-# ── PRODUSERENDE FELT ──
-print("\n[1] Produserende felt (historikk + predikert decline)...")
-n_prod = 0
-for field, g in panel.groupby("field"):
-    fu = field.upper().strip()
+# ── PRODUSERENDE FELT (full Sodir-dekning) ──
+print("\n[1] Produserende felt (full Sodir-historikk + decline-hierarki)...")
+n_prod = n_v51 = n_tc = n_nodecline = 0
+FORECAST_YEARS = 12
+for fu, g in sodir.groupby("field_u"):
     g = g.sort_values("date")
     g = g[g.oil_pct_peak > 0]
-    if len(g) < 12:
+    if len(g) < 12 or g.oil.sum() < 0.3:    # min historikk + min oljevolum (filtrer gass)
         continue
-    # tid siden førsteolje (år)
-    t0 = g.months_since_start.min()
-    t_years = (g.months_since_start - t0) / 12.0
-    pct = g.oil_pct_peak.clip(upper=130).values  # cap visuell outlier
-    # peak-punkt (der oil_pct_peak ≈ 100, dvs months_since_peak == 0)
-    peak_row = g[g.months_since_peak == 0]
-    if len(peak_row) == 0:
-        peak_t = t_years.iloc[g.oil_pct_peak.values.argmax()]
-    else:
-        peak_t = float((peak_row.months_since_start.iloc[0] - t0) / 12.0)
+    t_years = (g.mss - g.mss.min()) / 12.0
+    pct = g.oil_pct_peak.clip(upper=130).values
+    peak_t = float((g.loc[g.oil_pct_peak.idxmax(), "mss"] - g.mss.min()) / 12.0)
 
+    # decline-hierarki: V5.1 → typecurve observert
     D_pred = D_pred_map.get(fu)
+    decline_src = "V5.1"
+    if D_pred is None:
+        D_pred = tc_decline_map.get(fu)
+        decline_src = "observert (typecurve)"
     D_act = D_act_map.get(fu)
 
-    # Historiske årlige søyler
     hist_bars = annual_bars(t_years.values, pct)
-    last_yr = hist_bars[-1][0]
-    last_pct = hist_bars[-1][1]
-
-    # FORECAST-søyler: anvend predikert decline på siste faktiske produksjon
-    fcst_bars = []
-    decline_line = []
-    FORECAST_YEARS = 12
-    if D_pred is not None and D_pred > 0:
-        for k in range(1, FORECAST_YEARS + 1):
-            y = last_yr + k
-            v = last_pct * np.exp(-D_pred * k)
-            fcst_bars.append([int(y), round(float(v), 1)])
-        # stiplet decline-linje: jevn exp-kurve fra peak gjennom forecast (viser fit + projeksjon)
-        t_end = last_yr + FORECAST_YEARS
-        tp = np.linspace(peak_t, t_end, 50)
-        yp = 100.0 * np.exp(-D_pred * (tp - peak_t))
-        decline_line = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tp, yp)]
+    last_yr, last_pct = hist_bars[-1]
 
     # livssyklus-stadium
-    months_post = float(g.months_since_peak.iloc[-1])
+    months_post = float(g.msp.iloc[-1])
     last_actual_pct = float(g.oil_pct_peak.iloc[-1])
-    if months_post <= 0:
+    if months_post <= 6:
         stage = "pre-peak / ramp"
     elif last_actual_pct > 85 and months_post < 36:
         stage = "platå"
     else:
         stage = "decline"
 
+    fcst_bars, decline_line = [], []
+    if D_pred is not None and D_pred > 0 and months_post > 6:
+        for k in range(1, FORECAST_YEARS + 1):
+            fcst_bars.append([int(last_yr + k), round(float(last_pct * np.exp(-D_pred * k)), 1)])
+        tp = np.linspace(peak_t, last_yr + FORECAST_YEARS, 50)
+        yp = 100.0 * np.exp(-D_pred * (tp - peak_t))
+        decline_line = [[round(float(x), 2), round(float(y), 1)] for x, y in zip(tp, yp)]
+        n_v51 += decline_src == "V5.1"; n_tc += decline_src != "V5.1"
+    else:
+        n_nodecline += 1
+        decline_src = "ennå ikke i decline" if months_post <= 6 else "ingen decline-estimat"
+
     profiles[fu] = {
-        "type": "producing",
-        "stage": stage,
-        "D_pred": round(float(D_pred), 4) if D_pred is not None else None,
+        "type": "producing", "stage": stage,
+        "D_pred": round(float(D_pred), 4) if (D_pred and fcst_bars) else None,
         "D_actual": round(float(D_act), 4) if D_act is not None else None,
+        "decline_src": decline_src,
         "peak_t": round(peak_t, 2),
-        "hist_bars": hist_bars,
-        "fcst_bars": fcst_bars,
-        "decline_line": decline_line,
+        "hist_bars": hist_bars, "fcst_bars": fcst_bars, "decline_line": decline_line,
     }
     n_prod += 1
 print(f"  {n_prod} produserende felt med profil")
+print(f"    decline fra V5.1-modell:        {n_v51}")
+print(f"    decline fra typecurve (obs.):   {n_tc}")
+print(f"    historikk uten forecast (nye):  {n_nodecline}")
 
 # ── FORWARD FELT (lifecycle V2-forecast) ──
 print("\n[2] Forward-felt (lifecycle V2-forecast)...")
