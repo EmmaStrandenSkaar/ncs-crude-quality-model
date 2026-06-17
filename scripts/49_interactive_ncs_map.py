@@ -37,6 +37,8 @@ PROC_DIR     = PROJECT_ROOT / "data" / "processed"
 OUT_HTML     = PROC_DIR / "49_ncs_interactive_map.html"
 
 MODEL_JSON   = PROC_DIR / "34b_brent_model.json"
+IMPUTED_CSV  = PROC_DIR / "63_ncs_field_quality.csv"                              # Script 63 felt→kvalitet
+DECLINE_CSV  = PROJECT_ROOT / "analyses" / "decline_quality" / "data" / "predictions_v51.csv"  # V5.1 decline
 
 # ── DIREKTE assay-mapping (★★★ Equinor lab-assay) ──────────────────────────
 # Felt med egen publisert offisiell Equinor XLSX-assay
@@ -506,10 +508,11 @@ FEATURE_LABELS = {
 def source_badge(source_type: str, source_label: str) -> str:
     """Tydelig merkelapp for hvor assay-dataen kommer fra."""
     cfg = {
-        "DIRECT": ("★★★", "#27AE60", "EGEN ASSAY"),
-        "BLEND":  ("★★",  "#2980B9", "BLEND-PROXY"),
-        "PROXY":  ("★",   "#E67E22", "GEOGRAFISK PROXY (ESTIMAT)"),
-        "FORWARD":("◆",   "#8E44AD", "FORWARD-ESTIMAT"),
+        "DIRECT":  ("★★★", "#27AE60", "EGEN ASSAY"),
+        "BLEND":   ("★★",  "#2980B9", "BLEND-PROXY"),
+        "IMPUTED": ("★★",  "#16A085", "SCRIPT 63 (MEDIAN + SODIR-DST)"),
+        "PROXY":   ("★",   "#E67E22", "GEOGRAFISK PROXY (ESTIMAT)"),
+        "FORWARD": ("◆",   "#8E44AD", "FORWARD-ESTIMAT"),
     }
     icon, color, tag = cfg.get(source_type, ("?", "#999", "UKJENT"))
     return (
@@ -522,11 +525,110 @@ def source_badge(source_type: str, source_label: str) -> str:
     )
 
 
+# ────────────────────────────────────────────────────────────────────────────
+# SCRIPT 63 KVALITETS-FALLBACK + V5.1 DECLINE-KURVER
+# ────────────────────────────────────────────────────────────────────────────
+# main_area → log(avstand til Rotterdam), avledet fra hardkodede assay-verdier
+AREA_LOG_DIST = {"North sea": 6.50, "Norwegian sea": 7.30, "Barents sea": 7.70, "Unknown": 6.60}
+
+def load_imputed_quality() -> dict:
+    """Script 63: felt → kvalitets-assay-dict (samme format som get_assay_values)."""
+    if not IMPUTED_CSV.exists():
+        return {}
+    df = pd.read_csv(IMPUTED_CSV)
+    out = {}
+    for _, r in df.iterrows():
+        out[str(r["field"]).upper().strip()] = dict(
+            api=float(r["api_gravity"]), sulfur=float(r["sulfur_pct"]),
+            vac_res=float(r["vacuum_resid_pct"]), ccr=float(r["ccr_pct"]),
+            mid_dist=float(r["middle_distillate_pct"]),
+            v_ni=float(r["vanadium_ppm"]) + float(r["nickel_ppm"]),
+            tier=str(r["tier"]),
+        )
+    return out
+
+def load_decline_predictions() -> dict:
+    """V5.1 decline-modell: felt → {D_pred, D_actual, tier, is_akerbp}."""
+    if not DECLINE_CSV.exists():
+        return {}
+    df = pd.read_csv(DECLINE_CSV)
+    out = {}
+    for _, r in df.iterrows():
+        out[str(r["field"]).upper().strip()] = dict(
+            D_pred=float(r["D_pred"]),
+            D_actual=float(r["D_annual"]) if pd.notna(r.get("D_annual")) else None,
+            tier=str(r.get("api_quality_tier", "")),
+        )
+    return out
+
+def decline_sparkline_svg(D_pred: float, D_actual: float | None = None,
+                           years: int = 10, w: int = 240, h: int = 60) -> str:
+    """Inline SVG: projisert produksjonskurve exp(-D·t) over `years` år."""
+    pad = 6
+    def pts(D):
+        xs = np.linspace(0, years, 40)
+        ys = np.exp(-D * xs)
+        coords = []
+        for x, y in zip(xs, ys):
+            px = pad + x / years * (w - 2 * pad)
+            py = pad + (1 - y) * (h - 2 * pad)
+            coords.append(f"{px:.1f},{py:.1f}")
+        return " ".join(coords)
+    # halveringstid
+    half_life = np.log(2) / D_pred if D_pred > 0 else float("inf")
+    hl_str = f"{half_life:.1f} år" if np.isfinite(half_life) else "—"
+    # 5-års gjenværende
+    rem5 = np.exp(-D_pred * 5) * 100
+    actual_path = ""
+    if D_actual is not None and D_actual > 0:
+        actual_path = (f"<polyline points='{pts(D_actual)}' fill='none' "
+                       f"stroke='#9b59b6' stroke-width='1.2' stroke-dasharray='3,2' opacity='0.7'/>")
+    # gridlinjer (peak og halv)
+    y_half = pad + 0.5 * (h - 2 * pad)
+    return f"""
+    <svg width='{w}' height='{h}' style='display:block;'>
+      <line x1='{pad}' y1='{pad}' x2='{w-pad}' y2='{pad}' stroke='#eee' stroke-width='1'/>
+      <line x1='{pad}' y1='{y_half:.0f}' x2='{w-pad}' y2='{y_half:.0f}' stroke='#f3f3f3' stroke-width='1'/>
+      {actual_path}
+      <polyline points='{pts(D_pred)}' fill='none' stroke='#e74c3c' stroke-width='2'/>
+    </svg>
+    <div style='font-size:8.5px;color:#999;margin-top:-2px;'>
+      Peak → {years} år · halveringstid {hl_str} · ~{rem5:.0f}% igjen etter 5 år
+    </div>
+    """
+
+def decline_block_html(decline: dict | None) -> str:
+    """HTML-blokk for estimert decline-kurve i popup."""
+    if not decline:
+        return ""
+    D_pred = decline["D_pred"]
+    D_act = decline.get("D_actual")
+    spark = decline_sparkline_svg(D_pred, D_act)
+    actual_line = ""
+    if D_act is not None:
+        actual_line = (f"<span style='color:#9b59b6;'>&nbsp;·&nbsp;observert "
+                       f"{D_act*100:.1f}%/år</span>")
+    return f"""
+      <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:6px;'>
+        📉 ESTIMERT DECLINE (V5.1-modell)
+      </div>
+      <div style='font-size:15px;font-weight:bold;color:#e74c3c;margin-top:1px;line-height:1.1;'>
+        {D_pred*100:.1f}%<span style='font-size:10px;color:#888;font-weight:normal;'> /år</span>
+        {actual_line}
+      </div>
+      {spark}
+      <div style='font-size:8px;color:#aaa;font-style:italic;'>
+        Rød = modell-estimat · lilla stiplet = observert decline
+      </div>
+    """
+
+
 def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
                       top5: list | None, normpris: dict | None,
                       source_type: str = "", source_label: str = "",
                       is_forward: bool = False, forward_label: str = "",
-                      baseline_pred: float | None = None) -> str:
+                      baseline_pred: float | None = None,
+                      decline: dict | None = None) -> str:
     """Generer HTML for popup når man klikker på et felt."""
     name      = props.get("fldName") or props.get("dscName") or "Ukjent"
     operator  = props.get("cmpLongName") or props.get("dscOwnerName") or "—"
@@ -561,7 +663,7 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
 
     # Kvalitets-tabell
     if assay:
-        is_estimat = source_type in ("PROXY", "FORWARD")
+        is_estimat = source_type in ("PROXY", "FORWARD", "IMPUTED")
         header_label = "OLJEKVALITET (estimert fra proxy)" if is_estimat else "OLJEKVALITET (assay)"
         html += f"""
       <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:4px;'>
@@ -583,7 +685,7 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
     if pred_diff is not None:
         color = "#27AE60" if pred_diff > 0 else "#C0392B" if pred_diff < -0.5 else "#7F8C8D"
         sign  = "+" if pred_diff > 0 else ""
-        is_estimat = source_type in ("PROXY", "FORWARD")
+        is_estimat = source_type in ("PROXY", "FORWARD", "IMPUTED")
         header_lbl = "MODELL-ESTIMAT (basert på proxy)" if is_estimat else "MODELLPREDIKERT DIFFERENSIAL"
         disclaimer = ""
         if is_estimat:
@@ -679,9 +781,12 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
       </div>
         """
 
+    # Estimert decline-kurve (V5.1-modell)
+    html += decline_block_html(decline)
+
     html += """
       <div style='font-size:8.5px;color:#999;font-style:italic;border-top:1px solid #eee;padding-top:3px;margin-top:6px;'>
-        Modell: Brent-linked OLS (32 grades, RMSE 2.95)
+        Pris: Brent-linked OLS · Decline: V5.1 (nested CV R²=0.66) · Kvalitet: Script 63-fallback
       </div>
     </div>
     """
@@ -814,6 +919,12 @@ def main() -> None:
     normpris = load_normpris_latest()
     print(f"  Normpris (siste 4Q): {len(normpris)} felt")
 
+    imputed_quality = load_imputed_quality()
+    print(f"  Script 63 kvalitets-fallback: {len(imputed_quality)} felt")
+
+    decline_preds = load_decline_predictions()
+    print(f"  V5.1 decline-prediksjoner: {len(decline_preds)} felt")
+
     fields_fc      = load_geojson("fields")
     discoveries_fc = load_geojson("discoveries")
     licences_fc    = load_geojson("licences")
@@ -901,13 +1012,24 @@ def main() -> None:
             source_label = f"Blend-proxy: {blend_name}"
             n_blend += 1
 
-        # Nivå 3: GEOGRAFISK PROXY (nærmeste felt med assay)
-        else:
+        # Nivå 3: SCRIPT 63 IMPUTERING (område-median + Sodir-DST API)
+        #         Erstatter tidligere geografisk-proxy-fallback.
+        assay = None
+        if assay_grade is None and name in imputed_quality:
+            assay = imputed_quality[name]
+            tier = assay.get("tier", "")
+            source_type = "IMPUTED"
+            tier_lbl = {"3_MEDIAN+DST": "median + Sodir-DST",
+                        "2_BLEND": "blend-assay", "1_STANDALONE": "standalone"}.get(tier, tier)
+            source_label = f"Script 63 ({tier_lbl})"
+            n_proxy += 1
+
+        # Nivå 4: GEOGRAFISK PROXY (siste utvei — kun hvis ikke i Script 63)
+        if assay_grade is None and assay is None:
             sodir_candidates = {n for n in proxy_candidates if n in centroids}
             nearest = find_nearest_proxy(name, centroids, sodir_candidates)
             if nearest:
                 proxy_name, dist_km = nearest
-                # Bruk det proxy-feltets assay (direkte eller blend)
                 if proxy_name in DIRECT_ASSAY:
                     assay_grade = DIRECT_ASSAY[proxy_name]
                 else:
@@ -916,14 +1038,15 @@ def main() -> None:
                 source_label = f"Geografisk proxy: {proxy_name.title()} ({dist_km:.0f} km)"
                 n_proxy += 1
 
-        if assay_grade is None:
-            n_none += 1
-            continue
-
-        assay = get_assay_values(assay_grade)
+        # Hent assay-verdier fra grade hvis vi gikk via DIRECT/BLEND/PROXY
         if assay is None:
-            n_none += 1
-            continue
+            if assay_grade is None:
+                n_none += 1
+                continue
+            assay = get_assay_values(assay_grade)
+            if assay is None:
+                n_none += 1
+                continue
 
         # is_fpso-flagg basert på Sodir-feltnavn (NY i v3)
         is_fpso = 1 if name in SODIR_FPSO_FIELDS else 0
@@ -943,13 +1066,16 @@ def main() -> None:
             "source_label":  source_label,
             "proxy_grade":   assay_grade,
             "is_fpso":       is_fpso,
+            "decline":       decline_preds.get(name),
         }
 
+    n_decline = sum(1 for n in field_predictions if decline_preds.get(n))
     print(f"  ★★★ DIRECT (egen assay):       {n_direct:>3}")
     print(f"  ★★  BLEND-PROXY:                {n_blend:>3}")
-    print(f"  ★   GEOGRAFISK PROXY:           {n_proxy:>3}")
+    print(f"  ★★  SCRIPT 63 / proxy:          {n_proxy:>3}")
     print(f"  —   uten data:                  {n_none:>3}")
     print(f"  TOTAL m/ modellprediksjon:    {n_direct + n_blend + n_proxy:>3} / {len(fields_fc['features'])}")
+    print(f"  📉  m/ V5.1 decline-kurve:      {n_decline:>3}")
 
     # ── Bygg Folium-kart ─────────────────────────────────────────────────────
     print("\n[3] Bygger kart...")
@@ -1172,10 +1298,12 @@ def main() -> None:
                 source_type=pred_info["source_type"],
                 source_label=pred_info["source_label"],
                 baseline_pred=baseline_pred,
+                decline=pred_info.get("decline"),
             )
         else:
             style = style_field(None, status, cm)
-            popup_html = popup_html_field(props, None, None, None, normpris.get(name))
+            popup_html = popup_html_field(props, None, None, None, normpris.get(name),
+                                          decline=decline_preds.get(name))
 
         folium.GeoJson(
             f,
