@@ -73,3 +73,7 @@ credentials.json
 # Claude Code metadata (lokale prosjektinnstillinger)
 # ============================================================
 .claude/
+
+# Personlig (urelatert til modellen)
+scripts/karpe_ticket_monitor.py
+scripts/karpe_monitor.log

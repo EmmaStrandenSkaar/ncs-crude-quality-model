@@ -1,0 +1,23 @@
+# NCS Crude Oil Analytics Platform — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Core data & numerics
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+
+# Modelling
+scikit-learn>=1.3
+statsmodels>=0.14
+linearmodels>=5.0          # panel / clustered-SE regressions
+
+# Visualisation
+matplotlib>=3.7
+folium>=0.15               # interactive NCS map
+branca>=0.7                # colormaps for the map
+
+# Data access & I/O
+requests>=2.31             # Sodir / EIA API fetches
+yfinance>=0.2              # Brent / equity price series
+openpyxl>=3.1              # Excel assay / normpris parsing
+python-docx>=1.1           # methodology document generation

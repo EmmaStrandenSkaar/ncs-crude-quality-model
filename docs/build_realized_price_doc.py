@@ -11,10 +11,10 @@ from docx.enum.table import WD_ALIGN_VERTICAL, WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-ROOT = Path("/Users/emmastrandenskaar/Documents/Claude/Projects/Oljepris")
+ROOT = Path(".")
 PROC = ROOT / "data" / "processed"
 OUT = ROOT / "docs" / "NCS_Realized_Price_Methodology.docx"
-ONEDRIVE = Path("/Users/emmastrandenskaar/Library/CloudStorage/OneDrive-BINorwegianBusinessSchool(BIEDU)/NCS_Realized_Price_Methodology.docx")
+ONEDRIVE = Path(str(Path.home()) + "/Library/CloudStorage/OneDrive-BINorwegianBusinessSchool(BIEDU)/NCS_Realized_Price_Methodology.docx")
 
 DARK = RGBColor(0x1F, 0x4E, 0x79); GREEN = RGBColor(0x2E, 0x7D, 0x32)
 RED = RGBColor(0xC6, 0x28, 0x28); ORANGE = RGBColor(0xE6, 0x51, 0x00)
