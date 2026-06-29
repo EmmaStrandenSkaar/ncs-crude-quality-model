@@ -1340,7 +1340,7 @@ def main() -> None:
     # Bruker geografisk proxy for kvalitet — nærmeste felt med assay.
     # Alle popups markeres som ESTIMAT med klar usikkerhets-disclaimer.
     discovery_layer = folium.FeatureGroup(
-        name="🔮  Funn under utvikling", show=False
+        name="🔮  Funn under utvikling", show=True
     )
     n_disc = 0
     # Bygg sentroid-indeks også for funn (vi har den allerede for felt)
