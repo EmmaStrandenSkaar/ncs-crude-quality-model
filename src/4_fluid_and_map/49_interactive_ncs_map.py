@@ -721,6 +721,12 @@ def decline_block_html(profile: dict | None) -> str:
                  f"⚠ Ikke-besluttet funn — ressursvolum ukjent. Søylene viser forventet "
                  f"PRODUKSJONSFORM (% av peak), ikke volum. Halveringstid ~{hl_str}.</div>")
     elif is_fwd:
+        analog = profile.get("analog")
+        if analog:
+            decline_sentence = (
+                f"Decline-rate satt fra analog-felt <b>{analog}</b>: "
+                f"<b style='color:#16a085;'>{D_pred*100:.1f}%/år</b> etter platå "
+                f"<span style='color:#999;'>(ramp/platå fra lifecycle-modellen)</span>.")
         legend = ("<span style='color:#a9dfbf;'>▮</span> forecast-produksjon &nbsp; "
                   "<span style='color:#16a085;'>┄ lifecycle</span>")
         extra = (f"<div style='font-size:8.5px;color:#888;margin-top:1px;'>"
@@ -1216,11 +1222,13 @@ def main() -> None:
         prefer_canvas=True,
         control_scale=True,
     )
+    # Lyst kart som standard. Mørkt kart legges med show=False så det kun er
+    # et valg i lag-kontrollen og ikke rendres oppå det lyse ved innlasting.
     folium.TileLayer(
         "CartoDB positron", name="Lyst kart (Positron)", control=True
     ).add_to(fmap)
     folium.TileLayer(
-        "CartoDB dark_matter", name="Mørkt kart (Dark Matter)", control=True
+        "CartoDB dark_matter", name="Mørkt kart (Dark Matter)", control=True, show=False
     ).add_to(fmap)
 
     # Fargeskala brukes til felt-farger. Branca-legenden (Leaflet-kontroll,

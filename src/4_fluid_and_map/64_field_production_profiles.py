@@ -131,15 +131,22 @@ print(f"    historikk uten forecast (nye):  {n_nodecline}")
 
 # ── FORWARD FELT (lifecycle V2-forecast) ──
 print("\n[2] Forward-felt (lifecycle V2-forecast)...")
-# Kuraterte ex-ante input for forward-felt (PDO/CMD-estimater)
+# Kuraterte ex-ante input for forward-felt (PDO/CMD-estimater).
+# decline-fasen settes fra et navngitt analog-felt (observert NCS-decline), ikke
+# fra lifecycle-V2-modellens decline-output. V2-decline traff et tak rundt 0.40
+# for nesten alle subsea-tiebacks, noe som er urealistisk bratt. Vi bruker i
+# stedet sammenlignbare produserende felt som analoger. Ramp/platå/peak beholdes
+# fra V2-modellen; kun decline-raten overstyres med analog-raten.
+#   D_analog forankret i observert decline (predictions_v51.csv):
+#     Ivar Aasen ~18-22%, Vilje ~22%, Volund ~24%, Skarv ~11%, Goliat ~13%, Maria ~8%
 FORWARD_INPUTS = {
-    "HUGIN":   dict(recoverable_msm3=8,  n_wells_planned=8,  facility_type="Subsea tieback", operator="Aker BP ASA", first_oil=2027),
-    "MUNIN":   dict(recoverable_msm3=7,  n_wells_planned=10, facility_type="Subsea tieback", operator="Aker BP ASA", first_oil=2027),
-    "FULLA":   dict(recoverable_msm3=11, n_wells_planned=12, facility_type="Subsea tieback", operator="Aker BP ASA", first_oil=2028),
-    "SYMRA":   dict(recoverable_msm3=7,  n_wells_planned=8,  facility_type="Subsea tieback", operator="Aker BP ASA", first_oil=2029),
-    "TYRVING": dict(recoverable_msm3=5,  n_wells_planned=6,  facility_type="Subsea tieback", operator="Aker BP ASA", first_oil=2025),
-    "WISTING": dict(recoverable_msm3=80, n_wells_planned=30, facility_type="FPSO",           operator="Equinor Energy AS", first_oil=2028),
-    "DVALIN":  dict(recoverable_msm3=6,  n_wells_planned=6,  facility_type="Subsea tieback", operator="Equinor Energy AS", first_oil=2027),
+    "HUGIN":   dict(recoverable_msm3=8,  n_wells_planned=8,  facility_type="Subsea tieback", operator="Aker BP ASA",       first_oil=2027, analog="Ivar Aasen",   D_analog=0.18),
+    "MUNIN":   dict(recoverable_msm3=7,  n_wells_planned=10, facility_type="Subsea tieback", operator="Aker BP ASA",       first_oil=2027, analog="Ivar Aasen",   D_analog=0.18),
+    "FULLA":   dict(recoverable_msm3=11, n_wells_planned=12, facility_type="Subsea tieback", operator="Aker BP ASA",       first_oil=2028, analog="Skarv (kondensat)", D_analog=0.15),
+    "SYMRA":   dict(recoverable_msm3=7,  n_wells_planned=8,  facility_type="Subsea tieback", operator="Aker BP ASA",       first_oil=2029, analog="Vilje",        D_analog=0.20),
+    "TYRVING": dict(recoverable_msm3=5,  n_wells_planned=6,  facility_type="Subsea tieback", operator="Aker BP ASA",       first_oil=2025, analog="Volund",       D_analog=0.24),
+    "WISTING": dict(recoverable_msm3=80, n_wells_planned=30, facility_type="FPSO",           operator="Equinor Energy AS", first_oil=2028, analog="Goliat",       D_analog=0.13),
+    "DVALIN":  dict(recoverable_msm3=6,  n_wells_planned=6,  facility_type="Subsea tieback", operator="Equinor Energy AS", first_oil=2027, analog="Maria",        D_analog=0.16),
 }
 n_fwd = 0
 for field, inp in FORWARD_INPUTS.items():
@@ -151,9 +158,24 @@ for field, inp in FORWARD_INPUTS.items():
         print(f"  {field}: forecast feilet ({e})")
         continue
     ps = r["param_stats"]
-    t_months = r["t_months"]
-    p50 = r["p50"]
-    peak = max(p50.max(), 1e-9)
+    t_months = np.asarray(r["t_months"], dtype=float)
+    p50 = np.asarray(r["p50"], dtype=float).copy()
+    peak = max(float(p50.max()), 1e-9)
+
+    # Behold V2-modellens ramp + platå, men overstyr decline-halen med analog-
+    # raten (V2-decline traff et urealistisk tak ~0.40 for subsea-tiebacks).
+    D = float(inp["D_analog"])
+    peak_i = int(p50.argmax())
+    plat_end = peak_i
+    for i in range(peak_i, len(p50)):
+        if p50[i] >= 0.98 * peak:
+            plat_end = i
+        else:
+            break
+    for i in range(plat_end + 1, len(p50)):
+        dt_yr = (t_months[i] - t_months[plat_end]) / 12.0
+        p50[i] = peak * np.exp(-D * dt_yr)
+
     horizon = min(len(p50), 240)   # ~20 år
     tf = (t_months[:horizon]) / 12.0
     yf = p50[:horizon] / peak * 100.0
@@ -165,7 +187,8 @@ for field, inp in FORWARD_INPUTS.items():
         "type": "forward",
         "stage": "forward (pre-produksjon)",
         "first_oil": inp["first_oil"],
-        "D_pred": round(float(ps["dec"]["p50"]), 4),
+        "D_pred": round(D, 4),
+        "analog": inp["analog"],
         "peak_p50_msm3": round(float(ps["peak"]["p50"]), 4),
         "ramp_p50": round(float(ps["ramp"]["p50"]), 1),
         "plateau_p50": round(float(ps["plat"]["p50"]), 1),
@@ -174,7 +197,7 @@ for field, inp in FORWARD_INPUTS.items():
     }
     n_fwd += 1
     print(f"  {field:10s} → peak {ps['peak']['p50']:.2f} MSm³/mnd, ramp {ps['ramp']['p50']:.0f}mo, "
-          f"plat {ps['plat']['p50']:.0f}mo, D {ps['dec']['p50']:.3f}")
+          f"plat {ps['plat']['p50']:.0f}mo, D {D:.3f} (analog: {inp['analog']})")
 print(f"  {n_fwd} forward-felt med forecast")
 
 with open(OUT, "w") as f:
