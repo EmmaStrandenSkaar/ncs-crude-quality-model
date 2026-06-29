@@ -77,3 +77,6 @@ credentials.json
 # Personlig (urelatert til modellen)
 scripts/karpe_ticket_monitor.py
 scripts/karpe_monitor.log
+
+# Internt arbeidsdokument — holdes lokalt, ikke i det offentlige repoet
+PROJECT_PLAN.md

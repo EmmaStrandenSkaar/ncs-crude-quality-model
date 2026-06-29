@@ -1,169 +1,98 @@
-# NCS Crude Oil Analytics Platform
+# NCS Crude Quality Model
 
-**A full-lifecycle quantitative model of the Norwegian Continental Shelf — turning public data into field-level estimates of realized price, production decline, and valuation inputs that tie out to operator-reported figures at R² = 0.989.**
+A field-by-field quantitative model of the Norwegian Continental Shelf that estimates the realised crude price each field earns relative to Dated Brent, how fast each field's oil production declines from its fluid properties, and a pre-peak production lifecycle forecast for new fields. Built entirely from public data by Emma Strandenskaar, a finance student at BI Norwegian Business School.
 
-*Emma Strandenskaar · BI Norwegian Business School · [github.com/EmmaStrandenSkaar/ncs-crude-quality-model](https://github.com/EmmaStrandenSkaar/ncs-crude-quality-model)*
+[![NCS crude quality map](docs/map_preview.png)](https://emmastrandenskaar.github.io/ncs-crude-quality-model/)
 
----
+Click the map above to open the live interactive version. It covers 100+ NCS fields, each with its decline curve, production history and forecast, crude quality and realised differential.
 
-## Why this matters for equity research
+Live map: https://emmastrandenskaar.github.io/ncs-crude-quality-model/
 
-A field-level NPV is only as good as its two hardest inputs: **what price the barrels actually fetch** and **how fast the volumes decline**. Both are usually hand-waved — analysts assume "Brent flat" and a generic 8–10% decline. This platform replaces those assumptions with data-driven, out-of-sample-validated estimates for the entire NCS, grounded entirely in public data.
+## Key findings
 
-Three models chain together to drive a field's revenue line from first principles:
+**1. Decline rates vary 25-fold across the shelf.** Observed annual oil decline runs from about 1.0 percent per year at Ekofisk, a mature giant, to about 38 percent per year at Edvard Grieg, with a median near 9 percent. This spread is the core motivation for the decline model.
 
-```
-Crude quality (assay)      →  Price differential vs Brent  →  Realized price
-Reservoir fluid + history  →  Annual decline rate          →  Production profile
-PDO variables (ex-ante)    →  Peak / ramp / plateau        →  Pre-production forecast
-                                         ↓
-                         Field-level revenue & NPV inputs
-```
+**2. Decline is partly predictable from fluid physics.** A model using viscosity and a field-specific production premium fits 48 fields with in-sample R-squared 0.74. Under honest nested leave-one-out cross-validation the R-squared is about 0.66, with mean absolute error about 2.8 percentage points on the annual decline rate. The nested cross-validation removes a circularity in the premium term that would otherwise inflate the score.
 
-The payoff: a realized price that ties out to operator-reported figures at **R² = 0.989 / MAE 1.56 USD/bbl** (Aker BP, 24 quarters), and a decline rate that lands within ±0.05 **83% of the time** on held-out operator data.
+**3. Field-level price discrimination is the real contribution.** A production-share-weighted reconstruction of field differentials matches Aker BP's reported quarterly realised oil price with mean absolute error 1.56 USD/bbl and R-squared 0.989 across 24 quarters from 2020 Q1 to 2025 Q4. One quarter (2026 Q1) was excluded as an implausible reported value. The discrimination matters at the field level, for example Valhall at about +0.62 USD/bbl versus Skarv at about -4.21 USD/bbl under current market conditions.
 
----
+**4. The model does not beat Brent on the single blended number, and that is stated plainly.** At the blended portfolio level a naive assumption that fields realise flat Brent tracks the reported figure slightly better still, with mean absolute error about 1.31 USD/bbl. Positive and negative field differentials net out across a diversified portfolio. The value of the model is field-level discrimination.
 
-## The three models
+**5. Crude quality alone does not explain the differential.** Univariate API gravity explains essentially none of the cross-field variation, with R-squared about 0.00, and the relationship is non-monotonic. Medium light-sweet grades earn the largest premiums (Troll about +2.6, Alvheim about +2.7 USD/bbl mean) while ultra-light condensates trade at discounts (Asgard about -3.8, Gudrun about -5.1 USD/bbl mean). This is why the model conditions on region, sulphur and refining margins rather than quality alone. The grade-level panel reaches out-of-time R-squared about 0.41.
 
-### 1 · Realized-price model — `src/2_quality_price_model/`
+## Figures
 
-Predicts a crude grade's **price differential to Dated Brent** from assay quality (API gravity, sulphur, vacuum resid, CCR, middle-distillate yield, metals) interacted with the prevailing market regime.
+![Decline curves for six NCS fields](figures/decline_curves.png)
 
-- Two specifications: **Model A** (global, 43 grades) and **Model B** (Brent-linked, 32 grades)
-- OLS with cluster-robust standard errors; **out-of-time** validation, not just in-sample
-- Differential model: in-sample R² **0.49**, OOT R² **0.38**, RMSE **2.78 USD/bbl**
-- Closes the identity `Realized = Brent + Σ(production share × differential)`, validated at field level against **Aker BP** reported realizations: **R² 0.989, MAE 1.56 USD/bbl** across 24 quarters
+Six NCS fields, real Sodir annual production normalised to peak, with an exponential decline fitted at each field's annual rate. The spread runs from Ekofisk at about 1 percent per year, nearly flat, to Edvard Grieg at about 38 percent per year, steep.
 
-> *Business relevance:* a 2–3 USD/bbl differential error on a 100 kbbl/d field is ~$75–110m of annual revenue. Getting the grade-level differential right is the difference between a buy and a hold.
+![Realised differential versus API gravity](figures/price_vs_quality.png)
 
-### 2 · Decline model V5.1 — `src/3_decline_lifecycle/`
+Each field's 2012 to 2025 mean realised differential versus Dated Brent plotted against API gravity, coloured by sulphur. The relationship is weak and non-monotonic, which is why the price model conditions on region, sulphur and refining margins rather than quality alone.
 
-Predicts a producing field's **annual decline rate**:
+## Method
 
-```
-D = 0.094 + 0.011·ln(viscosity) − 0.061·P₁₂ + 0.040·|P₁₂|
-```
+The project is three connected models.
 
-It blends **physics** (Beggs-Robinson viscosity derived from reservoir API) with a **field-specific premium** `P₁₂` — the trailing 12-month deviation of actual production from the physics baseline, capturing reservoir and operational realities the physics alone misses.
+### Model 1, realised price by field
 
-| Metric | Value |
-|---|---|
-| Nested LOO cross-validated R² | **0.662** (honest, post-QA) |
-| Aker BP RMSE | 0.062 |
-| Aker BP hit rate (±0.05) | **83%** (Wilson 95% CI: 55–95%) |
+Realised field price equals Dated Brent plus a field differential. A company's realised price is the production-share-weighted average of its field differentials added to Brent. The differentials are modelled from crude quality and market structure, namely API gravity, sulphur, region, crack spreads and refinery utilisation. Validation is done against Aker BP's reported quarterly realised oil price. The reconstruction reaches mean absolute error 1.56 USD/bbl and R-squared 0.989 across 24 quarters. The honest caveat is that this does not beat a flat-Brent assumption at the blended portfolio level, because field differentials net out across a diversified portfolio. The contribution is field-level discrimination, not the blended number.
 
-Fed by a **108-field master fluid library** with reservoir API enriched from Sodir DST (1,186 wellbore tests) plus operator assays.
+### Model 2, production decline from fluid properties
 
-### 3 · Pre-peak lifecycle forecast — `src/3_decline_lifecycle/`, `src/4_fluid_and_map/`
-
-For fields **not yet on stream**, forecasts the full curve (peak → ramp → plateau → decline) from **only ex-ante PDO variables** — recoverable reserves, planned wells, facility type, operator. No post-first-oil data leaks in.
-
-| Phase | Out-of-sample accuracy | Intended use |
-|---|---|---|
-| Ramp duration | median error ±5 months | point estimate |
-| Plateau duration | median error ±4 months | point estimate |
-| Peak level | log-space CV R² 0.84; linear error ~35% | **range / triangulation tool, not a point NPV input** |
-| Decline | calibrated to recoverable reserves | derived, not free |
-
-A **joint bootstrap + recovery constraint** produces physically consistent **P10/P50/P90** bands (the area under the curve cannot exceed recoverable reserves). Case study: **Yggdrasil** (Aker BP NOAKA), modelled as a hub plus five components with triangulated scenarios.
-
----
-
-## Validation discipline
-
-This is built like research that has to survive a desk review, not a backtest that flatters itself. The standard throughout is *honest out-of-sample performance*, not in-sample fit.
-
-- **Nested LOO and out-of-time cross-validation** — headline numbers are held-out, not in-sample.
-- **A QA pass caught and removed premium circularity** in the decline model. The honest CV R² fell from 0.71 → **0.66**, and the lower number is the one reported. Self-correction over self-promotion.
-- **Genuine hold-out on new fields** revealed that peak level is a **~35% range tool**, not a point estimate — and this README says so, rather than burying it.
-- **Cross-basin stress test:** on UK NSTA data the viscosity coefficient *reverses sign* — so the model is explicitly scoped as **NCS-specific**, not a universal law.
-- **Bootstrap CIs** on forecasts and **Wilson CIs** on every hit-rate proportion (small-*n* honesty).
-
-| Model | Headline | Honest validation |
-|---|---|---|
-| Differential | in-sample R² 0.49 | OOT R² 0.38, RMSE 2.78 USD/bbl |
-| Realized price (field) | — | R² 0.989, MAE 1.56 USD/bbl (24 qtrs) |
-| Decline V5.1 | — | nested LOO R² 0.662; Aker BP RMSE 0.062 |
-| Pre-peak peak | log CV R² 0.84 | OOS linear error ~35% (range tool) |
-| Pre-peak ramp/plateau | — | OOS ±5 / ±4 months |
-
----
-
-## Supporting infrastructure
-
-- **Master fluid library** — 108 fields with reservoir API across **4 provenance tiers** (Sodir DST · operator direct assays · operator research · blended fallback), so any number traces back to a source.
-- **Field → quality imputation** (Script 63) — area-median assay characteristics + Sodir-DST API gravity fill quality drivers for the **104 NCS fields** without a published assay, keeping every producing field in the price model rather than dropping it.
-- **Interactive NCS map** (Script 49) — **142 NCS fields** with production bar charts (historical + forecast), price differentials, and quality drivers; the full pipeline applied across the entire lifecycle (producing / forward / discovery) in one view.
-- **Supporting research** — post-earnings drift, M&A windows, and oil-service lag studies under `src/5_supporting_research/`.
-
----
-
-## Repository structure
+A field's annual oil decline rate is partly predictable from the crude's fluid physics. Heavier and more viscous oil tends to decline more slowly. A field-specific production-premium term captures performance above or below the physics baseline. The fitted form (V5.1) follows.
 
 ```
-src/
-├── 1_data_ingestion/        Data fetch — Sodir, EIA, crude assays, normpris
-├── 2_quality_price_model/   Quality → differential + Aker BP realized-price validation
-├── 3_decline_lifecycle/     V5.1 decline + lifecycle forecast (own scripts/data/results/docs)
-├── 4_fluid_and_map/         Fluid imputation, production profiles, interactive map
-└── 5_supporting_research/   Earnings, M&A, and oil-service event studies
-
-data/
-├── raw/                     Inputs as fetched from public sources
-└── processed/               Model-ready panels and derived tables
-
-docs/                        Methodology documents (.docx)
+D = 0.094 + 0.011 * ln(viscosity) - 0.061 * P12 + 0.040 * |P12|
 ```
 
-**Where to start by interest:**
+Here D is the annual decline rate and P12 is a 12-month production premium, defined as the log deviation of actual production from the physics baseline. The fit covers 48 fields with in-sample R-squared 0.74 and a nested leave-one-out cross-validated R-squared about 0.66. Crude API gravity is sourced in tiers, from operator-direct assay through robust Sodir DST, single-well DST, and blend-inherited values, with provenance tracked per field.
 
-| If you want to see… | Go to |
-|---|---|
-| The headline modelling and validation | `src/3_decline_lifecycle/README.md` |
-| Quality-to-price economics | `src/2_quality_price_model/` |
-| Everything visual, in one place | `src/4_fluid_and_map/` (Script 49, interactive map) |
-| How the data is sourced | `src/1_data_ingestion/` |
-| The written methodology | `docs/` and `src/3_decline_lifecycle/docs/` |
+### Model 3, pre-peak lifecycle forecast
 
----
+For fields not yet at peak, the model forecasts the production ramp, plateau and peak rate, then hands off to the decline model. Validation is on a hold-out set of 13 fields. The peak rate is a rough sizing tool with mean absolute error about 35 percent. Ramp duration is predicted within about 9 months and plateau duration within about 7 months. P10, P50 and P90 ranges are produced by bootstrap. The peak is approximate, not precise, and is presented that way.
 
-## Reproducibility
+## Repository layout
 
-- **Layered pipeline** — ingestion → modelling → fluid/map, with numbered, ordered scripts in each stage so the build can be re-run end to end.
-- **Versioned artifacts** — master fluid library, type-curve library, and model predictions are written as CSVs under each module's `data/` and `results/`.
-- **Provenance-tagged inputs** — every fluid record carries its source tier, so any number traces back to a Sodir DST test or a named operator document.
-- **Two methodology documents** (`.docx`) — decline model and realized price — in `src/3_decline_lifecycle/docs/` and `docs/`.
+```
+src/1_data_ingestion       Pull and clean the public data sources
+src/2_quality_price_model  Realised price and quality differential model (Model 1)
+src/3_decline_lifecycle    Decline model and lifecycle forecast (Models 2 and 3)
+src/4_fluid_and_map        Crude fluid library, quality imputation, map builder
+src/5_supporting_research  Exploratory analyses
+data/                      Processed model outputs
+figures/                   Static figures
+docs/                      Interactive map and methodology
+requirements.txt           Pinned Python dependencies
+```
 
-**Decline model, applied step by step:**
+## How to run
 
-1. Obtain reservoir API gravity (Sodir DST or operator data).
-2. Compute Beggs-Robinson viscosity from API and reservoir temperature.
-3. Pull the last 12 months of post-peak production from Sodir.
-4. Compute the premium `P₁₂` as the mean log-deviation from the physics baseline.
-5. Apply `D = 0.094 + 0.011·ln(μ) − 0.061·P₁₂ + 0.040·|P₁₂|`.
-6. Forecast `production_T = peak · exp(−D · T)`.
+You need Python 3 and the packages pinned in `requirements.txt` (pandas, numpy, scikit-learn, statsmodels, matplotlib, folium).
 
----
+Install the dependencies with pip.
 
-## Data sources (all public)
+```bash
+pip install -r requirements.txt
+```
 
-- **Sodir** (Sokkeldirektoratet / Norwegian Offshore Directorate) — production, drill-stem tests, geology
-- **Petroleumsprisrådet** (Petroleum Price Board) — normpris (norm price)
-- **Equinor, ExxonMobil, TotalEnergies** — crude assays
-- **EIA** — market fundamentals
-- **Aker BP** — quarterly reports (used as an independent validation target)
+Regenerate the figures with the figures script.
 
----
+```bash
+python figures/make_figures.py
+```
 
-## Limitations & honesty
+The decline and price model scripts live under `src/` and read from `data/` and `src/3_decline_lifecycle/data/`.
 
-- The exponential-decline assumption breaks down for plateau fields (e.g. Valhall).
-- The decline model is **NCS-specific** — the viscosity coefficient reverses sign on UK NSTA data.
-- The decline model requires **≥12 months of post-peak history**; new fields fall back to the analog-based pre-peak forecast.
-- Pre-peak **peak level** is a triangulation range (~35% OOS error), not a point NPV input.
-- The differential model explains roughly a third of out-of-time variance — useful for systematic quality pricing, not for predicting short-term market noise.
+## Data sources
 
----
+All data is public. No proprietary or licensed data is included. There is no Argus, no Platts and no Bull Invest data anywhere in this repository.
 
-*Built to answer a single question end-to-end: given what we can know publicly about an NCS field, what price will its barrels realize, how fast will they decline, and what is that worth? The emphasis throughout is on cross-validated, honestly-bounded estimates — models that are useful precisely because they declare what they can and cannot predict.*
+- **Sodir (Norwegian Offshore Directorate) FactPages.** Monthly and yearly field production, wellbore drill-stem-test (DST) fluid data, reserves.
+- **EIA fundamentals.** Refinery utilisation, crude and product stocks, crack spreads.
+- **World Bank commodity prices**, including Dated Brent.
+- **Public operator crude assays** from Equinor, Aker BP and others, plus public assay aggregators.
+
+## Limitations
+
+This is a student project. The aim is careful, honest analysis rather than a finished commercial product. In-sample fit, out-of-sample fit and cross-validated fit are reported separately throughout. Where a result is weak, such as the near-zero univariate API R-squared, or approximate, such as the 35 percent peak forecast error, that is stated directly rather than smoothed over.
