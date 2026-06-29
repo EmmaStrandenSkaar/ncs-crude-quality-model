@@ -28,6 +28,7 @@ import numpy as np
 import pandas as pd
 import folium
 from folium import plugins
+from folium.map import CustomPane
 from branca.colormap import LinearColormap
 from branca.element import Template, MacroElement
 
@@ -1222,19 +1223,26 @@ def main() -> None:
         "CartoDB dark_matter", name="Mørkt kart (Dark Matter)", control=True
     ).add_to(fmap)
 
+    # Fargeskala brukes til felt-farger. Branca-legenden (Leaflet-kontroll,
+    # låst til topright) erstattes av en egen HTML-legend nederst til høyre
+    # lenger ned, så den blir større og plassert der vi vil ha den.
     cm = make_colormap()
-    cm.add_to(fmap)
 
     # NB: Leaflet legger sist-tilføyde lag ØVERST i z-orden, så vi MÅ legge
     # bakgrunnslag (blokker, lisenser) først og felt-laget til slutt.
     # Bakgrunnslagene gjøres også non-interactive (ingen klikk-fangst).
 
-    # ── BAKGRUNNSLAG 1: NCS-blokker (legges nederst, ikke-interaktivt) ─────
-    blocks_layer = folium.FeatureGroup(name="🗺  NCS-blokkruter", show=False)
+    # ── BAKGRUNNSLAG 1: NCS-blokker (nederst, ekte non-interactive) ────────
+    # Eget Leaflet-pane med pointer_events=False og lav z-index. Da fanger
+    # blokk-rutene ALDRI klikk, og de ligger alltid under feltene, uansett
+    # hvilken rekkefølge lagene hukes av/på. Feltene forblir klikkbare.
+    # Huket av som standard når lenken åpnes (vises som referansegrid).
+    CustomPane("ncs_bg", z_index=350, pointer_events=False).add_to(fmap)
+    blocks_layer = folium.FeatureGroup(name="🗺  NCS-blokkruter", show=True)
     folium.GeoJson(
         blocks_fc,
         style_function=style_block,
-        # Ingen tooltip/popup → fanger ikke klikk
+        pane="ncs_bg",          # klikk passerer rett gjennom til feltene
         zoom_on_click=False,
     ).add_to(blocks_layer)
     blocks_layer.add_to(fmap)
@@ -1324,7 +1332,7 @@ def main() -> None:
     # Bruker geografisk proxy for kvalitet — nærmeste felt med assay.
     # Alle popups markeres som ESTIMAT med klar usikkerhets-disclaimer.
     discovery_layer = folium.FeatureGroup(
-        name="🔮  Funn under utvikling (NAV-upside)", show=False
+        name="🔮  Funn under utvikling", show=False
     )
     n_disc = 0
     # Bygg sentroid-indeks også for funn (vi har den allerede for felt)
@@ -1500,6 +1508,28 @@ def main() -> None:
     </div>
     """
     fmap.get_root().html.add_child(folium.Element(title_html))
+
+    # Heatmap-legend (kvalitets-differensial) — nederst til høyre, større.
+    # Erstatter branca sin lille topright-kontroll.
+    legend_html = """
+    <div style='position: fixed; bottom: 22px; right: 14px; z-index: 9998;
+                background: rgba(255,255,255,0.94); padding: 11px 14px;
+                border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,0.22);
+                font-family: -apple-system, sans-serif; width: 320px;'>
+      <div style='font-size: 11.5px; font-weight: bold; color: #333; margin-bottom: 7px;'>
+        Modellpredikert differensial vs. Dated Brent
+      </div>
+      <div style='height: 18px; border-radius: 3px; border: 1px solid #ddd;
+                  background: linear-gradient(to right,
+                  #C0392B 0%, #E67E22 25%, #F4F4F4 50%, #52BE80 75%, #1D6A39 100%);'></div>
+      <div style='display: flex; justify-content: space-between;
+                  font-size: 10.5px; color: #555; margin-top: 4px;'>
+        <span>&minus;5 rabatt</span><span>0</span><span>+5 premium</span>
+      </div>
+      <div style='font-size: 9.5px; color: #999; margin-top: 3px;'>USD/bbl</div>
+    </div>
+    """
+    fmap.get_root().html.add_child(folium.Element(legend_html))
 
     # ── Lagre ────────────────────────────────────────────────────────────────
     fmap.save(str(OUT_HTML))
