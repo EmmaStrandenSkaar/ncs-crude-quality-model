@@ -1255,12 +1255,17 @@ def main() -> None:
     ).add_to(blocks_layer)
     blocks_layer.add_to(fmap)
 
-    # ── BAKGRUNNSLAG 2: Lisensblokker (ikke-interaktivt) ────────────────────
-    licences_layer = folium.FeatureGroup(name="📑  Produksjonslisenser", show=False)
+    # ── BAKGRUNNSLAG 2: Produksjonslisenser ─────────────────────────────────
+    # Eget pane (z-index 360) mellom blokk-grid (350) og felt/funn (overlayPane
+    # 400). Lisensene beholder hover-tooltip, men ligger ALLTID under feltene og
+    # funnene, så et klikk på et felt eller funn vinner uansett av/på-rekkefølge.
+    # Huket av som standard når lenken åpnes.
+    CustomPane("licence_bg", z_index=360, pointer_events=True).add_to(fmap)
+    licences_layer = folium.FeatureGroup(name="📑  Produksjonslisenser", show=True)
     folium.GeoJson(
         licences_fc,
         style_function=style_licence,
-        # Tooltip ved hover (fanger ikke klikk på samme måte)
+        pane="licence_bg",      # under felt/funn → blokkerer ikke klikk
         tooltip=folium.GeoJsonTooltip(
             fields=["prlName", "cmpLongName"],
             aliases=["Lisens:", "Operatør:"],
