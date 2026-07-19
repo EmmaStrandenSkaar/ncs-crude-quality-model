@@ -80,3 +80,6 @@ scripts/karpe_monitor.log
 
 # Internt arbeidsdokument — holdes lokalt, ikke i det offentlige repoet
 PROJECT_PLAN.md
+
+# Internt NAV-blueprint (basert på Bull Invest-modellen — holdes lokalt)
+NAV_ENGINE_BLUEPRINT.md
