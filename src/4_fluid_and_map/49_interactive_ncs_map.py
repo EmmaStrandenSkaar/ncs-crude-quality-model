@@ -2,7 +2,7 @@
 Script 49 — Interaktivt NCS-kart (FactMaps-stil) med modellpredikert kvalitetsdiff.
 
 LAG:
-  Bakgrunn:   CartoDB Positron (lys, nøytral)
+  Bakgrunn:   Esri Light Gray Canvas (lys, nøytral, uten API-nøkkel)
   Lag 1 (på): Felt-polygoner fargelagt etter modellpredikert differensial vs. Brent
               (heatmap: rød = rabatt, grønn = premium)
   Lag 2 (på): Aktive funn under utbygging (Yggdrasil/Hugin/Munin/Fulla)
@@ -1224,12 +1224,81 @@ def main() -> None:
     )
     # Lyst kart som standard. Mørkt kart legges med show=False så det kun er
     # et valg i lag-kontrollen og ikke rendres oppå det lyse ved innlasting.
-    folium.TileLayer(
-        "CartoDB positron", name="Lyst kart (Positron)", control=True
-    ).add_to(fmap)
-    folium.TileLayer(
-        "CartoDB dark_matter", name="Mørkt kart (Dark Matter)", control=True, show=False
-    ).add_to(fmap)
+    #
+    # NB: Vi bruker IKKE CartoDB Positron/Dark Matter lenger. CARTO krever nå
+    # API-nøkkel for basiskart-flisene, og uten nøkkel returnerer de fliser med
+    # "API KEY REQUIRED" stemplet inn i bildet — som da ligger som vannmerke
+    # over hele kartet. Esri sine grå lerret-basiskart er nøytrale på samme måte
+    # og krever ingen nøkkel.
+    ESRI_ATTR = "Tiles &copy; Esri — Esri, DeLorme, NAVTEQ"
+    ESRI_TPL = (
+        "https://server.arcgisonline.com/ArcGIS/rest/services/"
+        "Canvas/World_{v}_Gray_{part}/MapServer/tile/{{z}}/{{y}}/{{x}}"
+    )
+    base_light = folium.TileLayer(
+        tiles=ESRI_TPL.format(v="Light", part="Base"),
+        attr=ESRI_ATTR,
+        name="Lyst kart (grått lerret)",
+        control=True,
+        max_zoom=20,
+        max_native_zoom=16,
+    )
+    base_light.add_to(fmap)
+    base_dark = folium.TileLayer(
+        tiles=ESRI_TPL.format(v="Dark", part="Base"),
+        attr=ESRI_ATTR,
+        name="Mørkt kart (mørkt lerret)",
+        control=True,
+        show=False,
+        max_zoom=20,
+        max_native_zoom=16,
+    )
+    base_dark.add_to(fmap)
+
+    # Esri sine lerret-basiskart har stedsnavn i et eget referanselag. Uten det
+    # mister vi Bergen/Stavanger/Trondheim osv. Etikettene legges i et eget pane
+    # (z-index 250) — over basiskartet, men under blokk-grid (350), lisenser
+    # (360) og felt/funn (400), og uten klikk-fangst. Lyst og mørkt etikettlag
+    # byttes automatisk sammen med basiskartet (se JS-snutten under).
+    CustomPane("basemap_labels", z_index=250, pointer_events=False).add_to(fmap)
+    labels_light = folium.TileLayer(
+        tiles=ESRI_TPL.format(v="Light", part="Reference"),
+        attr=ESRI_ATTR,
+        name="Stedsnavn (lys)",
+        overlay=True,
+        control=False,
+        show=True,
+        max_zoom=20,
+        max_native_zoom=16,
+        pane="basemap_labels",
+    )
+    labels_light.add_to(fmap)
+    labels_dark = folium.TileLayer(
+        tiles=ESRI_TPL.format(v="Dark", part="Reference"),
+        attr=ESRI_ATTR,
+        name="Stedsnavn (mørk)",
+        overlay=True,
+        control=False,
+        show=False,
+        max_zoom=20,
+        max_native_zoom=16,
+        pane="basemap_labels",
+    )
+    labels_dark.add_to(fmap)
+
+    swap_labels = MacroElement()
+    swap_labels._template = Template(f"""
+        {{% macro script(this, kwargs) %}}
+        {fmap.get_name()}.on('baselayerchange', function (e) {{
+            var dark = (e.layer === {base_dark.get_name()});
+            var on  = dark ? {labels_dark.get_name()}  : {labels_light.get_name()};
+            var off = dark ? {labels_light.get_name()} : {labels_dark.get_name()};
+            if ({fmap.get_name()}.hasLayer(off)) {{ {fmap.get_name()}.removeLayer(off); }}
+            if (!{fmap.get_name()}.hasLayer(on)) {{ {fmap.get_name()}.addLayer(on); }}
+        }});
+        {{% endmacro %}}
+    """)
+    swap_labels.add_to(fmap)
 
     # Fargeskala brukes til felt-farger. Branca-legenden (Leaflet-kontroll,
     # låst til topright) erstattes av en egen HTML-legend nederst til høyre
