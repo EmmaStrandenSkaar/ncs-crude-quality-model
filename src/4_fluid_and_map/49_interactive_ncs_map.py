@@ -511,7 +511,7 @@ def source_badge(source_type: str, source_label: str) -> str:
     cfg = {
         "DIRECT":  ("★★★", "#27AE60", "EGEN ASSAY"),
         "BLEND":   ("★★",  "#2980B9", "BLEND-PROXY"),
-        "IMPUTED": ("★★",  "#16A085", "SCRIPT 63 (MEDIAN + SODIR-DST)"),
+        "IMPUTED": ("★★",  "#16A085", "OMRÅDE-ANALOG"),
         "PROXY":   ("★",   "#E67E22", "GEOGRAFISK PROXY (ESTIMAT)"),
         "FORWARD": ("◆",   "#8E44AD", "FORWARD-ESTIMAT"),
     }
@@ -527,7 +527,7 @@ def source_badge(source_type: str, source_label: str) -> str:
 
 
 # ────────────────────────────────────────────────────────────────────────────
-# SCRIPT 63 KVALITETS-FALLBACK + V5.1 DECLINE-KURVER
+# OMRÅDE-ANALOG KVALITETS-FALLBACK (script 63) + V5.1 DECLINE-KURVER
 # ────────────────────────────────────────────────────────────────────────────
 # main_area → log(avstand til Rotterdam), avledet fra hardkodede assay-verdier
 AREA_LOG_DIST = {"North sea": 6.50, "Norwegian sea": 7.30, "Barents sea": 7.70, "Unknown": 6.60}
@@ -793,7 +793,7 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
     # Kvalitets-tabell
     if assay:
         is_estimat = source_type in ("PROXY", "FORWARD", "IMPUTED")
-        header_label = "OLJEKVALITET (estimert fra proxy)" if is_estimat else "OLJEKVALITET (assay)"
+        header_label = "OLJEKVALITET (estimert)" if is_estimat else "OLJEKVALITET (assay)"
         html += f"""
       <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:4px;'>
         ⛽ {header_label}
@@ -815,11 +815,12 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
         color = "#27AE60" if pred_diff > 0 else "#C0392B" if pred_diff < -0.5 else "#7F8C8D"
         sign  = "+" if pred_diff > 0 else ""
         is_estimat = source_type in ("PROXY", "FORWARD", "IMPUTED")
-        header_lbl = "MODELL-ESTIMAT (basert på proxy)" if is_estimat else "MODELLPREDIKERT DIFFERENSIAL"
+        header_lbl = "MODELL-ESTIMAT (estimert kvalitet)" if is_estimat else "MODELLPREDIKERT DIFFERENSIAL"
         disclaimer = ""
         if is_estimat:
             disclaimer = ("<div style='font-size:9px;color:#999;font-style:italic;margin-top:2px;'>"
-                          "Usikkerhet: ±2–3 USD/bbl. Estimatet hviler på proxy-assay.</div>")
+                          "Usikkerhet: ±2–3 USD/bbl. Estimatet hviler på estimert kvalitet, "
+                          "ikke feltets egen assay.</div>")
 
         html += f"""
       <div style='font-size:10px;font-weight:bold;color:#444;border-top:1px solid #ddd;padding-top:4px;margin-top:6px;'>
@@ -915,7 +916,7 @@ def popup_html_field(props: dict, assay: dict | None, pred_diff: float | None,
 
     html += """
       <div style='font-size:8.5px;color:#999;font-style:italic;border-top:1px solid #eee;padding-top:3px;margin-top:6px;'>
-        Pris: Brent-linked OLS · Decline: V5.1 (nested CV R²=0.66) · Kvalitet: Script 63-fallback
+        Pris: Brent-linked OLS · Decline: V5.1 (nested CV R²=0.66) · Kvalitet: assay, ellers områdeanalog
       </div>
     </div>
     """
@@ -940,9 +941,10 @@ def style_field(pred_diff: float | None, status: str, cm: LinearColormap,
                  source_type: str = "DIRECT") -> dict:
     """
     Style for et felt-polygon. Kantstil koder kvalitetsnivået på prediksjonen:
-       DIRECT  — Solid svart kant, full opacity   (egen assay)
-       BLEND   — Solid mørkblå kant, full opacity (faktisk eksport-blend)
-       PROXY   — Stiplet grå kant, redusert opac. (geografisk estimat)
+       DIRECT  — Solid svart kant, full opacity    (egen assay)
+       BLEND   — Solid mørkblå kant, full opacity  (faktisk eksport-blend)
+       IMPUTED — Stiplet grønn kant, midtre opac.  (områdeanalog)
+       PROXY   — Stiplet grå kant, redusert opac.  (nærmeste nabofelt)
     """
     if pred_diff is None:
         return {
@@ -955,9 +957,10 @@ def style_field(pred_diff: float | None, status: str, cm: LinearColormap,
     fill_color = cm(max(-5, min(5, pred_diff)))
 
     border_cfg = {
-        "DIRECT": dict(color="#222222", weight=1.1, dash=None,   fillOp=0.82),
-        "BLEND":  dict(color="#2874A6", weight=0.9, dash=None,   fillOp=0.75),
-        "PROXY":  dict(color="#7F7F7F", weight=0.8, dash="4, 3", fillOp=0.55),
+        "DIRECT":  dict(color="#222222", weight=1.1, dash=None,   fillOp=0.82),
+        "BLEND":   dict(color="#2874A6", weight=0.9, dash=None,   fillOp=0.75),
+        "IMPUTED": dict(color="#16A085", weight=0.9, dash="5, 2", fillOp=0.65),
+        "PROXY":   dict(color="#7F7F7F", weight=0.8, dash="4, 3", fillOp=0.55),
     }
     cfg = border_cfg.get(source_type, border_cfg["DIRECT"])
 
@@ -1049,7 +1052,7 @@ def main() -> None:
     print(f"  Normpris (siste 4Q): {len(normpris)} felt")
 
     imputed_quality = load_imputed_quality()
-    print(f"  Script 63 kvalitets-fallback: {len(imputed_quality)} felt")
+    print(f"  Områdeanalog kvalitetsbase:   {len(imputed_quality)} felt")
 
     prod_profiles = load_production_profiles()
     n_prod_prof = sum(1 for p in prod_profiles.values() if p.get("type") == "producing")
@@ -1122,7 +1125,7 @@ def main() -> None:
                     ccr=ccr, mid_dist=mid_dist, v_ni=v_ni)
 
     field_predictions = {}
-    n_direct = n_blend = n_proxy = n_none = 0
+    n_direct = n_blend = n_imputed = n_proxy = n_none = 0
 
     for f in fields_fc["features"]:
         name = (f.get("properties", {}).get("fldName") or "").upper()
@@ -1147,19 +1150,19 @@ def main() -> None:
             source_label = f"Blend-proxy: {blend_name}"
             n_blend += 1
 
-        # Nivå 3: SCRIPT 63 IMPUTERING (område-median + Sodir-DST API)
+        # Nivå 3: OMRÅDE-ANALOG (område-median av lab-assays + Sodir-DST API)
         #         Erstatter tidligere geografisk-proxy-fallback.
         assay = None
         if assay_grade is None and name in imputed_quality:
             assay = imputed_quality[name]
             tier = assay.get("tier", "")
             source_type = "IMPUTED"
-            tier_lbl = {"3_MEDIAN+DST": "median + Sodir-DST",
-                        "2_BLEND": "blend-assay", "1_STANDALONE": "standalone"}.get(tier, tier)
-            source_label = f"Script 63 ({tier_lbl})"
-            n_proxy += 1
+            tier_lbl = {"3_MEDIAN+DST": "områdemedian + Sodir-API",
+                        "2_BLEND": "blend-assay", "1_STANDALONE": "egen assay"}.get(tier, tier)
+            source_label = tier_lbl
+            n_imputed += 1
 
-        # Nivå 4: GEOGRAFISK PROXY (siste utvei — kun hvis ikke i Script 63)
+        # Nivå 4: GEOGRAFISK PROXY (siste utvei — kun hvis ikke i kvalitetsbasen)
         if assay_grade is None and assay is None:
             sodir_candidates = {n for n in proxy_candidates if n in centroids}
             nearest = find_nearest_proxy(name, centroids, sodir_candidates)
@@ -1207,9 +1210,10 @@ def main() -> None:
     n_decline = sum(1 for n in field_predictions if prod_profiles.get(n))
     print(f"  ★★★ DIRECT (egen assay):       {n_direct:>3}")
     print(f"  ★★  BLEND-PROXY:                {n_blend:>3}")
-    print(f"  ★★  SCRIPT 63 / proxy:          {n_proxy:>3}")
+    print(f"  ★★  OMRÅDE-ANALOG:              {n_imputed:>3}")
+    print(f"  ★   GEOGRAFISK PROXY:           {n_proxy:>3}")
     print(f"  —   uten data:                  {n_none:>3}")
-    print(f"  TOTAL m/ modellprediksjon:    {n_direct + n_blend + n_proxy:>3} / {len(fields_fc['features'])}")
+    print(f"  TOTAL m/ modellprediksjon:    {n_direct + n_blend + n_imputed + n_proxy:>3} / {len(fields_fc['features'])}")
     print(f"  📈  m/ produksjonsprofil:       {n_decline:>3}")
 
     # ── Bygg Folium-kart ─────────────────────────────────────────────────────
@@ -1573,6 +1577,9 @@ def main() -> None:
         Egen Equinor lab-assay <span style='color:#888;'>(solid svart kant)</span><br>
         <span style='color:#2980B9;font-weight:bold;'>★★ BLEND-PROXY</span> &mdash;
         Eksportert via kjent blend, f.eks. Ekofisk Blend <span style='color:#888;'>(solid blå kant)</span><br>
+        <span style='color:#16A085;font-weight:bold;'>★★ OMRÅDE-ANALOG</span> &mdash;
+        Ingen egen assay: lab-verdier fra områdemedian, API fra Sodir-brønnprøve
+        <span style='color:#888;'>(stiplet grønn kant)</span><br>
         <span style='color:#E67E22;font-weight:bold;'>★ GEOGRAFISK PROXY</span> &mdash;
         Estimert fra nærmeste nabofelt <span style='color:#888;'>(stiplet grå kant)</span><br>
         <span style='color:#E67E22;font-weight:bold;'>◆ FORWARD-FELT</span> &mdash;
