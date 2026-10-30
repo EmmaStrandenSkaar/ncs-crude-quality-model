@@ -40,7 +40,7 @@ Realised field price equals Dated Brent plus a field differential. A company's r
 
 ### Model 2, production decline from fluid properties
 
-A field's annual oil decline rate is partly predictable from the crude's fluid physics. Heavier and more viscous oil tends to decline more slowly. A field-specific production-premium term captures performance above or below the physics baseline. The fitted form (V5.1) follows.
+A field's annual oil decline rate is partly predictable from the crude's fluid physics. Heavier and more viscous oil tends to decline faster, which is why the viscosity term enters with a positive sign. Viscosity is computed from API gravity and reservoir temperature with the Beggs-Robinson correlation. A field-specific production-premium term captures performance above or below the physics baseline. The fitted form (V5.1) follows.
 
 ```
 D = 0.094 + 0.011 * ln(viscosity) - 0.061 * P12 + 0.040 * |P12|
