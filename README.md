@@ -1,6 +1,6 @@
 # NCS Crude Quality Model
 
-A field-by-field quantitative model of the Norwegian Continental Shelf that estimates the realised crude price each field earns relative to Dated Brent, how fast each field's oil production declines from its fluid properties, and a pre-peak production lifecycle forecast for new fields. Built entirely from public data by Emma Strandenskaar, a finance student at BI Norwegian Business School.
+A field-by-field quantitative model of the Norwegian Continental Shelf that estimates the realised crude price each field earns relative to Dated Brent, how fast each field's oil production declines from its fluid properties, and a pre-peak production lifecycle forecast for new fields. Built entirely from public data by Emma Strandenskaar, a finance student at NHH Norwegian School of Economics.
 
 [![NCS crude quality map](docs/map_preview.png)](https://emmastrandenskaar.github.io/ncs-crude-quality-model/)
 
